@@ -1,5 +1,6 @@
 body{
     background-color: #f2f3f4;
+    background: url(../img/hbg.jpg) center center space;
 }
 /* login */
 
@@ -83,7 +84,7 @@ input, button {
     top: 0;
     width: 900px;
     height: 100%;
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/bg_3.jpg);
     background-size: cover;
     transition: -webkit-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;
