@@ -300,11 +300,20 @@ input, button {
     background-color: #fff;
     margin-top: 60px;
 }
+.navBox{
+    display: flex;
+    width: 76%;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+}
+.logotitle{
+    font-size: 30px;
+    font-weight: 600;
+    color: #282b2d;
+}
 .nav{
     display: flex;
-    width: 80%;
-    margin: 0 auto;
-    
 }
 .nav li{
     padding: 0 20px;
