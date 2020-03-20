@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最美龙山 | photo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pc.css">
+    <script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="src/images-grid.js"></script>
+    <link rel="stylesheet" href="src/images-grid.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <ul class="nav">
+                <li class="on">首页</li>
+                <li>樱花</li>
+                <li>风景</li>
+                <li>风土</li>
+                <li>人情</li>
+                <li>关于我们</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <div>
+            <p class="xixi">我拍的</p>
+            <div id="gallery1"></div>
+            <p class="xixi">是不是很好看</p>
+            <div id="gallery2"></div>
+
+            <script>
+
+                $('#gallery1').imagesGrid({
+                    images: [
+                        'img/1.jpg',
+                        { src: 'img/2.jpg', caption: '龙山樱花1', alt: 'Second image', title: 'Second image' },
+                        { src: 'img/3.jpg', caption: '龙山樱花2' },
+                        { src: 'img/4.jpg', caption: '龙山樱花3' },
+                        { src: 'img/5.jpg', caption: '龙山樱花4' },
+                        { src: 'img/6.jpg', caption: '龙山樱花5' }
+                    ]
+                });
+
+                $('#gallery2').imagesGrid({
+                    images: [
+                        'img/diff-size/1.jpg',
+                        'img/diff-size/2.jpg',
+                        'img/diff-size/3.jpg',
+                        'img/diff-size/4.jpg',
+                        'img/diff-size/5.jpg'
+                    ],
+                    align: true
+                });
+
+            </script>
+        </div>
+    </section>
+</body>
+
+</html>
