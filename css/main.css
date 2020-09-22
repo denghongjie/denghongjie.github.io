@@ -1,0 +1,133 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+ul,
+li,
+input {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: microsoft YaHei, Aril;
+	font-size: 12px;
+	background-color: #eef3f7;
+}
+
+a {
+	text-decoration: none;
+	color: #4a8cef;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.ml-5 {
+	margin-left: 5px;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mt-15 {
+	margin-top: 15px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mt-50 {
+	margin-top: 50px !important;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+[v-cloak] {
+	display: none
+}
+
+
+/*登录*/
+.login_bg {
+	width: 100%;
+	height: calc(50vh);
+	background-color: #4a8cef;
+	position: relative;
+}
+
+.login_title {
+	width: 550px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-left: -275px;
+}
+
+.login_title h1 {
+	font-size: 28px;
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 1px;
+	text-shadow: 0 3px 3px #0b60de;
+}
+
+.loginPane {
+	width: 550px;
+	height: 400px;
+	background-color: #ffffff0f;
+	border-radius: -1px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -275px;
+	transition: ease all 0.5s;
+	box-shadow: 0 5px 10px #4a8cef59;
+}
+
+.loginInputBox {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.loginImg {
+	display: block;
+	width: 225px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 23px;
+	margin-bottom: 30px;
+}
+
+.loginInputBox .el-input__inner {
+	height: 44px;
+	line-height: 44px;
+}
+
+.loginBtn {
+	width: 100%
+}
