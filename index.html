@@ -1,55 +1,489 @@
 <!DOCTYPE html>
-<html>
+<!-- saved from url=(0025)http://www.psmirror.cn/zh -->
+<html lang="en" class="wf-loading wf-source-han-sans-simplified-c-n7-loading wf-source-han-sans-simplified-c-n1-loading wf-source-han-sans-simplified-c-n2-loading wf-source-han-sans-simplified-c-n4-loading responsejs"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iMunch图片快速处理">
+    <meta name="keywords" content="iMunch|图片快速处理|裁切大小|质量压缩|背景替换|快速抠章|批量处理|模型展示|水印去除|签名签章处理">
+    <meta name="author" content="Hongjie">
+    <meta name="baidu-site-verification" content="您身边的图片处理助手">
+    <link rel="shortcut icon" href="http://www.psmirror.cn/images/favicon.ico">
+    <title> iMunch-图片快速处理 </title>
 
-<head>
-	<meta charset="UTF-8">
-	<title>Hi Code 登录</title>
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="css/main.css">
-</head>
+    <!-- Fonts -->
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    
+    <!--[if lt IE 9]>
+    <script src="http://static.cutterman.cn/static/mirror/js/html5.js"></script>
+    <script src="http://static.cutterman.cn/static/mirror/js/respond.min.js"></script>
+    <![endif]-->
 
-<body style="background-color: #fff">
-	<div id="app" v-cloak>
-		<section class="login_bg">
-			<div class="login_title">
-				<h1>欢迎畅享你的登录</h1>
-			</div>
-			<div class="loginPane">
-				<img src="imgs/yunlogo.png" class="loginImg">
-				<div class="loginInputBox">
-					<el-input placeholder="用户名/邮箱" v-model="loginForm.name" class="mb-20">
-						<i slot="prefix" class="el-input__icon el-icon-user"></i>
-					</el-input>
-					<el-input placeholder="用户密码" v-model="loginForm.pwd" class="mb-20" show-password>
-						<i slot="prefix" class="el-input__icon el-icon-unlock"></i>
-					</el-input>
-					<el-checkbox label="记住密码" v-model="loginForm.recode" name="type" class="mt-20"></el-checkbox>
-					<div class="clear"></div>
-					<el-button type="primary" class="loginBtn mt-20">立即登录
-					</el-button>
-				</div>
-			</div>
-		</section>
-	</div>
-</body>
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="css/ie-older.css">
+    <![endif]-->
 
-</html>
-<!-- import Vue before Element -->
-<script src="js/vue.js"></script>
-<!-- import JavaScript -->
-<script src="js/index.js"></script>
-<script>
-	new Vue({
-		el: '#app',
-		data: function () {
-			return {
-				loginForm: {
-					name: "",
-					pwd: "",
-					recode: false,
-				}
-			}
-		}
-	})
-</script>
+    <noscript><link rel="stylesheet" href="css/no-js.css"></noscript>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="http://www.psmirror.cn/images/favicon.ico">
+    <link rel="apple-touch-icon" href="http://www.psmirror.cn/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://www.psmirror.cn/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://www.psmirror.cn/images/apple-touch-icon-114x114.png">
+    <link rel="stylesheet" href="css/style_zh.css">
+    <script src="js/tnd8zlt.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script><style>.tk-source-han-sans-simplified-c{font-family:"source-han-sans-simplified-c",sans-serif;}</style>
+    <style type="text/css">.fancybox-margin{margin-right:17px;}</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+<body>
+
+<div id="preloader" style="display: none;">
+    <div class="spinner" style="display: none;"></div> <!-- page loader spinner -->
+</div>
+
+<!-- #header -->
+<nav id="navigation_affix">
+    <!-- .container -->
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="index.html"><img src="imgs/logo_v2.png" style="width:200px;height:46px" alt="Logo"></a> <!-- site logo -->                  
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="http://www.psmirror.cn/zh" class="smooth-scroll">首页</a></li>
+            <li><a href="http://www.psmirror.cn/zh/install" class="smooth-scroll">流程</a></li>
+            <li><a href="http://www.psmirror.cn/zh/usage" class="smooth-scroll">使用</a></li>
+            <li><a href="http://www.psmirror.cn/zh/purchase" class="smooth-scroll">购买</a></li>
+            <li><a href="http://www.psmirror.cn/zh/help" class="smooth-scroll">帮助</a></li>
+            <li><a href="http://www.psmirror.cn/zh/login" class="smooth-scroll">联系我们</a></li>
+        </ul>
+    </div>
+    <!-- .container end -->
+</nav>
+<header id="header" style="opacity: 1;">
+    <nav class="nav-menu-mobile">
+        <div class="nav-menu-links">
+            <ul>
+                <li><a href="http://www.psmirror.cn/zh" class="smooth-scroll">首页</a></li>
+                <li><a href="http://www.psmirror.cn/zh/install" class="smooth-scroll">流程</a></li>
+                <li><a href="http://www.psmirror.cn/zh/usage" class="smooth-scroll">使用</a></li>
+                <li><a href="http://www.psmirror.cn/zh/purchase" class="smooth-scroll">购买</a></li>
+                <li><a href="http://www.psmirror.cn/zh/help" class="smooth-scroll">帮助</a></li>
+                <li><a href="http://www.psmirror.cn/zh/login" class="smooth-scroll">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="nav-menu-button">
+            <button class="nav-menu-toggle"><i class="fa fa-navicon"></i></button>
+        </div>
+    </nav>
+    <!-- #navigation -->
+    <nav id="navigation" class="navbar">
+
+        <!-- .container -->
+        <div class="container">
+
+            <div class="navbar-brand">
+                <a href="http://www.psmirror.cn/zh">
+                    <img src="imgs/logo_v2.png" style="width:200px;height:46px" alt="Logo"></a> <!-- site logo -->             
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li><a href="http://www.psmirror.cn/zh" class="smooth-scroll">首页</a></li>
+                <li><a href="http://www.psmirror.cn/zh/install" class="smooth-scroll">流程</a></li>
+                <li><a href="http://www.psmirror.cn/zh/usage" class="smooth-scroll">使用</a></li>
+                <li><a href="http://www.psmirror.cn/zh/purchase" class="smooth-scroll">购买</a></li>
+                <li><a href="http://www.psmirror.cn/zh/help" class="smooth-scroll">帮助</a></li>
+                <li><a href="http://www.psmirror.cn/zh/login" class="smooth-scroll">联系我们</a></li>
+            </ul>
+
+        </div>
+        <!-- .container end -->
+
+    </nav>
+<!-- #navigation end -->
+    <!-- .header-content -->
+    <div class="header-content" style="padding-top: 5em">
+        <!-- .container -->
+        <div class="container">
+            <div class="animation animated animation-fade-in-down" data-animation="animation-fade-in-down">
+                <div class="header-heading-title">
+                    <h2 class="tk-source-han-sans-simplified-c">iMunch</h2>
+                    <h1 class="tk-source-han-sans-simplified-c">您身边的图片处理助手</h1>
+                </div>
+                <div class="header-button">
+                    <a href="http://www.psmirror.cn/zh/install" class="btn-header smooth-scroll"><i class="fa fa-download"></i> 立即联系</a>
+                </div>
+            </div>
+
+            <figure class="header-img animation animated animation-fade-in-up" data-animation="animation-fade-in-up" style="padding: 0">
+                <img src="imgs/index_banner.png" alt="Header Image">
+            </figure>
+
+        </div>
+        <!-- .container end -->
+
+    </div>
+    <!-- .header-content end -->
+
+</header>
+<!-- #header end -->
+
+<!-- #features -->
+<div id="features" class="row-section" style="opacity: 1;">
+
+    <!-- .container -->
+    <div class="container">
+
+        <!-- .row -->
+        <div class="row">
+
+            <div class="col-sm-3 animation" data-animation="animation-fade-in-down"> <!-- 1 -->
+                <div class="affa_feature_icon_top">
+                    <img src="imgs/ps_icon1.png" alt="">
+                    <h4>提供需求</h4>
+                    <p>提供您需要如何修改或制作的具体需求</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3 animation" data-animation="animation-fade-in-down" data-delay="200"> <!-- 2 -->
+                <div class="affa_feature_icon_top">
+                    <img src="imgs/xd_icon1.png" alt="">
+                    <h4>合理报价</h4>
+                    <p>报价不会太高，5元-20元，极速处理</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3 animation" data-animation="animation-fade-in-down" data-delay="400"> <!-- 3 -->
+                <div class="affa_feature_icon_top">
+                    <img src="imgs/sketch_icon1.png" alt="">
+                    <h4>支付定金</h4>
+                    <p>微信、支付宝一次性支付，无需担忧，立即处理</p>
+                </div>
+            </div>
+            <div class="col-sm-3 animation" data-animation="animation-fade-in-down" data-delay="400"> <!-- 3 -->
+                <div class="affa_feature_icon_top">
+                    <img src="imgs/sketch_icon1.png" alt="">
+                    <h4>确定交付</h4>
+                    <p>根据用户需求即使处理为合格的图片，并交付</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- .row end -->
+
+    </div>
+    <!-- .container end -->
+
+</div>
+<!-- #features end -->
+
+<!-- #testimonials -->
+
+<div id="testimonials" class="row-section wrap-bg">
+
+    <div class="container">
+
+        <div class="affa_testimonials_carousel carousel-slider general-slider animation" data-animation="animation-fade-in-down">
+            <div class="testimonial-item">
+                <img src="http://static.cutterman.cn/static/mirror/images/content/avatar/1.png" alt="Avatar" />
+                <div class="testimonial-text">
+                    <p>"人生是有限的，我们所能做的只不过是在有生之年让自己过的高兴些罢了。"</p>
+                </div>
+                <div class="testimonial-author">
+                    <h4>小雨的箭</h4>
+                    <p>点我为你服务</p>
+                </div>
+            </div>
+
+            <div class="testimonial-item">
+                <img src="http://static.cutterman.cn/static/mirror/images/content/avatar/2.png" alt="Avatar" />
+                <div class="testimonial-text">
+                    <p>"如果在胜利前却步，往往只会拥抱失败;如果在困难时坚持，常常会获得新的成功。"</p>
+                </div>
+                <div class="testimonial-author">
+                    <h4>鲁班</h4>
+                    <p>点我为你服务</p>
+                </div>
+            </div>
+
+            <div class="testimonial-item">
+                <img src="http://static.cutterman.cn/static/mirror/images/content/avatar/3.png" alt="Avatar" />
+                <div class="testimonial-text">
+                    <p>"奋斗令我们的生活充满生机，责任让我们的生命充满意义，常遇困境说明你在进步，常有压力，说明你有目标。"</p>
+                </div>
+                <div class="testimonial-author">
+                    <h4>小乔</h4>
+                    <p>点我为你服务</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- #testimonials end -->
+
+<!-- #screenshots -->
+
+<div id="screenshots" class="row-section border-bottom" style="display: none;">
+
+    <div class="container">
+
+        <div class="post-heading-center animation" data-animation="animation-fade-in-down">
+            <h2>Our's App Screenshots</h2>
+            <p>perspiciatis unde omnis iste natus error sit voluptatem dolores eos qui<br>ratione voluptatem sequi nesciunt</p>
+        </div>
+
+        <div class="row carousel-slider gallery-slider animation" data-animation="animation-fade-in-up">
+            <div class="col-sm-3">
+                <a href="http://static.cutterman.cn/static/mirror/images/content/screenshots/1.jpg" class="fancybox" data-fancybox-group="images_gallery">
+                    <figure class="img-hover">
+                        <img src="http://static.cutterman.cn/static/mirror/images/content/screenshots/1.jpg" alt="Screenshot 1" />
+                        <div class="img-hover-masked"></div>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-sm-3">
+                <a href="http://static.cutterman.cn/static/mirror/images/content/screenshots/2.jpg" class="fancybox" data-fancybox-group="images_gallery">
+                    <figure class="img-hover">
+                        <img src="http://static.cutterman.cn/static/mirror/images/content/screenshots/2.jpg" alt="Screenshot 2" />
+                        <div class="img-hover-masked"></div>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-sm-3">
+                <a href="http://static.cutterman.cn/static/mirror/images/content/screenshots/3.jpg" class="fancybox" data-fancybox-group="images_gallery">
+                    <figure class="img-hover">
+                        <img src="http://static.cutterman.cn/static/mirror/images/content/screenshots/3.jpg" alt="Screenshot 3" />
+                        <div class="img-hover-masked"></div>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-sm-3">
+                <a href="http://static.cutterman.cn/static/mirror/images/content/screenshots/4.jpg" class="fancybox" data-fancybox-group="images_gallery">
+                    <figure class="img-hover">
+                        <img src="http://static.cutterman.cn/static/mirror/images/content/screenshots/4.jpg" alt="Screenshot 4" />
+                        <div class="img-hover-masked"></div>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-sm-3">
+                <a href="http://static.cutterman.cn/static/mirror/images/content/screenshots/5.jpg" class="fancybox" data-fancybox-group="images_gallery">
+                    <figure class="img-hover">
+                        <img src="http://static.cutterman.cn/static/mirror/images/content/screenshots/5.jpg" alt="Screenshot 5" />
+                        <div class="img-hover-masked"></div>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-sm-3">
+                <a href="http://static.cutterman.cn/static/mirror/images/content/screenshots/6.jpg" class="fancybox" data-fancybox-group="images_gallery">
+                    <figure class="img-hover">
+                        <img src="http://static.cutterman.cn/static/mirror/images/content/screenshots/6.jpg" alt="Screenshot 6" />
+                        <div class="img-hover-masked"></div>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-sm-3">
+                <a href="http://static.cutterman.cn/static/mirror/images/content/screenshots/7.jpg" class="fancybox" data-fancybox-group="images_gallery">
+                    <figure class="img-hover">
+                        <img src="http://static.cutterman.cn/static/mirror/images/content/screenshots/7.jpg" alt="Screenshot 7" />
+                        <div class="img-hover-masked"></div>
+                    </figure>
+                </a>
+            </div>
+
+            <div class="col-sm-3">
+                <a href="http://static.cutterman.cn/static/mirror/images/content/screenshots/8.jpg" class="fancybox" data-fancybox-group="images_gallery">
+                    <figure class="img-hover">
+                        <img src="http://static.cutterman.cn/static/mirror/images/content/screenshots/8.jpg" alt="Screenshot 8" />
+                        <div class="img-hover-masked"></div>
+                    </figure>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- #screenshots end -->
+
+<!-- #pricing -->
+<div id="pricing" class="row-section wrap-bg" style="opacity: 1;" >
+    <div class="container" style="display: none;">
+
+        <div class="post-heading-center animation" data-animation="animation-fade-in-down">
+            <h2>价格与购买方式</h2>
+            <p>默认享有15天的免费试用，请确认好用后再购买，一次购买终身使用，享受免费升级</p>
+        </div>
+
+        <div class="tbl-pricing tbl-prc-recommended animation" data-animation="animation-fade-in-up">
+            <div class="row">
+                <div class="col-sm-3 tbl-prc-col"> <!-- 1 -->
+                    <div class="tbl-prc-base">
+                        <h4 class="tbl-prc-heading">Photoshop</h4>
+                        <h2 class="tbl-prc-price"><sup>￥</sup>60</h2>
+                        <h5 class="tbl-prc-sub-price">终身使用权限</h5>
+                        <ul class="tbl-prc-list">
+                            <li><i class="fa fa-check"></i> 限本人使用</li>
+                            <li><i class="fa fa-check"></i> 免费提供升级</li>
+                            <li><i class="fa fa-check"></i> 技术支持</li>
+                        </ul>
+                        <div class="tbl-prc-footer">
+                            <a href="http://www.psmirror.cn/zh/order/create?type=1" class="btn-custom">去购买</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-3 tbl-prc-col"> <!-- 2 -->
+                    <div class="tbl-prc-base">
+                        <h4 class="tbl-prc-heading">Adobe XD</h4>
+                        <h2 class="tbl-prc-price"><sup>￥</sup>60</h2>
+                        <h5 class="tbl-prc-sub-price">终身使用权限</h5>
+                        <ul class="tbl-prc-list">
+                            <li><i class="fa fa-check"></i> 限本人使用</li>
+                            <li><i class="fa fa-check"></i> 免费提供升级</li>
+                            <li><i class="fa fa-check"></i> 技术支持</li>
+                        </ul>
+                        <div class="tbl-prc-footer">
+                            <a href="http://www.psmirror.cn/zh/order/create?type=17" class="btn-custom">去购买</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 tbl-prc-col"> <!-- 2 -->
+                    <div class="tbl-prc-base">
+                        <h4 class="tbl-prc-heading">Sketch</h4>
+                        <h2 class="tbl-prc-price"><sup>￥</sup>60</h2>
+                        <h5 class="tbl-prc-sub-price">终身使用权限</h5>
+                        <ul class="tbl-prc-list">
+                            <li><i class="fa fa-check"></i> 限本人使用</li>
+                            <li><i class="fa fa-check"></i> 免费提供升级</li>
+                            <li><i class="fa fa-check"></i> 技术支持</li>
+                        </ul>
+                        <div class="tbl-prc-footer">
+                            <a href="http://www.psmirror.cn/zh/order/create?type=12" class="btn-custom">去购买</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-sm-3 tbl-prc-col"> <!-- 4 -->
+                    <div class="tbl-prc-base">
+                        <h4 class="tbl-prc-heading">Group</h4>
+                        <h2 class="tbl-prc-price">80% <sup>折扣</sup></h2>
+                        <h5 class="tbl-prc-sub-price">终身使用权限</h5>
+                        <ul class="tbl-prc-list">
+                            <li><i class="fa fa-check"></i> 10人以上8折</li>
+                            <li><i class="fa fa-check"></i> 免费提供升级</li>
+                            <li><i class="fa fa-check"></i> 技术支持</li>
+                        </ul>
+                        <div class="tbl-prc-footer">
+                            <a href="http://www.psmirror.cn/zh/order/create?type=14" class="btn-custom">去购买</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- #pricing end -->
+
+<!-- #bottom -->
+<div id="bottom" class="animation" data-animation="animation-fade-in-down">
+
+    <!-- .container -->
+    <div class="container">
+
+        <div class="post-heading-center">
+            <h2>软件技能</h2>
+            <p>您可以了解我们的技能</p>
+        </div>
+
+        <div class="bottom-button">
+            <a href="javascript:;" class="btn-custom btn-icon"><i class="fa fa-diamond"></i> <em>设计制作 </em>Sketch  &nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="javascript:;" class="btn-custom btn-icon"><i class="fa fa-puzzle-piece"></i> <em>图片处理</em>Photoshop</a>
+            <a href="javascript:;" class="btn-custom btn-icon"><i class="fa fa-puzzle-piece"></i> <em>矢量插画</em>Illustrator</a>
+            <br>
+            <a href="javascript:;" class="btn-custom btn-icon"><i class="fa fa-android"></i> <em>平面画册</em>CDR</a>
+            <a href="javascript:;" class="btn-custom btn-icon"><i class="fa fa-apple"></i>  <em>模型展示</em>C4D</a>
+        </div>
+
+        <div class="sep-border"></div> <!-- separator -->
+
+    <!--
+        <div class="subscribe-form">
+            <div class="post-heading-center2">
+                <h2>Sign up here</h2>
+            </div>
+
+            <form method="post" action="#" class="affa-form-subscribe">
+                <input type="text" name="email" placeholder="Enter your e-mail address...." />
+                <input type="submit" name="submit" value="">
+            </form>
+        </div>
+
+        <div class="social-links">
+            <a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" title="google plus"><i class="fa fa-google-plus"></i></a>
+            <a href="#" title="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" title="pinterest"><i class="fa fa-pinterest"></i></a>
+            <a href="#" title="dribbble"><i class="fa fa-dribbble"></i></a>
+        </div>
+        -->
+
+        <footer class="footer-text">
+            <p>© 2020 iMunch 爱蒙奇图片快速处理工作室  </p>
+        </footer>
+
+    </div>
+    <!-- .container end -->
+
+</div>
+<!-- #bottom end -->
+
+<!--[if lt IE 8]>
+<div class="browser-notice">
+    <div class="container">
+        <div class="text">
+            <h1>Internet Explorer Out To Date</h1>
+            <p>Please update your Internet Explorer browser with a newer version (Internet Explorer 8 above) now!</p>
+            <span>You can download it <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="blank">here....</a></span>
+        </div>
+    </div>
+</div>
+<![endif]-->
+
+<!-- JavaScripts -->
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/response.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+
+
+
+
+</body></html>
