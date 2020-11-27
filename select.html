@@ -17,7 +17,8 @@
           <el-select 
             v-model="value" 
             filterable 
-            placeholder="请选择6"
+            placeholder="请选择7"
+            @blur="selectBlur"
             >
             <el-option
               v-for="item in options"
@@ -60,7 +61,9 @@
                 
         },
         methods: {
-          
+          selectBlur(e){
+            this.value = e.target.value
+          }
         }
     })
 
