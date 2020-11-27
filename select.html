@@ -14,10 +14,12 @@
 <body>
     <div id="app">
         <template>
-          <el-select v-model="value" filterable placeholder="请选择"
-          ref="select"
-        @hook:mounted="cancalReadOnly"
-        @visible-change="cancalReadOnly">
+          <el-select 
+            v-model="value" 
+            filterable 
+            placeholder="请选择"
+            ref="select"
+            @focus="closeReadOnly" @blur="closeReadOnly">
             <el-option
               v-for="item in options"
               :key="item.value"
@@ -59,15 +61,16 @@
                 
         },
         methods: {
-          cancalReadOnly(onOff) {
-                this.$nextTick(() => {
-                    if (!onOff) {
-                        const {select} = this.$refs;
-                        const input = select.$el.querySelector('.el-input__inner');
-                        input.removeAttribute('readonly');
-                    }
-                });
-            }
+          closeReadOnly() {
+            // 去除el-select默认的readOnly，否则移动端下拉框出不来
+            Array.from(document.getElementsByClassName('el-select')).forEach(item => {
+              item.children[0].children[0].removeAttribute('readOnly');
+              item.children[0].children[0].onblur = function () {
+                let _this = this;
+                _this.removeAttribute('readOnly');
+              }
+            });
+          },
         }
     })
 </script>
