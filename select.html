@@ -17,8 +17,8 @@
           <el-select 
             v-model="value" 
             filterable 
-            placeholder="请选择7"
-            @blur="selectBlur"
+            placeholder="请选择8"
+            id="select"
             >
             <el-option
               v-for="item in options"
@@ -35,6 +35,8 @@
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <!-- import JavaScript -->
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
 <script>
     new Vue({
         el: '#app',
@@ -65,6 +67,11 @@
             this.value = e.target.value
           }
         }
+    })
+    $(function(){
+        $('#select input').on('touchstart', function() {
+            $('#select input').focus();
+        });
     })
 
 </script>
