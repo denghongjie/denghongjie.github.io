@@ -17,9 +17,8 @@
           <el-select 
             v-model="value" 
             filterable 
-            placeholder="请选择2"
-            ref="select"
-            @focus="closeReadOnly" @blur="closeReadOnly">
+            placeholder="请选择3"
+            id="select">
             <el-option
               v-for="item in options"
               :key="item.value"
@@ -35,6 +34,7 @@
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <!-- import JavaScript -->
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
 <script>
     new Vue({
         el: '#app',
@@ -72,5 +72,12 @@
             });
           },
         }
+    })
+
+    // 
+    $(function(){
+        $('#select').on('touchstart', function() {
+            $('#select').focus();
+        });
     })
 </script>
