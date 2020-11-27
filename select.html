@@ -17,8 +17,8 @@
           <el-select 
             v-model="value" 
             filterable 
-            placeholder="请选择8"
-            id="select"
+            placeholder="请选择3"
+            id="fuck"
             >
             <el-option
               v-for="item in options"
@@ -35,7 +35,6 @@
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <!-- import JavaScript -->
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
 
 <script>
     new Vue({
@@ -62,16 +61,20 @@
             }
                 
         },
+        mounted(){
+          document.getElementById('fuck').removeAttribute('readOnly');
+          Array.from(document.getElementsByClassName('el-select')).forEach((item) => {
+            item.children[0].children[0].removeAttribute('readOnly')
+            item.children[0].children[0].onblur = function () {
+              let _this = this
+              setTimeout(() => {
+                _this.removeAttribute('readOnly')
+              }, 200)
+            }
+          })
+        },
         methods: {
-          selectBlur(e){
-            this.value = e.target.value
-          }
         }
-    })
-    $(function(){
-        $('#select input').on('touchstart', function() {
-            $('#select input').focus();
-        });
     })
 
 </script>
