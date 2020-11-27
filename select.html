@@ -14,7 +14,10 @@
 <body>
     <div id="app">
         <template>
-          <el-select v-model="value" filterable placeholder="请选择">
+          <el-select v-model="value" filterable placeholder="请选择"
+          ref="select"
+        @hook:mounted="cancalReadOnly"
+        @visible-change="cancalReadOnly">
             <el-option
               v-for="item in options"
               :key="item.value"
@@ -56,7 +59,15 @@
                 
         },
         methods: {
-            
+          cancalReadOnly(onOff) {
+                this.$nextTick(() => {
+                    if (!onOff) {
+                        const {select} = this.$refs;
+                        const input = select.$el.querySelector('.el-input__inner');
+                        input.removeAttribute('readonly');
+                    }
+                });
+            }
         }
     })
 </script>
