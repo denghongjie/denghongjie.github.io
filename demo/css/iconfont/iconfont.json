@@ -1,0 +1,58 @@
+{
+  "id": "2402508",
+  "name": "crm",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "695187",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "1933028",
+      "name": "企业",
+      "font_class": "web-icon-",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "3930510",
+      "name": "上箭头",
+      "font_class": "shangjiantou",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "3930514",
+      "name": "下箭头",
+      "font_class": "xiajiantou",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "9512618",
+      "name": "地点",
+      "font_class": "position-fill",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "11177860",
+      "name": "更多",
+      "font_class": "ziyuan",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "19104009",
+      "name": "首页-用户",
+      "font_class": "yonghu-fuben",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    }
+  ]
+}

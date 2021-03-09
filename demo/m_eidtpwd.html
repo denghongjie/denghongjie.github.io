@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>修改密码</title>
+  <link rel="stylesheet" type="text/css" href="css/mcss.css">
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- 头部 -->
+    <div class="corp_Part_head">
+      <div class="fl">
+        <i class="el-icon-arrow-left icon_set" title="返回" onclick="window.location.href='m_index.html'"></i>
+        <span class="labelUname2" onclick="window.location.href='m_index.html'">返回</span>
+      </div>
+      <!-- <div class="fr labelUname">孙工</div> -->
+    </div>
+    <!-- tab -->
+    <div class="corp_Part_tab">
+      <div class="mlr-10">
+          <el-form ref="form" :model="ruleForm" label-width="80px" label-position="left"  class="mt-10 item_m10">
+            <el-form-item label="旧密码">
+              <el-input type="password" v-model="ruleForm.passold" autocomplete="off"></el-input>
+            </el-form-item>
+            <el-form-item label="新密码">
+              <el-input type="password" v-model="ruleForm.passnew" autocomplete="off"></el-input>
+            </el-form-item>
+            <el-form-item label="确认密码">
+              <el-input type="password" v-model="ruleForm.passnew2" autocomplete="off"></el-input>
+            </el-form-item>
+          </el-form>
+      </div>
+      <el-button type="primary" @click="submitForm('ruleForm')" class="tijiaoBtn">提交</el-button>
+    </div>
+    
+  </div>
+</body>
+</html>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: function() {
+      return { 
+        ruleForm:{
+          passold:'', 
+          passnew:'', 
+          passnew2:'', 
+        }
+      }  
+    },
+    methods: {
+      submitForm(){
+        
+      }
+    }
+  })
+</script>

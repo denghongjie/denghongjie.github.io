@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" type="text/css" href="css/mcss.css">
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <link rel="stylesheet" href="css/iconfont/iconfont.css">
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <!-- 头部 -->
+    <div class="corp_Part_head">
+      <div class="fl">
+        <el-dropdown>
+          <span class="el-dropdown-link">
+            <i class="el-icon-s-tools icon_set"></i>
+          </span>
+          <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item onclick="window.location.href='m_eidtpwd.html'">修改密码</el-dropdown-item>
+            <el-dropdown-item onclick="window.location.href='m_login.html'">退出登录</el-dropdown-item>
+          </el-dropdown-menu>
+        </el-dropdown>
+      </div>
+      <div class="fr labelUname">孙工</div>
+    </div>
+    <!-- 查询 -->
+    <div class="corp_Part_search">
+      <el-input placeholder="请输入关键词" v-model="searchKey" class="input-with-select self_input mlr-10" size="small">
+        <el-button slot="append" icon="el-icon-search"></el-button>
+      </el-input>
+    </div>
+    <!-- 表格 -->
+    <div class="corp_Part_table">
+
+      <div class="m_part_Box" v-for="index in 8" :key="index">
+        <div class="m_part_header">
+          <div class="m_part_h_l">
+            <span class="m_work_worker">李晓明</span>
+            <label class="m_work_label">软件测试/问题整理</label>
+          </div>
+          <div class="m_part_h_r">
+            <button class="m_lei_btn">技术内业</button>
+            <el-dropdown trigger="click">
+              <span class="el-dropdown-link">
+                <button class="m_more_btn"><i class="icon iconfont icon-ziyuan"></i></button>
+              </span>
+              <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item>追加</el-dropdown-item>
+                <el-dropdown-item>编辑</el-dropdown-item>
+                <el-dropdown-item>删除</el-dropdown-item>
+              </el-dropdown-menu>
+            </el-dropdown>
+          </div>
+        </div>
+        <div class="m_part_content">
+          <div class="m_info_1">
+            <div class="m_calenerBox">
+              <div class="m_calener">
+                <div class="m_calener_year">2021</div>
+                <div class="m_calener_dayBox">
+                  <span class="m_calener_day">31</span>
+                  <span class="m_calener_line"></span>
+                  <span class="m_calener_mounth">01</span>
+                </div>
+              </div>
+            </div>
+            <div class="worktext">
+              工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工
+            </div>
+          </div>
+          <div class="clecle">
+            <span></span>
+            <div class="line"></div>
+            <span></span>
+          </div>
+          <div class="m_info_1">
+            <div class="m_list_workBox">
+              <span class="m_zuijia">追加</span>
+              <span class="m_work_time">2021-03-05</span>
+              <span class="m_work_time">08:30:41</span>
+            </div>
+            <div class="worktext">
+              工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工
+            </div>
+          </div>
+        </div>
+        <div class="m_part_footer">
+          <div> <i class="icon iconfont icon-position-fill"></i> 北京</div>
+          <div><i class="icon iconfont icon-shijian"></i>2021-03-02 12:28:41</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: function () {
+      return {
+        searchKey: '',
+        currentPage1: 1,
+        listContract: [{
+          contractdateStr: '2019-12-20',
+          corpname: '设计院名称',
+          totlamoney: '120000'
+        }, {
+          contractdateStr: '2019-12-20',
+          corpname: '设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称',
+          totlamoney: '12000000'
+        }, {
+          contractdateStr: '2019-12-20',
+          corpname: '设计院名称',
+          totlamoney: '120000'
+        }, {
+          contractdateStr: '2019-12-20',
+          corpname: '设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称',
+          totlamoney: '12000000'
+        }, {
+          contractdateStr: '2019-12-20',
+          corpname: '设计院名称',
+          totlamoney: '120000'
+        }, {
+          contractdateStr: '2019-12-20',
+          corpname: '设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称',
+          totlamoney: '12000000'
+        }, {
+          contractdateStr: '2019-12-20',
+          corpname: '设计院名称',
+          totlamoney: '120000'
+        }, {
+          contractdateStr: '2019-12-20',
+          corpname: '设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称',
+          totlamoney: '12000000'
+        }, {
+          contractdateStr: '2019-12-20',
+          corpname: '设计院名称',
+          totlamoney: '120000'
+        }, {
+          contractdateStr: '2019-12-20',
+          corpname: '设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称',
+          totlamoney: '12000000'
+        }, {
+          contractdateStr: '2019-12-20',
+          corpname: '设计院名称',
+          totlamoney: '120000'
+        }, {
+          contractdateStr: '2019-12-20',
+          corpname: '设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称',
+          totlamoney: '12000000'
+        }, {
+          contractdateStr: '2019-12-20',
+          corpname: '设计院名称',
+          totlamoney: '120000'
+        }, {
+          contractdateStr: '2019-12-20',
+          corpname: '设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称',
+          totlamoney: '12000000'
+        }]
+
+
+
+
+      }
+    },
+    methods: {
+      tableRowClassName({ row, rowIndex }) {
+        if (rowIndex % 2 == 1) {
+          return 'warning-row';
+        } else if (rowIndex % 2 == 0) {
+          return 'success-row';
+        }
+        return '';
+      },
+      handleSizeChange(val) {
+        console.log(`每页 ${val} 条`);
+      },
+      handleCurrentChange(val) {
+        console.log(`当前页: ${val}`);
+      }
+    }
+  })
+</script>

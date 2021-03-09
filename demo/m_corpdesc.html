@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>合同信息</title>
+  <link rel="stylesheet" type="text/css" href="css/mcss.css">
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- 头部 -->
+    <div class="corp_Part_head">
+      <div class="fl">
+        <i class="el-icon-arrow-left icon_set" title="返回" onclick="window.location.href='m_index.html'"></i>
+        <span class="labelUname2" onclick="window.location.href='m_index.html'">返回</span>
+      </div>
+      <!-- <div class="fr labelUname">孙工</div> -->
+    </div>
+    <!-- tab -->
+    <div class="corp_Part_tab">
+      <div class="mlr-10">
+        <el-tabs v-model="activeName" @tab-click="handleClick">
+          <el-tab-pane label="合同信息" name="first">
+            <el-form ref="form" :model="form" label-width="80px" label-position="left"  class=" mt-10">
+              <el-form-item label="合同日期">
+                <span class="wenziText">2020-12-25</span>
+              </el-form-item>
+              <el-form-item label="客户名称">
+                <span class="wenziText">北京新东方烹饪学校</span>
+              </el-form-item>
+              <el-form-item label="合同金额">
+                <span class="wenziText">12，000<span>元</span></span>
+              </el-form-item>
+              <el-form-item label="开票">
+                <el-radio-group v-model="form.resource">
+                  <el-radio label="是"></el-radio>
+                  <el-radio label="否"></el-radio>
+                </el-radio-group>
+              </el-form-item>
+              <el-form-item label="分期合同">
+                <el-radio-group v-model="form.resource">
+                  <el-radio label="是"></el-radio>
+                  <el-radio label="否"></el-radio>
+                </el-radio-group>
+              </el-form-item>
+              <el-form-item label="授权码">
+                <span class="wenziText">MH2018-12245-58858-66614-18482-666</span>
+              </el-form-item>
+              <el-form-item label="备注">
+                <span class="wenziText">该部分请小邓自行设计，显示美观即可。该部分请小邓自行设计，显示美观即可该部分请小邓自行设计，显示美观即可</span>
+              </el-form-item>
+              <el-form-item label="附件">
+                <ul class="file_list">
+                  <li class="wenziText">文件1</li>
+                </ul>
+              </el-form-item>
+            </el-form>
+          </el-tab-pane>
+          <el-tab-pane label="到账信息" name="second">
+            <!-- 表格 -->
+            <el-table
+            :data="listContract"
+            :row-class-name="tableRowClassName"
+            style="width: 100%"
+            height="calc(84vh)">
+            <el-table-column
+              type="index"
+              label="序号"
+              width="55">
+            </el-table-column>
+            <el-table-column
+              prop="date1"
+              label="到账日期">
+              <template scope="scope">
+                <span>{{scope.row.date1}}</span>
+              </template>
+            </el-table-column>
+            <el-table-column
+              prop="cash1"
+              label="到账金额"
+              width="120"
+              >
+              <template scope="scope">
+                <span class="cashtext">{{scope.row.cash1}}</span>
+              </template>
+            </el-table-column>
+          </el-table>
+          </el-tab-pane>
+          <el-tab-pane label="开票信息" name="third">
+            <el-form ref="form" :model="form" label-width="80px" label-position="left"  class="mt-10">
+              <el-form-item label="开票约定">
+                <span class="wenziText">该部分请小邓自行设计，显示美观即可。该部分请小邓自行设计，显示美观即可该部分请小邓自行设计，显示美观即可</span>
+              </el-form-item>
+              <el-form-item label="附件">
+                <ul class="file_list">
+                  <li class="wenziText">文件1</li>
+                </ul>
+              </el-form-item>
+          </el-tab-pane>
+        </el-tabs>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: function() {
+      return { 
+        activeName:'first',
+        form:[],
+        listContract:[{
+          date1:'2020-12-20 22:45:36',
+          cash1:'12,000'
+        }]
+      }  
+    },
+    methods: {
+      handleClick(tab, event) {
+        console.log(tab, event);
+      }
+    }
+  })
+</script>

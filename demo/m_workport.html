@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>探索者CRM首页 | 工作汇报</title>
+    <!-- import CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/phone.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="m_bar_header">
+            <span class="fl_icon_fl"><a href="phone_index"> <i class="el-icon-arrow-left ml-1"></i> 返回</a></span>
+            <span class="tetie">填写工作汇报</span>
+            <span class="fl_icon_fr"> <i class="el-icon-finished "></i> <span class="ml-2">提交 </span> </span>
+        </div>
+        <!-- 表单 -->
+        <div class="phone_form bianju">
+            <el-form ref="form" :model="renderDetailData" ref="addForm">
+                <!-- 汇报日期 -->
+                <el-form-item label="汇报日期">
+                    <el-time-picker placeholder="选择日期" v-model="renderDetailData.renddate" style="width: 100%;">
+                    </el-time-picker>
+                </el-form-item>
+                <!-- 工作时间 -->
+                <el-form-item label="工作时间">
+                    <el-radio-group v-model="renderDetailData.resource">
+                        <el-radio label="0">上午</el-radio>
+                        <el-radio label="1">下午</el-radio>
+                        <el-radio label="2">全天</el-radio>
+                    </el-radio-group>
+                </el-form-item>
+                <!-- 服务标志    根据服务标志显示后续内容 serverFlag = 1 为技术内页   2技术外业  3出差途中 4请假-->
+                <el-form-item label="服务标志">
+                    <el-radio-group v-model="renderDetailData.serverFlag">
+                        <el-radio label="1" @click="change(1)">技术内业</el-radio>
+                        <el-radio label="2" @click="change(2)">技术外业</el-radio>
+                        <el-radio label="3" @click="change(3)">出差途中</el-radio>
+                        <el-radio label="4" @click="change(4)">请假</el-radio>
+                    </el-radio-group>
+                </el-form-item>
+                <!-- 技术内业 -->
+                <div v-if="renderDetailData.serverFlag == 1">
+                    <!-- 销售人员 -->
+                    <el-form-item label="销售人员">
+                        <el-select v-model="renderDetailData.saleUsrId" placeholder="请选择">
+                            <el-option label="0" value="shanghai">人员1</el-option>
+                            <el-option label="1" value="beijing">人员2</el-option>
+                            <el-option label="2" value="beijing">人员3</el-option>
+                        </el-select>
+                    </el-form-item>
+                    <!-- 设计院 -->
+                    <el-form-item label="设计院">
+                        <el-select v-model="renderDetailData.corpname" placeholder="请选择">
+                            <el-option label="0" value="shanghai">设计院1</el-option>
+                            <el-option label="1" value="beijing">设计院2</el-option>
+                            <el-option label="2" value="beijing">设计院3</el-option>
+                        </el-select>
+                    </el-form-item>
+                    <!-- 工作城市 -->
+                    <el-form-item label="工作城市">
+                        <el-select v-model="renderDetailData.workcity" placeholder="请选择">
+                            <el-option label="0" value="shanghai">人员1</el-option>
+                            <el-option label="1" value="beijing">人员2</el-option>
+                            <el-option label="2" value="beijing">人员3</el-option>
+                        </el-select>
+                    </el-form-item>
+                    <!-- 技术服务属性 -->
+                    <el-form-item label="技术服务属性">
+                        <el-select v-model="renderDetailData.propertyname" placeholder="请选择">
+                            <el-option label="0" value="shanghai">人员1</el-option>
+                            <el-option label="1" value="beijing">人员2</el-option>
+                            <el-option label="2" value="beijing">人员3</el-option>
+                        </el-select>
+                    </el-form-item>
+                    <!-- 工作内容 -->
+                    <el-form-item label="工作内容">
+                        <el-input type="textarea" :rows="7" v-model="renderDetailData.content"></el-input>
+                    </el-form-item>
+                </div>
+                <!-- 技术外业 -->
+                <div v-if="renderDetailData.serverFlag == 2">
+                    <!-- 销售人员 -->
+                    <el-form-item label="销售人员">
+                        <el-select v-model="renderDetailData.saleUsrId" placeholder="请选择">
+                            <el-option label="0" value="shanghai">人员1</el-option>
+                            <el-option label="1" value="beijing">人员2</el-option>
+                            <el-option label="2" value="beijing">人员3</el-option>
+                        </el-select>
+                    </el-form-item>
+                    <!-- 设计院 -->
+                    <el-form-item label="设计院">
+                        <el-select v-model="renderDetailData.corpname" placeholder="请选择">
+                            <el-option label="0" value="shanghai">设计院1</el-option>
+                            <el-option label="1" value="beijing">设计院2</el-option>
+                            <el-option label="2" value="beijing">设计院3</el-option>
+                        </el-select>
+                    </el-form-item>
+                    <!-- 工作城市 -->
+                    <el-form-item label="工作城市">
+                        <el-select v-model="renderDetailData.workcity" placeholder="请选择">
+                            <el-option label="0" value="shanghai">人员1</el-option>
+                            <el-option label="1" value="beijing">人员2</el-option>
+                            <el-option label="2" value="beijing">人员3</el-option>
+                        </el-select>
+                    </el-form-item>
+                    <!-- 技术服务属性 -->
+                    <el-form-item label="技术服务属性" filterable>
+                        <el-select v-model="renderDetailData.propertyname" placeholder="请选择">
+                            <el-option label="0" value="shanghai">人员1</el-option>
+                            <el-option label="1" value="beijing">人员2</el-option>
+                            <el-option label="2" value="beijing">人员3</el-option>
+                        </el-select>
+                    </el-form-item>
+                    <!-- 工作内容 -->
+                    <el-form-item label="工作内容">
+                        <el-input type="textarea" :rows="7" v-model="renderDetailData.content"></el-input>
+                    </el-form-item>
+
+                </div>
+                <div v-if="renderDetailData.serverFlag == 3">
+                    <!-- 起点城市 -->
+                    <el-form-item label="起点城市">
+                        <el-select v-model="renderDetailData.startcity" placeholder="请选择城市（可输入快速检索）">
+                            <el-option label="0" value="shanghai">人员1</el-option>
+                            <el-option label="1" value="beijing">人员2</el-option>
+                            <el-option label="2" value="beijing">人员3</el-option>
+                        </el-select>
+                    </el-form-item>
+                    <!-- 终点城市 -->
+                    <el-form-item label="终点城市">
+                        <el-select v-model="renderDetailData.endcity" placeholder="请选择城市（可输入快速检索）">
+                            <el-option label="0" value="shanghai">人员1</el-option>
+                            <el-option label="1" value="beijing">人员2</el-option>
+                            <el-option label="2" value="beijing">人员3</el-option>
+                        </el-select>
+                    </el-form-item>
+                    <!-- 工作内容 -->
+
+                </div>
+                <div v-if="renderDetailData.serverFlag == 4">
+                    <!-- 工作城市 -->
+                    <el-form-item label="工作城市">
+                        <el-select v-model="renderDetailData.workcity" placeholder="请选择城市（可输入快速检索）">
+                            <el-option label="0" value="shanghai">人员1</el-option>
+                            <el-option label="1" value="beijing">人员2</el-option>
+                            <el-option label="2" value="beijing">人员3</el-option>
+                        </el-select>
+                    </el-form-item>
+                    <!-- 工作内容 -->
+                    <el-form-item label="工作内容">
+                        <el-input type="textarea" :rows="7" v-model="renderDetailData.content"></el-input>
+                    </el-form-item>
+                </div>
+                <el-form-item label="备注">
+                    <el-input type="textarea" :rows="1" v-model="renderDetailData.remark"></el-input>
+                </el-form-item>
+                <div class="mt-2">
+                    <el-button type="primary" @click="onSubmit">提交</el-button>
+                </div>
+            </el-form>
+        </div>
+
+
+
+    </div>
+</body>
+<!-- import Vue before Element -->
+<script src="js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="js/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                renderDetailData: {
+                    renddate: "", //汇报日期
+                    resource: "", //工作时间
+                    serverFlag: 1, //服务标志
+                    // < !--技术内业 -- >
+                    saleUsrId: "", //销售人员
+                    corpname: "", //设计院
+                    workcity: "", //工作城市
+                    propertyname: "", //技术服务属性
+                    content: "", //工作内容
+                    affaineffect: "", //达成结果
+                    keepwork: "", //需跟进工作
+                    keepdate: "", //下次拜访时间
+                    phase: "", //项目阶段
+                    remark: "" //备注
+                }
+            }
+        },
+        methods: {
+            onSubmit() {
+                console.log('submit!');
+            },
+            change(i) {
+                alert(i);
+                this.serverFlag = i
+            }
+        }
+    })
+</script>
+
+</html>
