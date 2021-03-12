@@ -205,8 +205,8 @@ i.icon_set{
   background-color: #fff;
   overflow: hidden;
   border-radius:14px ;
-  box-shadow: 0 2px 28px rgba(55, 74, 107, 0.1);
-  margin: 12px;
+  box-shadow: 0 2px 20px rgba(55, 74, 107, 0.33);
+  margin: 24px 12px;
   border-top: 1px solid transparent;
   box-sizing: border-box;
 }
@@ -214,6 +214,10 @@ i.icon_set{
   display: flex;
   justify-content: space-between;
   margin: 10px;
+}
+.m_part_h_l{
+  display: flex;
+  align-items: center;
 }
 .m_lei_btn{
 border: 0;
@@ -225,10 +229,10 @@ border: 0;
 }
 .m_more_btn{
     border: 0;
-    background-color: #3c78ff;
+    background-color: #c7d1e6;
     color: #fff;
     font-size: 14px;
-    padding: 4px 4px;
+    padding: 4px 0px;
     border-radius: 6px;
 }
 .m_work_worker{
@@ -249,7 +253,6 @@ border: 0;
   overflow: hidden;
 }
 .clecle{
-  margin: 20px 12px 12px 12px;
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -258,21 +261,51 @@ border: 0;
   display: block;
   width: 6px;
   height: 6px;
-  border: 2px solid #ccc;
+  border: 1px solid #dee3ef;
   border-radius: 5px;
 
 }
 .clecle div{
   position: relative;
-  top: 5px;
+  top: 4px;
   width: 100%;
   height: 1px;
-  background-color: #ccc;
+  background-color: #dee3ef;
 }
 .m_info_1{
   margin: 12px 12px;
   display: flex;
   justify-content: space-between;
+}
+.m_otherinfo{
+  margin: 0px 12px;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+a.m_company{
+  padding: 4px 8px;
+  background-color: #dae8f7; 
+  border-radius: 4px;
+  margin-right: 4px!important;
+  text-decoration: none;
+  color: #333;
+      display: inline-flex;
+}
+a.m_connect{
+  padding: 4px 8px;
+  background-color: #cff3c2; 
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  
+}
+a.m_company,a.m_connect{
+    margin: 4px 0;
+    display: inline-flex;
+    font-size: 12px;
+}
+a.m_company i,.m_connect i{
+  margin-right: 4px;
 }
 .m_calenerBox,.m_list_workBox{
   width: 84px;
@@ -328,18 +361,163 @@ border: 0;
 }
 .m_zuijia{
   color: #ff9548;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 .m_work_time{
   display: block;
   color: #ccc;
-  font-size: 13px;
+  font-size: 12px;
 }
 .m_part_footer{
-  background-color: #ccc;
+  background-color: #dfe3ea;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 4px 10px;
+}
+.m_localtion{
+  font-size: 13px;
+  color: #a5aab5;
+  display: flex;
+   align-items: center;
+}
+.m_localtion i,.m_updtetime i{
+  margin-right: 4px;
+}
+.m_updtetime{
+   font-size: 13px;
+   color: #a5aab5;
+   display: flex;
+   align-items: center;
+}
+.m-height{
+  height: 40px;
+  overflow: hidden;
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+}
+
+.m_expend{
+  color: #3c78ff
+}
+.m_type1{
+  background-color: #0d5dff;
+}
+.m_type2{
+  background-color: #17dcff;
+}
+.m_type3{
+  background-color: #ffb017;
+}
+.m_type4{
+  background-color: #f82525;
+}
+.m_userBox{
+      margin: 12px 4px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #dde3e8;
+    padding: 12px;
+}
+.m_name{
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+}
+.m_userinfo a{
+ text-decoration: none;
+ color: #808694;
+    font-size: 14px;
+}
+.m_zhiwei{
+  background-color: #3c78ff;
+    padding: 2px 6px;
+    color: #fff;
+    border-radius: 6px 0 0 6px;
+}
+.m_bumen{
+  background-color: #ffad3c;
+    padding: 2px 6px;
+    color: #fff;
+    border-radius:  0 6px 6px 0 ;
+}
+.m_zhiwei,.m_bumen{
+ font-size: 12px;
+    float: left;
+}
+.m_bj_4{
+  margin-right: 4px;
+}
+.m_userbeizhu{
+      color: #ccc;
+    background-color: #f7f7f7;
+    min-height: 42px;
+    padding: 6px 10px;
+    font-size: 14px;
+    margin-top: 8px;
+}
+.m_userpageBox{
+      height: calc(100vh - 5vh - 40px);
+  overflow-y: auto;
+}
+.m_userinfo{
+ display: flex;
+ justify-content: space-between;
+}
+.hb_m_list-item{
+ margin: 20px 0;
+}
+.hb_m_itemcontent{
+    padding: 10px;
+   margin: 5px 4px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #dde3e8;
+}
+.m_title{
+  font-size: 13px;
+    font-weight: 600;
+    color: #bac1ce;
+}
+.m_title2{
+  font-size: 14px;
+    font-weight: 400;
+    color: #bac1ce;
+}
+.m_context{
+  font-size: 14px;
+    line-height: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+.rmargin_1{
+  margin: 20px 12px 12px 12px;
+}
+.jieguo{
+  padding: 4px 8px;
+    background-color: #e5ebf7;
+    color: #3c78ff;
+    border-radius: 4px;
+    border: 1px solid #ccdcff;
+}
+.gengjin{
+  padding: 4px 8px;
+    background-color: #eefbe8;
+    color: #67c23a;
+    border-radius: 4px;
+    border: 1px solid #cee2c5;
+}
+.codeNexttime{
+  font-size: 14px;
+  text-align: right;
+  color: #c2cada;
+  line-height: 30px;
+      padding-right: 15px;
+}
+.hb_m_list_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

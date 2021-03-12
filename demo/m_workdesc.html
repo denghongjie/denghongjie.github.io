@@ -38,16 +38,18 @@
       </el-input>
     </div>
     <!-- 表格 -->
-    <div class="corp_Part_table">
-
-      <div class="m_part_Box" v-for="index in 8" :key="index">
+    <div class="corp_Part_table" style="height: 89vh;">
+      <div class="m_part_Box" v-for="(item,index)  in workList" :key="index">
         <div class="m_part_header">
           <div class="m_part_h_l">
-            <span class="m_work_worker">李晓明</span>
-            <label class="m_work_label">软件测试/问题整理</label>
+            <span class="m_work_worker">{{item.worker}}</span>
+            <label class="m_work_label">{{item.workType}}</label>
           </div>
           <div class="m_part_h_r">
-            <button class="m_lei_btn">技术内业</button>
+            <button class="m_lei_btn m_type1" v-if="item.Type== 1">技术内业</button>
+            <button class="m_lei_btn m_type2" v-if="item.Type== 2">技术外业</button>
+            <button class="m_lei_btn m_type3" v-if="item.Type== 3">出差途中</button>
+            <button class="m_lei_btn m_type4" v-if="item.Type== 4">请假</button>
             <el-dropdown trigger="click">
               <span class="el-dropdown-link">
                 <button class="m_more_btn"><i class="icon iconfont icon-ziyuan"></i></button>
@@ -64,37 +66,55 @@
           <div class="m_info_1">
             <div class="m_calenerBox">
               <div class="m_calener">
-                <div class="m_calener_year">2021</div>
+                <div class="m_calener_year" v-text="item.workdate.slice(0,4)"></div>
                 <div class="m_calener_dayBox">
-                  <span class="m_calener_day">31</span>
+                  <span class="m_calener_day" v-text="item.workdate.slice(5,7)"></span>
                   <span class="m_calener_line"></span>
-                  <span class="m_calener_mounth">01</span>
+                  <span class="m_calener_mounth" v-text="item.workdate.slice(8,10)"></span>
                 </div>
               </div>
             </div>
             <div class="worktext">
-              工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工
+              {{item.workcontent}}
             </div>
           </div>
-          <div class="clecle">
+          <div class="clecle rmargin_1" v-if="item.clildworkList.length>0">
             <span></span>
             <div class="line"></div>
             <span></span>
           </div>
-          <div class="m_info_1">
-            <div class="m_list_workBox">
-              <span class="m_zuijia">追加</span>
-              <span class="m_work_time">2021-03-05</span>
-              <span class="m_work_time">08:30:41</span>
+          <div v-if="item.clildworkList.length>0">
+            <div class="m_info_1" v-for="(v,i)  in item.clildworkList">
+              <div class="m_list_workBox">
+                <span class="m_zuijia">追加</span>
+                <span class="m_work_time" v-text="v.chi_work_date.slice(0,9)">2021-03-05</span>
+                <span class="m_work_time" v-text="v.chi_work_date.slice(10,18)">08:30:41</span>
+              </div>
+              <div class="worktext">
+                <div :class="isShowall?'m-height':'' ">
+                  {{v.addWorkCon}}
+                </div>
+                <div v-if="v.addWorkCon.length>50" class="m_expend" v-show="isShowall" @click="showAll">展开全部 <i
+                    class="icon iconfont icon-xiajiantou"></i>
+                </div>
+                <div v-if="v.addWorkCon.length>50" class="m_expend" v-show="!isShowall" @click="hideAll">折叠全部 <i
+                    class="icon iconfont icon-shangjiantou"></i>
+                </div>
+              </div>
             </div>
-            <div class="worktext">
-              工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工
-            </div>
+          </div>
+          <div class="m_otherinfo">
+            <a href="m_company.html" class="m_company" v-show="item.serviceCompany"> <i
+                class="icon iconfont icon-web-icon-"></i>
+              <span>{{item.serviceCompany}}</span>
+            </a>
+            <a href="" class="m_connect" v-show="item.serviceConnect"> <i class="icon iconfont icon-yonghu-fuben"></i>
+              {{item.serviceConnect}}</a>
           </div>
         </div>
         <div class="m_part_footer">
-          <div> <i class="icon iconfont icon-position-fill"></i> 北京</div>
-          <div><i class="icon iconfont icon-shijian"></i>2021-03-02 12:28:41</div>
+          <div class="m_localtion"> <i class="icon iconfont icon-position-fill"></i> {{item.position}}</div>
+          <div class="m_updtetime"><i class="icon iconfont icon-shijian"></i>{{item.submitdete}}</div>
         </div>
       </div>
 
@@ -113,72 +133,72 @@
     el: '#app',
     data: function () {
       return {
+        isShowall: true,
         searchKey: '',
         currentPage1: 1,
-        listContract: [{
-          contractdateStr: '2019-12-20',
-          corpname: '设计院名称',
-          totlamoney: '120000'
+        workList: [{
+          worker: '李晓明',
+          workType: '软件测试/问题整理',
+          Type: '1',   //1 技术内业 2 技术外业  3 出差途中   4 请假
+          workdate: "2021-02-29",
+          workcontent: "一、数字化审图   1）修改界面UI，调整界面代码 ； 2）和产品进行沟通关于产品升级需求；",
+          position: "北京",
+          clildworkList: [{
+            chi_work_date: "2021-03-05 08:30:41",
+            addWorkCon: "一、小程序商城 1、配合王慧娇调整小程序商城界面UI 二、签名签章 1、配合刘晓楠处理西北市政签名 三、CRM 1、针对现在的CRMweb端对适配手机页面进行UI设计，已出部分图 四、其他 1、和宋蕊沟通建筑结构杂志封面制作； 2、和邢雅熙沟通关于参加中石油石化的科学大会物料设计（展板、画册）设计需求 3、听麻工分享DDD领域设计概论"
+          }],
+          submitdete: "2021-03-02 12:28:41",
+          serviceCompany: "北京探索者软件股份有限公司",
+          serviceConnect: "吴云杰"
         }, {
-          contractdateStr: '2019-12-20',
-          corpname: '设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称',
-          totlamoney: '12000000'
+          worker: '吉明',
+          workType: '其他工作',
+          Type: '2',
+          workdate: "2021-02-28",
+          workcontent: "一、数字化审图   1）修改界面UI，调整界面代码 ； 2）和产品进行沟通关于产品升级需求；",
+          position: "北京",
+          clildworkList: [],
+          submitdete: "2021-03-02 12:28:41",
+          serviceCompany: "成都城电电力工程设计有限公司(国网四川省电力公司经济技术研究院）",
+          serviceConnect: "刘肖楠"
         }, {
-          contractdateStr: '2019-12-20',
-          corpname: '设计院名称',
-          totlamoney: '120000'
+          worker: '古力娜扎',
+          workType: '项目伴随',
+          Type: '3',
+          workdate: "2021-02-27",
+          workcontent: "上海出差",
+          position: "北京",
+          clildworkList: [{
+            chi_work_date: "2021-03-05 08:30:41",
+            addWorkCon: "下午到上海"
+          }],
+          submitdete: "2021-03-02 12:28:41",
+          serviceCompany: "",
+          serviceConnect: ""
         }, {
-          contractdateStr: '2019-12-20',
-          corpname: '设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称',
-          totlamoney: '12000000'
-        }, {
-          contractdateStr: '2019-12-20',
-          corpname: '设计院名称',
-          totlamoney: '120000'
-        }, {
-          contractdateStr: '2019-12-20',
-          corpname: '设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称',
-          totlamoney: '12000000'
-        }, {
-          contractdateStr: '2019-12-20',
-          corpname: '设计院名称',
-          totlamoney: '120000'
-        }, {
-          contractdateStr: '2019-12-20',
-          corpname: '设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称',
-          totlamoney: '12000000'
-        }, {
-          contractdateStr: '2019-12-20',
-          corpname: '设计院名称',
-          totlamoney: '120000'
-        }, {
-          contractdateStr: '2019-12-20',
-          corpname: '设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称',
-          totlamoney: '12000000'
-        }, {
-          contractdateStr: '2019-12-20',
-          corpname: '设计院名称',
-          totlamoney: '120000'
-        }, {
-          contractdateStr: '2019-12-20',
-          corpname: '设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称',
-          totlamoney: '12000000'
-        }, {
-          contractdateStr: '2019-12-20',
-          corpname: '设计院名称',
-          totlamoney: '120000'
-        }, {
-          contractdateStr: '2019-12-20',
-          corpname: '设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称设计院名称',
-          totlamoney: '12000000'
+          worker: '诸葛项羽',
+          workType: '软件安装/培训',
+          Type: '4',
+          workdate: "2021-02-26",
+          workcontent: "请假",
+          position: "北京",
+          clildworkList: [{
+            chi_work_date: "2021-03-05 08:30:41",
+            addWorkCon: "下午请假半天"
+          }],
+          submitdete: "2021-03-02 12:28:41",
+          serviceCompany: "",
+          serviceConnect: ""
         }]
-
-
-
-
       }
     },
     methods: {
+      showAll() {
+        this.isShowall = !this.isShowall
+      },
+      hideAll() {
+        this.isShowall = !this.isShowall
+      },
       tableRowClassName({ row, rowIndex }) {
         if (rowIndex % 2 == 1) {
           return 'warning-row';

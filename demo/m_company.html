@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>合同信息</title>
+  <link rel="stylesheet" type="text/css" href="css/mcss.css">
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <!-- 头部 -->
+    <div class="corp_Part_head">
+      <div class="fl">
+        <i class="el-icon-arrow-left icon_set" title="返回" onclick="window.location.href='m_workdesc.html'"></i>
+        <span class="labelUname2" onclick="window.location.href='m_workdesc.html'">返回</span>
+      </div>
+      <!-- <div class="fr labelUname">孙工</div> -->
+    </div>
+    <!-- tab -->
+    <div class="corp_Part_tab">
+      <div class="mlr-10">
+        <el-tabs v-model="activeName" @tab-click="handleClick">
+          <el-tab-pane label="设计院" name="first">
+            <el-form ref="form" :model="form" label-width="100px" label-position="left" class=" mt-10">
+              <el-form-item label="设计院名称：">
+                <span class="wenziText">北京探索者软件股份有限公司</span>
+              </el-form-item>
+              <el-form-item label="曾用名：">
+                <span class="wenziText">探索者软件</span>
+              </el-form-item>
+              <el-form-item label="简称：">
+                <span class="wenziText">探索者</span>
+              </el-form-item>
+              <el-form-item label="所属类别：">
+                <span class="wenziText">建筑结构设计</span>
+              </el-form-item>
+              <el-form-item label="所属地：">
+                <span class="wenziText">北京市 海淀区</span>
+              </el-form-item>
+              <el-form-item label="邮编：">
+                <span class="wenziText">551700</span>
+              </el-form-item>
+              <el-form-item label="公司地址：">
+                <span class="wenziText">北京市海淀区紫竹院路128号</span>
+              </el-form-item>
+              <el-form-item label="乘车路线：">
+                <span class="wenziText">地铁10号线 车道沟地铁站D口出</span>
+              </el-form-item>
+              <el-form-item label="备注说明：">
+                <span class="wenziText">优质客户</span>
+              </el-form-item>
+            </el-form>
+          </el-tab-pane>
+          <el-tab-pane label="联系人" name="second">
+            <!-- 表格 -->
+            <div class="m_userpageBox">
+              <div class="m_userBox" v-for="index in 8" :key="index">
+                <div class="m_userinfo">
+                  <span class="m_name">李晓明</span>
+                  <div><span class="m_zhiwei">VIP销售</span> <span class="m_bumen">市场部</span></div>
+                </div>
+                <div>
+
+                  <div class="m_userinfo"> <a href="">183-1933-3232</a> <a href="">400-800-0808</a></div>
+                  <div class="m_userinfo"><a href="">lixiaomeng@tsz.com.cn</a></div>
+                  <div class="m_userbeizhu">已离职</div>
+                </div>
+              </div>
+            </div>
+          </el-tab-pane>
+          <el-tab-pane label="汇报记录" name="third">
+            <div class="m_userpageBox">
+              <div class="hb_m_list">
+                <div class="hb_m_list-item" v-for="index in 4" :key="index">
+                  <div class="hb_m_list_header">
+                    <div><span class="m_name">2021-03-09</span> <span class="m_title2">邓鸿杰汇报</span></div>
+                    <div class="m_bj_4">
+                      <a href="" class="m_connect"> <i class="icon iconfont icon-yonghu-fuben"></i>
+                        联系人：李浩</a>
+                    </div>
+                  </div>
+                  <div class="hb_m_itemcontent">
+                    <div>
+                      <span class="m_title">汇报内容：</span>
+                      <div class="m_context">今天去了探索者软件公司，公司约200人规模。对设计软件特别熟练。经常使用VSCode作为主要开发工具，后期可能需要节点量更大</div>
+                    </div>
+                    <div class="clecle">
+                      <span></span>
+                      <div class="line"></div>
+                      <span></span>
+                    </div>
+                    <div>
+                      <span class="m_title">达成结果：</span>
+                      <div class="m_context jieguo">成交1个亿<br />
+                        但是前提需要49%的股权
+                      </div>
+                    </div>
+                    <div class="clecle">
+                      <span></span>
+                      <div class="line"></div>
+                      <span></span>
+                    </div>
+                    <div>
+                      <span class="m_title">需跟进工作：</span>
+                      <div class="m_context gengjin">
+                        更新需求<br />
+                        推进双边合作、促进关于校审系统应用于贵公司<br />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="codeNexttime">下次拜访时间：2021-03-15</div>
+                </div>
+              </div>
+            </div>
+
+          </el-tab-pane>
+        </el-tabs>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: function () {
+      return {
+        activeName: 'first',
+        form: [],
+        listContract: [{
+          date1: '2020-12-20 22:45:36',
+          cash1: '12,000'
+        }]
+      }
+    },
+    methods: {
+      handleClick(tab, event) {
+        console.log(tab, event);
+      }
+    }
+  })
+</script>
