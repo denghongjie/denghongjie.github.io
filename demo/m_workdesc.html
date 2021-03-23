@@ -35,7 +35,7 @@
     <div class="corp_Part_table"  style="height: 88vh;">
       <div class="m_part_Box" v-for="(item,index)  in workList" :key="index">
         <div class="div_riqi">
-          <span>03/25</span>
+          <span><span v-text="item.workdate.slice(5,7)"></span>/<span v-text="item.workdate.slice(8,10)"></span></span>
         </div>
         <div class="m_part_header">
           <div class="m_part_h_l">
