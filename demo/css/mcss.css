@@ -382,7 +382,7 @@ i.icon_set {
 }
 
 a.m_company {
-  padding: 4px 8px;
+  padding: 4px 0px;
   /* background-color: #dae8f7; */
   background-color: #fff;
   border-radius: 4px;
@@ -393,7 +393,7 @@ a.m_company {
 }
 
 a.m_connect {
-  padding: 4px 8px;
+  padding: 4px 0px;
   /* background-color: #cff3c2; */
   background-color: #fff;
   border-radius: 4px;
