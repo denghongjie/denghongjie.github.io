@@ -7,24 +7,21 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>首页</title>
   <link rel="stylesheet" type="text/css" href="css/mcss.css">
+  <link rel="stylesheet" href="css/reset.css">
   <!-- 引入样式 -->
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/vant.css">
   <link rel="stylesheet" href="css/iconfont/iconfont.css">
-  
+  <link rel="stylesheet" href="css/phone.css">
 </head>
 
 <body>
   <div id="app">
     <!-- 头部 -->
-    <div class="corp_Part_head">
-      <div class="fl">
-        <i class="el-icon-arrow-left icon_set" title="返回" onclick="window.location.href='m_index.html'"></i>
-        <span class="labelUname2" onclick="window.location.href='m_index.html'">返回</span>
-      </div>
-      <div class="fr labelUname">
-        <div @click="drawer = true"><i class="el-icon-search"></i><span>高级搜索</span></div>
-      </div>
+    <div class="m_bar_header">
+      <span class="fl_icon_fl"><a href="m_index.html"> <i class="el-icon-arrow-left ml-1"></i> 返回</a></span>
+      <span class="tetie"></span>
+      <span class="fl_icon_fr"> <div @click="drawer = true"><i class="el-icon-search"></i><span style="margin: 0 14px 0 6px;">高级搜索</span></div> </span>
     </div>
     <!-- 查询 -->
     <div class="corp_Part_search">

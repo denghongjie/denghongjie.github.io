@@ -5,15 +5,15 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>首页</title>
   <link rel="stylesheet" type="text/css" href="css/mcss.css">
+  <link rel="stylesheet" href="css/reset.css">
   <!-- 引入样式 -->
-  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-  <!-- 引入组件库 -->
-  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/phone.css">
 </head>
 <body>
   <div id="app">
     <!-- 头部 -->
-    <div class="corp_Part_head">
+    <div class="corp_Part_head" v-show="false">
       <div class="fl">
         <el-dropdown>
           <span class="el-dropdown-link">
@@ -26,6 +26,11 @@
         </el-dropdown>
       </div>
       <div class="fr labelUname">孙工</div>
+    </div>
+    <div class="m_bar_header">
+        <span class="fl_icon_fl"><a href="m_index.html"> <i class="el-icon-arrow-left ml-1"></i> 返回</a></span>
+        <span class="tetie">合同管理</span>
+        <span class="fl_icon_fr">  </span>
     </div>
     <!-- 查询 -->
     <div class="corp_Part_search">
@@ -83,9 +88,9 @@
 </body>
 </html>
 <!-- import Vue before Element -->
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="js/vue.js"></script>
 <!-- import JavaScript -->
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="js/index.js"></script>
 <script>
   new Vue({
     el: '#app',
