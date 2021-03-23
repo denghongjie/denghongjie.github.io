@@ -47,8 +47,8 @@
                 <button class="m_more_btn"><i class="icon iconfont icon-ziyuan"></i></button>
               </span>
               <el-dropdown-menu slot="dropdown">
-                <el-dropdown-item> <span onclick="window.location.href='m_workport.html'">追加</span> </el-dropdown-item>
-                <el-dropdown-item>编辑</el-dropdown-item>
+                <el-dropdown-item> 追加</el-dropdown-item>
+                <el-dropdown-item><span onclick="window.location.href='m_workport.html'">编辑</span> </el-dropdown-item>
                 <el-dropdown-item>删除</el-dropdown-item>
               </el-dropdown-menu>
             </el-dropdown>
@@ -106,7 +106,7 @@
         </div>
         <div class="m_part_footer">
           <div class="m_localtion"> <i class="icon iconfont icon-position-fill"></i> {{item.position}}</div>
-          <div class="m_updtetime"><i class="icon iconfont icon-shijian"></i>{{item.submitdete}}</div>
+          <div class="m_updtetime"><i class="icon iconfont icon-shijian" style="position: relative;top: 1px;"></i> <span>{{item.submitdete}}</span> </div>
         </div>
       </div>
 

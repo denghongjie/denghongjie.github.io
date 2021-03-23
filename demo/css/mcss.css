@@ -258,7 +258,7 @@ i.icon_set {
 .m_part_Box {
   background-color: #fff;
   overflow: hidden;
-  border-radius: 14px;
+  border-radius: 4px;
   box-shadow: 0 2px 20px rgb(255 255 255 / 33%);
   margin: 12px 12px;
   border-top: 1px solid transparent;
@@ -276,6 +276,11 @@ i.icon_set {
   align-items: center;
 }
 
+.m_part_h_r {
+  display: flex;
+  align-items: center;
+}
+
 .m_lei_btn {
   border: 0;
   background-color: #3c78ff;
@@ -283,6 +288,9 @@ i.icon_set {
   font-size: 14px;
   padding: 3px 4px;
   border-radius: 6px;
+  height: 28px;
+  box-sizing: border-box;
+  margin-right: 6px;
 }
 
 .m_more_btn {
@@ -292,6 +300,8 @@ i.icon_set {
   font-size: 14px;
   padding: 4px 0px;
   border-radius: 6px;
+  height: 28px;
+  box-sizing: border-box;
 }
 
 .m_work_worker {
@@ -304,7 +314,8 @@ i.icon_set {
 .m_work_label {
   font-size: 14px;
   padding: 4px 10px;
-  background-color: #dff4ff;
+  /* background-color: #dff4ff; */
+  background-color: #fff;
   color: #3ebdff;
   border-radius: 6px;
 
@@ -338,7 +349,7 @@ i.icon_set {
 }
 
 .m_info_1 {
-  margin: 12px 12px;
+  margin: 0px 12px;
   display: flex;
   justify-content: space-between;
 }
@@ -351,7 +362,8 @@ i.icon_set {
 
 a.m_company {
   padding: 4px 8px;
-  background-color: #dae8f7;
+  /* background-color: #dae8f7; */
+  background-color: #fff;
   border-radius: 4px;
   margin-right: 4px !important;
   text-decoration: none;
@@ -361,7 +373,8 @@ a.m_company {
 
 a.m_connect {
   padding: 4px 8px;
-  background-color: #cff3c2;
+  /* background-color: #cff3c2; */
+  background-color: #fff;
   border-radius: 4px;
   text-decoration: none;
   color: #333;
@@ -402,7 +415,7 @@ a.m_company i,
 .m_calener_dayBox {
   width: 100%;
   height: 58px;
-  background-color: #dff4ff;
+  background-color: #fff;
   position: relative;
 }
 
@@ -418,7 +431,7 @@ a.m_company i,
   display: block;
   width: 56px;
   height: 1px;
-  background-color: #3ebdff;
+  background-color: #d7dbec;
   position: absolute;
   transform: rotate(-45deg);
   bottom: 29px;
@@ -437,7 +450,7 @@ a.m_company i,
   color: #000;
   width: calc(100% - 80px);
   font-size: 14px;
-  line-height: 20px;
+  line-height: 24px;
 }
 
 .m_zuijia {
@@ -453,7 +466,7 @@ a.m_company i,
 }
 
 .m_part_footer {
-  background-color: #dfe3ea;
+  background-color: #f5f7f8;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -480,7 +493,7 @@ a.m_company i,
 }
 
 .m-height {
-  height: 40px;
+  height: 48px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
