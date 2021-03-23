@@ -8,10 +8,10 @@
   <title>首页</title>
   <link rel="stylesheet" type="text/css" href="css/mcss.css">
   <!-- 引入样式 -->
-  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/vant.css">
   <link rel="stylesheet" href="css/iconfont/iconfont.css">
-  <!-- 引入组件库 -->
-  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  
 </head>
 
 <body>
@@ -19,26 +19,19 @@
     <!-- 头部 -->
     <div class="corp_Part_head">
       <div class="fl">
-        <el-dropdown>
-          <span class="el-dropdown-link">
-            <i class="el-icon-s-tools icon_set"></i>
-          </span>
-          <el-dropdown-menu slot="dropdown">
-            <el-dropdown-item onclick="window.location.href='m_eidtpwd.html'">修改密码</el-dropdown-item>
-            <el-dropdown-item onclick="window.location.href='m_login.html'">退出登录</el-dropdown-item>
-          </el-dropdown-menu>
-        </el-dropdown>
+        <i class="el-icon-arrow-left icon_set" title="返回" onclick="window.location.href='m_index.html'"></i>
+        <span class="labelUname2" onclick="window.location.href='m_index.html'">返回</span>
       </div>
-      <div class="fr labelUname">孙工</div>
+      <div class="fr labelUname"></div>
     </div>
     <!-- 查询 -->
     <div class="corp_Part_search">
       <el-input placeholder="请输入关键词" v-model="searchKey" class="input-with-select self_input mlr-10" size="small">
-        <el-button slot="append" icon="el-icon-search"></el-button>
+        <el-button slot="append" icon="el-icon-search"  @click="drawer = true"></el-button>
       </el-input>
     </div>
     <!-- 表格 -->
-    <div class="corp_Part_table" style="height: 89vh;">
+    <div class="corp_Part_table"  style="height: 89vh;">
       <div class="m_part_Box" v-for="(item,index)  in workList" :key="index">
         <div class="m_part_header">
           <div class="m_part_h_l">
@@ -55,7 +48,7 @@
                 <button class="m_more_btn"><i class="icon iconfont icon-ziyuan"></i></button>
               </span>
               <el-dropdown-menu slot="dropdown">
-                <el-dropdown-item>追加</el-dropdown-item>
+                <el-dropdown-item> <span onclick="window.location.href='m_workport.html'">追加</span> </el-dropdown-item>
                 <el-dropdown-item>编辑</el-dropdown-item>
                 <el-dropdown-item>删除</el-dropdown-item>
               </el-dropdown-menu>
@@ -119,24 +112,58 @@
       </div>
 
     </div>
-
+    <van-popup position="bottom" round v-model="drawer" :style="{ height: '50%' }" closeable>
+      <div style="margin-top: 52px; height: 75%;overflow-y: auto;">
+        <van-cell title="汇报人" :value="search.user" @click="selectuser = true" ></van-cell>
+        <van-picker title="选择汇报人" v-show="selectuser" show-toolbar
+          :columns="usergroups"
+          @confirm="onConfirmuser"
+          @cancel="onCanceluser"
+          @change="onChangeuser"
+        ></van-picker>
+        <van-cell title="设计院" :value="search.company" @click="selectcompany = true" ></van-cell>
+        <van-picker title="选择设计院" v-show="selectcompany" show-toolbar
+          :columns="companys"
+          @confirm="onConfirmcompany"
+          @cancel="onCancelcompany"
+          @change="onChangecompany"
+        ></van-picker>
+        <van-cell title="服务标志" :value="search.flag" @click="selectflag = true" ></van-cell>
+        <van-picker title="选择服务标志" v-show="selectflag" show-toolbar
+          :columns="flags"
+          @confirm="onConfirmflag"
+          @cancel="onCancelflag"
+          @change="onChangeflag"
+        ></van-picker>
+        <van-cell title="汇报日期" :value="search.date" @click="selectdate = true" ></van-cell>
+        <van-calendar v-model="selectdate" type="range" @confirm="onConfirm" ></van-calendar>
+      </div>
+      <div style="display: flex;justify-content: space-between;padding: 4px 12px;">
+        <van-button type="default" size="small" @click="drawer = false">取消</van-button>
+        <van-button type="info" size="small" @click="drawer = false">确定</van-button>
+      </div>
+    </van-popup>
   </div>
 </body>
 
 </html>
 <!-- import Vue before Element -->
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="js/vue.js"></script>
 <!-- import JavaScript -->
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="js/index.js"></script>
+<script src="js/vant.js"></script>
 <script>
   new Vue({
     el: '#app',
     data: function () {
       return {
+        drawer: false,
+        timer: null,
         isShowall: true,
         searchKey: '',
         currentPage1: 1,
-        workList: [{
+        workList: [
+          {
           worker: '李晓明',
           workType: '软件测试/问题整理',
           Type: '1',   //1 技术内业 2 技术外业  3 出差途中   4 请假
@@ -189,8 +216,22 @@
           submitdete: "2021-03-02 12:28:41",
           serviceCompany: "",
           serviceConnect: ""
-        }]
+        }],
+        search:{
+          name:'',
+          company:'',
+          flag:'',
+          date:'',
+        },
+        usergroups: ['麻工', '江哥', '小猛', '仙', '阮', '刘肖楠', '阮', '李杰'],
+        companys: ['探索者软件', '中南建筑', '西北市政', '中建十二局'],
+        flags: ['销售内业', '销售外业', '技术内业', '技术外业', '请假', '出差途中'],
+        selectuser:false,
+        selectcompany:false,
+        selectflag:false,
+        selectdate:false,
       }
+      
     },
     methods: {
       showAll() {
@@ -207,12 +248,55 @@
         }
         return '';
       },
+      
+      cancelForm() {
+        this.drawer = false;
+      },
       handleSizeChange(val) {
         console.log(`每页 ${val} 条`);
       },
       handleCurrentChange(val) {
         console.log(`当前页: ${val}`);
-      }
+      },
+      
+      formatDate(date) {
+        return `${date.getMonth() + 1}/${date.getDate()}`;
+      },
+      onConfirm(date) {
+        const [start, end] = date;
+        this.selectdate = false;
+        this.search.date = `${this.formatDate(start)} - ${this.formatDate(end)}`;
+      },
+      // 选人
+      onConfirmuser(value, index) {
+        this.selectuser= false;
+        this.search.user=`${value}`
+      },
+      onChangeuser(picker, value, index) {
+      },
+      onCanceluser() {
+        this.selectuser= false
+      },
+      // 选设计院
+      onConfirmcompany(value, index) {
+        this.selectcompany= false;
+        this.search.company=`${value}`
+      },
+      onChangecompany(picker, value, index) {
+      },
+      onCancelcompany() {
+        this.selectcompany= false
+      },
+      // 选服务标志
+      onConfirmflag(value, index) {
+        this.selectflag= false;
+        this.search.flag=`${value}`
+      },
+      onChangeflag(picker, value, index) {
+      },
+      onCancelflag() {
+        this.selectflag= false
+      },
     }
   })
 </script>

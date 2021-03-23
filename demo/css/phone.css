@@ -1,178 +1,220 @@
-body{
-    background-color: #f2f3f4;
+body {
+  background-color: #f2f3f4;
 }
+
 .m_user_header {
-    margin-top: 5vh;
-    height: 25vh;
-    /* background: url(../img/phone/m_header_bg.png) no-repeat center center ; */
-    background-color: #20a0ff;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: 5vh;
+  height: 25vh;
+  /* background: url(../img/phone/m_header_bg.png) no-repeat center center ; */
+  background-color: #20a0ff;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.m_user_imgbox{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+
+.m_user_imgbox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.m_user_Img{
-    width: 24vw;
-    height: 24vw;
-    border-radius: 16vw;
-    background-color: #fff;
-    overflow: hidden;
+
+.m_user_Img {
+  width: 24vw;
+  height: 24vw;
+  border-radius: 16vw;
+  background-color: #fff;
+  overflow: hidden;
 }
-.m_user_Img img{
-    width: 100%;
-    height: 100%;
+
+.m_user_Img img {
+  width: 100%;
+  height: 100%;
 }
-.m_user_name{
-    font-size: 4.5vw;
-    margin-top: 2.5vw;
-    color: #fff;
+
+.m_user_name {
+  font-size: 4.5vw;
+  margin-top: 2.5vw;
+  color: #fff;
 }
+
 /* 导航 */
-.m_nav_box{
- margin: 2.5vw 0;
- display: flex;
- justify-content: center;
- align-items: center;
+.m_nav_box {
+  margin-top: 1vw;
 }
-.m_nav_item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 46vw;
-    margin: 1vw;
-    padding: 2vw 0;
-    background-color: #fff;
+
+.m_nav_box a {
+  display: block;
+  width: 47vw;
+  margin: 0.5vw 1vw;
+  float: left;
+
 }
-.m_large_icon{
-    display: block;
-    width: 10vw;
-    height: 10vw;
+
+.m_nav_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 46vw;
+  margin: 1vw;
+  padding: 2vw 0;
+  background-color: #fff;
 }
-.m_nav_text{
-    font-size: 2.5vw;
-    color: #666;
-    margin-top: 2.5vw;
+
+.m_large_icon {
+  display: block;
+  width: 10vw;
+  height: 10vw;
+}
+
+.m_nav_text {
+  font-size: 2.5vw;
+  color: #666;
+  margin-top: 2.5vw;
 }
 
 /* 工作汇报 */
 .m_bar_header {
-    width: 100%;
-    height: 4vh;
-    display: flex;
-    padding: 0vw;
-    font-size: 3.5vw;
-    justify-content: center;
-    align-items: center;
-    background-color: #20a0ff;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    z-index: 9;
-    padding: 2vw 0;
-}
-.m_bar_header a{
- color: #fff;
-}
-.ml-1{
-    margin-left: 4vw;
-}
-.ml-2{
-    margin-right: 4vw;
-}
-.m_bar_header>span{
-    display: block;
-    float: left;
-    width: 33.33%;
-}    
-.tetie{
-    text-align: center;
-}
-.fl_icon_fl{
-    text-align: left;
-}
-.fl_icon_fr{
-    text-align: right;
-}
-.bianju{
-    overflow: hidden;
-    margin-top:7vh!important;
-}
-.phone_form{
-    display: block;
-    width: 100vw;
-    margin: 20px auto;
-    justify-content: center;
-    align-items: center;
-}
-.el-form-item__label{
-    font-size: 3.5vw;
-    line-height: 6vw;
-    color: #b3bac5;
-}
-.el-form{
-    width: 96vw;
-    margin: 20px auto;
-}
-.phone_form .el-input__inner,.el-radio-group{
-    height: 10vw;
-    width: 100%;
-    font-size: 3.5vw;
-    margin: 1vw 0;
-}
-.el-radio-group{
-    display: flex;
-    align-items: center;
-
-}
-.el-radio__label,.el-textarea__inner{
-    font-size: 3.5vw;
-}
-.el-radio__inner::after,.el-radio__inner{
-    width: 3vw;
-    height: 3vw;
-}
-.el-radio__inner::after{
-    background-color: #20a0ff;
-}
-.el-select{
-    width: 100%;
-}
-.el-select .el-input .el-select__caret,.el-input__icon{
-    font-size: 5.5vw;
-}
-.el-input__icon{
-    width: auto;
-    line-height: auto;
-}
-.el-input--prefix .el-input__inner{
-    padding-right: 5vw;
-    text-indent: 5vw;
-}
-.el-textarea__inner{
-    min-height: 20vw!important;
-}
-.el-radio__inner{
-    border-width: 6px;
-}
-.el-radio__input{
-    top: -6px;
-}
-.el-button--primary{
-    display: block;
-    width: 25vw;
-    height: 10vw;
-    font-size: 3.5vw;
-    margin: 0 auto;
-}
-.mt-2{
-    margin-top: 5vh;
+  width: 100%;
+  height: 4vh;
+  display: flex;
+  padding: 0vw;
+  font-size: 3.5vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #20a0ff;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  padding: 2vw 0;
 }
 
+.m_bar_header a {
+  color: #fff;
+}
+
+.ml-1 {
+  margin-left: 4vw;
+}
+
+.ml-2 {
+  margin-right: 4vw;
+}
+
+.m_bar_header>span {
+  display: block;
+  float: left;
+  width: 33.33%;
+}
+
+.tetie {
+  text-align: center;
+}
+
+.fl_icon_fl {
+  text-align: left;
+}
+
+.fl_icon_fr {
+  text-align: right;
+}
+
+.bianju {
+  overflow: hidden;
+  margin-top: 7vh !important;
+}
+
+.phone_form {
+  display: block;
+  width: 100vw;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.el-form-item__label {
+  font-size: 3.5vw;
+  line-height: 6vw;
+  color: #b3bac5;
+}
+
+.el-form {
+  width: 96vw;
+  margin: 20px auto;
+}
+
+.phone_form .el-input__inner,
+.el-radio-group {
+  height: 10vw;
+  width: 100%;
+  font-size: 3.5vw;
+  margin: 1vw 0;
+}
+
+.el-radio-group {
+  display: flex;
+  align-items: center;
+
+}
+
+.el-radio__label,
+.el-textarea__inner {
+  font-size: 3.5vw;
+}
+
+.el-radio__inner::after,
+.el-radio__inner {
+  width: 3vw;
+  height: 3vw;
+}
+
+.el-radio__inner::after {
+  background-color: #20a0ff;
+}
+
+.el-select {
+  width: 100%;
+}
+
+.el-select .el-input .el-select__caret,
+.el-input__icon {
+  font-size: 5.5vw;
+}
+
+.el-input__icon {
+  width: auto;
+  line-height: auto;
+}
+
+.el-input--prefix .el-input__inner {
+  padding-right: 5vw;
+  text-indent: 5vw;
+}
+
+.el-textarea__inner {
+  min-height: 20vw !important;
+}
+
+.el-radio__inner {
+  border-width: 6px;
+}
+
+.el-radio__input {
+  top: -6px;
+}
+
+.el-button--primary {
+  display: block;
+  width: 25vw;
+  height: 10vw;
+  font-size: 3.5vw;
+  margin: 0 auto;
+}
+
+.mt-2 {
+  margin-top: 5vh;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" type="text/css" href="css/mcss.css">
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="css/vant.css">
+  <link rel="stylesheet" href="css/iconfont/iconfont.css">
+  
+</head>
+
+<body>
+  <div id="app">
+    
+    <van-cell title="选择日期区间" :value="date" @click="show = true" ></van-cell>
+    <van-calendar v-model="show" type="range" @confirm="onConfirm"></van-calendar>
+
+  </div>
+</body>
+
+</html>
+<!-- import Vue before Element -->
+<script src="js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="js/index.js"></script>
+<script src="js/vant.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: function () {
+      return {
+        value1: 0,
+        option1: [
+          { text: '修改密码', value: 0 },
+          { text: '退出登录', value: 1 },
+        ],
+        searchKey: '',
+        drawer: false,
+        loading: false,
+        value1: '',
+        form: {},
+        formLabelWidth: '80px',
+        date: '',
+      show: false,
+        timer: null,
+        isShowall: true,
+        searchKey: '',
+        currentPage1: 1,
+        workList: [{
+          worker: '李晓明',
+          workType: '软件测试/问题整理',
+          Type: '1',   //1 技术内业 2 技术外业  3 出差途中   4 请假
+          workdate: "2021-02-29",
+          workcontent: "一、数字化审图   1）修改界面UI，调整界面代码 ； 2）和产品进行沟通关于产品升级需求；",
+          position: "北京",
+          clildworkList: [{
+            chi_work_date: "2021-03-05 08:30:41",
+            addWorkCon: "一、小程序商城 1、配合王慧娇调整小程序商城界面UI 二、签名签章 1、配合刘晓楠处理西北市政签名 三、CRM 1、针对现在的CRMweb端对适配手机页面进行UI设计，已出部分图 四、其他 1、和宋蕊沟通建筑结构杂志封面制作； 2、和邢雅熙沟通关于参加中石油石化的科学大会物料设计（展板、画册）设计需求 3、听麻工分享DDD领域设计概论"
+          }],
+          submitdete: "2021-03-02 12:28:41",
+          serviceCompany: "北京探索者软件股份有限公司",
+          serviceConnect: "吴云杰"
+        }, {
+          worker: '吉明',
+          workType: '其他工作',
+          Type: '2',
+          workdate: "2021-02-28",
+          workcontent: "一、数字化审图   1）修改界面UI，调整界面代码 ； 2）和产品进行沟通关于产品升级需求；",
+          position: "北京",
+          clildworkList: [],
+          submitdete: "2021-03-02 12:28:41",
+          serviceCompany: "成都城电电力工程设计有限公司(国网四川省电力公司经济技术研究院）",
+          serviceConnect: "刘肖楠"
+        }, {
+          worker: '古力娜扎',
+          workType: '项目伴随',
+          Type: '3',
+          workdate: "2021-02-27",
+          workcontent: "上海出差",
+          position: "北京",
+          clildworkList: [{
+            chi_work_date: "2021-03-05 08:30:41",
+            addWorkCon: "下午到上海"
+          }],
+          submitdete: "2021-03-02 12:28:41",
+          serviceCompany: "",
+          serviceConnect: ""
+        }, {
+          worker: '诸葛项羽',
+          workType: '软件安装/培训',
+          Type: '4',
+          workdate: "2021-02-26",
+          workcontent: "请假",
+          position: "北京",
+          clildworkList: [{
+            chi_work_date: "2021-03-05 08:30:41",
+            addWorkCon: "下午请假半天"
+          }],
+          submitdete: "2021-03-02 12:28:41",
+          serviceCompany: "",
+          serviceConnect: ""
+        }]
+      }
+    },
+    methods: {
+      showAll() {
+        this.isShowall = !this.isShowall
+      },
+      hideAll() {
+        this.isShowall = !this.isShowall
+      },
+      tableRowClassName({ row, rowIndex }) {
+        if (rowIndex % 2 == 1) {
+          return 'warning-row';
+        } else if (rowIndex % 2 == 0) {
+          return 'success-row';
+        }
+        return '';
+      },
+      
+      cancelForm() {
+        this.drawer = false;
+      },
+      handleSizeChange(val) {
+        console.log(`每页 ${val} 条`);
+      },
+      handleCurrentChange(val) {
+        console.log(`当前页: ${val}`);
+      },
+      
+    onConfirm(date) {
+      this.show = false;
+    },
+    }
+  })
+</script>
