@@ -22,12 +22,14 @@
         <i class="el-icon-arrow-left icon_set" title="返回" onclick="window.location.href='m_index.html'"></i>
         <span class="labelUname2" onclick="window.location.href='m_index.html'">返回</span>
       </div>
-      <div class="fr labelUname"></div>
+      <div class="fr labelUname">
+        <div @click="drawer = true"><i class="el-icon-search"></i><span>高级搜索</span></div>
+      </div>
     </div>
     <!-- 查询 -->
     <div class="corp_Part_search">
-      <el-input placeholder="请输入关键词" v-model="searchKey" class="input-with-select self_input mlr-10" size="small">
-        <el-button slot="append" icon="el-icon-search"  @click="drawer = true"></el-button>
+      <el-input placeholder="关键词搜索" v-model="searchKey" class="input-with-select self_input mlr-10" size="small">
+        <el-button slot="append" icon="el-icon-search"  ></el-button>
       </el-input>
     </div>
     <!-- 表格 -->
