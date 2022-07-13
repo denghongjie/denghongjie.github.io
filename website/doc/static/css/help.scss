@@ -1,4 +1,16 @@
+body{
+   background-color: #f0f0f3; 
+}
+.title{
+    margin-bottom: 20px;
+}
 .grid-content{
     background-color: #fff;
     padding: 10px;
+    background: #ecedf0;
+    box-shadow: 5px 5px 10px rgba(163,177,198,60%), -5px -5px 10px rgba(255, 255, 255,50%);
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #333;
 }

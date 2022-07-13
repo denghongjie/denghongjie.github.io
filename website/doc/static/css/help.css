@@ -1,4 +1,18 @@
+body {
+  background-color: #f0f0f3;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
 .grid-content {
   background-color: #fff;
   padding: 10px;
+  background: #ecedf0;
+  box-shadow: 5px 5px 10px #a3b1c6, -5px -5px 10px white;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: #333;
 }
