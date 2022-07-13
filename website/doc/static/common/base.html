@@ -1,0 +1,64 @@
+<!--
+ * @Description:基础模板
+ * @Author: r_yuesheng
+ * @Date: 2022-06-19 10:08:15
+ * @LastEditTime: 2022-06-19 13:28:23
+ * @LastEditors: r_yuesheng
+ * 注意事项：注意css和js文件的引用路径
+-->
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/base.css" rel="stylesheet">
+    <link href="./static/css/element@2.2.6.css" rel="stylesheet">
+    <script src="./static/js/vue@3.2.36.js"></script>
+    <script src="./static/js/elementPlus@2.2.6.js"></script>
+    <script src="./static/js/elementPlus-zhcn.js"></script>
+    <script src="./static/js/elementPlusIcon@2.0.4.js"></script>
+    <script src="./static/js/init.js"></script>
+    <title>基础模板</title>
+</head>
+
+<body>
+    <div id="app">
+        <el-button type="primary" @click="testClick">{{ message }}</el-button>
+        <el-icon :size="20" color="#000">
+            <Edit />
+        </el-icon>
+        <el-date-picker v-model="value1" type="date" placeholder="选择日期" />
+    </div>
+</body>
+
+</html>
+
+<script>
+    const App = {
+        setup() {
+            const { proxy } = getCurrentInstance();
+            function initState() {
+                return {
+                    message: '测试',
+                    value1: null
+                }
+            }
+            const state = reactive(initState());
+            function testClick() {
+                proxy.$message.success('这是提示语');
+                proxy.$notify({
+                    title: 'Success',
+                    message: 'This is a success message',
+                    type: 'success',
+                });
+            }
+            return {
+                ...toRefs(state),
+                testClick
+            }
+        }
+    }
+    mountApp(App);
+</script>
