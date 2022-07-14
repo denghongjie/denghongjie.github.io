@@ -4,14 +4,17 @@ const navLists=[{
     children:[{
         title:"bigjpg",
         desc:"AI图片无损放大",
+        imgurl:"./static/img/app/big.png",
         url:"https://bigjpg.com/",
     },{
         title:"tinypng",
         desc:"图片在线压缩",
+        imgurl:"./static/img/app/panda.png",
         url:"https://tinypng.com/",
     },{
         title:"佐糖",
         desc:"AI在线抠图",
+        imgurl:"./static/img/app/zuotang.png",
         url:"https://picwish.cn/?apptype=aps-pin",
     }]
 },{
@@ -19,19 +22,36 @@ const navLists=[{
     children:[{
         title:"像素蛋糕",
         desc:"商业智能精修神器",
+        imgurl:"./static/img/app/xsdg.png",
         url:"http://www.pixcakeai.com/",
     },{
         title:"美图云修",
         desc:"图片在线压缩",
+        imgurl:"./static/img/app/mtyx.jpg",
         url:"https://yunxiu.meitu.com/home/",
     },{
         title:"咻图AI",
         desc:"AI智能修图工具",
+        imgurl:"./static/img/app/xtai.png",
         url:"https://www.aixtsy.com/",
     },{
         title:"Luminar AI 【国外】",
         desc:"基于人工智能的图像编辑器",
+        imgurl:"./static/img/app/LuminarAI.png",
         url:"https://www.luminartech.com/",
+    }]
+},{
+    title:"格式工具",
+    children:[{
+        title:"360字体查询",
+        desc:"本地字体在线查询",
+        imgurl:"./static/img/app/360.png",
+        url:"https://fonts.safe.360.cn/",
+    },{
+        title:"iconfont",
+        desc:"阿里巴巴图标管理",
+        imgurl:"./static/img/app/iconfonts.png",
+        url:"https://www.iconfont.cn/",
     }]
 }]
 
@@ -40,69 +60,80 @@ const softwarelist=[{
     children:[{
         title:"PS2022",
         desc:"平面设计软件",
+        imgurl:"./static/img/app/ps.png",
         url:"https://bigjpg.com/",
     },{
         title:"AI2022",
         desc:"矢量设计软件",
+        imgurl:"./static/img/app/ai.png",
         url:"https://tinypng.com/",
     },{
         title:"C4D",
         desc:"3D设计软件",
+        imgurl:"./static/img/app/c4d.png",
         url:"https://picwish.cn/?apptype=aps-pin",
     },{
         title:"Blender",
         desc:"3D设计软件",
+        imgurl:"./static/img/app/blender.png",
         url:"https://picwish.cn/?apptype=aps-pin",
     },{
         title:"Icofx",
         desc:"工具条图标制作软件",
+        imgurl:"./static/img/app/iconfx.png",
         url:"https://picwish.cn/?apptype=aps-pin",
     },{
         title:"Figma",
         desc:"原型+设计软件",
-        url:"https://picwish.cn/?apptype=aps-pin",
+        imgurl:"./static/img/app/figma.png",
+        url:"https://www.figma.com/",
     },{
         title:"Sketch",
         desc:"原型+设计软件",
-        url:"https://picwish.cn/?apptype=aps-pin",
+        imgurl:"./static/img/app/aef2b925.png",
+        url:"http://www.sketchchina.com/?ref=iamxk",
     }]
 },{
     title:"PS插件",
     children:[{
         title:"cuttman",
         desc:"切图软件",
+        imgurl:"./static/img/app/c4d.png",
         url:"https://www.cutterman.cn/zh/cutterman",
     },{
         title:"parker",
         desc:"设计页面标注工具",
+        imgurl:"./static/img/app/c4d.png",
         url:"https://www.cutterman.cn/zh/parker",
     },{
         title:"Nicon",
         desc:"个人图标库管理",
+        imgurl:"./static/img/app/c4d.png",
         url:"https://www.cutterman.cn/zh/icview",
     },{
-        title:"NB cuutter",
-        desc:"桌面贴图工具",
+        title:"NB cutter",
+        desc:"灰大切图工具",
+        imgurl:"./static/img/app/nbCutter.png",
         url:"https://pslkzs.com/nbCutter/index.php",
     },{
         title:"拉框助手",
         desc:"拉框生成可视图",
+        imgurl:"./static/img/app/pslkzs.png",
         url:"https://www.pslkzs.com/ps/index.php",
     },{
         title:"PS UI助手",
         desc:"UI规范性生成组件",
+        imgurl:"./static/img/app/psUiAssistant.png",
         url:"https://www.pslkzs.com/psUiAssistant/index.php",
-    },{
-        title:"拉框助手",
-        desc:"拉框生成可视图",
-        url:"https://pslkzs.com/nbCutter/index.php",
     },{
         title:"NB Map",
         desc:"3D地图在线生成",
+        imgurl:"./static/img/app/nbMap.png",
         url:"https://nbcharts.com/map/map.php",
     },{
         title:"NB 3D charts",
         desc:"3D可视化视图",
+        imgurl:"./static/img/app/nbPie.png",
         url:"https://www.pslkzs.com/chart/charts.php",
     }]
 },{
@@ -110,18 +141,22 @@ const softwarelist=[{
     children:[{
         title:"WPS",
         desc:"办公文档软件",
+        imgurl:"./static/img/app/wps.png",
         url:"https://www.wps.cn/",
     },{
         title:"everything",
         desc:"快速查找文件资源工具",
+        imgurl:"./static/img/app/everything.png",
         url:"http://soft.5119.cn/soft/85579.htm",
     },{
         title:"Xmind",
         desc:"思维导图",
+        imgurl:"./static/img/app/xmind.png",
         url:"https://www.jb51.net/softs/774812.html#downintro2",
     },{
         title:"Snipaste",
         desc:"桌面贴图工具",
+        imgurl:"./static/img/app/Snipaste.svg",
         url:"https://www.snipaste.com/",
     }]
 }]
@@ -131,18 +166,22 @@ const studylists=[{
     children:[{
         title:"HTML",
         desc:"HTML基础教程",
+        imgurl:"./static/img/app/html5.png",
         url:"http://c.biancheng.net/html/",
     },{
         title:"CSS",
         desc:"CSS基础教程",
+        imgurl:"./static/img/app/css.png",
         url:"http://c.biancheng.net/css3/what-is-css.html",
     },{
         title:"JS",
         desc:"JS基础教程",
+        imgurl:"./static/img/app/js.png",
         url:"http://c.biancheng.net/js/",
     },{
         title:"JSON",
         desc:"JSON基础教程",
+        imgurl:"./static/img/app/json.png",
         url:"http://c.biancheng.net/json/",
     }]
 },{
@@ -150,50 +189,90 @@ const studylists=[{
     children:[{
         title:"C4D",
         desc:"小莫C4D(20课)",
+        imgurl:"./static/img/app/c4d.png",
         url:"https://www.bilibili.com/video/BV1Ws411q7jM?p=1&vd_source=73357f58ec36951707e8dc7f5422e7f6",
     },{
         title:"Blender",
         desc:"官方教程（43课）",
+        imgurl:"./static/img/app/blender.png",
         url:"https://www.bilibili.com/video/BV1S7411x7tj?spm_id_from=333.337.search-card.all.click&vd_source=73357f58ec36951707e8dc7f5422e7f6",
     },{
         title:"Spline",
         desc:"Spline新手入门（13课）",
+        imgurl:"./static/img/app/spline.png",
         url:"https://space.bilibili.com/2033738697/channel/collectiondetail?sid=394913",
     }]
 }]
 
-const designnorms=[{
+const designnorm=[{
     title:"网页规范",
     children:[{
         title:"Web UI 网页设计规范",
         desc:"设计规范",
+        imgurl:"./static/img/app/c4d.png",
         url:"https://mp.weixin.qq.com/s/sdGFKkTxwsVoZZC-tQab4Q",
     },{
-        title:"CSS",
-        desc:"CSS基础教程",
-        url:"http://c.biancheng.net/css3/what-is-css.html",
+        title:"苹果规范",
+        desc:"界面UI详细规范",
+        imgurl:"./static/img/app/apple.png",
+        url:"https://developer.apple.com/design/human-interface-guidelines/guidelines/overview/",
     },{
-        title:"JS",
-        desc:"JS基础教程",
-        url:"http://c.biancheng.net/js/",
+        title:"Material Design 指南中文版",
+        desc:"谷歌设计规范",
+        imgurl:"./static/img/app/Material.png",
+        url:"https://www.mdui.org/design/",
     },{
-        title:"JSON",
-        desc:"JSON基础教程",
-        url:"http://c.biancheng.net/json/",
+        title:"IBM设计规范",
+        desc:"老外的设计规范",
+        imgurl:"./static/img/app/ibm.png",
+        url:"https://carbondesignsystem.com/?ref=designresourc.es",
+    },{
+        title:"微软设计规范",
+        desc:"Micsoftware",
+        imgurl:"./static/img/app/weiruan.png",
+        url:"https://www.microsoft.com/design/fluent/#/",
+    },{
+        title:"微信小程序规范",
+        desc:"腾讯微信小程序",
+        imgurl:"./static/img/app/wxxcx.svg",
+        url:"https://developers.weixin.qq.com/miniprogram/design/?t=201714",
+    },{
+        title:"支付宝小程序规范",
+        desc:"阿里小程序规范",
+        imgurl:"./static/img/app/zfbxcx.svg",
+        url:"https://opendocs.alipay.com/mini/design",
+    },{
+        title:"Adobe",
+        desc:"adobe设计规范",
+        imgurl:"./static/img/app/adobe.png",
+        url:"https://spectrum.adobe.com/",
+    },{
+        title:"阿里 Fusion",
+        desc:"阿里设计开发规范",
+        imgurl:"./static/img/app/jdSvK6gaqaWB.png",
+        url:"https://fusion.design/pc/?themeid=2",
+    },{
+        title:"百度小程序规范",
+        desc:"百度小程序",
+        imgurl:"./static/img/app/bdxcx.png",
+        url:"https://smartprogram.baidu.com/docs/design/overview/introduction/",
     }]
 },{
     title:"设计软件教程",
     children:[{
         title:"C4D",
         desc:"小莫C4D(20课)",
+        imgurl:"./static/img/app/c4d.png",
         url:"https://www.bilibili.com/video/BV1Ws411q7jM?p=1&vd_source=73357f58ec36951707e8dc7f5422e7f6",
     },{
         title:"Blender",
         desc:"官方教程（43课）",
+        imgurl:"./static/img/app/blender.png",
         url:"https://www.bilibili.com/video/BV1S7411x7tj?spm_id_from=333.337.search-card.all.click&vd_source=73357f58ec36951707e8dc7f5422e7f6",
     },{
         title:"Spline",
         desc:"Spline新手入门（13课）",
+        imgurl:"./static/img/app/spline.png",
         url:"https://space.bilibili.com/2033738697/channel/collectiondetail?sid=394913",
     }]
 }]

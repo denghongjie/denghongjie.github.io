@@ -1,6 +1,8 @@
 body {
   background-color: #f0f0f3;
   color: #363636;
+  height: calc(100vh);
+  box-shadow: inset 80px 80px 160px #c0cdd542, inset -80px -80px 160px #ebf0fb;
 }
 
 h1 {
@@ -17,8 +19,17 @@ h1 {
   height: 60px;
   display: flex;
   align-items: center;
-  padding: 0 20px;
-  background-color: #ecedf0;
+  padding: 0px 20px;
+  background-color: transparent;
+  backdrop-filter: blur(6px);
+}
+
+.navheader h1 {
+  text-transform: uppercase;
+}
+
+.navheader h1 span {
+  color: #583cf1;
 }
 
 .navheader .logobox {
@@ -39,6 +50,7 @@ h1 {
   border-radius: 10px;
   color: #333;
   transition: ease all 0.5s;
+  position: relative;
 }
 
 .grid-content:hover {
@@ -51,11 +63,54 @@ h1 {
   margin-bottom: 5px;
 }
 
+.grid-content .grid-content_title {
+  font-size: 14px;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .grid-content .desctext {
   color: #868686;
   font-size: 12px;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.grid-content .appimg {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+}
+
+.grid-content .appimg img {
+  width: 100%;
+}
+
+.grid-content .app_text {
+  padding-left: 50px;
 }
 
 .nav_tab_body {
   padding: 12px 24px 0px 24px;
+}
+
+.navtab .el-tabs__item:hover {
+  color: #583cf1;
+}
+
+.navtab .el-tabs__item.is-active {
+  color: #583cf1;
+}
+
+.navtab .el-tabs__active-bar {
+  background-color: #583cf1;
 }

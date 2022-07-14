@@ -1,6 +1,9 @@
+$main_color:#583cf1;
 body{
    background-color: #f0f0f3; 
    color: #363636;
+   height: calc(100vh);
+   box-shadow: inset 80px 80px 160px #c0cdd542, inset -80px -80px 160px #ebf0fb;
 }
 h1{
     margin: 0;
@@ -14,8 +17,17 @@ h1{
     height: 60px;
     display: flex;
     align-items: center;
-    padding: 0 20px;
-    background-color: #ecedf0;
+    padding: 0px 20px;
+    // background-color: #f5f8ffb5;
+    background-color: transparent;
+    backdrop-filter: blur(6px);
+    // border-bottom: 1px solid #ffffff91;
+    h1{
+        text-transform: uppercase;
+        span{
+            color: $main_color;
+        }
+    }
     .logobox{
         height: 38px;
         img{
@@ -33,6 +45,7 @@ h1{
     border-radius: 10px;
     color: #333;
     transition: ease all 0.5s;
+    position: relative;
     &:hover{
 
         background-color: #fff;
@@ -42,11 +55,52 @@ h1{
         display: block;
         margin-bottom: 5px;
     }
+    .grid-content_title{
+        font-size: 14px;
+        -webkit-line-clamp: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .desctext{
         color: #868686;
         font-size: 12px;
+        -webkit-line-clamp: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .appimg{
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+        position: absolute;
+        top: 10px;
+    }
+    .app_text{
+        padding-left: 50px;
     }
 }
 .nav_tab_body{
     padding: 12px 24px 0px 24px;
+}
+
+.navtab{
+    .el-tabs__item{
+        &:hover{
+            color: $main_color;
+        }
+        &.is-active{
+            color: $main_color;
+        } 
+    }
+    .el-tabs__active-bar{
+        background-color: $main_color;
+    }
 }
