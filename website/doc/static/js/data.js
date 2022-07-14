@@ -1,13 +1,199 @@
+
+const navLists=[{
+    title:"图片工具推荐",
+    children:[{
+        title:"bigjpg",
+        desc:"AI图片无损放大",
+        url:"https://bigjpg.com/",
+    },{
+        title:"tinypng",
+        desc:"图片在线压缩",
+        url:"https://tinypng.com/",
+    },{
+        title:"佐糖",
+        desc:"AI在线抠图",
+        url:"https://picwish.cn/?apptype=aps-pin",
+    }]
+},{
+    title:"商业修图工具推荐",
+    children:[{
+        title:"像素蛋糕",
+        desc:"商业智能精修神器",
+        url:"http://www.pixcakeai.com/",
+    },{
+        title:"美图云修",
+        desc:"图片在线压缩",
+        url:"https://yunxiu.meitu.com/home/",
+    },{
+        title:"咻图AI",
+        desc:"AI智能修图工具",
+        url:"https://www.aixtsy.com/",
+    },{
+        title:"Luminar AI 【国外】",
+        desc:"基于人工智能的图像编辑器",
+        url:"https://www.luminartech.com/",
+    }]
+}]
+
+const softwarelist=[{
+    title:"设计软件",
+    children:[{
+        title:"PS2022",
+        desc:"平面设计软件",
+        url:"https://bigjpg.com/",
+    },{
+        title:"AI2022",
+        desc:"矢量设计软件",
+        url:"https://tinypng.com/",
+    },{
+        title:"C4D",
+        desc:"3D设计软件",
+        url:"https://picwish.cn/?apptype=aps-pin",
+    },{
+        title:"Blender",
+        desc:"3D设计软件",
+        url:"https://picwish.cn/?apptype=aps-pin",
+    },{
+        title:"Icofx",
+        desc:"工具条图标制作软件",
+        url:"https://picwish.cn/?apptype=aps-pin",
+    },{
+        title:"Figma",
+        desc:"原型+设计软件",
+        url:"https://picwish.cn/?apptype=aps-pin",
+    },{
+        title:"Sketch",
+        desc:"原型+设计软件",
+        url:"https://picwish.cn/?apptype=aps-pin",
+    }]
+},{
+    title:"PS插件",
+    children:[{
+        title:"cuttman",
+        desc:"切图软件",
+        url:"https://www.cutterman.cn/zh/cutterman",
+    },{
+        title:"parker",
+        desc:"设计页面标注工具",
+        url:"https://www.cutterman.cn/zh/parker",
+    },{
+        title:"Nicon",
+        desc:"个人图标库管理",
+        url:"https://www.cutterman.cn/zh/icview",
+    },{
+        title:"NB cuutter",
+        desc:"桌面贴图工具",
+        url:"https://pslkzs.com/nbCutter/index.php",
+    },{
+        title:"拉框助手",
+        desc:"拉框生成可视图",
+        url:"https://www.pslkzs.com/ps/index.php",
+    },{
+        title:"PS UI助手",
+        desc:"UI规范性生成组件",
+        url:"https://www.pslkzs.com/psUiAssistant/index.php",
+    },{
+        title:"拉框助手",
+        desc:"拉框生成可视图",
+        url:"https://pslkzs.com/nbCutter/index.php",
+    },{
+        title:"NB Map",
+        desc:"3D地图在线生成",
+        url:"https://nbcharts.com/map/map.php",
+    },{
+        title:"NB 3D charts",
+        desc:"3D可视化视图",
+        url:"https://www.pslkzs.com/chart/charts.php",
+    }]
+},{
+    title:"办公软件",
+    children:[{
+        title:"WPS",
+        desc:"办公文档软件",
+        url:"https://www.wps.cn/",
+    },{
+        title:"everything",
+        desc:"快速查找文件资源工具",
+        url:"http://soft.5119.cn/soft/85579.htm",
+    },{
+        title:"Xmind",
+        desc:"思维导图",
+        url:"https://www.jb51.net/softs/774812.html#downintro2",
+    },{
+        title:"Snipaste",
+        desc:"桌面贴图工具",
+        url:"https://www.snipaste.com/",
+    }]
+}]
+
 const studylists=[{
-    title:"HTML",
-    url:"http://c.biancheng.net/html/",
+    title:"基础教程",
+    children:[{
+        title:"HTML",
+        desc:"HTML基础教程",
+        url:"http://c.biancheng.net/html/",
+    },{
+        title:"CSS",
+        desc:"CSS基础教程",
+        url:"http://c.biancheng.net/css3/what-is-css.html",
+    },{
+        title:"JS",
+        desc:"JS基础教程",
+        url:"http://c.biancheng.net/js/",
+    },{
+        title:"JSON",
+        desc:"JSON基础教程",
+        url:"http://c.biancheng.net/json/",
+    }]
 },{
-    title:"CSS",
-    url:"http://c.biancheng.net/css3/what-is-css.html",
+    title:"设计软件教程",
+    children:[{
+        title:"C4D",
+        desc:"小莫C4D(20课)",
+        url:"https://www.bilibili.com/video/BV1Ws411q7jM?p=1&vd_source=73357f58ec36951707e8dc7f5422e7f6",
+    },{
+        title:"Blender",
+        desc:"官方教程（43课）",
+        url:"https://www.bilibili.com/video/BV1S7411x7tj?spm_id_from=333.337.search-card.all.click&vd_source=73357f58ec36951707e8dc7f5422e7f6",
+    },{
+        title:"Spline",
+        desc:"Spline新手入门（13课）",
+        url:"https://space.bilibili.com/2033738697/channel/collectiondetail?sid=394913",
+    }]
+}]
+
+const designnorms=[{
+    title:"网页规范",
+    children:[{
+        title:"Web UI 网页设计规范",
+        desc:"设计规范",
+        url:"https://mp.weixin.qq.com/s/sdGFKkTxwsVoZZC-tQab4Q",
+    },{
+        title:"CSS",
+        desc:"CSS基础教程",
+        url:"http://c.biancheng.net/css3/what-is-css.html",
+    },{
+        title:"JS",
+        desc:"JS基础教程",
+        url:"http://c.biancheng.net/js/",
+    },{
+        title:"JSON",
+        desc:"JSON基础教程",
+        url:"http://c.biancheng.net/json/",
+    }]
 },{
-    title:"JS",
-    url:"http://c.biancheng.net/js/",
-},{
-    title:"JSON",
-    url:"http://c.biancheng.net/json/",
+    title:"设计软件教程",
+    children:[{
+        title:"C4D",
+        desc:"小莫C4D(20课)",
+        url:"https://www.bilibili.com/video/BV1Ws411q7jM?p=1&vd_source=73357f58ec36951707e8dc7f5422e7f6",
+    },{
+        title:"Blender",
+        desc:"官方教程（43课）",
+        url:"https://www.bilibili.com/video/BV1S7411x7tj?spm_id_from=333.337.search-card.all.click&vd_source=73357f58ec36951707e8dc7f5422e7f6",
+    },{
+        title:"Spline",
+        desc:"Spline新手入门（13课）",
+        url:"https://space.bilibili.com/2033738697/channel/collectiondetail?sid=394913",
+    }]
 }]

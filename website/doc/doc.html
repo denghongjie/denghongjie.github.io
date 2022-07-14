@@ -12,7 +12,7 @@
     <script src="./static/js/elementPlus-zhcn.js"></script>
     <script src="./static/js/elementPlusIcon@2.0.4.js"></script>
     <script src="./static/js/init.js"></script>
-    <title>资源导航</title>
+    <title>设计师导航</title>
     <link href="./static/css/common.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="./static/css/fonts/iconfont.css">
     <link rel="stylesheet" href="./static/css/iconfonts/iconfont.css">
@@ -21,22 +21,70 @@
 
 <body>
     <div id="app">
+        <div class="navheader">
+            <div class="logobox" >
+                <!-- <a href=""><img src="./static/img/navbar.png" alt=""></a> -->
+                <h1>DesignNav</h1>
+            </div>
+        </div>
         <div class="navbody">
-            <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
-                <el-tab-pane label="设计教程" name="first">其他</el-tab-pane>
-                <el-tab-pane label="基础教程" name="second">
-                    <div class="title">前端基础</div>
-                    <el-row :gutter="10">
-                        <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,index) in studylist" :key="index">
-                          <div class="grid-content ep-bg-purple">
-                            <a :href="item.url" target="_blank">
-                                <div>
-                                    {{item.title}}
-                                </div>
-                            </a>
-                          </div>
-                        </el-col>
-                    </el-row>
+            <el-tabs v-model="activeName" class="demo-tabs" tab-position="left" @tab-click="handleClick">
+                <el-tab-pane label="实用工具" name="1">
+                    <div class="nav_tab_body" v-for="(navs,index) in navList" :key="index">
+                        <div class="title">{{navs.title}}</div>
+                        <el-row :gutter="16">
+                            <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                            <div class="grid-content ep-bg-purple">
+                                <a :href="item.url" target="_blank">
+                                    <div>
+                                        {{item.title}}
+                                    </div>
+                                    <div class="desctext">
+                                        {{item.desc}}
+                                    </div>
+                                </a>
+                            </div>
+                            </el-col>
+                        </el-row>
+                    </div>
+                </el-tab-pane>
+                <el-tab-pane label="软件下载" name="2">
+                    <div class="nav_tab_body" v-for="(navs,index) in softwarelists" :key="index">
+                        <div class="title">{{navs.title}}</div>
+                        <el-row :gutter="16">
+                            <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                            <div class="grid-content ep-bg-purple">
+                                <a :href="item.url" target="_blank">
+                                    <div>
+                                        {{item.title}}
+                                    </div>
+                                    <div class="desctext">
+                                        {{item.desc}}
+                                    </div>
+                                </a>
+                            </div>
+                            </el-col>
+                        </el-row>
+                    </div>
+                </el-tab-pane>
+                <el-tab-pane label="基础教程" name="3">
+                    <div class="nav_tab_body" v-for="(navs,index) in studylist" :key="index">
+                        <div class="title">{{navs.title}}</div>
+                        <el-row :gutter="16">
+                            <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                            <div class="grid-content ep-bg-purple">
+                                <a :href="item.url" target="_blank">
+                                    <div>
+                                        {{item.title}}
+                                    </div>
+                                    <div class="desctext">
+                                        {{item.desc}}
+                                    </div>
+                                </a>
+                            </div>
+                            </el-col>
+                        </el-row>
+                    </div>
                 </el-tab-pane>
             </el-tabs>
         </div>
@@ -47,15 +95,16 @@
 </html>
 <script src="./static/js/data.js"></script>
 <script>
-
     const App = {
         setup() {
             const { proxy } = getCurrentInstance();
             const { computed} = Vue;
             function initState() {
                 return {
-                    activeName:'first',
-                    studylist:studylists
+                    activeName:'1',
+                    studylist:studylists,
+                    navList:navLists,
+                    softwarelists:softwarelist,
                 }
             }
             const state = reactive(initState());

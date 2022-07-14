@@ -1,9 +1,32 @@
 body {
   background-color: #f0f0f3;
+  color: #363636;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 .title {
   margin-bottom: 20px;
+}
+
+.navheader {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #ecedf0;
+}
+
+.navheader .logobox {
+  height: 38px;
+}
+
+.navheader .logobox img {
+  height: 100%;
 }
 
 .grid-content {
@@ -15,4 +38,24 @@ body {
   margin-bottom: 20px;
   border-radius: 10px;
   color: #333;
+  transition: ease all 0.5s;
+}
+
+.grid-content:hover {
+  background-color: #fff;
+}
+
+.grid-content a {
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.grid-content .desctext {
+  color: #868686;
+  font-size: 12px;
+}
+
+.nav_tab_body {
+  padding: 12px 24px 0px 24px;
 }
