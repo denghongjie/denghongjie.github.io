@@ -1,3 +1,123 @@
+const designspaces=[{
+    title:"灵感借鉴",
+    children:[{
+        title:"美叶",
+        desc:"分类收藏",
+        imgurl:"./static/img/app/my.png",
+        url:"https://www.meiye.art/inspiration",
+    },{
+        title:"花瓣",
+        desc:"设计画板收藏",
+        imgurl:"./static/img/app/huaban.png",
+        url:"https://huaban.com/",
+    },{
+        title:"站酷",
+        desc:"AI在线抠图",
+        imgurl:"./static/img/app/zhanku.jpg",
+        url:"https://my.zcool.com.cn/",
+    },{
+        title:"UI中国",
+        desc:"AI在线抠图",
+        imgurl:"./static/img/app/uichina.png",
+        url:"https://www.ui.cn/",
+    }]
+},{
+    title:"商用图片下载",
+    children:[{
+        title:"bigjpg",
+        desc:"美叶",
+        imgurl:"./static/img/app/big.png",
+        url:"https://bigjpg.com/",
+    },{
+        title:"tinypng",
+        desc:"图片在线压缩",
+        imgurl:"./static/img/app/panda.png",
+        url:"https://tinypng.com/",
+    },{
+        title:"佐糖",
+        desc:"AI在线抠图",
+        imgurl:"./static/img/app/zuotang.png",
+        url:"https://picwish.cn/?apptype=aps-pin",
+    }]
+},{
+    title:"商用字体下载",
+    children:[{
+        title:"思源黑体",
+        desc:"美叶",
+        imgurl:"./static/img/app/syht.png",
+        url:"https://bigjpg.com/",
+    },{
+        title:"思源宋体",
+        desc:"图片在线压缩",
+        imgurl:"./static/img/app/syst.png",
+        url:"https://tinypng.com/",
+    },{
+        title:"阿里巴巴普惠字体",
+        desc:"阿里字体",
+        imgurl:"./static/img/app/albbph.png",
+        url:"https://alibabafont.taobao.com/wow/alibabafont/act/alifont?spm=a213iq.12778988.2991352756.2.497a125fFvRskZ&wh_biz=tm&acm=lb-zebra-483718-6345752.1003.4.5774787&scm=1003.4.lb-zebra-483718-6345752.OTHER_15548342496051_5774787",
+    }]
+},{
+    title:"图标空间",
+    children:[{
+        title:"iconfont",
+        desc:"美叶",
+        imgurl:"./static/img/app/iconfonts.png",
+        url:"https://bigjpg.com/",
+    }]
+},{
+    title:"配色空间站",
+    children:[{
+        title:"flat Color",
+        desc:"扁平UI配色",
+        imgurl:"./static/img/app/flatuicolorpicker.png",
+        url:"https://www.flatuicolorpicker.com/",
+    },{
+        title:"adobe Color",
+        desc:"色轮调色",
+        imgurl:"./static/img/app/adobe.png",
+        url:"https://color.adobe.com/zh/create/color-wheel",
+    },{
+        title:"material",
+        desc:"生成你的配色模板",
+        imgurl:"./static/img/app/materialpalette.png",
+        url:"https://www.materialpalette.com/",
+    },{
+        title:"brandcolors",
+        desc:"企业配色方案集合",
+        imgurl:"./static/img/app/brandcolors.png",
+        url:"https://brandcolors.net/",
+    },{
+        title:"materialui",
+        desc:"材质色卡",
+        imgurl:"./static/img/app/materialui.png",
+        url:"https://materialui.co/colors/",
+    },{
+        title:"grabient",
+        desc:"渐变色",
+        imgurl:"./static/img/app/grabient.png",
+        url:"https://www.grabient.com/",
+    },{
+        title:"uigradients",
+        desc:"渐变色",
+        imgurl:"./static/img/app/uigradients.jpg",
+        url:"https://uigradients.com/#Windy",
+    },{
+        title:"webgradients",
+        desc:"180种线性渐变",
+        imgurl:"./static/img/app/webgradients.png",
+        url:"https://webgradients.com/",
+    }]
+},{
+    title:"LOGO标志",
+    children:[{
+        title:"标志情报局",
+        desc:"美叶",
+        imgurl:"./static/img/app/big.png",
+        url:"https://bigjpg.com/",
+    }]
+}]
+
 
 const navLists=[{
     title:"图片工具推荐",
@@ -98,17 +218,17 @@ const softwarelist=[{
     children:[{
         title:"cuttman",
         desc:"切图软件",
-        imgurl:"./static/img/app/c4d.png",
+        imgurl:"./static/img/app/cuttman.png",
         url:"https://www.cutterman.cn/zh/cutterman",
     },{
         title:"parker",
         desc:"设计页面标注工具",
-        imgurl:"./static/img/app/c4d.png",
+        imgurl:"./static/img/app/Parker.png",
         url:"https://www.cutterman.cn/zh/parker",
     },{
         title:"Nicon",
         desc:"个人图标库管理",
-        imgurl:"./static/img/app/c4d.png",
+        imgurl:"./static/img/app/Nicon.png",
         url:"https://www.cutterman.cn/zh/icview",
     },{
         title:"NB cutter",
@@ -258,7 +378,7 @@ const designnorm=[{
         url:"https://smartprogram.baidu.com/docs/design/overview/introduction/",
     }]
 },{
-    title:"设计软件教程",
+    title:"交互体验",
     children:[{
         title:"C4D",
         desc:"小莫C4D(20课)",
