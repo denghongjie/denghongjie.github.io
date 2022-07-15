@@ -3,201 +3,202 @@ const tszWeblists=[{
     children:[{
         title:"探索者官网",
         desc:"探索者官网",
-        imgurl:"./static/img/app/big.png",
+        imgurl:"./static/img/app/tsz.ico",
         url:"https://www.tsz.com.cn/Index.jsp",
     },{
         title:"探索者CRM网站",
-        desc:"探索者官网",
-        imgurl:"./static/img/app/big.png",
+        desc:"探索者CRM系统",
+        imgurl:"./static/img/app/crm.png",
         url:"https://www.tsz.com.cn/tszcrm2020/",
     }]
 },{
     title:"产品网站",
     children:[{
         title:"大平台",
-        desc:"探索者官网",
+        desc:"探索者微管理平台",
         imgurl:"./static/img/app/big.png",
         url:"https://www.tszcloud.com.cn/login",
     },{
         title:"易批注",
-        desc:"探索者官网",
-        imgurl:"./static/img/app/big.png",
+        desc:"易批注软件官网",
+        imgurl:"./static/img/app/ypz.png",
         url:"https://www.tszcloud.com.cn/website/index.html",
     },{
         title:"工程易览PDF",
-        desc:"探索者官网",
-        imgurl:"./static/img/app/big.png",
+        desc:"TSPsee产品介绍",
+        imgurl:"./static/img/app/gcpdf.png",
         url:"http://gcyl.yunzhukeji.cn/",
     },{
         title:"BIMbang",
-        desc:"探索者官网",
-        imgurl:"./static/img/app/big.png",
+        desc:"BIMbang官方网站",
+        imgurl:"./static/img/app/bimbang.png",
         url:"https://bang.yunzhukeji.cn/",
     },{
         title:"数字化审图",
-        desc:"探索者官网",
+        desc:"数字化审图中心",
         imgurl:"./static/img/app/big.png",
         url:"http://123.57.83.204:7002/",
     },{
         title:"设计院管理系统",
-        desc:"探索者官网",
+        desc:"设计院管理系统",
         imgurl:"./static/img/app/big.png",
         url:"http://123.57.83.204:7006/login?redirect=/home",
     },{
         title:"探索者协同",
-        desc:"探索者官网",
-        imgurl:"./static/img/app/big.png",
+        desc:"探索者协同网站",
+        imgurl:"./static/img/app/xittongpingtai.png",
         url:"http://123.57.83.204:9002/",
     }]
 },{
     title:"友情链接",
     children:[{
         title:"云注科技",
-        desc:"探索者官网",
-        imgurl:"./static/img/app/big.png",
+        desc:"云注科技官网",
+        imgurl:"./static/img/app/yzkj.png",
         url:"https://yunzhukeji.cn/",
     },{
         title:"南昌探索者软件",
-        desc:"探索者官网",
+        desc:"江西南昌探索者",
         imgurl:"./static/img/app/big.png",
         url:"https://www.tsz.com.cn/Index.jsp",
     },{
         title:"江阴数字化审图中心",
-        desc:"探索者官网",
+        desc:"江阴数字化生态园",
         imgurl:"./static/img/app/big.png",
         url:"http://www.jysgtsc.com/",
     },{
         title:"真果OKR",
-        desc:"探索者官网",
-        imgurl:"./static/img/app/big.png",
+        desc:"真果联动OKR官网",
+        imgurl:"./static/img/app/zgokr.png",
         url:"https://app.we-focus.cn/login",
     }]
 },{
     title:"开发平台",
     children:[{
         title:"禅道-探索者测试平台",
-        desc:"探索者官网",
-        imgurl:"./static/img/app/big.png",
+        desc:"探索者测试专用平台",
+        imgurl:"./static/img/app/tszcd.png",
         url:"http://123.57.83.204:81/zentao/user-login-L3plbnRhby8=.html",
     }]
 }]
 const threeDlists=[{
+    title:"探索者产品",
+    children:[{
+        title:"施工图校审系统【个人版】",
+        desc:"轻量化模型渲染",
+        imgurl:"./static/img/app/sgst.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=87",
+    },{
+        title:"施工图校审系统【企业版】",
+        desc:"轻量化模型渲染",
+        imgurl:"./static/img/app/sgst.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=87",
+    },{
+        title:"TSSD",
+        desc:"轻量化模型渲染",
+        imgurl:"./static/img/app/bimbang.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=87",
+    },{
+        title:"易批注",
+        desc:"轻量化模型渲染",
+        imgurl:"./static/img/app/ypz.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=87",
+    },{
+        title:"TS-MTS钢结构计算工具箱",
+        desc:"轻量化模型渲染",
+        imgurl:"./static/img/app/MTS.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=87",
+    },{
+        title:"集团授权管理工具",
+        desc:"轻量化模型渲染",
+        imgurl:"./static/img/app/bimbang.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=87",
+    },{
+        title:"易打【CAD】",
+        desc:"轻量化模型渲染",
+        imgurl:"./static/img/app/ydrj.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=87",
+    },{
+        title:"DWG合并助手",
+        desc:"轻量化模型渲染",
+        imgurl:"./static/img/app/dwfhbzs.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=87",
+    },{
+        title:"PSee签章",
+        desc:"轻量化模型渲染",
+        imgurl:"./static/img/app/tszpseeqz.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=87",
+    },{
+        title:"DWF签章",
+        desc:"轻量化模型渲染",
+        imgurl:"./static/img/app/sndwf.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=87",
+    },{
+        title:"BIMSys.-建筑工业化系统【TSPC】",
+        desc:"轻量化模型渲染",
+        imgurl:"./static/img/app/tspc.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=87",
+    },{
+        title:"工程预览PDF",
+        desc:"轻量化模型渲染",
+        imgurl:"./static/img/app/gcpdf.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=87",
+    },{
+        title:"探索者Revit工具箱",
+        desc:"轻量化模型渲染",
+        imgurl:"./static/img/app/tools.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=87",
+    },{
+        title:"探索者字体",
+        desc:"轻量化模型渲染",
+        imgurl:"./static/img/app/tszfont.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=87",
+    }]
+},{
     title:"轻量化产品",
     children:[{
         title:"BIMbang",
         desc:"轻量化模型渲染",
         imgurl:"./static/img/app/bimbang.png",
         url:"https://tsz.yunzhukeji.cn/download.php?p=87",
-    },{
-        title:"花瓣",
-        desc:"设计画板收藏",
-        imgurl:"./static/img/app/huaban.png",
-        url:"https://huaban.com/",
-    },{
-        title:"站酷",
-        desc:"AI在线抠图",
-        imgurl:"./static/img/app/zhanku.jpg",
-        url:"https://my.zcool.com.cn/",
-    },{
-        title:"UI中国",
-        desc:"AI在线抠图",
-        imgurl:"./static/img/app/uichina.png",
-        url:"https://www.ui.cn/",
     }]
 },{
-    title:"商用图片下载",
+    title:"云注科技系列",
     children:[{
-        title:"bigjpg",
-        desc:"美叶",
-        imgurl:"./static/img/app/big.png",
-        url:"https://bigjpg.com/",
+        title:"易打软件",
+        desc:"自动拆图、批量打印、一键生成图纸目录及多格式打印必备工具",
+        imgurl:"./static/img/app/ydrj.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=100",
     },{
-        title:"tinypng",
+        title:"易批注",
         desc:"图片在线压缩",
-        imgurl:"./static/img/app/panda.png",
-        url:"https://tinypng.com/",
+        imgurl:"./static/img/app/ypz.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=34",
     },{
-        title:"佐糖",
-        desc:"AI在线抠图",
-        imgurl:"./static/img/app/zuotang.png",
-        url:"https://picwish.cn/?apptype=aps-pin",
-    }]
-},{
-    title:"商用字体下载",
-    children:[{
-        title:"思源黑体",
-        desc:"美叶",
-        imgurl:"./static/img/app/syht.png",
-        url:"https://bigjpg.com/",
+        title:"PSee签章",
+        desc:"PDF图纸批量签章神器",
+        imgurl:"./static/img/app/pseeqz.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=29",
     },{
-        title:"思源宋体",
-        desc:"图片在线压缩",
-        imgurl:"./static/img/app/syst.png",
-        url:"https://tinypng.com/",
+        title:"赛恩（sign）DWF签章软件",
+        desc:"专用于DWF格式图纸盖章工具型软件",
+        imgurl:"./static/img/app/sndwf.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=83",
     },{
-        title:"阿里巴巴普惠字体",
-        desc:"阿里字体",
-        imgurl:"./static/img/app/albbph.png",
-        url:"https://alibabafont.taobao.com/wow/alibabafont/act/alifont?spm=a213iq.12778988.2991352756.2.497a125fFvRskZ&wh_biz=tm&acm=lb-zebra-483718-6345752.1003.4.5774787&scm=1003.4.lb-zebra-483718-6345752.OTHER_15548342496051_5774787",
-    }]
-},{
-    title:"图标空间",
-    children:[{
-        title:"iconfont",
-        desc:"美叶",
-        imgurl:"./static/img/app/iconfonts.png",
-        url:"https://bigjpg.com/",
-    }]
-},{
-    title:"配色空间站",
-    children:[{
-        title:"flat Color",
-        desc:"扁平UI配色",
-        imgurl:"./static/img/app/flatuicolorpicker.png",
-        url:"https://www.flatuicolorpicker.com/",
+        title:"DWG合并助手",
+        desc:"多模型合并",
+        imgurl:"./static/img/app/dwghbzs.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=9",
     },{
-        title:"adobe Color",
-        desc:"色轮调色",
-        imgurl:"./static/img/app/adobe.png",
-        url:"https://color.adobe.com/zh/create/color-wheel",
+        title:"键盘侠",
+        desc:"CAD中英文输入法切换神器",
+        imgurl:"./static/img/app/jpx.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=99",
     },{
-        title:"material",
-        desc:"生成你的配色模板",
-        imgurl:"./static/img/app/materialpalette.png",
-        url:"https://www.materialpalette.com/",
-    },{
-        title:"brandcolors",
-        desc:"企业配色方案集合",
-        imgurl:"./static/img/app/brandcolors.png",
-        url:"https://brandcolors.net/",
-    },{
-        title:"materialui",
-        desc:"材质色卡",
-        imgurl:"./static/img/app/materialui.png",
-        url:"https://materialui.co/colors/",
-    },{
-        title:"grabient",
-        desc:"渐变色",
-        imgurl:"./static/img/app/grabient.png",
-        url:"https://www.grabient.com/",
-    },{
-        title:"uigradients",
-        desc:"渐变色",
-        imgurl:"./static/img/app/uigradients.jpg",
-        url:"https://uigradients.com/#Windy",
-    },{
-        title:"webgradients",
-        desc:"180种线性渐变",
-        imgurl:"./static/img/app/webgradients.png",
-        url:"https://webgradients.com/",
-    }]
-},{
-    title:"LOGO标志",
-    children:[{
-        title:"标志情报局",
-        desc:"美叶",
-        imgurl:"./static/img/app/big.png",
-        url:"https://bigjpg.com/",
+        title:"Psee看图",
+        desc:"PDF工程看图软件",
+        imgurl:"./static/img/app/pseekt.png",
+        url:"https://tsz.yunzhukeji.cn/download.php?p=31",
     }]
 }]
 const designspaces=[{
