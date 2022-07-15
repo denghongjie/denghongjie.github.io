@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="./static/css/base.css" rel="stylesheet"> -->
+    <link href="./static/css/element@2.2.6.css" rel="stylesheet">
+    <script src="./static/js/vue@3.2.36.js"></script>
+    <script src="./static/js/elementPlus@2.2.6.js"></script>
+    <script src="./static/js/elementPlus-zhcn.js"></script>
+    <script src="./static/js/elementPlusIcon@2.0.4.js"></script>
+    <script src="./static/js/init.js"></script>
+    <title>探索者产品导航</title>
+    <link href="./static/css/common.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="./static/css/fonts/iconfont.css">
+    <link rel="stylesheet" href="./static/css/iconfonts/iconfont.css">
+    <link href="./static/css/help.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div id="app">
+        <div class="navheader">
+            <div class="logobox" >
+                <!-- <a href=""><img src="./static/img/navbar.png" alt=""></a> -->
+                <h1><span>探索者</span>网址导航</h1>
+            </div>
+        </div>
+        <div class="navbody">
+            <el-tabs v-model="activeName" class="demo-tabs navtab" tab-position="left" @tab-click="handleClick" >
+                <el-tab-pane label="网址导航" name="1">
+                    <div class="nav_tab_body" v-for="(navs,index) in tszWeblist" :key="index">
+                        <div class="title">{{navs.title}}</div>
+                        <el-row :gutter="16">
+                            <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                    <a :href="item.url" target="_blank">
+                                        <div class="appimg">
+                                            <img :src="item.imgurl" alt="">
+                                        </div>
+                                        <div class="app_text">
+                                            <div class="grid-content_title">
+                                                {{item.title}}
+                                            </div>
+                                            <div class="desctext">
+                                                {{item.desc}}
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </el-col>
+                        </el-row>
+                    </div>
+                </el-tab-pane>
+                <el-tab-pane label="产品下载" name="2">
+                    <div class="nav_tab_body" v-for="(navs,index) in threeDlist" :key="index">
+                        <div class="title">{{navs.title}}</div>
+                        <el-row :gutter="16">
+                            <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                    <a :href="item.url" target="_blank">
+                                        <div class="appimg">
+                                            <img :src="item.imgurl" alt="">
+                                        </div>
+                                        <div class="app_text">
+                                            <div class="grid-content_title">
+                                                {{item.title}}
+                                            </div>
+                                            <div class="desctext">
+                                                {{item.desc}}
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </el-col>
+                        </el-row>
+                    </div>
+                </el-tab-pane>
+            </el-tabs>
+        </div>
+        
+    </div>
+</body>
+
+</html>
+<script src="./static/js/data.js"></script>
+<script>
+    const App = {
+        setup() {
+            const { proxy } = getCurrentInstance();
+            const { computed} = Vue;
+            function initState() {
+                return {
+                    activeName:'1',
+                    tszWeblist:tszWeblists,
+                    threeDlist:threeDlists,
+                }
+            }
+            const state = reactive(initState());
+            const newName = computed(() => {
+                  
+            })
+            function handleClick (tab, event) {
+                console.log(tab, event)
+            }
+            return {
+                ...toRefs(state),
+                handleClick
+            }
+        }
+    }
+    mountApp(App);
+</script>
