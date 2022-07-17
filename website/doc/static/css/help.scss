@@ -104,3 +104,10 @@ h1{
         background-color: $main_color;
     }
 }
+
+.navbody-box{
+    height: calc(100vh - 60px);
+}
+.noscoll{
+    height: 100%;
+}

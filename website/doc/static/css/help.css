@@ -114,3 +114,11 @@ h1 {
 .navtab .el-tabs__active-bar {
   background-color: #583cf1;
 }
+
+.navbody-box {
+  height: calc(100vh - 60px);
+}
+
+.noscoll {
+  height: 100%;
+}
