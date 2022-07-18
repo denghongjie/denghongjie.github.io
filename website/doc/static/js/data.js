@@ -43,12 +43,12 @@ const designspaces=[{
     title:"商用字体下载",
     children:[{
         title:"思源黑体",
-        desc:"美叶",
+        desc:"网盘提取码：tob1",
         imgurl:"./static/img/app/syht.png",
-        url:"https://bigjpg.com/",
+        url:"https://pan.baidu.com/share/init?surl=iFGeCGmH3l-_iz-5VsgLzg",
     },{
         title:"思源宋体",
-        desc:"图片在线压缩",
+        desc:"网盘提取码：tob1",
         imgurl:"./static/img/app/syst.png",
         url:"https://tinypng.com/",
     },{
@@ -61,9 +61,9 @@ const designspaces=[{
     title:"图标空间",
     children:[{
         title:"iconfont",
-        desc:"美叶",
+        desc:"阿里巴巴字体图标",
         imgurl:"./static/img/app/iconfonts.png",
-        url:"https://bigjpg.com/",
+        url:"https://www.iconfont.cn/",
     }]
 },{
     title:"配色空间站",
@@ -112,9 +112,9 @@ const designspaces=[{
     title:"LOGO标志",
     children:[{
         title:"标志情报局",
-        desc:"美叶",
-        imgurl:"./static/img/app/big.png",
-        url:"https://bigjpg.com/",
+        desc:"全球LOGO品牌资讯平台",
+        imgurl:"./static/img/app/logoqbj.png",
+        url:"https://www.logonews.cn/",
     }]
 }]
 
@@ -168,10 +168,15 @@ const navLists=[{
         imgurl:"./static/img/app/360.png",
         url:"https://fonts.safe.360.cn/",
     },{
-        title:"iconfont",
-        desc:"阿里巴巴图标管理",
-        imgurl:"./static/img/app/iconfonts.png",
-        url:"https://www.iconfont.cn/",
+        title:"I love PDF",
+        desc:"万能转PDF文件",
+        imgurl:"./static/img/app/ilovepdf.svg",
+        url:"https://www.ilovepdf.com/",
+    },{
+        title:"I love IMG",
+        desc:"图片压缩、转换、水印处理",
+        imgurl:"./static/img/app/iloveimg.svg",
+        url:"https://www.iloveimg.com/zh-cn",
     }]
 }]
 
@@ -255,6 +260,14 @@ const softwarelist=[{
         desc:"3D可视化视图",
         imgurl:"./static/img/app/nbPie.png",
         url:"https://www.pslkzs.com/chart/charts.php",
+    }]
+},{
+    title:"C4D专区",
+    children:[{
+        title:"魔顿",
+        desc:"C4D素材集合站：模型、贴图、",
+        imgurl:"./static/img/app/modun.jpg",
+        url:"http://www.modown.cn/",
     }]
 },{
     title:"办公软件",
@@ -394,5 +407,96 @@ const designnorm=[{
         desc:"Spline新手入门（13课）",
         imgurl:"./static/img/app/spline.png",
         url:"https://space.bilibili.com/2033738697/channel/collectiondetail?sid=394913",
+    }]
+}]
+
+const iconDesigns=[{
+    title:"图标专栏",
+    children:[{
+        title:"Axialis Windows",
+        desc:"windows风格图标",
+        imgurl:"./static/img/app/axialis_text_logo_dark.svg",
+        url:"https://www.axialis.com/",
+    },{
+        title:"iconfont",
+        desc:"阿里巴巴图标管理",
+        imgurl:"./static/img/app/iconfonts.png",
+        url:"https://www.iconfont.cn/",
+    },{
+        title:"iconpark",
+        desc:"字节图标库",
+        imgurl:"./static/img/app/iconpark.svg",
+        url:"https://iconpark.oceanengine.com/home",
+    },{
+        title:"iconfinder",
+        desc:"3D图标AI+扁平",
+        imgurl:"./static/img/app/iconfinder.svg",
+        url:"https://www.iconfinder.com/3d-illustrations",
+    },{
+        title:"icons8",
+        desc:"windows风格图标",
+        imgurl:"./static/img/app/icons8.png",
+        url:"https://icons8.com/icons/ios",
+    },{
+        title:"remix Icon",
+        desc:"非常不错的图标、可免费下载",
+        imgurl:"./static/img/app/remixIcon.png",
+        url:"http://remixicon.com/",
+    }]
+},{
+    title:"APP ICON ",
+    children:[{
+        title:"iosicongallery",
+        desc:"IOS app精致图标收集",
+        imgurl:"./static/img/app/iosicongallery.png",
+        url:"https://www.iosicongallery.com/",
+    }]
+},{
+    title:"动态图标交互【访问慢】",
+    children:[{
+        title:"useanimations",
+        desc:"带动效果的图标",
+        imgurl:"./static/img/app/useanimations.png",
+        url:"https://useanimations.com/#explore",
+    }]
+}]
+
+const viewlist=[{
+    title:"可视化业务网站",
+    children:[
+    {
+        title:"阿里云·可视化",
+        desc:"阿里云可视化看板",
+        imgurl:"./static/img/app/alyiyunkshihua.png",
+        url:"https://www.aliyun.com/activity/intelligent/datav-showcase?spm=a2c0j.140",
+    },{
+        title:"数字像素",
+        desc:"可视化资源参考",
+        imgurl:"./static/img/app/shuzixiangshu.png",
+        url:"https://www.shuzixs.com/#/home",
+    },{
+        title:"易知数",
+        desc:"海量数据可视化",
+        imgurl:"./static/img/app/easyv.jpg",
+        url:"https://easyv.cloud/",
+    },{
+        title:"图扑",
+        desc:"在线可视化3D案例",
+        imgurl:"./static/img/app/tuchai.png",
+        url:"https://www.hightopo.com/demos/index.html",
+    },{
+        title:"thingsJs",
+        desc:"在线可视化3D案例",
+        imgurl:"./static/img/app/youruo3d.png",
+        url:"https://store.thingjs.com/?t=projects",
+    }]
+},{
+    title:"3D素材",
+    children:[
+    {
+        title:"免费3D模型",
+        desc:"3D模型下载、支持PNG、PSD格式",
+        imgurl:"./static/img/app/pixelsquid.svg",
+        url:"https://www.pixelsquid.com/png",
     }]
 }]
