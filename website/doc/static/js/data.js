@@ -24,20 +24,25 @@ const designspaces=[{
 },{
     title:"商用图片下载",
     children:[{
-        title:"bigjpg",
-        desc:"美叶",
-        imgurl:"./static/img/app/big.png",
-        url:"https://bigjpg.com/",
+        title:"freepik.png",
+        desc:"免费下载素材，素材不错",
+        imgurl:"./static/img/app/freepik.png",
+        url:"https://www.freepik.com/",
     },{
-        title:"tinypng",
-        desc:"图片在线压缩",
-        imgurl:"./static/img/app/panda.png",
-        url:"https://tinypng.com/",
+        title:"Pexels",
+        desc:"高质量图片",
+        imgurl:"./static/img/app/pexels.png",
+        url:"https://www.pexels.com/zh-cn/",
     },{
-        title:"佐糖",
-        desc:"AI在线抠图",
-        imgurl:"./static/img/app/zuotang.png",
-        url:"https://picwish.cn/?apptype=aps-pin",
+        title:"Unsplash",
+        desc:"高质量图片",
+        imgurl:"./static/img/app/unsplash.png",
+        url:"https://unsplash.com/images",
+    },{
+        title:"foodiesfeed",
+        desc:"美食图片",
+        imgurl:"./static/img/app/foodiesfeed.png",
+        url:"https://www.foodiesfeed.com/",
     }]
 },{
     title:"商用字体下载",
@@ -108,14 +113,6 @@ const designspaces=[{
         imgurl:"./static/img/app/webgradients.png",
         url:"https://webgradients.com/",
     }]
-},{
-    title:"LOGO标志",
-    children:[{
-        title:"标志情报局",
-        desc:"全球LOGO品牌资讯平台",
-        imgurl:"./static/img/app/logoqbj.png",
-        url:"https://www.logonews.cn/",
-    }]
 }]
 
 
@@ -136,6 +133,11 @@ const navLists=[{
         desc:"AI在线抠图",
         imgurl:"./static/img/app/zuotang.png",
         url:"https://picwish.cn/?apptype=aps-pin",
+    },{
+        title:"let's Enhance",
+        desc:"模糊图片变清晰",
+        imgurl:"./static/img/app/letsenhance.svg",
+        url:"https://letsenhance.io/",
     }]
 },{
     title:"商业修图工具推荐",
@@ -389,6 +391,11 @@ const designnorm=[{
         desc:"百度小程序",
         imgurl:"./static/img/app/bdxcx.png",
         url:"https://smartprogram.baidu.com/docs/design/overview/introduction/",
+    },{
+        title:"华为鸿蒙",
+        desc:"鸿蒙全场景设计指南",
+        imgurl:"./static/img/app/huawei.svg",
+        url:"https://developer.harmonyos.com/cn/design",
     }]
 },{
     title:"交互体验",
@@ -408,13 +415,56 @@ const designnorm=[{
         imgurl:"./static/img/app/spline.png",
         url:"https://space.bilibili.com/2033738697/channel/collectiondetail?sid=394913",
     }]
+},{
+    title:"UI框架-PC",
+    children:[{
+        title:"element UI",
+        desc:"饿了么研发团队",
+        imgurl:"./static/img/app/element.svg",
+        url:"https://element.eleme.cn/#/zh-CN",
+    },{
+        title:"antDesign",
+        desc:"蚂蚁金服",
+        imgurl:"./static/img/app/antDesign.svg",
+        url:"https://ant.design/index-cn",
+    },{
+        title:"arco Design",
+        desc:"字节跳动UI",
+        imgurl:"./static/img/app/arco.svg",
+        url:"https://arco.design/",
+    },{
+        title:"TDesign",
+        desc:"腾讯出品",
+        imgurl:"./static/img/app/tDesign.svg",
+        url:"https://tdesign.tencent.com/",
+    },{
+        title:"udcDesign",
+        desc:"京东数科设计",
+        imgurl:"./static/img/app/udcDesign.png",
+        url:"https://findesign.jd.com/#/home",
+    }]
+    
+},{
+    title:"UI框架-APP",
+    children:[{
+        title:"京东nutui",
+        desc:"京东风格（红）",
+        imgurl:"./static/img/app/nutui.png",
+        url:"https://nutui.jd.com/3x/#/",
+    },{
+        title:"Vant3",
+        desc:"有赞设计系统",
+        imgurl:"./static/img/app/vant3.png",
+        url:"https://vant-contrib.gitee.io/vant/#/zh-CN/home",
+    }]
+    
 }]
 
 const iconDesigns=[{
     title:"图标专栏",
     children:[{
         title:"Axialis Windows",
-        desc:"windows风格图标",
+        desc:"win、CAD……风格",
         imgurl:"./static/img/app/axialis_text_logo_dark.svg",
         url:"https://www.axialis.com/",
     },{
@@ -423,15 +473,15 @@ const iconDesigns=[{
         imgurl:"./static/img/app/iconfonts.png",
         url:"https://www.iconfont.cn/",
     },{
+        title:"icones",
+        desc:"字体图标大全",
+        imgurl:"./static/img/app/icones.svg",
+        url:"https://icones.js.org/",
+    },{
         title:"iconpark",
         desc:"字节图标库",
         imgurl:"./static/img/app/iconpark.svg",
         url:"https://iconpark.oceanengine.com/home",
-    },{
-        title:"iconfinder",
-        desc:"3D图标AI+扁平",
-        imgurl:"./static/img/app/iconfinder.svg",
-        url:"https://www.iconfinder.com/3d-illustrations",
     },{
         title:"icons8",
         desc:"windows风格图标",
@@ -442,6 +492,34 @@ const iconDesigns=[{
         desc:"非常不错的图标、可免费下载",
         imgurl:"./static/img/app/remixIcon.png",
         url:"http://remixicon.com/",
+    },{
+        title:"IKonate",
+        desc:"一套线标库，可批量导出svg",
+        imgurl:"./static/img/app/IKonate.png",
+        url:"https://ikonate.com/",
+    },{
+        title:"lineIcons",
+        desc:"2000+线性图标参考",
+        imgurl:"./static/img/app/lineIcons.svg",
+        url:"https://lineicons.com/icons/",
+    }]
+},{
+    title:"3D 图标 ",
+    children:[{
+        title:"iconfinder",
+        desc:"3D图标AI+扁平",
+        imgurl:"./static/img/app/iconfinder.svg",
+        url:"https://www.iconfinder.com/3d-illustrations",
+    },{
+        title:"3D ICONs",
+        desc:"3D图标免费下",
+        imgurl:"./static/img/app/3dicons.png",
+        url:"https://3dicons.co/?utm_source=appinn.com",
+    },{
+        title:"iconshock",
+        desc:"3D图标",
+        imgurl:"./static/img/app/iconshock.png",
+        url:"https://www.3dicons.com/",
     }]
 },{
     title:"APP ICON ",
@@ -458,6 +536,47 @@ const iconDesigns=[{
         desc:"带动效果的图标",
         imgurl:"./static/img/app/useanimations.png",
         url:"https://useanimations.com/#explore",
+    },{
+        title:"Icons8 动画 2.0",
+        desc:"高质量动效图标",
+        imgurl:"./static/img/app/icons8-animate.png",
+        url:"https://igoutu.cn/animated-icons",
+    },{
+        title:"Lordicon",
+        desc:"炫酷动态图标",
+        imgurl:"./static/img/app/lordicon.png",
+        url:"https://lordicon.com/",
+    },{
+        title:"CSS GG",
+        desc:"css绘制图标",
+        imgurl:"./static/img/app/cssgg.png",
+        url:"https://css.gg/app",
+    }]
+},{
+    title:"LOGO专区",
+    children:[{
+        title:"Worldvectorlogo",
+        desc:"全球知名LOGO失恋素材库，免费下载",
+        imgurl:"./static/img/app/worldvectorlogo.png",
+        url:"https://worldvectorlogo.com/",
+    },{
+        title:"标志情报局",
+        desc:"全球LOGO品牌资讯平台",
+        imgurl:"./static/img/app/logoqbj.png",
+        url:"https://www.logonews.cn/",
+    },{
+        title:"LOGO生成器",
+        desc:"设计参考",
+        imgurl:"./static/img/app/logosc.png",
+        url:"https://www.logosc.cn/",
+    }]
+},{
+    title:"医疗图标",
+    children:[{
+        title:"Health Icons",
+        desc:"医疗图标大全",
+        imgurl:"./static/img/app/health-icons-logo.svg",
+        url:"https://healthicons.org/",
     }]
 }]
 
