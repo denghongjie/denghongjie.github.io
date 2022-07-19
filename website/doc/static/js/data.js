@@ -187,28 +187,68 @@ const softwarelist=[{
     children:[{
         title:"PS2022",
         desc:"平面设计软件",
-        imgurl:"./static/img/app/ps.png",
-        url:"https://bigjpg.com/",
+        imgurl:"./static/img/app/ps2022.jpg",
+        url:"https://www.yutu.cn/softhtml/showsoft_6132.html",
     },{
         title:"AI2022",
         desc:"矢量设计软件",
         imgurl:"./static/img/app/ai.png",
-        url:"https://tinypng.com/",
+        url:"https://www.yutu.cn/softhtml/showsoft_6166.html",
     },{
-        title:"C4D",
+        title:"PR2022",
+        desc:"视频剪辑软件",
+        imgurl:"./static/img/app/pr2022.jpg",
+        url:"https://www.yutu.cn/softhtml/showsoft_6148.html",
+    },{
+        title:"Au2022",
+        desc:"音频编辑软件",
+        imgurl:"./static/img/app/au2022.jpg",
+        url:"https://www.yutu.cn/softhtml/showsoft_6193.html",
+    },{
+        title:"AE2022",
+        desc:"影视特效软件",
+        imgurl:"./static/img/app/ae2022.jpg",
+        url:"https://www.yutu.cn/softhtml/showsoft_6151.html",
+    },{
+        title:"ME2022",
+        desc:"视频与音频编码工具",
+        imgurl:"./static/img/app/Me2022.png",
+        url:"https://www.yutu.cn/softhtml/showsoft_6200.html",
+    },{
+        title:"ID2022",
+        desc:"排版编辑软件",
+        imgurl:"./static/img/app/id2022.jpg",
+        url:"https://www.yutu.cn/softhtml/showsoft_6179.html",
+    },{
+        title:"Lr2022",
+        desc:"图片处理",
+        imgurl:"./static/img/app/lr2022.jpg",
+        url:"https://www.yutu.cn/softhtml/showsoft_7715.html",
+    },{
+        title:"An2022",
+        desc:"二维动画制作",
+        imgurl:"./static/img/app/an2022.jpg",
+        url:"https://www.yutu.cn/softhtml/showsoft_6176.html",
+    },{
+        title:"C4D 26",
         desc:"3D设计软件",
         imgurl:"./static/img/app/c4d.png",
-        url:"https://picwish.cn/?apptype=aps-pin",
+        url:"https://www.yutu.cn/softhtml/showsoft_7594.html",
     },{
-        title:"Blender",
+        title:"C4D 19",
+        desc:"3D设计软件",
+        imgurl:"./static/img/app/c4d.png",
+        url:"https://www.yutu.cn/softhtml/showsoft_775.html",
+    },{
+        title:"Blender3.2",
         desc:"3D设计软件",
         imgurl:"./static/img/app/blender.png",
-        url:"https://picwish.cn/?apptype=aps-pin",
+        url:"https://www.yutu.cn/softhtml/showsoft_7811.html",
     },{
         title:"Icofx",
         desc:"工具条图标制作软件",
         imgurl:"./static/img/app/iconfx.png",
-        url:"https://picwish.cn/?apptype=aps-pin",
+        url:"https://www.chenbo.info/3933.html",
     },{
         title:"Figma",
         desc:"原型+设计软件",
