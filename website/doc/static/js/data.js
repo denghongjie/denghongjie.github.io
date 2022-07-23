@@ -35,7 +35,7 @@ const designspaces=[{
         url:"https://www.pexels.com/zh-cn/",
     },{
         title:"Unsplash",
-        desc:"高质量图片",
+        desc:"高质量无版权图片",
         imgurl:"./static/img/app/unsplash.png",
         url:"https://unsplash.com/images",
     },{
@@ -169,6 +169,24 @@ const navLists=[{
         desc:"本地字体在线查询",
         imgurl:"./static/img/app/360.png",
         url:"https://fonts.safe.360.cn/",
+    },{
+        title:"I love PDF",
+        desc:"万能转PDF文件",
+        imgurl:"./static/img/app/ilovepdf.svg",
+        url:"https://www.ilovepdf.com/",
+    },{
+        title:"I love IMG",
+        desc:"图片压缩、转换、水印处理",
+        imgurl:"./static/img/app/iloveimg.svg",
+        url:"https://www.iloveimg.com/zh-cn",
+    }]
+},{
+    title:"其他工具",
+    children:[{
+        title:"自适应界面测试",
+        desc:"批量导出网站在不通设备的截图",
+        imgurl:"./static/img/app/zsyjmceshi.gif",
+        url:"https://screendump.techulus.com/",
     },{
         title:"I love PDF",
         desc:"万能转PDF文件",

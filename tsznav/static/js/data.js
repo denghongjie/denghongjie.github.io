@@ -10,13 +10,18 @@ const tszWeblists=[{
         desc:"探索者CRM系统",
         imgurl:"./static/img/app/crm.png",
         url:"https://www.tsz.com.cn/tszcrm2020/",
+    },{
+        title:"探索者云",
+        desc:"探索者云系统",
+        imgurl:"./static/img/app/tszcould.png",
+        url:"https://cloud.tsz.com.cn/vpn/index.html",
     }]
 },{
     title:"产品网站",
     children:[{
         title:"大平台",
         desc:"探索者微管理平台",
-        imgurl:"./static/img/app/big.png",
+        imgurl:"./static/img/app/dapingtai.png",
         url:"https://www.tszcloud.com.cn/login",
     },{
         title:"易批注",
@@ -36,12 +41,12 @@ const tszWeblists=[{
     },{
         title:"数字化审图",
         desc:"数字化审图中心",
-        imgurl:"./static/img/app/big.png",
+        imgurl:"./static/img/app/shengtu.png",
         url:"http://123.57.83.204:7002/",
     },{
         title:"设计院管理系统",
         desc:"设计院管理系统",
-        imgurl:"./static/img/app/big.png",
+        imgurl:"./static/img/app/shejiyuan.png",
         url:"http://123.57.83.204:7006/login?redirect=/home",
     },{
         title:"探索者协同",
@@ -375,7 +380,13 @@ const navLists=[{
         desc:"阿里巴巴图标管理",
         imgurl:"./static/img/app/iconfonts.png",
         url:"https://www.iconfont.cn/",
+    },{
+        title:"convertio",
+        desc:"各种格式工具在线转换",
+        imgurl:"./static/img/app/iconfonts.png",
+        url:"https://convertio.co/zh/",
     }]
+    
 }]
 
 const softwarelist=[{
