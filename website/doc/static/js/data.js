@@ -163,6 +163,34 @@ const navLists=[{
         url:"https://www.luminartech.com/",
     }]
 },{
+    title:"在线工具",
+    children:[{
+        title:"在线录屏",
+        desc:"直接录屏",
+        imgurl:"./static/img/app/zaixianluping.png",
+        url:"https://www.toolnb.com/tools/screen.html",
+    },{
+        title:"文字转语音",
+        desc:"在线情感化转换",
+        imgurl:"./static/img/app/speech09.svg",
+        url:"https://azure.microsoft.com/zh-cn/services/cognitive-services/text-to-speech/#overview",
+    },{
+        title:"录音软件",
+        desc:"免费Audio Record Wizard",
+        imgurl:"./static/img/app/wizard.png",
+        url:"https://www.iloveimg.com/zh-cn",
+    },{
+        title:"剪映",
+        desc:"视频剪辑",
+        imgurl:"./static/img/app/jianying.jpg",
+        url:"https://lv.ulikecam.com/",
+    },{
+        title:"convertio",
+        desc:"在线转换格式转换",
+        imgurl:"./static/img/app/convertio.png",
+        url:"https://convertio.co/zh/",
+    }]
+},{
     title:"格式工具",
     children:[{
         title:"360字体查询",
@@ -187,16 +215,6 @@ const navLists=[{
         desc:"批量导出网站在不通设备的截图",
         imgurl:"./static/img/app/zsyjmceshi.gif",
         url:"https://screendump.techulus.com/",
-    },{
-        title:"I love PDF",
-        desc:"万能转PDF文件",
-        imgurl:"./static/img/app/ilovepdf.svg",
-        url:"https://www.ilovepdf.com/",
-    },{
-        title:"I love IMG",
-        desc:"图片压缩、转换、水印处理",
-        imgurl:"./static/img/app/iloveimg.svg",
-        url:"https://www.iloveimg.com/zh-cn",
     }]
 }]
 
