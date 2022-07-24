@@ -25,7 +25,9 @@
             <div class="logobox" >
                 <!-- <a href=""><img src="./static/img/navbar.png" alt=""></a> -->
                 <h1><span><img src="./static/img/logo_b.png" alt=""></span>网址导航</h1>
+                
             </div>
+            <el-button @click="SetHome(this,window.location)">设为主页</el-button>
         </div>
         <div class="navbody">
             <el-scrollbar style="height: 100%;" class="noscroll">
@@ -124,10 +126,28 @@
             function search(keyword){
                 window.open('https://www.baidu.com/s?wd='+keyword)
             }
+            // 设为首页
+            function SetHome(obj, vrl) {
+                try {
+                    obj.style.behavior = 'url(#default#homepage)';
+                    obj.setHomePage(vrl);
+                } catch(e) {
+                    if (window.netscape) {
+                    try {
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    } catch(e) {
+                        alert("抱歉！您的浏览器不支持直接设为首页。请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为“true”，点击“加入收藏”后忽略安全提示，即可设置成功。");
+                    }
+                    var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                    prefs.setCharPref('browser.startup.homepage', vrl);
+                    }
+                }
+            }
             return {
                 ...toRefs(state),
                 handleClick,
-                search
+                search,
+                SetHome
             }
         }
     }
