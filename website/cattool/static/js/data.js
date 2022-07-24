@@ -698,14 +698,8 @@ const viewlist=[{
 
 const devlist=[{
     title:"SEO 工具",
-    children:[
-    {
-        title:"阿里云·可视化",
-        desc:"阿里云可视化看板",
-        imgurl:"./static/img/app/alyiyunkshihua.png",
-        url:"https://www.aliyun.com/activity/intelligent/datav-showcase?spm=a2c0j.140",
-    },{
-        title:"数字像素",
+    children:[{
+        title:"免费SSL证书",
         desc:"SSL证书",
         imgurl:"./static/img/app/shuzixiangshu.png",
         url:"https://alerts.httpscop.com/",
