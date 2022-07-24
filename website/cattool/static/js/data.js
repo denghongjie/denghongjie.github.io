@@ -178,7 +178,7 @@ const navLists=[{
         title:"录音软件",
         desc:"免费Audio Record Wizard",
         imgurl:"./static/img/app/wizard.png",
-        url:"https://www.iloveimg.com/zh-cn",
+        url:"https://www.nowsmart.com/download.html",
     },{
         title:"剪映",
         desc:"视频剪辑",
