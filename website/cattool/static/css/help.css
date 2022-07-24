@@ -22,19 +22,15 @@ h1 {
   padding: 0px 20px;
   background-color: transparent;
   backdrop-filter: blur(6px);
-  /* box-shadow: inset 0 10px 50px #d2d0ff, inset 0px 54px 0 #fff; */
 }
 
 .navheader h1 {
-  text-transform: uppercase;
-    /* font-weight: 400; */
-  font-size: 24px;
+  text-transform: capitalize;
+  font-size: 31px;
   text-shadow: 1px 3px 3px #d4d6e7;
   display: flex;
   align-items: center;
   position: relative;
-  top: 6px;
-
 }
 
 .navheader h1 span {

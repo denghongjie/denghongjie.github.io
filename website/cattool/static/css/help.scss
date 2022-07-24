@@ -23,7 +23,12 @@ h1{
     backdrop-filter: blur(6px);
     // border-bottom: 1px solid #ffffff91;
     h1{
-        text-transform: uppercase;
+        text-transform: capitalize;
+        font-size: 31px;
+        text-shadow: 1px 3px 3px #d4d6e7;
+        display: flex;
+        align-items: center;
+        position: relative;
         span{
             color: $main_color;
         }
