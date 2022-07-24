@@ -24,60 +24,76 @@
         <div class="navheader">
             <div class="logobox" >
                 <!-- <a href=""><img src="./static/img/navbar.png" alt=""></a> -->
-                <h1><span>探索者</span>网址导航</h1>
+                <h1><span><img src="./static/img/logo_b.png" alt=""></span>网址导航</h1>
             </div>
         </div>
         <div class="navbody">
-            <el-tabs v-model="activeName" class="demo-tabs navtab" tab-position="left" @tab-click="handleClick" >
-                <el-tab-pane label="网址导航" name="1">
-                    <div class="nav_tab_body" v-for="(navs,index) in tszWeblist" :key="index">
-                        <div class="title">{{navs.title}}</div>
-                        <el-row :gutter="16">
-                            <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                    <a :href="item.url" target="_blank">
-                                        <div class="appimg">
-                                            <img :src="item.imgurl" alt="">
-                                        </div>
-                                        <div class="app_text">
-                                            <div class="grid-content_title">
-                                                {{item.title}}
-                                            </div>
-                                            <div class="desctext">
-                                                {{item.desc}}
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </el-col>
-                        </el-row>
+            <el-scrollbar style="height: 100%;" class="noscroll">
+                <div  class="baidusearch">
+                    <div class="sc_icon"> 
+                        <img src="./static/img/baidu.png" alt="" > 
                     </div>
-                </el-tab-pane>
-                <el-tab-pane label="产品下载" name="2">
-                    <div class="nav_tab_body" v-for="(navs,index) in threeDlist" :key="index">
-                        <div class="title">{{navs.title}}</div>
-                        <el-row :gutter="16">
-                            <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                    <a :href="item.url" target="_blank">
-                                        <div class="appimg">
-                                            <img :src="item.imgurl" alt="">
-                                        </div>
-                                        <div class="app_text">
-                                            <div class="grid-content_title">
-                                                {{item.title}}
-                                            </div>
-                                            <div class="desctext">
-                                                {{item.desc}}
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </el-col>
-                        </el-row>
+                    <div>
+                        <el-input v-model="searchvalue" @keyup.enter="search(searchvalue)">
+                            <template #append>
+                                <el-button  type="primary" @click="search(searchvalue)" size="large">百度一下</el-button>
+                            </template>
+                        </el-input>
                     </div>
-                </el-tab-pane>
-            </el-tabs>
+                </div>
+                <div class="tsz_navbody">
+                    <el-tabs v-model="activeName" class="demo-tabs navtab" tab-position="top" @tab-click="handleClick" >
+                        <el-tab-pane label="网址导航" name="1">
+                            <div class="nav_tab_body" v-for="(navs,index) in tszWeblist" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-tab-pane>
+                        <el-tab-pane label="产品下载" name="2">
+                            <div class="nav_tab_body" v-for="(navs,index) in threeDlist" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-tab-pane>
+                    </el-tabs>
+                </div>
+            </el-scrollbar>
         </div>
         
     </div>
@@ -95,6 +111,7 @@
                     activeName:'1',
                     tszWeblist:tszWeblists,
                     threeDlist:threeDlists,
+                    searchvalue:''
                 }
             }
             const state = reactive(initState());
@@ -104,9 +121,13 @@
             function handleClick (tab, event) {
                 console.log(tab, event)
             }
+            function search(keyword){
+                window.open('https://www.baidu.com/s?wd='+keyword)
+            }
             return {
                 ...toRefs(state),
-                handleClick
+                handleClick,
+                search
             }
         }
     }

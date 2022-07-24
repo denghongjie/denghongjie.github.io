@@ -11,6 +11,25 @@ h1 {
   line-height: 1;
 }
 
+.baidusearch {
+  width: 550px;
+  margin: 10px auto;
+}
+
+.baidusearch .sc_icon {
+  height: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.baidusearch .sc_icon img {
+  height: 100%;
+}
+
+.tsz_navbody {
+  padding: 0 24px;
+}
+
 .title {
   margin-bottom: 20px;
 }
@@ -26,10 +45,19 @@ h1 {
 
 .navheader h1 {
   text-transform: uppercase;
+  display: flex;
+  align-items: flex-end;
+  font-size: 20px;
+  height: 40px;
 }
 
 .navheader h1 span {
   color: #583cf1;
+  margin-right: 10px;
+}
+
+.navheader h1 span img {
+  height: 40px;
 }
 
 .navheader .logobox {
@@ -40,11 +68,14 @@ h1 {
   height: 100%;
 }
 
+.navbody {
+  height: calc(100vh - 60px);
+}
+
 .grid-content {
   background-color: #fff;
   padding: 10px;
   background: #ecedf0;
-  box-shadow: 5px 5px 10px #a3b1c6, -5px -5px 10px white;
   overflow: hidden;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -100,7 +131,7 @@ h1 {
 }
 
 .nav_tab_body {
-  padding: 12px 24px 0px 24px;
+  padding: 12px 0px 0px 0px;
 }
 
 .navtab .el-tabs__item:hover {
