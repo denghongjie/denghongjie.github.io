@@ -369,7 +369,7 @@ const navLists=[{
         url:"https://www.luminartech.com/",
     }]
 },{
-    title:"格式工具",
+    title:"格式工具1",
     children:[{
         title:"360字体查询",
         desc:"本地字体在线查询",
