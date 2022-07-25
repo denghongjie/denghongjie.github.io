@@ -73,10 +73,15 @@ h1 {
   height: calc(100vh - 60px);
 }
 
+.el-tabs__content {
+  overflow: inherit;
+}
+
 .grid-content {
   background-color: #fff;
   padding: 10px;
   background: #ecedf0;
+  box-shadow: 5px 5px 10px #d5dae1, -5px -5px 10px white;
   overflow: hidden;
   margin-bottom: 20px;
   border-radius: 10px;

@@ -65,11 +65,15 @@ h1{
 .navbody{
     height: calc(100vh - 60px);
 }
+.el-tabs__content{
+    overflow: inherit;
+}
 .grid-content{
     background-color: #fff;
     padding: 10px;
     background: #ecedf0;
     // box-shadow: 5px 5px 10px rgba(163,177,198,60%), -5px -5px 10px rgba(255, 255, 255,50%);
+    box-shadow: 5px 5px 10px #d5dae1, -5px -5px 10px white;
     overflow: hidden;
     margin-bottom: 20px;
     border-radius: 10px;
