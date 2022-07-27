@@ -151,3 +151,9 @@ h1 {
 .navtab .el-tabs__active-bar {
   background-color: #583cf1;
 }
+
+@media screen and (max-width: 860px) {
+  .baidusearch {
+    width: calc(100vw - 40px);
+  }
+}

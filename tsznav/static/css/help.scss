@@ -138,3 +138,10 @@ h1{
         background-color: $main_color;
     }
 }
+
+@media screen and (max-width:860px) {
+	.baidusearch{
+        width: calc(100vw - 40px);
+    
+    }
+}
