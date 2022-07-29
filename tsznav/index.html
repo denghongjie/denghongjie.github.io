@@ -49,7 +49,7 @@
                             <div class="nav_tab_body" v-for="(navs,index) in tszWeblist" :key="index">
                                 <div class="title">{{navs.title}}</div>
                                 <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                    <el-col :xs="12" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
                                         <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
                                             <a :href="item.url" target="_blank">
                                                 <div class="appimg">
@@ -73,7 +73,7 @@
                             <div class="nav_tab_body" v-for="(navs,index) in threeDlist" :key="index">
                                 <div class="title">{{navs.title}}</div>
                                 <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                    <el-col :xs="12" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
                                         <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
                                             <a :href="item.url" target="_blank">
                                                 <div class="appimg">
