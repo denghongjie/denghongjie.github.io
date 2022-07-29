@@ -106,7 +106,7 @@ h1 {
   z-index: 1;
   top: 0;
   filter: blur(25px);
-  opacity: 0.2;
+  opacity: 0.05;
 }
 
 .grid-content .app_text {
