@@ -100,6 +100,15 @@ h1 {
   width: 100%;
 }
 
+.grid-content .app_bg {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  filter: blur(25px);
+  opacity: 0.2;
+}
+
 .grid-content .app_text {
   padding-left: 50px;
 }

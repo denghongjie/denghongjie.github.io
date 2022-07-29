@@ -116,6 +116,15 @@ h1{
         }
         position: absolute;
         top: 10px;
+        z-index: 2;
+    }
+    .app_bg{
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        filter: blur(25px);
+        opacity: 0.1;
     }
     .app_text{
         padding-left: 50px;
