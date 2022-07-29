@@ -334,6 +334,11 @@ const softwarelist=[{
         imgurl:"./static/img/app/psUiAssistant.png",
         url:"https://www.pslkzs.com/psUiAssistant/index.php",
     },{
+        title:"Eagle破解版",
+        desc:"图像管理",
+        imgurl:"./static/img/app/Eagle.png",
+        url:"https://www.yutu.cn/softhtml/softsetup_4698.html",
+    },{
         title:"NB Map",
         desc:"3D地图在线生成",
         imgurl:"./static/img/app/nbMap.png",
@@ -343,6 +348,14 @@ const softwarelist=[{
         desc:"3D可视化视图",
         imgurl:"./static/img/app/nbPie.png",
         url:"https://www.pslkzs.com/chart/charts.php",
+    }]
+},{
+    title:"AI插件",
+    children:[{
+        title:"subscribe【LOGO描绘线】",
+        desc:"【提取码：CatT】",
+        imgurl:"./static/img/app/Astute.png",
+        url:"https://pan.baidu.com/s/17X06uPA_a66_dLbd6FZ5Xg?pwd=CatT",
     }]
 },{
     title:"C4D专区",
