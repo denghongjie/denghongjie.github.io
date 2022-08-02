@@ -286,14 +286,77 @@
                     </div>
                     
                 </el-tab-pane>
+                <el-tab-pane label="数据中心" name="9">
+                    <div class="navbody-box">
+                        <el-scrollbar  class="noscoll">
+                            <div class="nav_tab_body" v-for="(navs,index) in datalist" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-scrollbar>
+                    </div>
+                    
+                </el-tab-pane>
             </el-tabs>
         </div>
-        
+        <div :class="isShowlastpage?'gg_box gg_open':'gg_box'" >
+            <span class="gg_label" v-show="isShowlastpage" @click="isShowlastpage=false">最近上新</span>
+            <div class="gg_box_header">
+                <h2>最近上新</h2>
+                <span>
+                    <i class="icon iconfont icon-guanbi1" @click="isShowlastpage=true"></i>
+                </span>
+            </div>
+            <ul>
+                <li v-for="(item ,index) in lastapp" :key="item">
+                    <div class="lastapp-item" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                        <a :href="item.url" target="_blank">
+                            <div class="appimg">
+                                <img :src="item.imgurl" alt="">
+                            </div>
+                            <div class="app_bg">
+                                <img :src="item.imgurl" alt="">
+                            </div>
+                            <div class="app_text">
+                                <div class="grid-content_title">
+                                    {{item.title}}
+                                </div>
+                                <div class="desctext">
+                                    {{item.desc}}
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 
 </html>
 <script src="./static/js/data.js"></script>
+<script src="./static/data/logdata.js"></script>
 <script>
     const App = {
         setup() {
@@ -310,6 +373,11 @@
                     iconlists:iconDesigns,
                     viewlists:viewlist,
                     devlists:devlist,
+                    datalist:datalists,
+
+                    // 近期上新
+                    lastapp:lastapps,
+                    isShowlastpage:true
                 }
             }
             const state = reactive(initState());

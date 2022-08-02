@@ -100,6 +100,7 @@ h1{
         padding-left: 50px;
     }
 }
+
 .nav_tab_body{
     padding: 12px 24px 0px 24px;
 }
@@ -123,4 +124,110 @@ h1{
 }
 .noscoll{
     height: 100%;
+}
+.gg_box{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 260px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #dee1e7;
+    &.gg_open{
+        right: -300px;
+    }
+    .gg_label{
+        position: absolute;
+        left: -40px;
+        width: 30px;
+        background-color: #fff;
+        padding: 16px 8px;
+        border-radius: 8px 0 0 8px;
+        cursor: pointer;
+        writing-mode: vertical-lr;
+        letter-spacing: 2px;
+        color: #88899d;
+        transition: ease all 0.5s;
+
+        &:hover{
+            color: $main_color
+        }
+    }
+    .gg_box_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        h2{
+            font-size: 18px;
+        }
+        &>span{
+            cursor: pointer;
+            i{
+                font-size: 18px;
+            }
+            
+        }
+    }
+}
+.lastapp-item{
+    background-color: #fff;
+    padding: 10px;
+    background: #ecedf0;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #333;
+    transition: ease all 0.5s;
+    position: relative;
+    &:hover{
+        transform: scale(1.08);
+        box-shadow: 0 3px 10px #ccc;
+    }
+    a{
+        color: #333;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .grid-content_title{
+        font-size: 14px;
+        -webkit-line-clamp: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .desctext{
+        color: #868686;
+        font-size: 12px;
+        -webkit-line-clamp: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .appimg{
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+        position: absolute;
+        top: 10px;
+    }
+    .app_bg{
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        filter: blur(25px);
+        opacity: 0.05;
+    }
+    .app_text{
+        padding-left: 50px;
+    }
 }

@@ -48,6 +48,26 @@ const designspaces=[{
         desc:"免版权",
         imgurl:"./static/img/app/xttx.jpg",
         url:"https://www.sitapix.com/",
+    },{
+        title:"splitshire",
+        desc:"套图免版权",
+        imgurl:"./static/img/app/splitshire.png",
+        url:"https://www.splitshire.com/",
+    },{
+        title:"OUCH",
+        desc:"ICON8 插画",
+        imgurl:"./static/img/app/ouch.png",
+        url:"https://icons8.com/illustrations",
+    },{
+        title:"pixabay",
+        desc:"免版权",
+        imgurl:"./static/img/app/px.jpg",
+        url:"https://pixabay.com/",
+    },{
+        title:"manypixels",
+        desc:"自定义插画",
+        imgurl:"./static/img/app/manypixels.jpg",
+        url:"https://www.manypixels.co/gallery",
     }]
 },{
     title:"商用字体下载",
@@ -118,6 +138,29 @@ const designspaces=[{
         imgurl:"./static/img/app/webgradients.png",
         url:"https://webgradients.com/",
     }]
+},{
+    title:"动态图标交互【访问慢】",
+    children:[{
+        title:"useanimations",
+        desc:"带动效果的图标",
+        imgurl:"./static/img/app/useanimations.png",
+        url:"https://useanimations.com/#explore",
+    },{
+        title:"Icons8 动画 2.0",
+        desc:"高质量动效图标",
+        imgurl:"./static/img/app/icons8-animate.png",
+        url:"https://igoutu.cn/animated-icons",
+    },{
+        title:"Lordicon",
+        desc:"炫酷动态图标",
+        imgurl:"./static/img/app/lordicon.png",
+        url:"https://lordicon.com/",
+    },{
+        title:"CSS GG",
+        desc:"css绘制图标",
+        imgurl:"./static/img/app/cssgg.png",
+        url:"https://css.gg/app",
+    }]
 }]
 
 
@@ -138,6 +181,11 @@ const navLists=[{
         desc:"AI在线抠图",
         imgurl:"./static/img/app/zuotang.png",
         url:"https://picwish.cn/?apptype=aps-pin",
+    },{
+        title:"Vector Magic",
+        desc:"【非常棒】图片、图标变矢量",
+        imgurl:"./static/img/app/vectormagic.png",
+        url:"https://zh.vectormagic.com/",
     },{
         title:"let's Enhance",
         desc:"模糊图片变清晰",
@@ -353,7 +401,7 @@ const softwarelist=[{
     title:"AI插件",
     children:[{
         title:"subscribe【LOGO描绘线】",
-        desc:"【提取码：CatT】",
+        desc:"提取码：CatT",
         imgurl:"./static/img/app/Astute.png",
         url:"https://pan.baidu.com/s/17X06uPA_a66_dLbd6FZ5Xg?pwd=CatT",
     }]
@@ -372,6 +420,11 @@ const softwarelist=[{
         desc:"办公文档软件",
         imgurl:"./static/img/app/wps.png",
         url:"https://www.wps.cn/",
+    },{
+        title:"Islide",
+        desc:"PPT神器",
+        imgurl:"./static/img/app/islide.jpg",
+        url:"https://www.islide.cc/",
     },{
         title:"everything",
         desc:"快速查找文件资源工具",
@@ -420,6 +473,11 @@ const studylists=[{
         desc:"小莫C4D(20课)",
         imgurl:"./static/img/app/c4d.png",
         url:"https://www.bilibili.com/video/BV1Ws411q7jM?p=1&vd_source=73357f58ec36951707e8dc7f5422e7f6",
+    },{
+        title:"学哟网",
+        desc:"C4D小案例",
+        imgurl:"./static/img/app/xueyouwang.svg",
+        url:"https://www.3dxy.com/3dmax/1_11_0_0_0.html",
     },{
         title:"Blender",
         desc:"官方教程（43课）",
@@ -494,10 +552,10 @@ const designnorm=[{
 },{
     title:"交互体验",
     children:[{
-        title:"C4D",
-        desc:"小莫C4D(20课)",
-        imgurl:"./static/img/app/c4d.png",
-        url:"https://www.bilibili.com/video/BV1Ws411q7jM?p=1&vd_source=73357f58ec36951707e8dc7f5422e7f6",
+        title:"腾讯CDC",
+        desc:"腾讯用户体验调研",
+        imgurl:"./static/img/app/tenxuncdc.png",
+        url:"https://cdc.tencent.com/?ref=sgque.com",
     },{
         title:"Blender",
         desc:"官方教程（43课）",
@@ -550,6 +608,15 @@ const designnorm=[{
         desc:"有赞设计系统",
         imgurl:"./static/img/app/vant3.png",
         url:"https://vant-contrib.gitee.io/vant/#/zh-CN/home",
+    }]
+    
+},{
+    title:"移动交互效果",
+    children:[{
+        title:"UI Movement",
+        desc:"移动端交互动销",
+        imgurl:"./static/img/app/uimovement.png",
+        url:"https://screenlane.com/?ref=uimovement",
     }]
     
 }]
@@ -622,29 +689,6 @@ const iconDesigns=[{
         desc:"IOS app精致图标收集",
         imgurl:"./static/img/app/iosicongallery.png",
         url:"https://www.iosicongallery.com/",
-    }]
-},{
-    title:"动态图标交互【访问慢】",
-    children:[{
-        title:"useanimations",
-        desc:"带动效果的图标",
-        imgurl:"./static/img/app/useanimations.png",
-        url:"https://useanimations.com/#explore",
-    },{
-        title:"Icons8 动画 2.0",
-        desc:"高质量动效图标",
-        imgurl:"./static/img/app/icons8-animate.png",
-        url:"https://igoutu.cn/animated-icons",
-    },{
-        title:"Lordicon",
-        desc:"炫酷动态图标",
-        imgurl:"./static/img/app/lordicon.png",
-        url:"https://lordicon.com/",
-    },{
-        title:"CSS GG",
-        desc:"css绘制图标",
-        imgurl:"./static/img/app/cssgg.png",
-        url:"https://css.gg/app",
     }]
 },{
     title:"LOGO专区",
@@ -721,5 +765,15 @@ const devlist=[{
         desc:"SSL证书",
         imgurl:"./static/img/app/shuzixiangshu.png",
         url:"https://alerts.httpscop.com/",
+    },]
+},]
+
+const datalists=[{
+    title:"在线数据报表参考",
+    children:[{
+        title:"镝数聚",
+        desc:"中国领先的数据综合服务平台",
+        imgurl:"./static/img/app/dishuju.svg",
+        url:"https://dycharts.com/appv2/#/pages/home/index?channelCode=B0S1QDMY&hmsr=cop-dydataio&hmpl=navi&dypos=navi-logo",
     },]
 },]
