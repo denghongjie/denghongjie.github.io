@@ -502,6 +502,14 @@ const studylists=[{
         imgurl:"./static/img/app/spline.png",
         url:"https://space.bilibili.com/2033738697/channel/collectiondetail?sid=394913",
     }]
+},{
+    title:"软件常见问题",
+    children:[{
+        title:"C4D",
+        desc:"C4D入门常见问题",
+        imgurl:"./static/img/app/c4d.png",
+        url:"https://www.jb51.net/softjc/759300.html",
+    }]
 }]
 
 const designnorm=[{
