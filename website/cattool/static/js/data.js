@@ -70,6 +70,14 @@ const designspaces=[{
         url:"https://www.manypixels.co/gallery",
     }]
 },{
+    title:"PNG 透明素材",
+    children:[{
+        title:"clipartmax",
+        desc:"免版权 【元素素材】",
+        imgurl:"./static/img/app/clipartmax.png",
+        url:"https://www.clipartmax.com/",
+    }]
+},{
     title:"商用字体下载",
     children:[{
         title:"思源黑体",
@@ -242,6 +250,11 @@ const navLists=[{
         desc:"在线转换格式转换",
         imgurl:"./static/img/app/convertio.png",
         url:"https://convertio.co/zh/",
+    },{
+        title:"SooGif",
+        desc:"GIF工具箱，收费",
+        imgurl:"./static/img/app/soogif.png",
+        url:"https://www.soogif.com/gifTool",
     }]
 },{
     title:"格式工具",
@@ -557,15 +570,35 @@ const designnorm=[{
         imgurl:"./static/img/app/tenxuncdc.png",
         url:"https://cdc.tencent.com/?ref=sgque.com",
     },{
-        title:"Blender",
-        desc:"官方教程（43课）",
-        imgurl:"./static/img/app/blender.png",
-        url:"https://www.bilibili.com/video/BV1S7411x7tj?spm_id_from=333.337.search-card.all.click&vd_source=73357f58ec36951707e8dc7f5422e7f6",
+        title:"腾讯ISUX",
+        desc:"腾讯社交用户体验",
+        imgurl:"./static/img/app/tenxunisux.png",
+        url:"https://isux.tencent.com/",
     },{
-        title:"Spline",
-        desc:"Spline新手入门（13课）",
-        imgurl:"./static/img/app/spline.png",
-        url:"https://space.bilibili.com/2033738697/channel/collectiondetail?sid=394913",
+        title:"阿里EDX",
+        desc:"阿里2000名设计师交流平台",
+        imgurl:"./static/img/app/alidesign.png",
+        url:"https://www.alibabadesign.com/",
+    },{
+        title:"阿里妈妈MUX",
+        desc:"移动端用户体验中心",
+        imgurl:"./static/img/app/alimamamux.png",
+        url:"https://mux.alimama.com/",
+    },{
+        title:"百度EUX",
+        desc:"百度用户体验中心",
+        imgurl:"./static/img/app/baidueux.png",
+        url:"http://eux.baidu.com/",
+    },{
+        title:"京东JDR",
+        desc:"京东创新设计体验-零售",
+        imgurl:"./static/img/app/jingdongjdr.png",
+        url:"https://jelly.jd.com/",
+    },{
+        title:"网易游戏设计中心",
+        desc:"游戏设计",
+        imgurl:"./static/img/app/egdc.png",
+        url:"http://egdc.163.com/",
     }]
 },{
     title:"UI框架-PC",
