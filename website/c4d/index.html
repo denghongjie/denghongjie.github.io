@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="./static/css/base.css" rel="stylesheet"> -->
+    <link href="./static/css/element@2.2.6.css" rel="stylesheet">
+    <script src="./static/js/vue@3.2.36.js"></script>
+    <script src="./static/js/elementPlus@2.2.6.js"></script>
+    <script src="./static/js/elementPlus-zhcn.js"></script>
+    <script src="./static/js/elementPlusIcon@2.0.4.js"></script>
+    <script src="./static/js/init.js"></script>
+    <title>C4D 资源</title>
+    <link href="./static/css/common.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="./static/css/fonts/iconfont.css">
+    <link rel="stylesheet" href="./static/css/iconfonts/iconfont.css">
+    <link href="./static/css/help.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="imgs/favicon.ico">
+</head>
+
+<body>
+    <div id="app">
+        <div class="navheader">
+            <div class="logobox" >
+                <!-- <a href=""><img src="./static/img/navbar.png" alt=""></a> -->
+                <h1><span>C4D -</span> tools</h1>
+            </div>
+        </div>
+        <div class="navbody">
+            <el-tabs v-model="activeName" class="demo-tabs navtab" tab-position="left" @tab-click="handleClick" >
+                <el-tab-pane label="技巧学习" name="1">
+                    <div class="navbody-box">
+                        <el-scrollbar  class="noscoll">
+                            <div class="nav_tab_body" v-for="(navs,index) in skilllists" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="24" :sm="12" :md="6" :lg="6" :xl="4" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div v-if="item.ishot" class="label_top">
+                                                    <span>推荐</span>
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-scrollbar>
+                    </div>
+                    
+                </el-tab-pane>
+                <el-tab-pane label="案例教程" name="2">
+                    <div class="navbody-box">
+                        <el-scrollbar  class="noscoll">
+                            <div class="nav_tab_body" v-for="(navs,index) in cases" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="24" :sm="12" :md="6" :lg="6" :xl="4" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-scrollbar>
+                    </div>
+                    
+                </el-tab-pane>
+                <el-tab-pane label="插件教程" name="3">
+                    <div class="navbody-box">
+                        <el-scrollbar  class="noscoll">
+                            <div class="nav_tab_body" v-for="(navs,index) in pluginLists" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="24" :sm="12" :md="6" :lg="6" :xl="4" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-scrollbar>
+                    </div>
+                    
+                </el-tab-pane>
+                <el-tab-pane label="模板下载" name="4">
+                    <div class="navbody-box">
+                        <el-scrollbar  class="noscoll">
+                            <div class="nav_tab_body" v-for="(navs,index) in c4dmodels" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="24" :sm="12" :md="6" :lg="6" :xl="4" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-scrollbar>
+                    </div>
+                    
+                </el-tab-pane>
+            </el-tabs>
+        </div>
+        <div :class="isShowlastpage?'gg_box gg_open':'gg_box'" v-if="false">
+            <span class="gg_label" v-show="isShowlastpage" @click="isShowlastpage=false">最近上新</span>
+            <div class="gg_box_header">
+                <h2>最近上新</h2>
+                <span>
+                    <i class="icon iconfont icon-guanbi1" @click="isShowlastpage=true"></i>
+                </span>
+            </div>
+            <ul>
+                <li v-for="(item ,index) in lastapp" :key="item">
+                    <div class="lastapp-item" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                        <a :href="item.url" target="_blank">
+                            <div class="appimg">
+                                <img :src="item.imgurl" alt="">
+                            </div>
+                            <div class="app_bg">
+                                <img :src="item.imgurl" alt="">
+                            </div>
+                            <div class="app_text">
+                                <div class="grid-content_title">
+                                    {{item.title}}
+                                </div>
+                                <div class="desctext">
+                                    {{item.desc}}
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./static/data/testData.js"></script>
+<script src="./static/data/logdata.js"></script>
+<script>
+    const App = {
+        setup() {
+            const { proxy } = getCurrentInstance();
+            const { computed} = Vue;
+            function initState() {
+                return {
+                    activeName:'1',
+                    skilllists:skilllist,
+                    cases:caselist,
+                    pluginLists:pluginList,
+                    c4dmodels:c4dmodel,
+                    // 近期上新
+                    lastapp:lastapps,
+                    isShowlastpage:true
+                }
+            }
+            const state = reactive(initState());
+            const newName = computed(() => {
+                  
+            })
+            function handleClick (tab, event) {
+                console.log(tab, event)
+            }
+            return {
+                ...toRefs(state),
+                handleClick
+            }
+        }
+    }
+    mountApp(App);
+</script>

@@ -88,7 +88,7 @@ const designspaces=[{
         title:"思源宋体",
         desc:"提取码：tob1",
         imgurl:"./static/img/app/syst.png",
-        url:"https://source.typekit.com/source-han-serif/cn/",
+        url:"https://tinypng.com/",
     },{
         title:"阿里巴巴普惠字体",
         desc:"阿里字体",
@@ -491,11 +491,6 @@ const studylists=[{
         desc:"C4D小案例",
         imgurl:"./static/img/app/xueyouwang.svg",
         url:"https://www.3dxy.com/3dmax/1_11_0_0_0.html",
-    },{
-        title:"C4D Tools",
-        desc:"C4D工具箱",
-        imgurl:"./static/img/app/c4d.png",
-        url:"../c4d/index.html",
     },{
         title:"Blender",
         desc:"官方教程（43课）",
