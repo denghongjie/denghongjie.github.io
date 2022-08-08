@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/element@2.2.6.css" rel="stylesheet">
+    <script src="./static/js/vue@3.2.36.js"></script>
+    <script src="./static/js/elementPlus@2.2.6.js"></script>
+    <script src="./static/js/elementPlus-zhcn.js"></script>
+    <script src="./static/js/elementPlusIcon@2.0.4.js"></script>
+    <script src="./static/js/init.js"></script>
+    <title>大平台官网</title>
+    <link rel="stylesheet" href="./static/css/fonts/iconfont.css">
+    <link rel="stylesheet" href="./static/css/iconfonts/iconfont.css">
+    <link href="./static/css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="./static/css/screen.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="t_headerbox">
+                <div class="t_header">
+                    <!-- <img src="./static/img/tszlogo.png" alt="" height="40"> -->
+                    <img src="./static/img/logo_b.png" alt="" >
+                    <!-- <span>设计企业微管理平台</span> -->
+                </div>
+                <div class="t_nav">
+                    <ul>
+                        <a href=""><li><span>平台介绍</span> </li></a>
+                        <a href=""><li><span>解决方案</span></li></a>
+                        <a href=""><li><span>帮助中心</span></li></a>
+                        <a href=""><li><span>建议反馈</span></li></a>
+                        <a href=""><li><span>登录</span></li></a>
+                    </ul>
+                </div>
+            </div>解决方
+        </header>
+        <section>
+            <div class="t_bannerbox">
+                <img src="./static/img/banner.png" alt="">
+                <div class="t_masklayer"></div>
+                <div class="t_slogo">
+                    <div class="t_main_warp">
+                        <h2>设计企业微管理平台</h2>
+                        <span>企业级设计管理体系</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="t-body">
+            <div class="t_main_warp">
+                <el-row :gutter="20">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8" v-for="(item,index) in carddatas" :key="index">
+                        <div class="t_model_box">
+                            <span class="t_mb_toplabel">{{item.labeltip}}</span>
+                            <h1 class="t_mb_title">{{item.sulutiontitle}}</h1>
+                            <div class="t_mb_toprightimg">
+                                <img :src="item.blockimg" alt="">
+                            </div>
+                            <div>
+                                <div class="t_mb_appbox" v-for="(block,idx) in item.blocklist" :key="idx">
+                                    <span class="t_mb_applabel">{{block.labeltip}}</span>
+                                    <div class="t_mb_app_ul">
+                                        <el-row :gutter="10">
+                                            <el-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12" v-for="(app,i) in block.allitems" :key="i">
+                                                <div  class="t_mb_app_li">
+                                                    <div class="t_mb_app_imgbox">
+                                                        <img :src="app.img" alt="">
+                                                    </div>
+                                                    <div class="t_mb_app_textbox">
+                                                        <span class="t_mb_app_title">{{app.name}}</span>
+                                                        <em class="t_mb_tag t_tag_bg1">{{app.vision}}</em>
+                                                    </div>
+                                                </div>
+                                             </el-col>
+                                        </el-row>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t_mb_box_bg t_box_bg1" :class="`t_box_bg${index}`"></div>
+                        </div>
+                    </el-col>
+                </el-row>
+            </div>
+            <!--  -->
+            <div class="t_main_section">
+                <div class="t_main_warp">
+                    <div class="t_section">
+                        <div class="t_rowitem">
+                            <el-row :gutter="20">
+                                <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
+                                    <div class="t_section_left">
+                                        <h2 class="tsf_title">创新</h2>
+                                        <div class="tsf_line"></div>
+                                        <div class="tsf_text">
+                                            <h4>聚焦行业实用经验</h4>
+                                            <div class="tsf_text_desc">
+                                                采用分布式管理经验，始终保持开放的心态，建立优质管理系统。
+                                            </div>
+                                            <a href="" class="tiyanbtn">立即体验</a>
+                                        </div>
+                                    </div>
+                                </el-col>
+                                <el-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
+                                    <div class="t_section_right">
+                                        <div class="t_sectimg_picbox"></div>
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="t_main_section2">
+                <h1>先进企业的选择</h1>
+                <div>
+                </div>
+            </div> -->
+        </section>
+        <section class="t-footer">
+            <div class="t_main_warp">
+                <footer>
+                    <el-row :gutter="20">
+                        <el-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
+                            <div class="t_mb_alllinkbox">
+                                <div class="t_mb_linkbox">
+                                    <h5>资源</h5>
+                                    <ul>
+                                        <li>帮助中心</li>
+                                        <li>视频教程</li>
+                                        <li>软件下载</li>
+                                        <li>文档资源</li>
+                                    </ul>
+                                </div>
+                                <div class="t_mb_linkbox">
+                                    <h5>链接</h5>
+                                    <ul>
+                                        <li>探索者软件</li>
+                                        <li>云注科技</li>
+                                        <li>BIMBang</li>
+                                        <li>工程易览PDF</li>
+                                    </ul>
+                                </div>
+                                <div class="t_mb_linkbox">
+                                    <h5>我们</h5>
+                                    <ul>
+                                         <li>关于</li> 
+                                        <!-- <li>意见反馈</li> -->
+                                        <!-- <li>加入我们</li> -->
+                                        <li>意见反馈</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </el-col>
+                        <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
+                            <div class="t_mb_qrbox" style="float: right;">
+                                <div class="t_mb_qrimgbox">
+                                    <img src="./static/img/TSZ.png"/>
+                                </div>
+                                <div class="t_mb_qrtextbox" >
+                                    <h4>企业公众号</h4>
+                                    <p>欢迎微信扫码联系我们</p>
+                                </div>
+                            </div>
+                        </el-col>
+                    </el-row>
+                </footer>
+            </div>
+            <div class="t_mb_Copyright">
+                <div>Copyright &copy; 2022 Explorer Software. All Rights Reserved. 探索者软件 版权所有</div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+<script src="./static/data/testData.js"></script>
+<script>
+
+    const App = {
+        setup() {
+            const { proxy } = getCurrentInstance();
+            const { computed} = Vue;
+            function initState() {
+                return {
+                    carddatas:carddata
+                    
+                }
+            }
+            const state = reactive(initState());
+            return {
+                ...toRefs(state),
+            }
+        }
+    }
+    mountApp(App);
+</script>

@@ -1,0 +1,26 @@
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .t_main_warp {
+    width: 1200px;
+  }
+  .t_bannerbox {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .t_main_warp {
+    width: 1000px;
+  }
+  .t_bannerbox {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .t_main_warp {
+    width: calc(100vw - 40px);
+  }
+  .t_bannerbox {
+    height: 500px;
+  }
+}
