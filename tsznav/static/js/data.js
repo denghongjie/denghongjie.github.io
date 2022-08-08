@@ -22,7 +22,7 @@ const tszWeblists=[{
         title:"大平台",
         desc:"探索者微管理平台",
         imgurl:"./static/img/app/dapingtai.png",
-        url:"https://www.tszcloud.com.cn/login",
+        url:"https://www.navbar.site/website/tszcloud/index.html",
     },{
         title:"易批注",
         desc:"易批注软件官网",
