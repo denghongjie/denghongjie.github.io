@@ -361,11 +361,59 @@ a {
 }
 
 .t_sectimg_picbox {
-  height: 400px;
   background-color: #f1f2f5;
   border-radius: 6px;
   border: 1px solid #e7e7e7;
+  overflow: hidden;
   box-shadow: 0px 50px 100px -12px rgba(0, 0, 0, 0.05), 0px 30px 60px -30px rgba(0, 0, 0, 0.1);
+}
+
+.t_sectimg_picbox .tsp_page1 {
+  height: 260px;
+  background-color: #fff;
+}
+
+.t_sectimg_picbox .tsp_page1.tsp_pagebg_1 {
+  background-color: #0052d9;
+}
+
+.t_sectimg_picbox .tsp_page1.tsp_pagebg_2 {
+  background-color: #536178;
+}
+
+.t_sectimg_picbox .tsp_page1.tsp_pagebg_3 {
+  background-color: #fff;
+}
+
+.t_sectimg_picbox .tsp_page1.tsp_pagebg_4 {
+  background-color: #0052d9;
+}
+
+.t_sectimg_picbox .tsp_line {
+  background: linear-gradient(90deg, #0052d9, #fff);
+  height: 6px;
+}
+
+.t_sectimg_picbox .tsp_textbox {
+  padding: 36px;
+}
+
+.t_sectimg_picbox .tsp_textbox .tsp_textbox_title i {
+  display: block;
+  font-size: 32px;
+}
+
+.t_sectimg_picbox .tsp_textbox .tsp_textbox_title span {
+  font-size: 16px;
+  margin-bottom: 20px;
+  display: block;
+  margin-top: 10px;
+}
+
+.t_sectimg_picbox .tsp_textbox .tsp_textbox_desc {
+  font-size: 13px;
+  line-height: 22px;
+  color: #616161;
 }
 
 .tiyanbtn {

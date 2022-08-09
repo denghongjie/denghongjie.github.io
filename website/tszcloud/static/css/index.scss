@@ -319,11 +319,52 @@ a{
 }
 
 .t_sectimg_picbox{
-    height: 400px;
+    // height: 500px;
     background-color: #f1f2f5;
     border-radius: 6px;
     border: 1px solid #e7e7e7;
+    overflow: hidden;
     box-shadow: 0px 50px 100px -12px rgba(0,0,0,.05),0px 30px 60px -30px rgba(0,0,0,.1);
+    .tsp_page1{
+        height: 260px;
+        background-color: #fff;
+        &.tsp_pagebg_1{
+            background-color: #0052d9;
+        }
+        &.tsp_pagebg_2{
+            background-color: #536178;
+        }
+        &.tsp_pagebg_3{
+            background-color: #fff;
+        }
+        &.tsp_pagebg_4{
+            background-color: #0052d9;
+        }
+    }
+    .tsp_line{
+        background: linear-gradient(90deg,#0052d9,#fff);
+        height: 6px;
+    }
+    .tsp_textbox{
+        padding: 36px;
+        .tsp_textbox_title{
+            i{
+                display: block;
+                font-size: 32px;
+            }
+            span{
+                font-size: 16px;
+                margin-bottom: 20px;
+                display: block;
+                margin-top: 10px;
+            }
+        }
+        .tsp_textbox_desc{
+            font-size: 13px;
+            line-height: 22px;
+            color: #616161;
+        }
+    }
 }
 .tiyanbtn{
     width: 200px;
