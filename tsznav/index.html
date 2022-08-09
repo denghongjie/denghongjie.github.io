@@ -99,6 +99,59 @@
                                 </el-row>
                             </div>
                         </el-tab-pane>
+                        <el-tab-pane label="文档资源" name="3">
+                            <div class="nav_tab_body" v-for="(navs,index) in filelist" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="12" :sm="6" :md="6" :lg="6" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple largeblock" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg" :style="`background-color: ${item.bgcolor};`">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                                <a  :href="item.url" target="_blank" class="downfilebtn"> <i class="icon iconfont full-icon-icon_634"></i> 下载PDF</a>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-tab-pane>
+                        <el-tab-pane label="视频资源" name="4">
+                            <div class="nav_tab_body" v-for="(navs,index) in vediolist" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="12" :sm="6" :md="6" :lg="6" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple largeblock" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg" :style="`background-color: ${item.bgcolor};`">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                                <div class="bofang">
+                                                    <i class="icon iconfont full-icon-icon_205"></i>
+                                                </div>
+                                                <!-- <a  :href="item.url" target="_blank" class="downfilebtn"> <i class="icon iconfont full-icon-icon_634"></i> 下载PDF</a> -->
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-tab-pane>
                     </el-tabs>
                 </div>
             </el-scrollbar>
@@ -118,6 +171,8 @@
                     activeName:'1',
                     tszWeblist:tszWeblists,
                     threeDlist:threeDlists,
+                    filelist:filelists,
+                    vediolist:vediolists,
                     searchvalue:''
                 }
             }

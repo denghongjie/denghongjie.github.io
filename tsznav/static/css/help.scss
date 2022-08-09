@@ -84,6 +84,64 @@ h1{
 
         background-color: #fff;
     }
+    &.largeblock{
+        .appimg{
+            position: relative;
+            width: auto;
+            height: 90px;
+            top: 0;
+        }
+        .app_text{
+            padding-left: 0;
+            margin-top: 10px;
+            position: absolute;
+            top: 10px;
+            z-index: 2;
+            left: 20px;
+            .grid-content_title{
+                font-size: 18px;
+                font-weight: 400;
+                color: #000;
+            }
+            .desctext{
+                color: rgba(0,0,0,0.5);
+            }
+        }
+        .downfilebtn{
+            font-size: 14px;
+            padding: 5px 10px;
+            background-color: #e4e4e9;
+            border-radius: 5px;
+            color: #583cf1;
+            text-align: center;
+            transition: ease all 0.5s;
+            &:hover{
+                color: #fff;
+                background-color: #583cf1;
+            }
+        }
+        .bofang{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            width: 32px;
+            // background-color: #fff;
+            margin-left: -16px;
+            z-index: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-overflow: 0 0 5px #ccc;
+            transition: ease all 0.5s;
+            .icon{
+                font-size: 45px;
+            }
+            &:hover{
+                transform: rotate(360deg);
+            }
+        }
+    }
     a{
         color: #333;
         display: block;

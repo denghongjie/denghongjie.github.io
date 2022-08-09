@@ -464,3 +464,12 @@ a {
   font-size: 12px;
   color: rgba(0, 0, 0, 0.4);
 }
+
+.tms_page2 {
+  margin-top: 0;
+  background-color: transparent;
+}
+
+.tms_page3 {
+  margin-top: 0;
+}

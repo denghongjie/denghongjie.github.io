@@ -12,6 +12,9 @@
     <script src="./static/js/elementPlusIcon@2.0.4.js"></script>
     <script src="./static/js/init.js"></script>
     <title>大平台官网</title>
+    <link href="./static/css/animate-css/animate.css" rel="stylesheet">
+    <script src="./static/css/animate-css/wow.min.js"></script> 
+
     <link rel="stylesheet" href="./static/css/fonts/iconfont.css">
     <link rel="stylesheet" href="./static/css/iconfonts/iconfont.css">
     <link href="./static/css/index.css" rel="stylesheet" type="text/css"/>
@@ -92,7 +95,7 @@
                         <div class="t_rowitem">
                             <el-row :gutter="20">
                                 <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
-                                    <div class="t_section_left">
+                                    <div class="t_section_left wow slideInLeft">
                                         <h2 class="tsf_title">创新</h2>
                                         <div class="tsf_line"></div>
                                         <div class="tsf_text">
@@ -105,7 +108,63 @@
                                     </div>
                                 </el-col>
                                 <el-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
-                                    <div class="t_section_right">
+                                    <div class="t_section_right wow slideInRight">
+                                        <div class="t_sectimg_picbox"></div>
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="t_main_section tms_page2">
+                <div class="t_main_warp">
+                    <div class="t_section">
+                        <div class="t_rowitem">
+                            <el-row :gutter="20">
+                                <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
+                                    <div class="t_section_left wow slideInLeft">
+                                        <h2 class="tsf_title">创新</h2>
+                                        <div class="tsf_line"></div>
+                                        <div class="tsf_text">
+                                            <h4>聚焦行业实用经验</h4>
+                                            <div class="tsf_text_desc">
+                                                采用分布式管理经验，始终保持开放的心态，建立优质管理系统。
+                                            </div>
+                                            <a href="" class="tiyanbtn">立即体验</a>
+                                        </div>
+                                    </div>
+                                </el-col>
+                                <el-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
+                                    <div class="t_section_right wow slideInRight">
+                                        <div class="t_sectimg_picbox"></div>
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="t_main_section tms_page3">
+                <div class="t_main_warp">
+                    <div class="t_section">
+                        <div class="t_rowitem">
+                            <el-row :gutter="20">
+                                <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
+                                    <div class="t_section_left wow slideInLeft">
+                                        <h2 class="tsf_title">创新</h2>
+                                        <div class="tsf_line"></div>
+                                        <div class="tsf_text">
+                                            <h4>聚焦行业实用经验</h4>
+                                            <div class="tsf_text_desc">
+                                                采用分布式管理经验，始终保持开放的心态，建立优质管理系统。
+                                            </div>
+                                            <a href="" class="tiyanbtn">立即体验</a>
+                                        </div>
+                                    </div>
+                                </el-col>
+                                <el-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
+                                    <div class="t_section_right wow slideInRight">
                                         <div class="t_sectimg_picbox"></div>
                                     </div>
                                 </el-col>
@@ -138,10 +197,10 @@
                                 <div class="t_mb_linkbox">
                                     <h5>链接</h5>
                                     <ul>
-                                        <li>探索者软件</li>
-                                        <li>云注科技</li>
-                                        <li>BIMBang</li>
-                                        <li>工程易览PDF</li>
+                                        <a href="https://www.tsz.com.cn/Index.jsp"><li>探索者软件</li></a>
+                                        <a href="https://yunzhukeji.cn/"><li>云注科技</li></a>
+                                        <a href="https://bang.yunzhukeji.cn/"><li>BIMBang</li></a>
+                                        <a href="https://gcyl.yunzhukeji.cn/"><li>工程易览PDF</li></a>
                                     </ul>
                                 </div>
                                 <div class="t_mb_linkbox">
@@ -191,6 +250,23 @@
                 }
             }
             const state = reactive(initState());
+            onMounted(()=>{
+                var wow = new WOW(
+                    {
+                        boxClass:     'wow',      // animated element css class (default is wow)
+                        animateClass: 'animated', // animation css class (default is animated)
+                        offset:       0,          // distance to the element when triggering the animation (default is 0)
+                        mobile:       true,       // trigger animations on mobile devices (default is true)
+                        live:         true,       // act on asynchronously loaded content (default is true)
+                        callback:     function(box) {
+                        // the callback is fired every time an animation is started
+                        // the argument that is passed in is the DOM node being animated
+                        },
+                        scrollContainer: null // optional scroll container selector, otherwise use window
+                    }
+                    );
+                    wow.init();
+            })
             return {
                 ...toRefs(state),
             }
