@@ -75,7 +75,11 @@
                                                     </div>
                                                     <div class="t_mb_app_textbox">
                                                         <span class="t_mb_app_title">{{app.name}}</span>
-                                                        <em class="t_mb_tag t_tag_bg1">{{app.vision}}</em>
+                                                        <em class="t_mb_tag t_tag_bg1" v-if="app.type==1">{{app.vision}}</em>
+                                                        <em class="t_mb_tag t_tag_bg2" v-if="app.type==2">{{app.vision}}</em>
+                                                        <em class="t_mb_tag t_tag_bg3" v-if="app.type==3">{{app.vision}}</em>
+                                                        <em class="t_mb_tag t_tag_bg4" v-if="app.type==4">{{app.vision}}</em>
+                                                        <em class="t_mb_tag t_tag_bg5" v-if="app.type==5">{{app.vision}}</em>
                                                     </div>
                                                 </div>
                                              </el-col>
@@ -99,16 +103,16 @@
                                         <h2 class="tsf_title">创新</h2>
                                         <div class="tsf_line"></div>
                                         <div class="tsf_text">
-                                            <h4>聚焦行业实用经验</h4>
+                                            <h4>分布建设，智能管理</h4>
                                             <div class="tsf_text_desc">
-                                                采用分布式管理经验，始终保持开放的心态，建立优质管理系统。
+                                                聚焦行业实用经验，采用分布式管理经验，降低管理成本，建立优质可靠管理的系统。
                                             </div>
                                             <a href="" class="tiyanbtn">立即体验</a>
                                         </div>
                                     </div>
                                 </el-col>
                                 <el-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
-                                    <div class="t_section_right wow slideInRight">
+                                    <div class="t_section_right wow slideInUp">
                                         <div class="t_sectimg_picbox">
                                             <div class="tsp_page1  tsp_pagebg_1"></div>
                                             <div class="tsp_line"></div>
@@ -116,29 +120,29 @@
                                                 <el-row :gutter="20">
                                                     <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
                                                         <div class="tsp_textbox_title">
-                                                            <i class="icon iconfont full-icon-icon_254"></i>
-                                                            <span>可扩展的设计风格</span>
+                                                            <i class="icon iconfont full-icon-icon_727"></i>
+                                                            <span>平台</span>
                                                         </div>
                                                         <div class="tsp_textbox_desc">
-                                                            将设计样式抽离为 Design Token ，满足不同产品的品牌定制需求
+                                                            企业大数据信息化平台建设，提供企业信息化建设、数字化转型的基础支持
                                                         </div>
                                                     </el-col>
                                                     <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
                                                         <div class="tsp_textbox_title">
-                                                            <i class="icon iconfont full-icon-icon_254"></i>
-                                                            <span>可扩展的设计风格</span>
+                                                            <i class="icon iconfont full-icon-icon_726"></i>
+                                                            <span>工具</span>
                                                         </div>
                                                         <div class="tsp_textbox_desc">
-                                                            将设计样式抽离为 Design Token ，满足不同产品的品牌定制需求
+                                                            通过平台发布高效优质的设计工具软件，提升用户设计效率，确保设计质量。
                                                         </div>
                                                     </el-col>
                                                     <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
                                                         <div class="tsp_textbox_title">
-                                                            <i class="icon iconfont full-icon-icon_254"></i>
-                                                            <span>可扩展的设计风格</span>
+                                                            <i class="icon iconfont full-icon-icon_238"></i>
+                                                            <span>管理</span>
                                                         </div>
                                                         <div class="tsp_textbox_desc">
-                                                            将设计样式抽离为 Design Token ，满足不同产品的品牌定制需求
+                                                            提倡过程留痕，结果管理。设计工具汇集企业大数据，以大数据为支撑，驱动设计企业智能管理。
                                                         </div>
                                                     </el-col>
                                                 </el-row>
@@ -158,19 +162,19 @@
                             <el-row :gutter="20">
                                 <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
                                     <div class="t_section_left wow slideInLeft">
-                                        <h2 class="tsf_title">创新</h2>
+                                        <h2 class="tsf_title">专业</h2>
                                         <div class="tsf_line"></div>
                                         <div class="tsf_text">
-                                            <h4>聚焦行业实用经验</h4>
+                                            <h4>工具专业，二三维一体</h4>
                                             <div class="tsf_text_desc">
-                                                采用分布式管理经验，始终保持开放的心态，建立优质管理系统。
+                                              专注设计软件研发20余年，集成多项智能设计-智能管理技术，提供高效优质的设计-管理工具软件。  
                                             </div>
                                             <a href="" class="tiyanbtn">立即体验</a>
                                         </div>
                                     </div>
                                 </el-col>
                                 <el-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
-                                    <div class="t_section_right wow slideInRight">
+                                    <div class="t_section_right wow slideInUp">
                                         <div class="t_sectimg_picbox">
                                             <div class="tsp_page1 tsp_pagebg_2"></div>
                                             <div class="tsp_line"></div>
@@ -178,29 +182,29 @@
                                                 <el-row :gutter="20">
                                                     <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
                                                         <div class="tsp_textbox_title">
-                                                            <i class="icon iconfont full-icon-icon_254"></i>
-                                                            <span>可扩展的设计风格</span>
+                                                            <i class="icon iconfont full-icon-icon_719"></i>
+                                                            <span>CAD二维结构设计-智能校审</span>
                                                         </div>
                                                         <div class="tsp_textbox_desc">
-                                                            将设计样式抽离为 Design Token ，满足不同产品的品牌定制需求
+                                                            TSSD结构设计系列软件-结构智能校审软件专注行业20余年。
                                                         </div>
                                                     </el-col>
                                                     <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
                                                         <div class="tsp_textbox_title">
-                                                            <i class="icon iconfont full-icon-icon_254"></i>
-                                                            <span>可扩展的设计风格</span>
+                                                            <i class="icon iconfont full-icon-icon_142"></i>
+                                                            <span>BIM设计-数字化设计</span>
                                                         </div>
                                                         <div class="tsp_textbox_desc">
-                                                            将设计样式抽离为 Design Token ，满足不同产品的品牌定制需求
+                                                            BIM全专业正向设计-国产数字化三维设计平台，行业领先。
                                                         </div>
                                                     </el-col>
                                                     <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
                                                         <div class="tsp_textbox_title">
-                                                            <i class="icon iconfont full-icon-icon_254"></i>
-                                                            <span>可扩展的设计风格</span>
+                                                            <i class="icon iconfont full-icon-icon_357"></i>
+                                                            <span>二三维一体化协同</span>
                                                         </div>
                                                         <div class="tsp_textbox_desc">
-                                                            将设计样式抽离为 Design Token ，满足不同产品的品牌定制需求
+                                                            设计企业信息化建设新风向。
                                                         </div>
                                                     </el-col>
                                                 </el-row>
@@ -220,19 +224,19 @@
                             <el-row :gutter="20">
                                 <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
                                     <div class="t_section_left wow slideInLeft">
-                                        <h2 class="tsf_title">创新</h2>
+                                        <h2 class="tsf_title">开放</h2>
                                         <div class="tsf_line"></div>
                                         <div class="tsf_text">
-                                            <h4>聚焦行业实用经验</h4>
+                                            <h4>架构先进，包容开放</h4>
                                             <div class="tsf_text_desc">
-                                                采用分布式管理经验，始终保持开放的心态，建立优质管理系统。
+                                                采用前后端分离、微服务、数据中台等技术，支持企业大数据，支持企业定制开发与平台对接。
                                             </div>
                                             <a href="" class="tiyanbtn">立即体验</a>
                                         </div>
                                     </div>
                                 </el-col>
                                 <el-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
-                                    <div class="t_section_right wow slideInRight">
+                                    <div class="t_section_right wow slideInUp">
                                         <div class="t_sectimg_picbox">
                                             <div class="tsp_page1 tsp_pagebg_3"></div>
                                             <div class="tsp_line"></div>
@@ -240,91 +244,29 @@
                                                 <el-row :gutter="20">
                                                     <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
                                                         <div class="tsp_textbox_title">
-                                                            <i class="icon iconfont full-icon-icon_254"></i>
-                                                            <span>可扩展的设计风格</span>
+                                                            <i class="icon iconfont full-icon-icon_476"></i>
+                                                            <span>平台接口</span>
                                                         </div>
                                                         <div class="tsp_textbox_desc">
-                                                            将设计样式抽离为 Design Token ，满足不同产品的品牌定制需求
+                                                            支持平台数据对接，打通数据孤岛。
                                                         </div>
                                                     </el-col>
                                                     <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
                                                         <div class="tsp_textbox_title">
-                                                            <i class="icon iconfont full-icon-icon_254"></i>
-                                                            <span>可扩展的设计风格</span>
+                                                            <i class="icon iconfont full-icon-icon_736"></i>
+                                                            <span>工具开发包</span>
                                                         </div>
                                                         <div class="tsp_textbox_desc">
-                                                            将设计样式抽离为 Design Token ，满足不同产品的品牌定制需求
+                                                            支持用户对CAD插件、BIM插件，数字化设计插件，轻量化平台的自定义二次开发。
                                                         </div>
                                                     </el-col>
                                                     <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
                                                         <div class="tsp_textbox_title">
-                                                            <i class="icon iconfont full-icon-icon_254"></i>
-                                                            <span>可扩展的设计风格</span>
+                                                            <i class="icon iconfont full-icon-icon_487"></i>
+                                                            <span>企业定制</span>
                                                         </div>
                                                         <div class="tsp_textbox_desc">
-                                                            将设计样式抽离为 Design Token ，满足不同产品的品牌定制需求
-                                                        </div>
-                                                    </el-col>
-                                                </el-row>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </el-col>
-                            </el-row>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="t_main_section tms_page2">
-                <div class="t_main_warp">
-                    <div class="t_section">
-                        <div class="t_rowitem">
-                            <el-row :gutter="20">
-                                <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
-                                    <div class="t_section_left wow slideInLeft">
-                                        <h2 class="tsf_title">创新</h2>
-                                        <div class="tsf_line"></div>
-                                        <div class="tsf_text">
-                                            <h4>聚焦行业实用经验</h4>
-                                            <div class="tsf_text_desc">
-                                                采用分布式管理经验，始终保持开放的心态，建立优质管理系统。
-                                            </div>
-                                            <a href="" class="tiyanbtn">立即体验</a>
-                                        </div>
-                                    </div>
-                                </el-col>
-                                <el-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
-                                    <div class="t_section_right wow slideInRight">
-                                        <div class="t_sectimg_picbox">
-                                            <div class="tsp_page1 tsp_pagebg_4"></div>
-                                            <div class="tsp_line"></div>
-                                            <div class="tsp_textbox">
-                                                <el-row :gutter="20">
-                                                    <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
-                                                        <div class="tsp_textbox_title">
-                                                            <i class="icon iconfont full-icon-icon_254"></i>
-                                                            <span>可扩展的设计风格</span>
-                                                        </div>
-                                                        <div class="tsp_textbox_desc">
-                                                            将设计样式抽离为 Design Token ，满足不同产品的品牌定制需求
-                                                        </div>
-                                                    </el-col>
-                                                    <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
-                                                        <div class="tsp_textbox_title">
-                                                            <i class="icon iconfont full-icon-icon_254"></i>
-                                                            <span>可扩展的设计风格</span>
-                                                        </div>
-                                                        <div class="tsp_textbox_desc">
-                                                            将设计样式抽离为 Design Token ，满足不同产品的品牌定制需求
-                                                        </div>
-                                                    </el-col>
-                                                    <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
-                                                        <div class="tsp_textbox_title">
-                                                            <i class="icon iconfont full-icon-icon_254"></i>
-                                                            <span>可扩展的设计风格</span>
-                                                        </div>
-                                                        <div class="tsp_textbox_desc">
-                                                            将设计样式抽离为 Design Token ，满足不同产品的品牌定制需求
+                                                            支持企业数字化、信息化平台定制开发。
                                                         </div>
                                                     </el-col>
                                                 </el-row>
@@ -398,7 +340,6 @@
         </section>
     </div>
 </body>
-
 </html>
 <script src="./static/data/testData.js"></script>
 <script>
