@@ -626,6 +626,11 @@ const designnorm=[{
         imgurl:"./static/img/app/antDesign.svg",
         url:"https://ant.design/index-cn",
     },{
+        title:"antDesign【示例】",
+        desc:"蚂蚁金服",
+        imgurl:"./static/img/app/antDesign.svg",
+        url:"https://preview.pro.ant.design/dashboard/analysis",
+    },{
         title:"arco Design",
         desc:"字节跳动UI",
         imgurl:"./static/img/app/arco.svg",
