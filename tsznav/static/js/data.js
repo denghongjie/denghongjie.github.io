@@ -1,5 +1,6 @@
 const tszWeblists=[{
     title:"企业网址",
+    
     children:[{
         title:"探索者官网",
         desc:"探索者官网",
@@ -15,6 +16,11 @@ const tszWeblists=[{
         desc:"探索者云系统",
         imgurl:"./static/img/app/tszcould.png",
         url:"https://cloud.tsz.com.cn/vpn/index.html",
+    },{
+        title:"探索者CLM管理系统",
+        desc:"写锁平台",
+        imgurl:"./static/img/app/tsz.ico",
+        url:"https://admin.yunzhukeji.cn/",
     }]
 },{
     title:"产品网站",
