@@ -209,7 +209,7 @@ const navLists=[{
         url:"https://tinypng.com/",
     },{
         title:"佐糖",
-        desc:"AI在线抠图",
+        desc:"AI在线抠图、去水印",
         imgurl:"./static/img/app/zuotang.png",
         url:"https://picwish.cn/?apptype=aps-pin",
     },{
