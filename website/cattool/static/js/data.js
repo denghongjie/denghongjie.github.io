@@ -169,6 +169,29 @@ const designspaces=[{
         imgurl:"./static/img/app/cssgg.png",
         url:"https://css.gg/app",
     }]
+},{
+    title:"可商用视频素材网站",
+    children:[{
+        title:"Mazwai",
+        desc:"高清、4K免费、直接下载",
+        imgurl:"./static/img/app/Mazwai.svg",
+        url:"https://mazwai.com/",
+    },{
+        title:"Coverr",
+        desc:"提供免费可商用的航拍视频",
+        imgurl:"./static/img/app/Coverr.png",
+        url:"https://coverr.co/",
+    },{
+        title:"videvo",
+        desc:"免版权直接下载",
+        imgurl:"./static/img/app/videvo.png",
+        url:"https://www.videvo.net/",
+    },{
+        title:"mixkit",
+        desc:"免版权直接下载",
+        imgurl:"./static/img/app/mixkit.png",
+        url:"https://mixkit.co/free-stock-video/",
+    }]
 }]
 
 
@@ -255,6 +278,11 @@ const navLists=[{
         desc:"GIF工具箱，收费",
         imgurl:"./static/img/app/soogif.png",
         url:"https://www.soogif.com/gifTool",
+    },{
+        title:"智影",
+        desc:"数字人播报·字幕",
+        imgurl:"./static/img/app/zenvideo.png",
+        url:"https://zenvideo.qq.com/",
     }]
 },{
     title:"格式工具",
