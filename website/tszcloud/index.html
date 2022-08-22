@@ -11,7 +11,7 @@
     <script src="./static/js/elementPlus-zhcn.js"></script>
     <script src="./static/js/elementPlusIcon@2.0.4.js"></script>
     <script src="./static/js/init.js"></script>
-    <title>大平台官网</title>
+    <title>设计企业微管理平台</title>
     <link href="./static/css/animate-css/animate.css" rel="stylesheet">
     <script src="./static/css/animate-css/wow.min.js"></script> 
 
@@ -32,8 +32,8 @@
                 </div>
                 <div class="t_nav">
                     <ul>
-                        <a href=""><li><span>平台介绍</span> </li></a>
-                        <a href=""><li><span>解决方案</span></li></a>
+                        <a href="#introduce"><li><span>平台介绍</span> </li></a>
+                        <a href="#solution"><li><span>解决方案</span></li></a>
                         <a href=""><li><span>帮助中心</span></li></a>
                         <a href=""><li><span>建议反馈</span></li></a>
                         <a href="https://www.tszcloud.com.cn/login"><li><span>登录</span></li></a>
@@ -43,7 +43,7 @@
         </header>
         <section>
             <div class="t_bannerbox">
-                <img src="./static/img/banner.png" alt="">
+                <img src="./static/img/banner.jpg" alt="">
                 <div class="t_masklayer"></div>
                 <div class="t_slogo">
                     <div class="t_main_warp">
@@ -54,7 +54,7 @@
             </div>
         </section>
         <section class="t-body">
-            <div class="t_main_warp">
+            <div class="t_main_warp" id="introduce">
                 <el-row :gutter="20">
                     <el-col :xs="24" :sm="24" :md="24" :lg="8" :xl="8" v-for="(item,index) in carddatas" :key="index">
                         <div class="t_model_box">
@@ -68,7 +68,7 @@
                                     <span class="t_mb_applabel">{{block.labeltip}}</span>
                                     <div class="t_mb_app_ul">
                                         <el-row :gutter="10">
-                                            <el-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12" v-for="(app,i) in block.allitems" :key="i">
+                                            <el-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12" v-for="(app,i) in block.allitems" :key="i" @click="gopage(app,i)">
                                                 <div  class="t_mb_app_li">
                                                     <div class="t_mb_app_imgbox">
                                                         <img :src="app.img" alt="">
@@ -93,7 +93,7 @@
                 </el-row>
             </div>
             <!--  -->
-            <div class="t_main_section">
+            <div class="t_main_section" id="solution">
                 <div class="t_main_warp">
                     <div class="t_section">
                         <div class="t_rowitem">
@@ -107,14 +107,16 @@
                                             <div class="tsf_text_desc">
                                                 聚焦行业实用经验，采用分布式管理经验，降低管理成本，建立优质可靠管理的系统。
                                             </div>
-                                            <a href="" class="tiyanbtn">立即体验</a>
+                                            <a href="https://www.tszcloud.com.cn/login" class="tiyanbtn">立即体验</a>
                                         </div>
                                     </div>
                                 </el-col>
                                 <el-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
                                     <div class="t_section_right wow slideInUp">
                                         <div class="t_sectimg_picbox">
-                                            <div class="tsp_page1  tsp_pagebg_1"></div>
+                                            <div class="tsp_page1  tsp_pagebg_1">
+                                                <img src="./static/img/pic_bg1.png" alt="">
+                                            </div>
                                             <div class="tsp_line"></div>
                                             <div class="tsp_textbox">
                                                 <el-row :gutter="20">
@@ -169,14 +171,16 @@
                                             <div class="tsf_text_desc">
                                               专注设计软件研发20余年，集成多项智能设计-智能管理技术，提供高效优质的设计-管理工具软件。  
                                             </div>
-                                            <a href="" class="tiyanbtn">立即体验</a>
+                                            <a href="https://www.tszcloud.com.cn/login" class="tiyanbtn">立即体验</a>
                                         </div>
                                     </div>
                                 </el-col>
                                 <el-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
                                     <div class="t_section_right wow slideInUp">
                                         <div class="t_sectimg_picbox">
-                                            <div class="tsp_page1 tsp_pagebg_2"></div>
+                                            <div class="tsp_page1 tsp_pagebg_2">
+                                                <img src="./static/img/pic_bg2.png" alt="">
+                                            </div>
                                             <div class="tsp_line"></div>
                                             <div class="tsp_textbox">
                                                 <el-row :gutter="20">
@@ -231,14 +235,16 @@
                                             <div class="tsf_text_desc">
                                                 采用前后端分离、微服务、数据中台等技术，支持企业大数据，支持企业定制开发与平台对接。
                                             </div>
-                                            <a href="" class="tiyanbtn">立即体验</a>
+                                            <a href="https://www.tszcloud.com.cn/login" class="tiyanbtn">立即体验</a>
                                         </div>
                                     </div>
                                 </el-col>
                                 <el-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
                                     <div class="t_section_right wow slideInUp">
                                         <div class="t_sectimg_picbox">
-                                            <div class="tsp_page1 tsp_pagebg_3"></div>
+                                            <div class="tsp_page1 tsp_pagebg_3">
+                                                <img src="./static/img/pic_bg3.jpg" alt="">
+                                            </div>
                                             <div class="tsp_line"></div>
                                             <div class="tsp_textbox">
                                                 <el-row :gutter="20">
@@ -350,7 +356,7 @@
             const { computed} = Vue;
             function initState() {
                 return {
-                    carddatas:carddata
+                    carddatas:carddata_New
                     
                 }
             }
@@ -371,9 +377,13 @@
                     }
                     );
                     wow.init();
-            })
+            });
+            function gopage(row,i){
+                window.open(row.url,'_self');
+            }
             return {
                 ...toRefs(state),
+                gopage
             }
         }
     }

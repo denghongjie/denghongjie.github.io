@@ -392,6 +392,10 @@ a{
     transition: ease all 0.5s;
     border-radius: 12px ;
     margin-top: 40px;
+    &:hover{
+        background-color: #156fff;
+        width: 280px;
+    }
 }
 .t-footer{
     background-color: #f5f5f5;
