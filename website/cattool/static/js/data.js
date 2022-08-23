@@ -179,7 +179,7 @@ const designspaces=[{
     },{
         title:"Coverr",
         desc:"提供免费可商用的航拍视频",
-        imgurl:"./static/img/app/Coverr.png",
+        imgurl:"./static/img/app/Coverr.PNG",
         url:"https://coverr.co/",
     },{
         title:"videvo",
@@ -189,7 +189,7 @@ const designspaces=[{
     },{
         title:"mixkit",
         desc:"免版权直接下载",
-        imgurl:"./static/img/app/mixkit.png",
+        imgurl:"./static/img/app/mixkit.PNG",
         url:"https://mixkit.co/free-stock-video/",
     }]
 }]
