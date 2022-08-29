@@ -309,6 +309,11 @@ const navLists=[{
         desc:"批量导出网站在不通设备的截图",
         imgurl:"./static/img/app/zsyjmceshi.gif",
         url:"https://screendump.techulus.com/",
+    },{
+        title:"文件恢复【免费】",
+        desc:"Recuva",
+        imgurl:"./static/img/app/Recuva.jpg",
+        url:"http://www.downza.cn/soft/4914.html",
     }]
 }]
 
