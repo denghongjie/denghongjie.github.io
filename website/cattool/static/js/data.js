@@ -208,8 +208,8 @@ const navLists=[{
         imgurl:"./static/img/app/panda.png",
         url:"https://tinypng.com/",
     },{
-        title:"佐糖",
-        desc:"AI在线抠图、去水印",
+        title:"佐糖【下载需要登录】",
+        desc:"AI在线抠图、去水印、制作证件照",
         imgurl:"./static/img/app/zuotang.png",
         url:"https://picwish.cn/?apptype=aps-pin",
     },{
