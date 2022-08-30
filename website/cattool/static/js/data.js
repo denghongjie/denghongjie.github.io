@@ -198,12 +198,12 @@ const designspaces=[{
 const navLists=[{
     title:"图片工具推荐",
     children:[{
-        title:"bigjpg",
+        title:"bigjpg【免费】",
         desc:"AI图片无损放大",
         imgurl:"./static/img/app/big.png",
         url:"https://bigjpg.com/",
     },{
-        title:"tinypng",
+        title:"tinypng【免费】",
         desc:"图片在线压缩",
         imgurl:"./static/img/app/panda.png",
         url:"https://tinypng.com/",
@@ -213,12 +213,12 @@ const navLists=[{
         imgurl:"./static/img/app/zuotang.png",
         url:"https://picwish.cn/?apptype=aps-pin",
     },{
-        title:"Vector Magic",
+        title:"Vector Magic【免费】",
         desc:"【非常棒】图片、图标变矢量",
         imgurl:"./static/img/app/vectormagic.png",
         url:"https://zh.vectormagic.com/",
     },{
-        title:"let's Enhance",
+        title:"let's Enhance【免费】",
         desc:"模糊图片变清晰",
         imgurl:"./static/img/app/letsenhance.svg",
         url:"https://letsenhance.io/",
@@ -226,17 +226,17 @@ const navLists=[{
 },{
     title:"商业修图工具推荐",
     children:[{
-        title:"像素蛋糕",
+        title:"像素蛋糕【收费】",
         desc:"商业智能精修神器",
         imgurl:"./static/img/app/xsdg.png",
         url:"http://www.pixcakeai.com/",
     },{
-        title:"美图云修",
+        title:"美图云修【收费】",
         desc:"图片在线压缩",
         imgurl:"./static/img/app/mtyx.jpg",
         url:"https://yunxiu.meitu.com/home/",
     },{
-        title:"咻图AI",
+        title:"咻图AI【收费】",
         desc:"AI智能修图工具",
         imgurl:"./static/img/app/xtai.png",
         url:"https://www.aixtsy.com/",
@@ -249,27 +249,27 @@ const navLists=[{
 },{
     title:"在线工具",
     children:[{
-        title:"在线录屏",
+        title:"在线录屏【免费】",
         desc:"直接录屏",
         imgurl:"./static/img/app/zaixianluping.png",
         url:"https://www.toolnb.com/tools/screen.html",
     },{
-        title:"文字转语音",
+        title:"文字转语音【免费】",
         desc:"在线情感化转换",
         imgurl:"./static/img/app/speech09.svg",
         url:"https://azure.microsoft.com/zh-cn/services/cognitive-services/text-to-speech/#overview",
     },{
-        title:"录音软件",
+        title:"录音软件【免费】",
         desc:"免费Audio Record Wizard",
         imgurl:"./static/img/app/wizard.png",
         url:"https://www.nowsmart.com/download.html",
     },{
-        title:"剪映",
+        title:"剪映【免费】",
         desc:"视频剪辑",
         imgurl:"./static/img/app/jianying.jpg",
         url:"https://lv.ulikecam.com/",
     },{
-        title:"convertio",
+        title:"convertio【免费】",
         desc:"在线转换格式转换",
         imgurl:"./static/img/app/convertio.png",
         url:"https://convertio.co/zh/",
@@ -292,12 +292,12 @@ const navLists=[{
         imgurl:"./static/img/app/360.png",
         url:"https://fonts.safe.360.cn/",
     },{
-        title:"I love PDF",
+        title:"I love PDF【免费】",
         desc:"万能转PDF文件",
         imgurl:"./static/img/app/ilovepdf.svg",
         url:"https://www.ilovepdf.com/",
     },{
-        title:"I love IMG",
+        title:"I love IMG【免费】",
         desc:"图片压缩、转换、水印处理",
         imgurl:"./static/img/app/iloveimg.svg",
         url:"https://www.iloveimg.com/zh-cn",
