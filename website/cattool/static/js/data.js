@@ -224,6 +224,25 @@ const navLists=[{
         url:"https://letsenhance.io/",
     }]
 },{
+    title:"网盘",
+    children:[{
+        title:"Antdownload",
+        desc:"【百度网盘下载不限速神器】",
+        imgurl:"./static/img/app/antdownload.png",
+        url:"https://www.jb51.net/softs/820446.html",
+        // url:"https://firepx.lanzoul.com/ikKFP05n9kud",
+    },{
+        title:"文叔叔",
+        desc:"10G 免费上传下载不限速",
+        imgurl:"./static/img/app/wenshushu.webp",
+        url:"https://www.wenshushu.cn/",
+    },{
+        title:"TMP LINK",
+        desc:"24小时自动删除",
+        imgurl:"./static/img/app/tmp_link.svg",
+        url:"https://tmp.link/",
+    }]
+},{
     title:"商业修图工具推荐",
     children:[{
         title:"像素蛋糕【收费】",
