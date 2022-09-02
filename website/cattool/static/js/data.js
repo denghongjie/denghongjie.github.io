@@ -22,6 +22,24 @@ const designspaces=[{
         url:"https://www.ui.cn/",
     }]
 },{
+    title:"在线工具",
+    children:[{
+        title:"2.D 建筑生成",
+        desc:"2.5D建模神器",
+        imgurl:"./static/img/app/icograms.jpg",
+        url:"https://icograms.com/designer",
+    },{
+        title:"Sktech 转 PSD",
+        desc:"在线【前半小时免费】",
+        imgurl:"./static/img/app/photopea.png",
+        url:"https://www.photopea.com/",
+    },{
+        title:"PSD 转 Sktech",
+        desc:"免费",
+        imgurl:"./static/img/app/convert.png",
+        url:"https://avocode.com/convert-psd-to-sketch",
+    }]
+},{
     title:"商用图片下载",
     children:[{
         title:"freepik.png",
@@ -145,29 +163,6 @@ const designspaces=[{
         desc:"180种线性渐变",
         imgurl:"./static/img/app/webgradients.png",
         url:"https://webgradients.com/",
-    }]
-},{
-    title:"动态图标交互【访问慢】",
-    children:[{
-        title:"useanimations",
-        desc:"带动效果的图标",
-        imgurl:"./static/img/app/useanimations.png",
-        url:"https://useanimations.com/#explore",
-    },{
-        title:"Icons8 动画 2.0",
-        desc:"高质量动效图标",
-        imgurl:"./static/img/app/icons8-animate.png",
-        url:"https://igoutu.cn/animated-icons",
-    },{
-        title:"Lordicon",
-        desc:"炫酷动态图标",
-        imgurl:"./static/img/app/lordicon.png",
-        url:"https://lordicon.com/",
-    },{
-        title:"CSS GG",
-        desc:"css绘制图标",
-        imgurl:"./static/img/app/cssgg.png",
-        url:"https://css.gg/app",
     }]
 },{
     title:"可商用视频素材网站",
@@ -413,6 +408,11 @@ const softwarelist=[{
         desc:"原型+设计软件",
         imgurl:"./static/img/app/aef2b925.png",
         url:"http://www.sketchchina.com/?ref=iamxk",
+    },{
+        title:"Spline",
+        desc:"3D建模【快速】",
+        imgurl:"./static/img/app/spline.png",
+        url:"https://spline.design/#download",
     }]
 },{
     title:"PS插件",
@@ -566,6 +566,26 @@ const studylists=[{
         desc:"C4D入门常见问题",
         imgurl:"./static/img/app/c4d.png",
         url:"https://www.jb51.net/softjc/759300.html",
+    },{
+        title:"C4D 100个实用技巧",
+        desc:"C4D高手指南",
+        imgurl:"./static/img/app/c4d.png",
+        url:"https://www.bilibili.com/medialist/play/ml436774491/BV1KX4y1N7B7",
+    },{
+        title:"AE 100问",
+        desc:"AE常见问题汇总",
+        imgurl:"./static/img/app/ae2022.jpg",
+        url:"https://www.bilibili.com/read/readlist/rl489890?spm_id_from=333.999.0.0",
+    },{
+        title:"PS 100问",
+        desc:"PS常见问题汇总",
+        imgurl:"./static/img/app/ps2022.jpg",
+        url:"https://www.bilibili.com/video/BV1V7411c7HC?p=5&vd_source=73357f58ec36951707e8dc7f5422e7f6",
+    },{
+        title:"AI 100道练手题",
+        desc:"AI常见问题汇总",
+        imgurl:"./static/img/app/ai.png",
+        url:"https://www.bilibili.com/video/BV1wg411j7XP?vd_source=73357f58ec36951707e8dc7f5422e7f6",
     }]
 }]
 
@@ -786,6 +806,34 @@ const iconDesigns=[{
         url:"https://www.3dicons.com/",
     }]
 },{
+    title:"动态图标+loading交互",
+    children:[{
+        title:"useanimations 【访问慢】",
+        desc:"带动效果的图标",
+        imgurl:"./static/img/app/useanimations.png",
+        url:"https://useanimations.com/#explore",
+    },{
+        title:"Icons8 动画 2.0",
+        desc:"高质量动效图标",
+        imgurl:"./static/img/app/icons8-animate.png",
+        url:"https://igoutu.cn/animated-icons",
+    },{
+        title:"Lordicon",
+        desc:"炫酷动态图标",
+        imgurl:"./static/img/app/lordicon.png",
+        url:"https://lordicon.com/",
+    },{
+        title:"CSS GG",
+        desc:"css绘制图标",
+        imgurl:"./static/img/app/cssgg.png",
+        url:"https://css.gg/app",
+    },{
+        title:"loading",
+        desc:"loading生成",
+        imgurl:"./static/img/app/loading.png",
+        url:"https://loading.io/",
+    }]
+},{
     title:"APP ICON ",
     children:[{
         title:"iosicongallery",
@@ -859,6 +907,33 @@ const viewlist=[{
         imgurl:"./static/img/app/pixelsquid.svg",
         url:"https://www.pixelsquid.com/png",
     }]
+},{
+    title:"数据实验室",
+    children:[
+        {
+            title:"百度可视化实验室",
+            desc:"可视化分析研究",
+            imgurl:"./static/img/app/baidukeshihua.png",
+            url:"https://vis.baidu.com/#/",
+        },
+        {
+            title:"IEEE VIS",
+            desc:"全球最大的可视化论坛",
+            imgurl:"./static/img/app/IEEEVIS.png",
+            url:"http://ieeevis.org/year/2022/welcome",
+        },
+        {
+            title:"浙江大学可视分析小组",
+            desc:"可视化分析研究",
+            imgurl:"./static/img/app/zjkshfx.png",
+            url:"https://zjuvag.org/",
+        },
+        {
+            title:"华盛顿数据交互实验室",
+            desc:"提高数据理解能力",
+            imgurl:"./static/img/app/washington.png",
+            url:"http://idl.cs.washington.edu/",
+        }]
 }]
 
 const devlist=[{
