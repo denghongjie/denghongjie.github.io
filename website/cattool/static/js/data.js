@@ -22,6 +22,24 @@ const designspaces=[{
         url:"https://www.ui.cn/",
     }]
 },{
+    title:"在线工具",
+    children:[{
+        title:"2.D 建筑生成",
+        desc:"2.5D建模神器",
+        imgurl:"./static/img/app/icograms.jpg",
+        url:"https://icograms.com/designer",
+    },{
+        title:"Sktech 转 PSD",
+        desc:"在线【前半小时免费】",
+        imgurl:"./static/img/app/photopea.png",
+        url:"https://www.photopea.com/",
+    },{
+        title:"PSD 转 Sktech",
+        desc:"免费",
+        imgurl:"./static/img/app/convert.png",
+        url:"https://avocode.com/convert-psd-to-sketch",
+    }]
+},{
     title:"商用图片下载",
     children:[{
         title:"freepik.png",
@@ -147,27 +165,27 @@ const designspaces=[{
         url:"https://webgradients.com/",
     }]
 },{
-    title:"动态图标交互【访问慢】",
+    title:"可商用视频素材网站",
     children:[{
-        title:"useanimations",
-        desc:"带动效果的图标",
-        imgurl:"./static/img/app/useanimations.png",
-        url:"https://useanimations.com/#explore",
+        title:"Mazwai",
+        desc:"高清、4K免费、直接下载",
+        imgurl:"./static/img/app/Mazwai.svg",
+        url:"https://mazwai.com/",
     },{
-        title:"Icons8 动画 2.0",
-        desc:"高质量动效图标",
-        imgurl:"./static/img/app/icons8-animate.png",
-        url:"https://igoutu.cn/animated-icons",
+        title:"Coverr",
+        desc:"提供免费可商用的航拍视频",
+        imgurl:"./static/img/app/Coverr.PNG",
+        url:"https://coverr.co/",
     },{
-        title:"Lordicon",
-        desc:"炫酷动态图标",
-        imgurl:"./static/img/app/lordicon.png",
-        url:"https://lordicon.com/",
+        title:"videvo",
+        desc:"免版权直接下载",
+        imgurl:"./static/img/app/videvo.png",
+        url:"https://www.videvo.net/",
     },{
-        title:"CSS GG",
-        desc:"css绘制图标",
-        imgurl:"./static/img/app/cssgg.png",
-        url:"https://css.gg/app",
+        title:"mixkit",
+        desc:"免版权直接下载",
+        imgurl:"./static/img/app/mixkit.PNG",
+        url:"https://mixkit.co/free-stock-video/",
     }]
 }]
 
@@ -175,45 +193,64 @@ const designspaces=[{
 const navLists=[{
     title:"图片工具推荐",
     children:[{
-        title:"bigjpg",
+        title:"bigjpg【免费】",
         desc:"AI图片无损放大",
         imgurl:"./static/img/app/big.png",
         url:"https://bigjpg.com/",
     },{
-        title:"tinypng",
+        title:"tinypng【免费】",
         desc:"图片在线压缩",
         imgurl:"./static/img/app/panda.png",
         url:"https://tinypng.com/",
     },{
-        title:"佐糖",
-        desc:"AI在线抠图",
+        title:"佐糖【下载需要登录】",
+        desc:"AI在线抠图、去水印、制作证件照",
         imgurl:"./static/img/app/zuotang.png",
         url:"https://picwish.cn/?apptype=aps-pin",
     },{
-        title:"Vector Magic",
+        title:"Vector Magic【免费】",
         desc:"【非常棒】图片、图标变矢量",
         imgurl:"./static/img/app/vectormagic.png",
         url:"https://zh.vectormagic.com/",
     },{
-        title:"let's Enhance",
+        title:"let's Enhance【免费】",
         desc:"模糊图片变清晰",
         imgurl:"./static/img/app/letsenhance.svg",
         url:"https://letsenhance.io/",
     }]
 },{
+    title:"网盘",
+    children:[{
+        title:"Antdownload",
+        desc:"【百度网盘下载不限速神器】",
+        imgurl:"./static/img/app/antdownload.png",
+        url:"https://www.jb51.net/softs/820446.html",
+        // url:"https://firepx.lanzoul.com/ikKFP05n9kud",
+    },{
+        title:"文叔叔",
+        desc:"10G 免费上传下载不限速",
+        imgurl:"./static/img/app/wenshushu.webp",
+        url:"https://www.wenshushu.cn/",
+    },{
+        title:"TMP LINK",
+        desc:"24小时自动删除",
+        imgurl:"./static/img/app/tmp_link.svg",
+        url:"https://tmp.link/",
+    }]
+},{
     title:"商业修图工具推荐",
     children:[{
-        title:"像素蛋糕",
+        title:"像素蛋糕【收费】",
         desc:"商业智能精修神器",
         imgurl:"./static/img/app/xsdg.png",
         url:"http://www.pixcakeai.com/",
     },{
-        title:"美图云修",
+        title:"美图云修【收费】",
         desc:"图片在线压缩",
         imgurl:"./static/img/app/mtyx.jpg",
         url:"https://yunxiu.meitu.com/home/",
     },{
-        title:"咻图AI",
+        title:"咻图AI【收费】",
         desc:"AI智能修图工具",
         imgurl:"./static/img/app/xtai.png",
         url:"https://www.aixtsy.com/",
@@ -226,27 +263,27 @@ const navLists=[{
 },{
     title:"在线工具",
     children:[{
-        title:"在线录屏",
+        title:"在线录屏【免费】",
         desc:"直接录屏",
         imgurl:"./static/img/app/zaixianluping.png",
         url:"https://www.toolnb.com/tools/screen.html",
     },{
-        title:"文字转语音",
+        title:"文字转语音【免费】",
         desc:"在线情感化转换",
         imgurl:"./static/img/app/speech09.svg",
         url:"https://azure.microsoft.com/zh-cn/services/cognitive-services/text-to-speech/#overview",
     },{
-        title:"录音软件",
+        title:"录音软件【免费】",
         desc:"免费Audio Record Wizard",
         imgurl:"./static/img/app/wizard.png",
         url:"https://www.nowsmart.com/download.html",
     },{
-        title:"剪映",
+        title:"剪映【免费】",
         desc:"视频剪辑",
         imgurl:"./static/img/app/jianying.jpg",
         url:"https://lv.ulikecam.com/",
     },{
-        title:"convertio",
+        title:"convertio【免费】",
         desc:"在线转换格式转换",
         imgurl:"./static/img/app/convertio.png",
         url:"https://convertio.co/zh/",
@@ -255,6 +292,11 @@ const navLists=[{
         desc:"GIF工具箱，收费",
         imgurl:"./static/img/app/soogif.png",
         url:"https://www.soogif.com/gifTool",
+    },{
+        title:"智影",
+        desc:"数字人播报·字幕",
+        imgurl:"./static/img/app/zenvideo.png",
+        url:"https://zenvideo.qq.com/",
     }]
 },{
     title:"格式工具",
@@ -264,12 +306,12 @@ const navLists=[{
         imgurl:"./static/img/app/360.png",
         url:"https://fonts.safe.360.cn/",
     },{
-        title:"I love PDF",
+        title:"I love PDF【免费】",
         desc:"万能转PDF文件",
         imgurl:"./static/img/app/ilovepdf.svg",
         url:"https://www.ilovepdf.com/",
     },{
-        title:"I love IMG",
+        title:"I love IMG【免费】",
         desc:"图片压缩、转换、水印处理",
         imgurl:"./static/img/app/iloveimg.svg",
         url:"https://www.iloveimg.com/zh-cn",
@@ -281,6 +323,11 @@ const navLists=[{
         desc:"批量导出网站在不通设备的截图",
         imgurl:"./static/img/app/zsyjmceshi.gif",
         url:"https://screendump.techulus.com/",
+    },{
+        title:"文件恢复【免费】",
+        desc:"Recuva",
+        imgurl:"./static/img/app/Recuva.jpg",
+        url:"http://www.downza.cn/soft/4914.html",
     }]
 }]
 
@@ -361,6 +408,11 @@ const softwarelist=[{
         desc:"原型+设计软件",
         imgurl:"./static/img/app/aef2b925.png",
         url:"http://www.sketchchina.com/?ref=iamxk",
+    },{
+        title:"Spline",
+        desc:"3D建模【快速】",
+        imgurl:"./static/img/app/spline.png",
+        url:"https://spline.design/#download",
     }]
 },{
     title:"PS插件",
@@ -514,6 +566,26 @@ const studylists=[{
         desc:"C4D入门常见问题",
         imgurl:"./static/img/app/c4d.png",
         url:"https://www.jb51.net/softjc/759300.html",
+    },{
+        title:"C4D 100个实用技巧",
+        desc:"C4D高手指南",
+        imgurl:"./static/img/app/c4d.png",
+        url:"https://www.bilibili.com/medialist/play/ml436774491/BV1KX4y1N7B7",
+    },{
+        title:"AE 100问",
+        desc:"AE常见问题汇总",
+        imgurl:"./static/img/app/ae2022.jpg",
+        url:"https://www.bilibili.com/read/readlist/rl489890?spm_id_from=333.999.0.0",
+    },{
+        title:"PS 100问",
+        desc:"PS常见问题汇总",
+        imgurl:"./static/img/app/ps2022.jpg",
+        url:"https://www.bilibili.com/video/BV1V7411c7HC?p=5&vd_source=73357f58ec36951707e8dc7f5422e7f6",
+    },{
+        title:"AI 100道练手题",
+        desc:"AI常见问题汇总",
+        imgurl:"./static/img/app/ai.png",
+        url:"https://www.bilibili.com/video/BV1wg411j7XP?vd_source=73357f58ec36951707e8dc7f5422e7f6",
     }]
 }]
 
@@ -734,6 +806,34 @@ const iconDesigns=[{
         url:"https://www.3dicons.com/",
     }]
 },{
+    title:"动态图标+loading交互",
+    children:[{
+        title:"useanimations 【访问慢】",
+        desc:"带动效果的图标",
+        imgurl:"./static/img/app/useanimations.png",
+        url:"https://useanimations.com/#explore",
+    },{
+        title:"Icons8 动画 2.0",
+        desc:"高质量动效图标",
+        imgurl:"./static/img/app/icons8-animate.png",
+        url:"https://igoutu.cn/animated-icons",
+    },{
+        title:"Lordicon",
+        desc:"炫酷动态图标",
+        imgurl:"./static/img/app/lordicon.png",
+        url:"https://lordicon.com/",
+    },{
+        title:"CSS GG",
+        desc:"css绘制图标",
+        imgurl:"./static/img/app/cssgg.png",
+        url:"https://css.gg/app",
+    },{
+        title:"loading",
+        desc:"loading生成",
+        imgurl:"./static/img/app/loading.png",
+        url:"https://loading.io/",
+    }]
+},{
     title:"APP ICON ",
     children:[{
         title:"iosicongallery",
@@ -807,6 +907,33 @@ const viewlist=[{
         imgurl:"./static/img/app/pixelsquid.svg",
         url:"https://www.pixelsquid.com/png",
     }]
+},{
+    title:"数据实验室",
+    children:[
+        {
+            title:"百度可视化实验室",
+            desc:"可视化分析研究",
+            imgurl:"./static/img/app/baidukeshihua.png",
+            url:"https://vis.baidu.com/#/",
+        },
+        {
+            title:"IEEE VIS",
+            desc:"全球最大的可视化论坛",
+            imgurl:"./static/img/app/IEEEVIS.png",
+            url:"http://ieeevis.org/year/2022/welcome",
+        },
+        {
+            title:"浙江大学可视分析小组",
+            desc:"可视化分析研究",
+            imgurl:"./static/img/app/zjkshfx.png",
+            url:"https://zjuvag.org/",
+        },
+        {
+            title:"华盛顿数据交互实验室",
+            desc:"提高数据理解能力",
+            imgurl:"./static/img/app/washington.png",
+            url:"http://idl.cs.washington.edu/",
+        }]
 }]
 
 const devlist=[{

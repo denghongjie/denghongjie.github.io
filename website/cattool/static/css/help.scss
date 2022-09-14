@@ -12,6 +12,8 @@ h1{
 }
 .title{
     margin-bottom: 20px;
+    font-size: 12px;
+    color: #979797;
 }
 .navheader{
     height: 60px;
@@ -40,17 +42,23 @@ h1{
         }
     }
 }
+.el-tabs__item{
+    font-size: 15px;
+    font-weight: 600;
+}
 .grid-content{
     background-color: #fff;
     padding: 10px;
     background: #ecedf0;
-    box-shadow: 5px 5px 10px rgba(163,177,198,60%), -5px -5px 10px rgba(255, 255, 255,50%);
+    // box-shadow: 5px 5px 10px rgba(163,177,198,60%), -5px -5px 10px rgba(255, 255, 255,50%);
+    box-shadow: 5px 5px 10px #d6dde7, -5px -5px 10px white;
     overflow: hidden;
     margin-bottom: 20px;
     border-radius: 10px;
     color: #333;
     transition: ease all 0.5s;
     position: relative;
+    border: 1px solid #fff;
     &:hover{
 
         background-color: #fff;
@@ -61,12 +69,14 @@ h1{
         margin-bottom: 5px;
     }
     .grid-content_title{
-        font-size: 14px;
+        font-size: 15px;
         -webkit-line-clamp: 1;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+        font-weight: 600;
+        margin-bottom: 3px;
     }
     .desctext{
         color: #868686;

@@ -201,6 +201,19 @@ const navLists=[{
         url:"https://letsenhance.io/",
     }]
 },{
+    title:"网盘",
+    children:[{
+        title:"Antdownload【百度网盘下载神器】",
+        desc:"下载不限速神器",
+        imgurl:"./static/img/app/zsyjmceshi.gif",
+        url:"https://firepx.lanzoul.com/ikKFP05n9kud",
+    },{
+        title:"文叔叔",
+        desc:"10G 免费上传下载不限速",
+        imgurl:"./static/img/app/wenshushu.webp",
+        url:"https://www.wenshushu.cn/",
+    }]
+},{
     title:"商业修图工具推荐",
     children:[{
         title:"像素蛋糕",
