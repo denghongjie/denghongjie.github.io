@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="./static/css/base.css" rel="stylesheet"> -->
+    <link href="./static/css/element@2.2.6.css" rel="stylesheet">
+    <script src="./static/js/vue@3.2.36.js"></script>
+    <script src="./static/js/elementPlus@2.2.6.js"></script>
+    <script src="./static/js/elementPlus-zhcn.js"></script>
+    <script src="./static/js/elementPlusIcon@2.0.4.js"></script>
+    <script src="./static/js/init.js"></script>
+    <title>探索者系统同系统</title>
+    <link href="./static/css/collaborative.css" rel="stylesheet">
+    <link href="./static/css/fonts/iconfont.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <div class="co_header">
+            <span onclick="window.open('index.html')">探索者协同系统</span>
+            <div>用户</div>
+        </div>
+        <div class="co_content">
+            <el-scrollbar style="height:100%">
+                <div class="co_breadcrumbbox">
+                    <el-breadcrumb separator="/">
+                        <el-breadcrumb-item :to="{ path: '/' }" onclick="window.open('index.html')">首页</el-breadcrumb-item>
+                        <el-breadcrumb-item><a href="/">嘉豪国际A座-一期</a></el-breadcrumb-item>
+                    </el-breadcrumb>
+                </div>
+                <section class="co_warp">
+                    <div>
+                        <el-row :gutter="20" >
+                            <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                                <div class="co_proinfo_topbar">
+                                    <div class="co_proinfo_header">
+                                        <div>
+                                            <h1>北京嘉豪国际A座-一期 <span class="co_statebox" style="position:relative;top:-2px">进行中</span></h1>
+                                            <span class="co_proinfo_titlelabel">项目编号:TSZPRO20220906102736 </span>
+                                            <span class="co_proinfo_titlelabel"> 创建时间：2022-09-09 12:28:36</span>
+                                        </div>
+                                        <div>
+                                            <el-button size="large" color="#155dff">编辑项目</el-button>
+                                            <el-button size="large" >删除项目</el-button>
+                                        </div>
+                                    </div>
+                                    <div class="co_proinfo_body">
+                                        <el-row :gutter="20">
+                                            <el-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12">
+                                                <div class="co_pane">
+                                                    <div class="co_pane_header">
+                                                        <h3>基本信息</h3>
+                                                        <div>
+                                                            <span class="co_eidt"> <i class="icon iconfont icon-bianjisekuai"></i> </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="co_pane_body">
+                                                        <el-row :gutter="20">
+                                                            <el-col :xs="12" :sm="8" :md="6" :lg="6" :xl="6">
+                                                                <div class="co_proinfo_bodycard" >
+                                                                    <i class="icon iconfont icon-component-full2" style="color: #00d0ff;background-color: #cff6ff;"></i>
+                                                                    <h4 style="color:#00d0ff">公共建筑</h4>
+                                                                </div>
+                                                            </el-col>
+                                                            <el-col :xs="12" :sm="8" :md="6" :lg="6" :xl="6">
+                                                                <div class="co_proinfo_bodycard" >
+                                                                    <i class="icon iconfont icon-danwei" style="color: #11a926;background-color: #d7f5db"></i>
+                                                                    <h4 style="color:#11a926">河北电力设计院</h4>
+                                                                </div>
+                                                            </el-col>
+                                                            <el-col :xs="12" :sm="8" :md="6" :lg="6" :xl="6">
+                                                                <div class="co_proinfo_bodycard">
+                                                                    <i class="icon iconfont icon-bumen" style="color: #0096ff;background-color: #cfebff;"></i>
+                                                                    <h4 style="color:#0096ff">设计部</h4>
+                                                                </div>
+                                                            </el-col>
+                                                            <el-col :xs="12" :sm="8" :md="6" :lg="6" :xl="6">
+                                                                <div class="co_proinfo_bodycard" >
+                                                                    <i class="icon iconfont icon-yijibumenfuzeren" style="color: #0000ff;background-color: #d4d4ff;"></i>
+                                                                    <h4 style="color:#0000ff">李小华</h4></div>
+                                                            </el-col>
+                                                            <el-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12">
+                                                                <div class="co_proinfo_chitembox">
+                                                                    <h2>项目子项</h2>
+                                                                    <div class="co_proinfo_chitemul">
+                                                                        <ul >
+                                                                            <li>1号楼</li>
+                                                                            <li>2号楼</li>
+                                                                            <li>3号楼</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </el-col>
+                                                            <el-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12">
+                                                                <div class="co_proinfo_chitembox">
+                                                                    <h2>项目成员</h2>
+                                                                    <div class="co_proinfo_chitemul">
+                                                                        <el-row :gutter="10">
+                                                                            <el-col :xs="24" :sm="12" :md="6" :lg="6" :xl="4" v-for="index in 8" :key="index">
+                                                                                <div class="co_user_box">
+                                                                                    <div class="co_user_imgbox">小华</div>
+                                                                                    <div class="co_user_imgtext">李小华</div>
+                                                                                </div>
+                                                                            </el-col>
+                                                                        </el-row>
+                                                                    </div>
+                                                                </div>
+                                                            </el-col>
+                                                        </el-row>
+                                                    </div>
+                                                </div>
+                                            </el-col>
+                                            <el-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12">
+                                                <div class="co_pane">
+                                                    <div class="co_pane_header">
+                                                        <h3>合同进度</h3>
+                                                        <div>
+                                                            <span class="co_eidt"> <i class="icon iconfont icon-bianjisekuai"></i> </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="co_pane_body">
+                                                        <el-row :gutter="20">
+                                                            <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                                                                <el-row>
+                                                                    <el-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
+                                                                        <div class="co_htprogress_box">
+                                                                            <div class="co_ht_progress">
+                                                                                <el-progress type="dashboard" :percentage="80" :stroke-width="14">
+                                                                                    <template #default="{ percentage }">
+                                                                                      <span class="percentage-value">{{ percentage }}%</span>
+                                                                                      <h4 class="percentage-label">到账情况</h4>
+                                                                                    </template>
+                                                                                </el-progress>
+                                                                            </div>
+                                                                        </div>
+                                                                    </el-col>
+                                                                    <el-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
+                                                                        <div class="co_htprogress_box">
+                                                                            <div class="co_ht_number">
+                                                                                <h3>￥100000.00</h3>
+                                                                                <span>总金额</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </el-col>
+                                                                    <el-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
+                                                                        <div class="co_htprogress_box">
+                                                                            <div class="co_ht_number">
+                                                                                <h3 style="color:#ff3535">￥80000.00</h3>
+                                                                                <span>到账金额</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </el-col>
+                                                                </el-row>
+                                                            </el-col>
+                                                            <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                                                                <div class="co_taskline_box">
+                                                                    <el-scrollbar>
+                                                                        <el-timeline class="co_rowtimebox">
+                                                                            <el-timeline-item
+                                                                              v-for="(task, index) in activities"
+                                                                              :key="index"
+                                                                              :icon="task.icon"
+                                                                              :type="task.type"
+                                                                              :color="task.color"
+                                                                              :size="task.size"
+                                                                              :hollow="task.hollow"
+                                                                            >
+                                                                            <el-card class="co_timecard" :class="task.state==1?' co_timecardsuccess':(task.state==2?' co_timecarddanger':' co_timecardifo')">
+                                                                                <div class="co_timecard_toptip">
+                                                                                    <span>任务{{index+1}}：</span> 
+                                                                                    <span v-if="task.state==1" class="co_tip_success">完成</span>
+                                                                                    <span v-if="task.state==2" class="co_tip_danger">完成超期</span>
+                                                                                    <span v-if="task.state==3" class="co_tip_info">未完成</span>
+                                                                                </div>
+                                                                                <!-- <span style="font-size:12px;color:#999">NO:{{task.tasknumber}}</span> -->
+                                                                                <h4>{{task.name}}</h4>
+                                                                                <h2 style="color:#c99d5c;">￥{{task.amount}}万</h2>
+                                                                                <div class="">
+                                                                                    <div>
+                                                                                       <span>{{task.remark}}</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <div class="mt-4">
+                                                                                        {{task.responsiblor}}
+                                                                                      </div>
+                                                                                </div>
+                                                                                <p style="font-size: 12px;color:#ccc">{{ task.endtime }}</p>
+                                                                            </el-card>
+                                                                             
+                                                                            </el-timeline-item>
+                                                                          </el-timeline>
+                                                                    </el-scrollbar>
+                                                                </div>
+                                                            </el-col>
+                                                            <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" v-if="false">
+                                                                <div>
+                                                                    <div>
+                                                                        <h3>合同任务项</h3>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="mt-10">
+                                                                            <!-- 表格 -->
+                                                                            <el-table :data="tableData" style="width: 100%" max-height="200" :header-cell-style="{background:'#eef1f6',color:'#606266'}" class="co_ht_table">
+                                                                                <el-table-column prop="name" label="合同-进度任务" min-width="120"></el-table-column>
+                                                                                <el-table-column prop="amount" label="合同金额/万" width="100"></el-table-column>
+                                                                                <el-table-column prop="remark" label="子项备注" width="100"></el-table-column>
+                                                                                <el-table-column prop="responsiblor" label="负责人" width="80"></el-table-column>
+                                                                                <el-table-column prop="endtime" label="时间" width="100"></el-table-column>
+                                                                                <el-table-column prop="tasknumber" label="任务编号" width="180"></el-table-column>
+                                                                                <el-table-column prop="state" label="状态" width="86">
+                                                                                    <template #default="scope">
+                                                                                        <span v-if="scope.row.state==1" class="co_tip_success">完成</span>
+                                                                                        <span v-if="scope.row.state==2" class="co_tip_danger">完成超期</span>
+                                                                                        <span v-if="scope.row.state==3" class="co_tip_info">未完成</span>
+                                                                                    </template>
+                                                                                </el-table-column>
+                                                                              </el-table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </el-col>
+                                                        </el-row>
+                                                    </div>
+                                                </div>
+                                            </el-col>
+                                            <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                                                <div class="co_pane">
+                                                    <div class="co_pane_header">
+                                                        <h3>设计进度</h3>
+                                                        <div style="width:200px">
+                                                            <el-progress
+                                                                :text-inside="true"
+                                                                :stroke-width="22"
+                                                                :percentage="80"
+                                                                status="warning"
+                                                                >
+                                                                <span>总进度 80%</span>
+                                                            </el-progress>
+                                                        </div>
+                                                        <div>
+                                                            <span class="co_eidt" @click="isPressCard=!isPressCard"> 
+                                                                <i v-show="!isPressCard" class="icon iconfont icon-qiapianxuanze-"></i> 
+                                                                <i v-show="isPressCard" class="icon iconfont icon-xiangduibiaozhunpiancha"></i> 
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="co_pane_body">
+                                                        <div class="mt-10">
+                                                            <!-- 表格 -->
+                                                            <div>
+                                                                <div v-show="!isPressCard">
+                                                                    <div id="container"></div>
+                                                                </div>
+                                                                <div v-show="isPressCard">
+                                                                    <div class="co_taskline_box">
+                                                                        <el-scrollbar>
+                                                                            <el-timeline class="co_rowtimebox">
+                                                                                <el-timeline-item
+                                                                                  v-for="(task, index) in DesignDatas"
+                                                                                  :key="index"
+                                                                                  :icon="task.icon"
+                                                                                  :type="task.type"
+                                                                                  :color="task.color"
+                                                                                  :size="task.size"
+                                                                                  :hollow="task.hollow"
+                                                                                >
+                                                                                <el-card class="co_timecard" :class="task.state==1?' co_timecardsuccess':(task.state==2?' co_timecarddanger':' co_timecardifo')">
+                                                                                    <div class="co_timecard_toptip">
+                                                                                        <span>任务{{index+1}}：</span> 
+                                                                                        <span v-if="task.state==1" class="co_tip_success">完成</span>
+                                                                                        <span v-if="task.state==2" class="co_tip_danger">完成超期</span>
+                                                                                        <span v-if="task.state==3" class="co_tip_info">未完成</span>
+                                                                                    </div>
+                                                                                    <!-- <span style="font-size:12px;color:#999">NO:{{task.tasknumber}}</span> -->
+                                                                                    <h4>{{task.name}}</h4>
+                                                                                    <h2 style="color:#c99d5c;">￥{{task.amount}}万</h2>
+                                                                                    <div class="">
+                                                                                        <div>
+                                                                                           <span>{{task.remark}}</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    {{task.responsiblor}}
+                                                                                    <p style="font-size: 12px;color:#ccc">{{ task.endtime }}</p>
+                                                                                </el-card>
+                                                                                 
+                                                                                </el-timeline-item>
+                                                                              </el-timeline>
+                                                                        </el-scrollbar>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </el-col>
+                                        </el-row>
+                                    </div>
+                                </div>
+                            </el-col>
+                            <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                                <div class="co_pane">
+                                    <!-- <div class="co_pane_header">
+                                        <h3>协同设计资源</h3>
+                                        <div>
+                                            <span class="co_eidt" v-if="false"> 
+                                            </span>
+                                        </div>
+                                    </div> -->
+                                    <div class="co_pane_body">
+                                        <el-row :gutter="20">
+                                            <el-col :xs="24" :sm="24" :md="5" :lg="4" :xl="3">
+                                                <div class="co_pane_header">
+                                                    <h3>协同设计资源</h3>
+                                                    <div>
+                                                        <span class="co_eidt" v-if="false"> 
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <el-tree :data="treedata" 
+                                                        :props="defaultProps" 
+                                                        node-key="id" 
+                                                        @node-contextmenu="treeRightClick"
+                                                        :indent="4" 
+                                                        :expand-on-click-node="false" 
+                                                        :highlight-current="true" 
+                                                        @node-click="handleNodeClick"
+                                                        class="co_tree">
+                                                        <template #default="{ node, data }">
+                                                            <span>
+                                                                <i :class="data.icon +' treeIconlarge'"></i>{{ node.label }}
+                                                            </span> 
+                                                        </template>
+                                                        <!-- <span class="custom-tree-node" slot-scope="{node, data }">
+                                                            <span>
+                                                                <i :class="data.icon +' treeIconlarge'"></i>{{ node.label }}
+                                                            </span>              
+                                                        </span> -->
+                                                    </el-tree>
+                                                </div>
+                                            </el-col>
+                                            <el-col :xs="24" :sm="24" :md="19" :lg="20" :xl="21">
+                                                <div class="co_subbox">
+                                                    <div>
+                                                        <el-button size="large" color="#155dff">新建文件夹</el-button>
+                                                        <!-- <h3>全部文件</h3> -->
+                                                    </div>
+                                                    <div>
+                                                        <el-button size="large"  onclick="window.open('filesearch.html')" style="margin-right: 10px;">智能文档检索</el-button>
+                                                        <span class="co_eidt" @click="isCard=!isCard"> 
+                                                            <i v-show="!isCard" class="icon iconfont icon-qiapianxuanze-"></i> 
+                                                            <i v-show="isCard" class="icon iconfont icon-liebiao"></i> 
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="co_breadcrumbbox" style="padding:16px 0;">
+                                                        <el-breadcrumb separator="/">
+                                                            <el-breadcrumb-item :to="{ path: '/' }" onclick="window.open('index.html')">项目名称</el-breadcrumb-item>
+                                                            <el-breadcrumb-item><a href="/">项目资料</a></el-breadcrumb-item>
+                                                        </el-breadcrumb>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="foxallcardbox">
+                                                        <el-scrollbar style="height: 100%;">
+                                                          <!-- 卡片 -->
+                                                          <div class="fox-allcardbox" v-show="!isCard">
+                                                            <ul>
+                                                              <li class="fox-cardlist-box" v-for="(item,index) in filetableData " :key="index">
+                                                                <div :class='"fox-icon-box file-" + item.format'>
+                                                                  <span>{{item.format}}</span>
+                                                                </div>
+                                                                <div class="fox-icon-pdf-text">{{item.name}}</div>
+                                                              </li>
+                                                            </ul>
+                                                          </div>
+                                                          <!-- 表格 -->
+                                                          <div class="fox-table-box" v-show="isCard">
+                                                            <el-table
+                                                              :data="filetableData"
+                                                              height="calc(100vh - 364px)"
+                                                              class="fs_fox_table"
+                                                              style="width: 100%">
+                                                              <el-table-column
+                                                                type="selection"
+                                                                align="center"
+                                                                width="55">
+                                                              </el-table-column>
+                                                              <el-table-column type="index"> </el-table-column>
+                                                              <el-table-column
+                                                                prop="name"
+                                                                label="文件名称"
+                                                                min-width="180">
+                                                              </el-table-column>
+                                                              <el-table-column
+                                                                prop="mark"
+                                                                label="签名"
+                                                                width="180">
+                                                              </el-table-column>
+                                                              <el-table-column
+                                                                prop="label"
+                                                                label="标签"
+                                                                width="180">
+                                                              </el-table-column>
+                                                              <el-table-column
+                                                                prop="size"
+                                                                label="文件大小"
+                                                                width="180">
+                                                              </el-table-column>
+                                                              <el-table-column
+                                                                prop="sendTime"
+                                                                label="发送时间"
+                                                                width="180">
+                                                              </el-table-column>
+                                                              <el-table-column
+                                                                prop="format"
+                                                                label="文件格式"
+                                                                width="100">
+                                                              </el-table-column>
+                                                            </el-table>
+                                                            <div style="margin-top: 6px;position:relative;left: -10px;">
+                                                              <el-pagination
+                                                              background
+                                                              layout="prev, pager, next"
+                                                              :total="1000">
+                                                            </el-pagination>
+                                                            </div>
+                                                            
+                                                          </div>
+                                                          
+                                                        </el-scrollbar>
+                                                      </div>
+                                                </div>
+                                            </el-col>
+                                        </el-row>
+                                    </div>
+                                </div>
+                            </el-col>
+                        </el-row>
+                    </div>
+                </section>
+                <div v-show="menuVisible">
+                    <ul id="menu" class="menu">
+                      <li class="menu__item" @click="creatfloderdialog = true"><i class="fa fa-folder treeIcon"></i>新建子文件夹</li>
+                      <div class="diviedline"></div>
+                      <li class="menu__item" ><i class="fa fa-arrow-up treeIcon"></i>上传</li>
+                      <li class="menu__item" ><i class="fa fa-arrow-down treeIcon"></i>下载</li>
+                      <div class="diviedline"></div>
+                      <li class="menu__item" ><i class="fa fa-rotate-right treeIcon"></i>刷新</li>
+                      <div class="diviedline"></div>
+                      <li class="menu__item" ><i class="fa fa-sort-numeric-asc treeIcon"></i>排序</li>
+                      <li class="menu__item" ><i class="fa fa-scissors treeIcon"></i>剪切</li>
+                      <li class="menu__item" ><i class="fa fa-copy treeIcon"></i>复制</li>
+                      <li class="menu__item" ><i class="fa fa-clipboard treeIcon"></i>粘贴</li>
+                      <div class="diviedline"></div>
+                      <li class="menu__item" ><i class="fa fa-trash treeIcon"></i>删除</li>
+                      <li class="menu__item" ><i class="fa fa-i-cursor treeIcon"></i>重命名</li>
+                      <div class="diviedline"></div>
+                      <li class="menu__item" ><i class="fa fa-send treeIcon"></i>发送更新</li>
+                      <li class="menu__item" ><i class="fa fa-cloud treeIcon"></i>同步</li>
+                    </ul>
+                 </div>
+            </el-scrollbar>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./static/data/testData.js"></script>
+<script>
+    const App = {
+        setup() {
+            const { proxy } = getCurrentInstance();
+            const { computed} = Vue;
+            function initState() {
+                return {
+                    activities:activitiesData,
+                    DesignDatas:DesignData,
+                    tableData:taskitemData,
+                    treedata:treedatas,
+                    filetableData:fileList,
+                    isPressCard:false,
+                    isCard:false,
+                    menuVisible:false,
+                }
+            }
+            const state = reactive(initState());
+            const newName = computed(() => {
+                  
+            })
+            function createProject(){
+                state.creatProDia=true
+            }
+            function showAccounthistory(){
+                state.isShowAccounthistoryPage=!state.isShowAccounthistoryPage
+            }
+
+            // 树节点右击
+            function treeRightClick(MouseEvent, object, Node, element) { // 鼠标右击触发事件
+                state.menuVisible = false // 先把模态框关死，目的是 第二次或者第n次右键鼠标的时候 它默认的是true
+                state.menuVisible = true  // 显示模态窗口，跳出自定义菜单栏
+                var menu = document.querySelector('#menu') 
+                menu.style.left = MouseEvent.clientX + 50 + 'px'
+                document.addEventListener('click', foo) // 给整个document添加监听鼠标事件，点击任何位置执行foo方法
+                menu.style.top = MouseEvent.clientY - 10 + 'px'
+                console.log('右键被点击的event:', MouseEvent)
+                console.log('右键被点击的object:', object)
+                console.log('右键被点击的value:', Node)
+                console.log('右键被点击的element:', element)
+                console.log('鼠标点击了树形结构图')
+            }
+            function foo() { // 取消鼠标监听事件 菜单栏
+                state.menuVisible = false
+                document.removeEventListener('click', foo) // 要及时关掉监听，不关掉的是一个坑，不信你试试，虽然前台显示的时候没有啥毛病，加一个alert你就知道了
+            }
+            function handleClick(tab, event) {
+                console.log(tab, event);
+            }
+          
+            return {
+                ...toRefs(state),
+                createProject,
+                showAccounthistory
+            }
+        }
+    }
+    mountApp(App);
+</script>
+
+<script src="./static/js/Highchart/highcharts-gantt.js"></script>
+<script src="./static/js/Highchart/exporting.js"></script>
+<script src="./static/js/Highchart/pro_gantt.js"></script>

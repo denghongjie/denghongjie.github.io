@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="./static/css/base.css" rel="stylesheet"> -->
+    <link href="./static/css/element@2.2.6.css" rel="stylesheet">
+    <script src="./static/js/vue@3.2.36.js"></script>
+    <script src="./static/js/elementPlus@2.2.6.js"></script>
+    <script src="./static/js/elementPlus-zhcn.js"></script>
+    <script src="./static/js/elementPlusIcon@2.0.4.js"></script>
+    <script src="./static/js/init.js"></script>
+    <title>探索者系统同系统</title>
+    <link href="./static/css/collaborative.css" rel="stylesheet">
+    <link href="./static/css/fonts/iconfont.css" rel="stylesheet">
+    <link href="./static/css/iconfonts/iconfont.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <div class="co_header">
+            <span onclick="window.open('index.html')">探索者协同系统</span>
+            <div>用户</div>
+        </div>
+        <div class="co_content">
+            <el-scrollbar style="height:100%">
+                <div class="co_breadcrumbbox">
+                    <el-breadcrumb separator="/">
+                        <el-breadcrumb-item :to="{ path: '/' }" onclick="window.open('index.html')">首页</el-breadcrumb-item>
+                        <el-breadcrumb-item><a href="/">文档检索引擎</a></el-breadcrumb-item>
+                    </el-breadcrumb>
+                </div>
+                <section class="co_warp">
+                    <div>
+                        <div class="co_yq_search" style="padding-top:10px">
+                            <div class="co_yq_searchbox">
+                                <el-input v-model="searchval">
+                                    <template #prepend>
+                                        <el-select v-model="searchtype" size="large" placeholder="选择" style="width: 115px">
+                                        <el-option label="项目" value="1" ></el-option>
+                                        <el-option label="文件夹" value="2" ></el-option>
+                                        <el-option label="文件名称" value="3" ></el-option>
+                                        </el-select>
+                                    </template>
+                                    <template #append>
+                                        <el-button :icon="Search" color="#155dff" onclick="window.open('result.html')">搜索</el-button>
+                                    </template>
+                                </el-input>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width:1360px;margin:60px auto;">
+                        <el-row :gutter="20">
+                            <el-col :span="5">
+                                <div class="grid-content ep-bg-purple" >
+                                    <div>
+                                        <h3>查询结果（420）</h3>
+                                    </div>
+                                    <!-- 检索列表 -->
+                                    <div class="co_leftcollapse">
+                                        <el-collapse v-model="activeNames" @change="handleChange">
+                                            <el-collapse-item title="按专业 （96）" name="1">
+                                            <div class="collapseulbox">
+                                                <ul>
+                                                    <li>建筑 <span>（15）</span> </li>
+                                                    <li>结构<span>（15）</span></li>
+                                                    <li>水<span>（15）</span></li>
+                                                    <li>暖<span>（15）</span></li>
+                                                </ul>
+                                            </div>
+                                            </el-collapse-item>
+                                            <el-collapse-item title="按格式 （155）" name="2">
+                                            <div class="collapseulbox">
+                                                <ul>
+                                                    <li>PDF<span>（15）</span></li>
+                                                    <li>DWG<span>（15）</span></li>
+                                                    <li>DWF<span>（15）</span></li>
+                                                    <li>DOC<span>（15）</span></li>
+                                                </ul>
+                                            </div>
+                                            </el-collapse-item>
+                                            <el-collapse-item title="按项目（55）" name="3">
+                                            <div class="collapseulbox">
+                                                <ul>
+                                                    <li>西北市政<span>（15）</span>）</li>
+                                                    <li>湖北电力<span>（15）</span></li>
+                                                    <li>江南水乡<span>（15）</span></li>
+                                                    <li>乌兰布统<span>（15）</span></li>
+                                                </ul>
+                                            </div>
+                                            </el-collapse-item>
+                                            <el-collapse-item title="按区域 （86）" name="4">
+                                            <div class="collapseulbox">
+                                                <ul>
+                                                    <li>北京<span>（15）</span></li>
+                                                    <li>上海<span>（15）</span></li>
+                                                    <li>广州<span>（15）</span></li>
+                                                    <li>湖南<span>（15）</span></li>
+                                                </ul>
+                                            </div>
+                                            </el-collapse-item>
+                                        </el-collapse>
+                                    </div>
+                                </div>
+                            </el-col>
+                            <el-col :span="19">
+                                <div class="grid-content ep-bg-purple" >
+                                    <div class="rest_top">
+                                        <div class="rest_top_text">
+                                            <h5>您检索的关键字为： <span style="color:#f00">'项目'</span> </h5>
+                                            <div class="rest_top_textdesc">找到约<span style="color:#f00"> (165) </span>条相关结果</div>
+                                        </div>
+                                        
+                                        <div class="rest_xsword">
+                                            相似词推荐： 
+                                            <span>施工图</span>
+                                            <span>设计师</span>
+                                            <span>后处理</span>          
+                                        </div>
+                                        <div class="rest_fileter">
+                                            <div>
+                                                <ul>
+                                                    <li class="oncur">匹配度</li>
+                                                    <li>热度</li>
+                                                    <li>文章名</li>
+                                                    <li>发布时间</li>
+                                                    <li>撰写时间</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 检索结果 -->
+                                    <div class="co_searchfile_box" v-for="index in 10 " :key="index">
+                                        <div class="co_searchfile_icon">
+                                            <i class="icon iconfont full-icon-icon_174"></i>
+                                        </div>
+                                        <div class="co_searchfile_text">
+                                            <div class="filenametext">TSZ-PC在装配式混凝土框架项目中的应用</div>
+                                            <div class="co_file_rowdesc">上传时间：2022-06-07   上传人：李晓雨     文件大小：120KB</div>
+                                            <div class="co_file_rowdesc">
+                                                文件标签：<el-tag>建筑</el-tag><el-tag>结构</el-tag><el-tag>水</el-tag>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </el-col>
+                          </el-row>
+                    
+                    </div>
+                </section>
+            </el-scrollbar>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./static/data/testData.js"></script>
+<script>
+    const App = {
+        setup() {
+            const { proxy } = getCurrentInstance();
+            const { computed} = Vue;
+            function initState() {
+                return {
+                    activeNames:'1'
+                }
+            }
+            const state = reactive(initState());
+            const newName = computed(() => {
+                  
+            })
+           
+
+            return {
+                ...toRefs(state),
+            }
+        }
+    }
+    mountApp(App);
+</script>
+

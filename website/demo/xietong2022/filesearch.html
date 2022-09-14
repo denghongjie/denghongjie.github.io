@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="./static/css/base.css" rel="stylesheet"> -->
+    <link href="./static/css/element@2.2.6.css" rel="stylesheet">
+    <script src="./static/js/vue@3.2.36.js"></script>
+    <script src="./static/js/elementPlus@2.2.6.js"></script>
+    <script src="./static/js/elementPlus-zhcn.js"></script>
+    <script src="./static/js/elementPlusIcon@2.0.4.js"></script>
+    <script src="./static/js/init.js"></script>
+    <title>探索者系统同系统</title>
+    <link href="./static/css/collaborative.css" rel="stylesheet">
+    <link href="./static/css/fonts/iconfont.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <div class="co_header">
+            <span onclick="window.open('index.html')">探索者协同系统</span>
+            <div>用户</div>
+        </div>
+        <div class="co_content">
+            <el-scrollbar style="height:100%">
+                <div class="co_breadcrumbbox">
+                    <el-breadcrumb separator="/">
+                        <el-breadcrumb-item :to="{ path: '/' }" onclick="window.open('index.html')">首页</el-breadcrumb-item>
+                        <el-breadcrumb-item><a href="/">文档检索引擎</a></el-breadcrumb-item>
+                    </el-breadcrumb>
+                </div>
+                <section class="co_warp">
+                    <div class="co_yq_search">
+                        <h1>我要查找</h1>
+                        <div class="co_yq_searchbox">
+                            <el-input v-model="searchval">
+                                <template #prepend>
+                                    <el-select v-model="searchtype" size="large" placeholder="选择" style="width: 115px">
+                                    <el-option label="项目" value="1" ></el-option>
+                                    <el-option label="文件夹" value="2" ></el-option>
+                                    <el-option label="文件名称" value="3" ></el-option>
+                                    </el-select>
+                                </template>
+                                <template #append>
+                                    <el-button :icon="Search" color="#155dff" onclick="window.open('result.html')">搜索</el-button>
+                                </template>
+                            </el-input>
+                        </div>
+                    </div>
+                    
+                </section>
+            </el-scrollbar>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./static/data/testData.js"></script>
+<script>
+    const App = {
+        setup() {
+            const { proxy } = getCurrentInstance();
+            const { computed} = Vue;
+            function initState() {
+                return {
+                    searchtype:'',
+                    searchval:'',
+                }
+            }
+            const state = reactive(initState());
+            const newName = computed(() => {
+                  
+            })
+           
+
+            return {
+                ...toRefs(state),
+            }
+        }
+    }
+    mountApp(App);
+</script>
+
