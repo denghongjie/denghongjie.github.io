@@ -288,15 +288,33 @@ const navLists=[{
         imgurl:"./static/img/app/convertio.png",
         url:"https://convertio.co/zh/",
     },{
-        title:"SooGif",
-        desc:"GIF工具箱，收费",
-        imgurl:"./static/img/app/soogif.png",
-        url:"https://www.soogif.com/gifTool",
-    },{
         title:"智影",
         desc:"数字人播报·字幕",
         imgurl:"./static/img/app/zenvideo.png",
         url:"https://zenvideo.qq.com/",
+    }]
+},{
+    title:"GIF工具",
+    children:[{
+        title:"GifCam",
+        desc:"录制Gif",
+        imgurl:"./static/img/app/GifCam.png",
+        url:"https://gifcam.en.softonic.com/download",
+    },{
+        title:"ezgif【免费】",
+        desc:"在线免费合并gif图",
+        imgurl:"./static/img/app/ezgif.png",
+        url:"https://ezgif.com/maker",
+    },{
+        title:"docsmall【免费】",
+        desc:"最多30个图片制作gif",
+        imgurl:"./static/img/app/docsmall.png",
+        url:"https://docsmall.com/gif-compress",
+    },{
+        title:"SooGif",
+        desc:"GIF工具箱，收费",
+        imgurl:"./static/img/app/soogif.png",
+        url:"https://www.soogif.com/gifTool",
     }]
 },{
     title:"格式工具",
@@ -953,5 +971,36 @@ const datalists=[{
         desc:"中国领先的数据综合服务平台",
         imgurl:"./static/img/app/dishuju.svg",
         url:"https://dycharts.com/appv2/#/pages/home/index?channelCode=B0S1QDMY&hmsr=cop-dydataio&hmpl=navi&dypos=navi-logo",
+    },]
+},]
+
+const skillLists=[{
+    title:"GIF",
+    children:[{
+        title:"压缩GIF的几种方法",
+        desc:"最基本的方法就是（抽帧）",
+        imgurl:"./static/img/app/gif.png",
+        url:"https://www.bilibili.com/read/cv16326458",
+    },]
+},{
+    title:"PS",
+    children:[{
+        title:"图片无损放大",
+        desc:"最清晰使用硬性边缘属性",
+        imgurl:"./static/img/app/ps.png",
+        url:"https://zhuanlan.zhihu.com/p/361483262",
+    },{
+        title:"制作透明背景bmp图标",
+        desc:"windows bmp工具图标制作方法",
+        imgurl:"./static/img/app/ps.png",
+        url:"https://www.renrendoc.com/paper/219021915.html",
+    }]
+},{
+    title:"AE",
+    children:[{
+        title:"视频导出小质量文件",
+        desc:"优先使用AfterCodecs",
+        imgurl:"./static/img/app/ae2022.jpg",
+        url:"http://www.360doc.com/content/21/0319/09/473725_967753481.shtml",
     },]
 },]

@@ -49,7 +49,6 @@ h1 {
 
 .el-tabs__item {
   font-size: 15px;
-  font-weight: 600;
 }
 
 .grid-content {
@@ -83,7 +82,6 @@ h1 {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-weight: 600;
   margin-bottom: 3px;
 }
 
