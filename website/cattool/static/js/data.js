@@ -112,6 +112,11 @@ const designspaces=[{
         desc:"阿里字体",
         imgurl:"./static/img/app/albbph.png",
         url:"https://alibabafont.taobao.com/wow/alibabafont/act/alifont?spm=a213iq.12778988.2991352756.2.497a125fFvRskZ&wh_biz=tm&acm=lb-zebra-483718-6345752.1003.4.5774787&scm=1003.4.lb-zebra-483718-6345752.OTHER_15548342496051_5774787",
+    },{
+        title:"其他字体",
+        desc:"灰大收集",
+        imgurl:"./static/img/app/huida.png",
+        url:"https://www.pslkzs.com/fonts.php",
     }]
 },{
     title:"图标空间",
@@ -346,6 +351,11 @@ const navLists=[{
         desc:"Recuva",
         imgurl:"./static/img/app/Recuva.jpg",
         url:"http://www.downza.cn/soft/4914.html",
+    },{
+        title:"爱资料工具【免费】",
+        desc:"里面有很多神器",
+        imgurl:"./static/img/app/toolnb.png",
+        url:"https://www.toolnb.com/",
     }]
 }]
 
