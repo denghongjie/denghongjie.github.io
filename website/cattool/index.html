@@ -350,6 +350,79 @@
                     </div>
                     
                 </el-tab-pane>
+                <el-tab-pane label="产品经理" name="11">
+                    <div class="navbody-box">
+                        <el-scrollbar  class="noscoll">
+                            <div class="right_info" style="position: fixed; right:0;bottom:60px;z-index: 5;">
+                                <el-image
+                                    style="width: 100px; height: 100px"
+                                    :src="url"
+                                    :preview-src-list="srcList"
+                                    :initial-index="4"
+                                    fit="cover"
+                                ></el-image>
+                            </div>
+                            <div class="nav_tab_body" v-for="(navs,index) in PMlist" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-scrollbar>
+                    </div>
+                    
+                </el-tab-pane>
+                <el-tab-pane label="智能科技" name="12">
+                    <div class="navbody-box">
+                        <el-scrollbar  class="noscoll">
+                            <div class="nav_tab_body" v-for="(navs,index) in AIlist" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-scrollbar>
+                    </div>
+                    
+                </el-tab-pane>
             </el-tabs>
         </div>
         <div :class="isShowlastpage?'gg_box gg_open':'gg_box'" >
@@ -407,10 +480,13 @@
                     viewlists:viewlist,
                     devlists:devlist,
                     datalist:datalists,
-
+                    PMlist:PMlists,
+                    AIlist:AIlists,
                     // 近期上新
                     lastapp:lastapps,
-                    isShowlastpage:true
+                    isShowlastpage:true,
+                    srcList:srcLists,
+                    url:srcLists[0],
                 }
             }
             const state = reactive(initState());
