@@ -1085,6 +1085,11 @@ const PMlists=[{
 },{
     title:"我要学习",
     children:[{
+        title:"人人都是产品经理",
+        desc:"产品经理之家",
+        imgurl:"./static/img/app/rrdoushicpjl.png",
+        url:"https://www.woshipm.com/",
+    },{
         title:"竞品分析",
         desc:"多对比几个总能精益求精",
         imgurl:"./static/img/app/jinpingfenxi.png",
