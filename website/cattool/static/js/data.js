@@ -441,6 +441,11 @@ const softwarelist=[{
         desc:"3D建模【快速】",
         imgurl:"./static/img/app/spline.png",
         url:"https://spline.design/#download",
+    },{
+        title:"CDR2021",
+        desc:"平面设计软件",
+        imgurl:"./static/img/app/crdr2021.jpg",
+        url:"https://www.yutu.cn/softhtml/downsoft_5125.html",
     }]
 },{
     title:"PS插件",
@@ -1013,7 +1018,20 @@ const skillLists=[{
         imgurl:"./static/img/app/ae2022.jpg",
         url:"http://www.360doc.com/content/21/0319/09/473725_967753481.shtml",
     },]
-},]
+},{
+    title:"字体",
+    children:[{
+        title:"字体侵权知多少？",
+        desc:"关于系统字体是否侵权",
+        imgurl:"./static/img/app/ae2022.jpg",
+        url:"https://www.zhihu.com/question/329951758",
+    },{
+        title:"Arial字体可使用面",
+        desc:"Arial不可商用、但开发商不追究责任",
+        imgurl:"./static/img/app/ae2022.jpg",
+        url:"https://www.zhihu.com/question/350237706",
+    }]
+}]
 const srcLists=['./static/img/腾讯产品经理 (2).png']
 const PMlists=[{
     title:"办公软件",
@@ -1121,8 +1139,9 @@ const PMlists=[{
         url:"https://www.dydata.io/community/report?source=baidu&plan=%E9%95%9D%E6%95%B0%E8%81%9A%E5%B7%A5%E4%BD%9C%E6%97%A5%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE&unit=%E8%A1%8C%E4%B8%9A%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%91%8A6&semkeyword=%E8%A1%8C%E4%B8%9A%E8%B6%8B%E5%8A%BF&e_creative=60633691285&e_keywordid=430574177489&e_keywordid2=430574177489",
     }]
 }]
+
 const AIlists=[{
-    title:"智能科技技术",
+    title:"智能科企",
     children:[{
         title:"网易智企",
         desc:"智能安全防护体系",
@@ -1132,7 +1151,7 @@ const AIlists=[{
         title:"智谱·AI",
         desc:"智能分析、数字人，让机器像人一样思考",
         imgurl:"./static/img/app/zpai.png",
-        url:"https://www.bilibili.com/read/cv16326458",
+        url:"https://www.zhipu.ai/",
     },]
 },{
     title:"智能体验",
@@ -1146,5 +1165,90 @@ const AIlists=[{
         desc:"智能分析、数字人，让机器像人一样思考",
         imgurl:"./static/img/app/lubanali.png",
         url:"https://hd.m.aliyun.com/act/luban-login.html?utm_content=g_1000033764&state=lb_login",
+    },]
+}]
+const viplists=[{
+    title:"终身会员",
+    children:[{
+        title:"千图网",
+        desc:"UI资源素材下载",
+        imgurl:"./static/img/app/qiantu.png",
+        url:"https://www.58pic.com/",
+    },{
+        title:"千库网",
+        desc:"透明素材下载",
+        imgurl:"./static/img/app/qianku.png",
+        url:"https://588ku.com/",
+    },{
+        title:"包图网",
+        desc:"图片视频素材下载",
+        imgurl:"./static/img/app/baotu.png",
+        url:"https://ibaotu.com/",
+    },{
+        title:"摄图网",
+        desc:"图片视频素材下载",
+        imgurl:"./static/img/app/shetuwang.png",
+        url:"https://699pic.com/",
+    },{
+        title:"虎课网",
+        desc:"基础办公软件学习",
+        imgurl:"./static/img/app/hukewang.png",
+        url:"https://huke88.com/",
+    },{
+        title:"办公资源网",
+        desc:"word、PPT等资源素材网站",
+        imgurl:"./static/img/app/banngongziyuan.png",
+        url:"https://www.bangongziyuan.com/",
+    },{
+        title:"觅知网",
+        desc:"版权图片素材",
+        imgurl:"./static/img/app/mizhiw.png",
+        url:"https://www.51miz.com/",
+    },{
+        title:"蜜蜂剪辑",
+        desc:"一款剪辑软件",
+        imgurl:"./static/img/app/mifenjianji.png",
+        url:"https://www.apowersoft.com.cn/beecut-pinzhuan",
+    },{
+        title:"爱拍剪辑",
+        desc:"一款剪辑软件",
+        imgurl:"./static/img/app/aipaijianji.png",
+        url:"http://www.aip.yswdap.vip/gp/ysjj.html?c=jianji14-bd&user=9&bd_vid=8189643460358578751",
+    },{
+        title:"迅捷文字转语音",
+        desc:"一款文字转换为语音的语音合成软件",
+        imgurl:"./static/img/app/xunjiewezzyy.png",
+        url:"https://www.xunjiepdf.com/voice",
+    },{
+        title:"迅捷OCR文字识别",
+        desc:"智能识别文字工具",
+        imgurl:"./static/img/app/xunjieocr.png",
+        url:"https://pc.recuvachina.com/ocr6/?utm_source=baidu-03&utm_medium=cpc&utm_campaign=17-OCR%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E5%93%81%E7%89%8C%E8%AE%A1%E5%88%92&utm_term=ocr%E8%BF%85%E6%8D%B7&e_creative=49411116832&e_keywordid=476957480308&bd_vid=8240630103684406670",
+    },{
+        title:"C4D在线",
+        desc:"C4D素材工具箱，用QQ",
+        imgurl:"./static/img/app/c4dzaixian.png",
+        url:"http://c4d.online/",
+    }]
+},{
+    title:"普通会员",
+    children:[{
+        title:"islide",
+        desc:"PPT制作神器",
+        imgurl:"./static/img/app/islide.jpg",
+        url:"https://www.islide.cc/",
+    },{
+        title:"Modown魔顿",
+        desc:"C4D素材工具箱，用QQ",
+        imgurl:"./static/img/app/modun.png",
+        url:"http://www.modown.cn/",
+    }]
+},{
+    title:"其他通道",
+    children:[{
+        title:"享设计",
+        desc:"他们说他们是认真的",
+        imgurl:"./static/img/app/xiansheji.png",
+        url:"https://www.design006.com/",
     },]
 }]

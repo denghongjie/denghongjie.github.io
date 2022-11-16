@@ -423,6 +423,38 @@
                     </div>
                     
                 </el-tab-pane>
+                <el-tab-pane label="VIP通道" name="13">
+                    <div class="navbody-box">
+                        <el-scrollbar  class="noscoll">
+                            <div class="nav_tab_body" v-for="(navs,index) in viplist" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-scrollbar>
+                    </div>
+                    
+                </el-tab-pane>
             </el-tabs>
         </div>
         <div :class="isShowlastpage?'gg_box gg_open':'gg_box'" >
@@ -460,7 +492,7 @@
 </body>
 
 </html>
-<script src="./static/js/data.js"></script>
+<script src="./static/js/data.js?v1.1"></script>
 <script src="./static/data/logdata.js"></script>
 <script>
     const App = {
@@ -482,6 +514,8 @@
                     datalist:datalists,
                     PMlist:PMlists,
                     AIlist:AIlists,
+                    viplist:viplists,
+
                     // 近期上新
                     lastapp:lastapps,
                     isShowlastpage:true,
