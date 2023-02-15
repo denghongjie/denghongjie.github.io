@@ -10,7 +10,7 @@ const tszWeblists=[{
         title:"探索者CRM网站",
         desc:"探索者CRM系统",
         imgurl:"./static/img/app/crm.png",
-        url:"https://www.tsz.com.cn/tszcrm2020/",
+        url:"https://beta.tsz.com.cn/login",
     },{
         title:"探索者云",
         desc:"探索者云系统",
@@ -82,6 +82,11 @@ const tszWeblists=[{
         desc:"真果联动OKR官网",
         imgurl:"./static/img/app/zgokr.png",
         url:"https://app.we-focus.cn/login",
+    },{
+        title:"catool",
+        desc:"收录工具箱",
+        imgurl:"./static/img/app/cat.png",
+        url:"https://deng_hong_jie.gitee.io/",
     }]
 },{
     title:"开发平台",
