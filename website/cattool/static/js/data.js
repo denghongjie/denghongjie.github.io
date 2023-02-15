@@ -987,7 +987,35 @@ const datalists=[{
         imgurl:"./static/img/app/dishuju.svg",
         url:"https://dycharts.com/appv2/#/pages/home/index?channelCode=B0S1QDMY&hmsr=cop-dydataio&hmpl=navi&dypos=navi-logo",
     },]
-},]
+},{
+    title:"大数据数据集",
+    children:[{
+        title:"百度飞桨",
+        desc:"数据集收录",
+        imgurl:"./static/img/app/baidufeijiang.png",
+        url:"https://aistudio.baidu.com/aistudio/index",
+    },{
+        title:"极市",
+        desc:"数据集收录",
+        imgurl:"./static/img/app/jishijiao.png",
+        url:"https://www.cvmart.net/dataSets",
+    },{
+        title:"格物钛",
+        desc:"数据集收录",
+        imgurl:"./static/img/app/gewutai.png",
+        url:"https://gas.graviti.cn/open-datasets",
+    },{
+        title:"千言",
+        desc:"数据集收录",
+        imgurl:"./static/img/app/qianyan.png",
+        url:"https://www.luge.ai/#/",
+    },{
+        title:"帕依提提",
+        desc:"数据集收录",
+        imgurl:"./static/img/app/payititi.svg",
+        url:"https://www.payititi.com/",
+    }]
+}]
 
 const skillLists=[{
     title:"GIF",
@@ -1166,6 +1194,93 @@ const AIlists=[{
         imgurl:"./static/img/app/lubanali.png",
         url:"https://hd.m.aliyun.com/act/luban-login.html?utm_content=g_1000033764&state=lb_login",
     },]
+},{
+    title:"那些好玩的AI",
+    children:[{
+        title:"ToonMe",
+        desc:"一款主打卡通特效的AI换脸软件，用户上传照片后，就能秒变迪士尼在逃公主/王子。",
+        imgurl:"./static/img/app/toonme.png",
+        url:"https://toonme.com/",
+    },{
+        title:"文心一格",
+        desc:"百度AI绘画平台，“一语成画”",
+        imgurl:"./static/img/app/feijiang.png",
+        url:"https://yige.baidu.com/",
+    },{
+        title:"Tinywow",
+        desc:"个强大的在线文件格式转换工具",
+        imgurl:"./static/img/app/Tinywow.png",
+        url:"https://tinywow.com/",
+    },{
+        title:"量子速写",
+        desc:"写作猫推出的一款AI自动写文章工具",
+        imgurl:"./static/img/app/xiezuocat.png",
+        url:"https://xiezuocat.com/",
+    },{
+        title:"33搜帧",
+        desc:"根据文案搜索视频",
+        imgurl:"./static/img/app/33souzhen.png",
+        url:"https://fse.agilestudio.cn/",
+    },{
+        title:"33台词",
+        desc:"根据台词搜索视频",
+        imgurl:"./static/img/app/33taici.png",
+        url:"https://33.agilestudio.cn/invite?userCode=9zJJt8wK",
+    }]
+},{
+    title:"chatGPT",
+    children:[{
+        title:"forchange",
+        desc:"暂时免费的chatgpt体验",
+        imgurl:"./static/img/app/forchange.png",
+        url:"https://chat.forchange.cn/",
+    },{
+        title:"OpenAI 官网",
+        desc:"chatGPT官网、需要国外账号",
+        imgurl:"./static/img/app/openAi.png",
+        url:"https://openai.com/",
+    }]
+},{
+    title:"数字多媒体",
+    children:[{
+        title:"movio",
+        desc:"数字人播报【国际通用】",
+        imgurl:"./static/img/app/movio.svg",
+        url:"https://app.movio.la/guest/templates?o=l&sid=no_sid",
+    },{
+        title:"colossyan",
+        desc:"数字人播报【编辑PPT变为视频】",
+        imgurl:"./static/img/app/colossyan.png",
+        url:"https://www.colossyan.com/",
+    },{
+        title:"Kinetix",
+        desc:"免费创建3D动画的代码平台，方便进入元宇宙",
+        imgurl:"./static/img/app/Kinetix.svg",
+        url:"https://www.kinetix.tech/",
+    },{
+        title:"DeepMotion",
+        desc:"实时身体跟踪将视频转换为3D动画",
+        imgurl:"./static/img/app/deepmotion.png",
+        url:"https://www.deepmotion.com/",
+    }]
+},{
+    title:"智能网站收录工具",
+    children:[{
+        title:"futurepedia",
+        desc:"最大的人工智能AI工具目录",
+        imgurl:"./static/img/app/futurepedia.svg",
+        url:"https://www.futurepedia.io/",
+    },{
+        title:"Ai Tool Hunt",
+        desc:"AI智能工具库",
+        imgurl:"./static/img/app/aitoolhunt.png",
+        url:"https://www.aitoolhunt.com/",
+    },{
+        title:"ai-lib",
+        desc:"国内的工具库",
+        imgurl:"./static/img/app/ai-lib.bin",
+        url:"https://www.ai-lib.club/",
+    }]
 }]
 const viplists=[{
     title:"终身会员",
