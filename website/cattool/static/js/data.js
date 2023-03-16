@@ -38,6 +38,11 @@ const designspaces=[{
         desc:"免费",
         imgurl:"./static/img/app/convert.png",
         url:"https://avocode.com/convert-psd-to-sketch",
+    },{
+        title:"ChartCube",
+        desc:"免费在线可是化工具",
+        imgurl:"./static/img/app/ChartCube.png",
+        url:"https://chartcube.alipay.com/",
     }]
 },{
     title:"商用图片下载",
@@ -241,6 +246,39 @@ const navLists=[{
         desc:"24小时自动删除",
         imgurl:"./static/img/app/tmp_link.svg",
         url:"https://tmp.link/",
+    }]
+},{
+    title:"黑科技工具",
+    children:[{
+        title:"MockingBird软件",
+        desc:"录制一段别人的声音，就可以模仿该人说话",
+        imgurl:"./static/img/app/mockingbird.png",
+        url:"https://github.com/babysor/MockingBird",
+    },{
+        title:"MockingBird教程",
+        desc:"MockingBird软件教程",
+        imgurl:"./static/img/app/mockingbird.png",
+        url:"https://www.bilibili.com/opus/762116447686099108",
+    },{
+        title:"Runway",
+        desc:"视频元素替换，一键抠视频",
+        imgurl:"./static/img/app/runway.png",
+        url:"https://runwayml.com/",
+    },{
+        title:"Runway简介",
+        desc:"抠图、替换背景随心所欲",
+        imgurl:"./static/img/app/runway.png",
+        url:"https://www.uisdc.com/runway",
+    },{
+        title:"xpression camera",
+        desc:"根据声音替换面容、生成动态视频",
+        imgurl:"./static/img/app/xpression.png",
+        url:"https://xpressioncamera.com/",
+    },{
+        title:"xpression简介",
+        desc:"视频换脸术",
+        imgurl:"./static/img/app/xpression.png",
+        url:"https://www.sohu.com/a/431031772_104421",
     }]
 },{
     title:"商业修图工具推荐",
