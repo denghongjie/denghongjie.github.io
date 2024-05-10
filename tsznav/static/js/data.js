@@ -91,13 +91,15 @@ const tszWeblists=[{
         title:"catool",
         desc:"收录工具箱",
         imgurl:"./static/img/app/cat.png",
-        url:"https://deng_hong_jie.gitee.io/",
-    },{
-        title:"UI参考",
-        desc:"收录界面参考",
-        imgurl:"./static/img/app/ymxs.png",
-        url:"https://deng_hong_jie.gitee.io/",
-    }]
+        url:"../website/cattool/index.html",
+    }
+    // ,{
+    //     title:"UI参考",
+    //     desc:"收录界面参考",
+    //     imgurl:"./static/img/app/ymxs.png",
+    //     url:"https://deng_hong_jie.gitee.io/",
+    // }
+]
     
 },{
     title:"开发平台",
