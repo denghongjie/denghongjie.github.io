@@ -108,6 +108,7 @@ h1 {
   top: 10px;
   z-index: 2;
   left: 20px;
+  width: 85%;
 }
 
 .grid-content.largeblock .app_text .grid-content_title {

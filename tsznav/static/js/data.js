@@ -10,7 +10,7 @@ const tszWeblists=[{
         title:"探索者CRM网站",
         desc:"探索者CRM系统",
         imgurl:"./static/img/app/crm.png",
-        url:"https://beta.tsz.com.cn/login",
+        url:"https://crm.tsz.com.cn/login",
     },{
         title:"探索者云",
         desc:"探索者云系统",
@@ -25,7 +25,7 @@ const tszWeblists=[{
 },{
     title:"产品网站",
     children:[{
-        title:"大平台",
+        title:"探索者数字与信息一体化平台2024",
         desc:"探索者微管理平台",
         imgurl:"./static/img/app/dapingtai.png",
         url:"https://www.tszcloud.com.cn/index",
@@ -33,7 +33,7 @@ const tszWeblists=[{
         title:"易批注",
         desc:"易批注软件官网",
         imgurl:"./static/img/app/ypz.png",
-        url:"https://www.tszcloud.com.cn/website/index.html",
+        url:"https://www.tszcloud.com.cn/web-page/website/index.html",
     },{
         title:"工程易览PDF",
         desc:"TSPsee产品介绍",
@@ -68,6 +68,11 @@ const tszWeblists=[{
         imgurl:"./static/img/app/yzkj.png",
         url:"https://yunzhukeji.cn/",
     },{
+        title:"审图助手",
+        desc:"探索者审图小助手",
+        imgurl:"./static/img/app/审图助手-客户.png",
+        url:"https://shentuasst.yunzhukeji.cn/",
+    },{
         title:"南昌探索者软件",
         desc:"江西南昌探索者",
         imgurl:"./static/img/app/big.png",
@@ -87,14 +92,20 @@ const tszWeblists=[{
         desc:"收录工具箱",
         imgurl:"./static/img/app/cat.png",
         url:"https://deng_hong_jie.gitee.io/",
+    },{
+        title:"UI参考",
+        desc:"收录界面参考",
+        imgurl:"./static/img/app/ymxs.png",
+        url:"https://deng_hong_jie.gitee.io/",
     }]
+    
 },{
     title:"开发平台",
     children:[{
         title:"禅道-探索者测试平台",
         desc:"探索者测试专用平台",
         imgurl:"./static/img/app/tszcd.png",
-        url:"http://123.57.83.204:81/zentao/user-login-L3plbnRhby8=.html",
+        url:"http://123.56.22.197:81/zentao/user-login-L3plbnRhby9teS5odG1s.html",
     }]
 }]
 const threeDlists=[{
@@ -220,47 +231,86 @@ const threeDlists=[{
     }]
 }]
 const filelists=[{
-    title:"微管理系列",
+    title:"文档资料",
     children:[{
-        title:"易打印",
-        desc:"CAD打印",
+        title:"设计企业微管理解决方案",
+        desc:"【微管理】",
+        imgurl:"./static/img/bg.png",
+        bgcolor:"#ecedf0",
+        url:"./static/source/微管理/2022/2022-08 微管理系列产品简介.pdf",
+    },{
+        title:"结构设计TSSD系列软件",
+        desc:"【TSSD】",
+        bgcolor:"#ecedf0",
+        imgurl:"./static/img/bg.png",
+        url:"./static/source/微管理/2022/2022-08 微管理系列产品简介.pdf",
+    },{
+        title:"结构施工图校审系统",
+        desc:"【探索者审图】",
+        bgcolor:"#ecedf0",
+        imgurl:"./static/img/bg.png",
+        url:"./static/source/微管理/2022/2022-08 微管理系列产品简介.pdf",
+    },{
+        title:"探索者数字化集成设计平台",
+        desc:"【TS3D】",
+        bgcolor:"#ecedf0",
+        imgurl:"./static/img/bg_3huapingtai.png",
+        url:"./static/source/微管理/2021/探索者三化平台-TS3D-画册.pdf",
+    },{
+        title:"探索者装配式设计系统",
+        desc:"【TSPC】",
+        bgcolor:"#ecedf0",
+        imgurl:"./static/img/bg_tspc.png",
+        url:"./static/source/微管理/2020/探索者装配式设计系统【TSPC】.pdf",
+    },{
+        title:"BIM项目汇编画册",
+        desc:"【BIM】",
+        bgcolor:"#ecedf0",
+        imgurl:"./static/img/bg.png",
+        url:"./static/source/微管理/2022/2022-08 微管理系列产品简介.pdf",
+    },{
+        title:"专为工程行业服务的云平台解决方案",
+        desc:"【探索者云平台】",
+        bgcolor:"#ecedf0",
+        imgurl:"./static/img/bg_could.png",
+        url:"./static/source/微管理/2019/专为工程行业服务的云平台解决方案.pdf",
+    }]
+},{
+    title:"公共图片",
+    children:[{
+        title:"企业LOGO",
+        desc:"PNG高清",
         imgurl:"./static/img/bg.png",
         bgcolor:"#57ffd5",
         url:"./static/source/微管理/2022/2022-08 微管理系列产品简介.pdf",
     },{
-        title:"易签章",
-        desc:"PDF签字签章",
+        title:"企业标准字",
+        desc:"思源黑体字体",
         bgcolor:"#ff7575",
         imgurl:"./static/img/bg.png",
         url:"./static/source/微管理/2022/2022-08 微管理系列产品简介.pdf",
     },{
-        title:"易批注",
-        desc:"CAD批注/传输",
+        title:"企业VI",
+        desc:"企业视觉识别系统",
         bgcolor:"#ffb63c",
         imgurl:"./static/img/bg.png",
         url:"./static/source/微管理/2022/2022-08 微管理系列产品简介.pdf",
     },{
-        title:"易审图",
-        desc:"PDF工程图纸浏览及审图",
+        title:"企业PPT模版",
+        desc:"探索者PPT模版",
         bgcolor:"#ff3c76",
         imgurl:"./static/img/bg.png",
         url:"./static/source/微管理/2022/2022-08 微管理系列产品简介.pdf",
     },{
-        title:"易协同",
-        desc:"CAD文件夹/参照",
+        title:"企业名片",
+        desc:"你的名片",
         bgcolor:"#3c7cff",
         imgurl:"./static/img/bg.png",
         url:"./static/source/微管理/2022/2022-08 微管理系列产品简介.pdf",
     },{
-        title:"易校审",
-        desc:"图面审查、计算比对、批注",
+        title:"企业邮件模版",
+        desc:"探索者邮件模版",
         bgcolor:"#18b9ff",
-        imgurl:"./static/img/bg.png",
-        url:"./static/source/微管理/2022/2022-08 微管理系列产品简介.pdf",
-    },{
-        title:"大数据数据看板",
-        desc:"大数据查看、监督、分析",
-        bgcolor:"#3bffe9",
         imgurl:"./static/img/bg.png",
         url:"./static/source/微管理/2022/2022-08 微管理系列产品简介.pdf",
     }]
@@ -275,4 +325,159 @@ const vediolists=[{
         bgcolor:"#57ffd5",
         url:"https://www.bilibili.com/video/BV1ku411C7PN?spm_id_from=333.999.0.0",
     }]
+}]
+
+
+const vilists=[{
+    title:"企业LOGO",
+    children:[{
+        title:"探索者LOGO",
+        desc:"【AI矢量文件+PNG文件+黑白背景】",
+        imgurl:"./static/img/bg.png",
+        bgcolor:"#57ffd5",
+        url:"https://www.bilibili.com/video/BV1ku411C7PN?spm_id_from=333.999.0.0",
+    }]
+}]
+
+
+const studylists=[{
+    title:"签名签章",
+    children:[{
+        title:"签名制作教程",
+        desc:"工具PS",
+        imgurl:"./static/img/bg.png",
+        bgcolor:"#57ffd5",
+        url:"./static/source/video/2024-01-02 探索者签名制作教程.mp4",
+    },{
+        title:"签章制作教程",
+        desc:"工具PS",
+        imgurl:"./static/img/bg.png",
+        bgcolor:"#57ffd5",
+        url:"./static/source/video/2024-01-02 探索者签章制作教程.mp4",
+    }]
+}]
+
+
+
+const toollists=[{
+    title:"办公常用",
+    
+    children:[{
+        title:"office2024",
+        desc:"Office",
+        imgurl:"./static/img/app/tools/office.jpg",
+        url:"https://www.tsz.com.cn/Index.jsp",
+    },{
+        title:"Xmind思维导图",
+        desc:"Xmind",
+        imgurl:"./static/img/app/tools/xmind.png",
+        url:"https://crm.tsz.com.cn/login",
+    },{
+        title:"WPS",
+        desc:"金山WPS",
+        imgurl:"./static/img/app/tools/wps.jpg",
+        url:"https://cloud.tsz.com.cn/vpn/index.html",
+    },{
+        title:"Zoom",
+        desc:"zoom会议",
+        imgurl:"./static/img/app/tools/zoom.jpg",
+        url:"https://admin.yunzhukeji.cn/",
+    },{
+        title:"腾讯会议",
+        desc:"腾讯会议",
+        imgurl:"./static/img/app/tools/tenxunhuiyi.jpg",
+        url:"https://admin.yunzhukeji.cn/",
+    }]
+},{
+    title:"开发工具",
+    children:[{
+        title:"VScode",
+        desc:"前段开发工具",
+        imgurl:"./static/img/app/tools/dapingtai.png",
+        url:"https://www.tszcloud.com.cn/index",
+    },{
+        title:"NodePad++",
+        desc:"易批注软件官网",
+        imgurl:"./static/img/app/tools/ypz.png",
+        url:"https://www.tszcloud.com.cn/web-page/website/index.html",
+    },{
+        title:"node.js",
+        desc:"TSPsee产品介绍",
+        imgurl:"./static/img/app/tools/gcpdf.png",
+        url:"http://gcyl.yunzhukeji.cn/",
+    },{
+        title:"yarn",
+        desc:"BIMbang官方网站",
+        imgurl:"./static/img/app/tools/bimbang.png",
+        url:"https://bang.yunzhukeji.cn/",
+    },{
+        title:"IDEA",
+        desc:"数字化审图中心",
+        imgurl:"./static/img/app/tools/shengtu.png",
+        url:"http://123.57.83.204:7002/",
+    },{
+        title:"谷歌浏览器",
+        desc:"数字化审图中心",
+        imgurl:"./static/img/app/tools/guge.jpg",
+        url:"http://123.57.83.204:7002/",
+    }]
+},{
+    title:"其他工具",
+    children:[{
+        title:"剪映",
+        desc:"云注科技官网",
+        imgurl:"./static/img/app/tools/jianyin.jpg",
+        url:"https://yunzhukeji.cn/",
+    },{
+        title:"钉钉企业版",
+        desc:"云注科技官网",
+        imgurl:"./static/img/app/tools/dingding.png",
+        url:"https://yunzhukeji.cn/",
+    },{
+        title:"亿图",
+        desc:"破解版",
+        imgurl:"./static/img/app/tools/yitu.png",
+        url:"https://yunzhukeji.cn/",
+    },{
+        title:"photoshop2020",
+        desc:"破解版",
+        imgurl:"./static/img/app/tools/ps2022.jpg",
+        url:"https://yunzhukeji.cn/",
+    },{
+        title:"todesk",
+        desc:"破解版",
+        imgurl:"./static/img/app/tools/yzkj.png",
+        url:"https://yunzhukeji.cn/",
+    },{
+        title:"向日葵",
+        desc:"破解版",
+        imgurl:"./static/img/app/tools/xiangrikui.jpg",
+        url:"https://yunzhukeji.cn/",
+    },{
+        title:"百度网盘",
+        desc:"破解版",
+        imgurl:"./static/img/app/tools/baiduwangpang.jpg",
+        url:"https://yunzhukeji.cn/",
+    },{
+        title:"阿里云盘",
+        desc:"破解版",
+        imgurl:"./static/img/app/tools/aliyun.jpg",
+        url:"https://yunzhukeji.cn/",
+    },{
+        title:"飞书",
+        desc:"破解版",
+        imgurl:"./static/img/app/tools/feishu.jpg",
+        url:"https://yunzhukeji.cn/",
+    },{
+        title:"火绒",
+        desc:"破解版",
+        imgurl:"./static/img/app/tools/huorong.jpg",
+        url:"https://yunzhukeji.cn/",
+    },{
+        title:"everything",
+        desc:"破解版",
+        imgurl:"./static/img/app/tools/everything.png",
+        url:"https://yunzhukeji.cn/",
+    }]
+    
 }]

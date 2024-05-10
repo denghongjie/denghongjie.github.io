@@ -50,7 +50,7 @@
                                                         {{item.title}}
                                                     </div>
                                                     <div class="desctext">
-                                                        {{item.desc}}
+                                                        {{item.desc}} 
                                                     </div>
                                                 </div>
                                             </a>
@@ -62,13 +62,13 @@
                     </div>
                     
                 </el-tab-pane>
-                <el-tab-pane label="释放大招" name="2">
+                <el-tab-pane label="设计空间" name="2">
                     <div class="navbody-box">
                         <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in skillList" :key="index">
+                            <div class="nav_tab_body" v-for="(navs,index) in designspace" :key="index">
                                 <div class="title">{{navs.title}}</div>
                                 <el-row :gutter="16">
-                                    <el-col :xs="12" :sm="8" :md="6" :lg="6" :xl="4" v-for="(item,idx) in navs.children" :key="idx">
+                                    <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
                                         <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
                                             <a :href="item.url" target="_blank">
                                                 <div class="appimg">
@@ -94,13 +94,13 @@
                     </div>
                     
                 </el-tab-pane>
-                <el-tab-pane label="设计空间" name="3">
+                <el-tab-pane label="释放大招" name="3">
                     <div class="navbody-box">
                         <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in designspace" :key="index">
+                            <div class="nav_tab_body" v-for="(navs,index) in skillList" :key="index">
                                 <div class="title">{{navs.title}}</div>
                                 <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                    <el-col :xs="12" :sm="8" :md="6" :lg="6" :xl="4" v-for="(item,idx) in navs.children" :key="idx">
                                         <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
                                             <a :href="item.url" target="_blank">
                                                 <div class="appimg">
@@ -423,13 +423,144 @@
                     </div>
                     
                 </el-tab-pane>
-                <el-tab-pane label="VIP通道" name="13">
+                <el-tab-pane label="SD模型" name="13">
+                    <div class="navbody-box">
+                        <el-scrollbar  class="noscoll">
+                            <div class="nav_tab_body" v-for="(navs,index) in SDlist" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div>
+                                                    <img :src="item.scanimg" alt="" style="width: 100%;">
+                                                </div>
+                                                <!-- <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div> -->
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text1">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-scrollbar>
+                    </div>
+                    
+                </el-tab-pane>
+                <el-tab-pane label="VIP通道" name="14">
                     <div class="navbody-box">
                         <el-scrollbar  class="noscoll">
                             <div class="nav_tab_body" v-for="(navs,index) in viplist" :key="index">
                                 <div class="title">{{navs.title}}</div>
                                 <el-row :gutter="16">
                                     <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-scrollbar>
+                    </div>
+                    
+                </el-tab-pane>
+                <el-tab-pane label="MAC工具箱" name="15">
+                    <div class="navbody-box">
+                        <el-scrollbar  class="noscoll">
+                            <div class="nav_tab_body" v-for="(navs,index) in macList" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-scrollbar>
+                    </div>
+                    
+                </el-tab-pane>
+                <el-tab-pane label="网站欣赏" name="16">
+                    <div class="navbody-box">
+                        <el-scrollbar  class="noscoll">
+                            <div class="nav_tab_body" v-for="(navs,index) in webList" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-scrollbar>
+                    </div>
+                    
+                </el-tab-pane>
+                <el-tab-pane label="自学空间" name="17">
+                    <div class="navbody-box">
+                        <el-scrollbar  class="noscoll">
+                            <div class="nav_tab_body" v-for="(navs,index) in selfstudylist" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
                                         <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
                                             <a :href="item.url" target="_blank">
                                                 <div class="appimg">
@@ -496,7 +627,7 @@
 </body>
 
 </html>
-<script src="./static/js/data.js?v1.3"></script>
+<script src="./static/js/data.js"></script>
 <script src="./static/data/logdata.js"></script>
 <script>
     const App = {
@@ -518,7 +649,11 @@
                     datalist:datalists,
                     PMlist:PMlists,
                     AIlist:AIlists,
+                    SDlist:SDlists,
                     viplist:viplists,
+                    macList:mactools,
+                    webList:webLists,
+                    selfstudylist:selfstudylists,
 
                     // 近期上新
                     lastapp:lastapps,
