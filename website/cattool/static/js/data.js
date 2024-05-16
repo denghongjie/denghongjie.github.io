@@ -661,16 +661,11 @@ const navLists = [
         desc: "免费软件工具箱",
         imgurl: "./static/img/app/佛系软件.png",
         url: "https://foxirj.com/",
-      },{
-        title: "涨幅计算器",
-        desc: "股票、基金涨跌计算器",
-        imgurl: "./static/img/app/佛系软件.png",
-        url: "calculator.html",
-      },
+      }
     ],
   },
   {
-    title: "其他工具",
+    title: "4K世界",
     children: [
       {
         title: "4K世界",
@@ -683,23 +678,6 @@ const navLists = [
         desc: "什么值得看",
         imgurl: "./static/img/app/30.jpg",
         url: "https://smzdk.top/#/",
-      },
-      {
-        title: "爱资料工具【免费】",
-        desc: "里面有很多神器",
-        imgurl: "./static/img/app/toolnb.png",
-        url: "https://www.toolnb.com/",
-      },
-      {
-        title: "佛系软件",
-        desc: "免费软件工具箱",
-        imgurl: "./static/img/app/佛系软件.png",
-        url: "https://foxirj.com/",
-      },{
-        title: "涨幅计算器",
-        desc: "股票、基金涨跌计算器",
-        imgurl: "./static/img/app/佛系软件.png",
-        url: "calculator.html",
       },
     ],
   },
@@ -1953,6 +1931,11 @@ const AIlists = [{
       desc: "10web",
       imgurl: "./static/img/app/10web.png",
       url: "https://10web-site.ai/51/darling-yeti/",
+    },{
+      title: "Marketsy",
+      desc: "电商网站代码生成",
+      imgurl: "./static/img/app/marketsy.png",
+      url: "https://marketsy.ai/",
     },
   ],
 },
@@ -2186,7 +2169,22 @@ const AIlists = [{
   },
   {
     title: "绘画软件",
-    children: [
+    children: [{
+      title: "Adobe Firefly",
+      desc: "AI 文生图、图生图",
+      imgurl: "./static/img/app/Firefly.png",
+      url: "https://firefly.adobe.com/generate/images?id=db4e8a3d-638d-4166-94c7-918bdbd48f61",
+    },{
+      title: "Adobe ExPress",
+      desc: "AI 平面+视频设计",
+      imgurl: "./static/img/app/express.png",
+      url: "https://new.express.adobe.com/?promoid=D8F91NS&mv=other&mv2=unav&locale=zh-Hans-CN",
+    },,{
+      title: "Photoroom",
+      desc: "AI图片处理",
+      imgurl: "./static/img/app/photoroom.png",
+      url: "https://app.photoroom.com/create",
+    },
       {
         title: "NVIDIA Canvas",
         desc: "使用 AI 将简单的笔触变成逼真的风景图。快速创建背景或加速探索概念，让您可以将更多时间用在可视化创意上。",
@@ -2216,6 +2214,12 @@ const AIlists = [{
   {
     title: "文本AI",
     children: [
+      {
+        title: "Writesonic",
+        desc: "ai人工智能写作工具软件网站",
+        imgurl: "./static/img/app/Writesonic.svg",
+        url: "https://writesonic.com/?via=yisheng83",
+      },
       {
         title: "Notion AI",
         desc: "Notion AI 是一款AI写作助手，可以帮助你写作、集思广益、编辑、写总结等等",
@@ -2262,6 +2266,23 @@ const AIlists = [{
         desc: "实时身体跟踪将视频转换为3D动画",
         imgurl: "./static/img/app/deepmotion.png",
         url: "https://www.deepmotion.com/",
+      },
+    ],
+  },
+  {
+    title: "AI装修",
+    children: [
+      {
+        title: "collov",
+        desc: "AI室内装修",
+        imgurl: "./static/img/app/collov.svg",
+        url: "https://collov.cn/home",
+      },
+      {
+        title: "mokker",
+        desc: "产品包装AI，简易模式下的高质量产品摄影",
+        imgurl: "./static/img/app/Mokker.svg",
+        url: "https://mokker.ai/zh/",
       },
     ],
   },
@@ -2314,6 +2335,11 @@ const AIlists = [{
         desc: "AI工具箱",
         imgurl: "./static/img/app/zmtjy.png",
         url: "https://www.msbd123.com/#term-209",
+      },{
+        title: "别摸鱼导航",
+        desc: "网址导航",
+        imgurl: "./static/img/app/bmy.png",
+        url: "https://biemoyu.com/",
       },
     ],
   },
@@ -2546,6 +2572,16 @@ const webLists = [
         desc: "意象：一款无代码AI应用开发神器，强大的在线生成能力，无需一行代码的编写，只需通过描述即可生成功能强大的应用程序。",
         imgurl: "./static/img/app/imagica.png",
         url: "https://get.imagica.ai/studio?ref=pidoutv.com",
+      },{
+        title: "crazy-creative",
+        desc: "crazy-creative个性化设计定制网站",
+        imgurl: "./static/img/app/crazy-creative.svg",
+        url: "https://crazy-creative.framer.website",
+      },{
+        title: "crazy games",
+        desc: "3D网页游戏网站",
+        imgurl: "./static/img/app/crazygame.png",
+        url: "https://www.crazygames.com/",
       },
     ],
   },
