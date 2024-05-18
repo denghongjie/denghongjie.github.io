@@ -1854,6 +1854,12 @@ const AIlists = [{
       url: "https://tusiart.com/",
     },
     {
+      title: "堆友",
+      desc: "阿里出品免费ai绘画神器,0门槛免费生成,AI行业大咖联合推荐！",
+      imgurl: "./static/img/app/dui.png",
+      url: "https://d.design/?spm=ddesign.ai.0.0.4be95b841ie3BU",
+    },
+    {
       title: "Civitai【C站】",
       desc: "外网，全球最火模型站点",
       imgurl: "./static/img/app/civitai.png",
@@ -1992,7 +1998,17 @@ const AIlists = [{
 },
   {
     title: "那些好玩的AI",
-    children: [
+    children: [{
+      title: "Humeai",
+      desc: "AI情绪分析：测谎仪",
+      imgurl: "./static/img/app/Humeai.png",
+      url: "https://www.hume.ai/",
+    },{
+      title: "Humeai Demo",
+      desc: "AI情绪分析：测谎仪Demo",
+      imgurl: "./static/img/app/Humeai.png",
+      url: "https://demo.hume.ai/",
+    },
       {
         title: "magicanimate",
         desc: "图片变动画大模型",
