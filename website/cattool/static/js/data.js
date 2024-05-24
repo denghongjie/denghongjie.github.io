@@ -1026,6 +1026,17 @@ const studylists = [
       },
     ],
   },
+  {
+    title: "其他收藏教程",
+    children: [
+      {
+        title: "灰大设计圈",
+        desc: "（PS+AI+AE+C4D设计教程）",
+        imgurl: "./static/img/app/.png",
+        url: "https://www.pslkzs.com/course/course.php",
+      },
+    ],
+  },
 ];
 
 const designnorm = [
