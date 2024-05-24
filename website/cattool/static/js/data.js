@@ -1032,7 +1032,7 @@ const studylists = [
       {
         title: "灰大设计圈",
         desc: "（PS+AI+AE+C4D设计教程）",
-        imgurl: "./static/img/app/.png",
+        imgurl: "./static/img/app/huida.png",
         url: "https://www.pslkzs.com/course/course.php",
       },
     ],
