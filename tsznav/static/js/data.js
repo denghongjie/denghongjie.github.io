@@ -92,13 +92,12 @@ const tszWeblists=[{
         desc:"收录工具箱",
         imgurl:"./static/img/app/cat.png",
         url:"../website/cattool/index.html",
+    },{
+        title:"开发者社区",
+        desc:"技术共享",
+        imgurl:"./static/img/app/ymxs.png",
+        url:"../website/opentool/",
     }
-    // ,{
-    //     title:"UI参考",
-    //     desc:"收录界面参考",
-    //     imgurl:"./static/img/app/ymxs.png",
-    //     url:"https://deng_hong_jie.gitee.io/",
-    // }
 ]
     
 },{
