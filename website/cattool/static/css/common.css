@@ -24,11 +24,9 @@ a {
   background-image: linear-gradient(to bottom, #d8e3f1, #f1f2f3);
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 9;
 }
-.el-table .el-table__cell{
-  z-index: auto;
-}
+
 .h_warp {
   width: 1200px;
   margin: 0 auto;
@@ -40,4 +38,20 @@ a {
 
 .mlr-10 {
   margin: 0 10px;
+}
+
+.navbutton {
+  padding: 4px 10px 5px 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 10px;
+  color: #787878;
+  transition: ease all 0.5s;
+}
+
+.navbutton:hover {
+  border: 1px solid #0077ff;
+  color: #0077ff;
 }
