@@ -1515,7 +1515,7 @@ const devlist = [
         title: "xrelay",
         desc: "梯子工具【稍微便宜点】",
         imgurl: "./static/img/app/Xrelay.png",
-        url: "https://xrelay.net/#/",
+        url: "https://crelay.net/#/",
       },
     ],
   },
