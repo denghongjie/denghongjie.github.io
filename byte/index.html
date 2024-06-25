@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="../tsznav/static/css/base.css" rel="stylesheet"> -->
+    <link href="../tsznav/static/css/element@2.2.6.css" rel="stylesheet">
+    <link href="../tsznav/static/css/element@2.2.6.css" rel="stylesheet">
+    <script src="../tsznav/static/js/vue@3.2.36.js"></script>
+    <script src="../tsznav/static/js/elementPlus@2.2.6.js"></script>
+    <script src="../tsznav/static/js/elementPlus-zhcn.js"></script>
+    <script src="../tsznav/static/js/elementPlusIcon@2.0.4.js"></script>
+    <script src="../tsznav/static/js/init.js"></script>
+    <title>字节码网址导航</title>
+    <link href="../tsznav/static/css/common.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../tsznav/static/css/fonts/iconfont.css">
+    <link rel="stylesheet" href="../tsznav/static/css/iconfonts/iconfont.css">
+    <link href="../tsznav/static/css/help.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div id="app">
+        <div class="navheader">
+            <div class="logobox" >
+                <!-- <a href=""><img src="../tsznav/static/img/navbar.png" alt=""></a> -->
+                <h1><span><img src="./img/marbyte.png" alt="" style="width: 185px;position: relative;top: 10px;"></span>网址导航</h1>
+                
+            </div>
+            <el-button @click="SetHome(this,window.location)">设为主页</el-button>
+        </div>
+        <div class="navbody">
+            <el-scrollbar style="height: 100%;" class="noscroll">
+                <div  class="baidusearch">
+                    <div class="sc_icon"> 
+                        <img src="../tsznav/static/img/baidu.png" alt="" > 
+                    </div>
+                    <div>
+                        <el-input v-model="searchvalue" @keyup.enter="search(searchvalue)">
+                            <template #append>
+                                <el-button  type="primary" @click="search(searchvalue)" size="large">百度一下</el-button>
+                            </template>
+                        </el-input>
+                    </div>
+                </div>
+                <div class="tsz_navbody">
+                    <el-tabs v-model="activeName" class="demo-tabs navtab" tab-position="top" @tab-click="handleClick" >
+                        <el-tab-pane label="网址导航" name="1">
+                            <div class="nav_tab_body" v-for="(navs,index) in byteWeblist" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="12" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-tab-pane>
+                        <el-tab-pane label="友情链接" name="2">
+                            <div class="nav_tab_body" v-for="(navs,index) in friendsList" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="12" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-tab-pane>
+                        <el-tab-pane label="文档资源" name="3">
+                            <div class="nav_tab_body" v-for="(navs,index) in filelist" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="12" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-tab-pane>
+                    </el-tabs>
+                </div>
+            </el-scrollbar>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./data.js"></script>
+<script>
+    const App = {
+        setup() {
+            const { proxy } = getCurrentInstance();
+            const { computed} = Vue;
+            function initState() {
+                return {
+                    activeName:'1',
+                    byteWeblist:byteWeblists,
+                    friendsList:friendsLists,
+                    filelist:filelists,
+                    searchvalue:''
+                }
+            }
+            const state = reactive(initState());
+            const newName = computed(() => {
+                  
+            })
+            function handleClick (tab, event) {
+                console.log(tab, event)
+            }
+            function search(keyword){
+                window.open('https://www.baidu.com/s?wd='+keyword)
+            }
+            // 设为首页
+            function SetHome(obj, vrl) {
+                try {
+                    obj.style.behavior = 'url(#default#homepage)';
+                    obj.setHomePage(vrl);
+                } catch(e) {
+                    if (window.netscape) {
+                    try {
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    } catch(e) {
+                        alert("抱歉！您的浏览器不支持直接设为首页。请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为“true”，点击“加入收藏”后忽略安全提示，即可设置成功。");
+                    }
+                    var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                    prefs.setCharPref('browser.startup.homepage', vrl);
+                    }
+                }
+            }
+            return {
+                ...toRefs(state),
+                handleClick,
+                search,
+                SetHome
+            }
+        }
+    }
+    mountApp(App);
+</script>
