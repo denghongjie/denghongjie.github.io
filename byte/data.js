@@ -8,22 +8,22 @@ const byteWeblists=[{
     },{
         title:"爱源码资源网",
         desc:"优秀源码学习平台",
-        imgurl:"./img/app/crm.png",
+        imgurl:"./img/app/aiyuanma.png",
         url:"https://www.jianai.love/",
     },{
-        title:"codeAI-前台",
+        title:"粉笔AI-前台",
         desc:"字节码AI工具箱",
-        imgurl:"./img/app/tszcould.png",
+        imgurl:"./img/app/fb.png",
         url:"http://47.104.4.220:9520",
     },{
-        title:"codeAI-后台管理",
+        title:"粉笔AI-后台管理",
         desc:"字节码AI工具箱",
-        imgurl:"./img/app/tszcould.png",
+        imgurl:"./img/app/fb.png",
         url:"http://47.104.4.220:9520/admin/#/",
     },{
         title:"tower协同办公",
         desc:"字节码协同办公平台",
-        imgurl:"./img/app/tszcould.png",
+        imgurl:"./img/app/tower.png",
         url:"https://tower.im/join?t=bf8743fd31a315ac0dccfd2cfc1366f0",
     },{
         title:"cattool",
@@ -36,52 +36,52 @@ const byteWeblists=[{
     children:[{
         title:"微信公众号",
         desc:"公众号登录渠道",
-        imgurl:"./img/app/dapingtai.png",
+        imgurl:"./img/app/wx.png",
         url:"https://mp.weixin.qq.com/",
     },{
         title:"抖音",
-        desc:"易批注软件官网",
-        imgurl:"./img/app/ypz.png",
+        desc:"抖音官网",
+        imgurl:"./img/app/dy.png",
         url:"https://www.douyin.com/",
     },{
         title:"快手",
-        desc:"TSPsee产品介绍",
-        imgurl:"./img/app/gcpdf.png",
+        desc:"快手官网",
+        imgurl:"./img/app/kuaishou.jfif",
         url:"https://www.kuaishou.com/new-reco",
     },{
         title:"CSDN",
-        desc:"BIMbang官方网站",
-        imgurl:"./img/app/bimbang.png",
+        desc:"csdn-官网",
+        imgurl:"./img/app/csdn.png",
         url:"https://www.csdn.net/",
     },{
         title:"掘金",
-        desc:"数字化审图中心",
-        imgurl:"./img/app/shengtu.png",
+        desc:"掘金官网",
+        imgurl:"./img/app/jj.png",
         url:"https://juejin.cn/",
     },{
         title:"知乎",
-        desc:"设计院管理系统",
-        imgurl:"./img/app/shejiyuan.png",
+        desc:"知乎官网",
+        imgurl:"./img/app/zh.png",
         url:"https://www.zhihu.com/",
     },{
         title:"简书",
-        desc:"探索者协同网站",
-        imgurl:"./img/app/xittongpingtai.png",
+        desc:"简书-官网",
+        imgurl:"./img/app/js.png",
         url:"https://www.jianshu.com/",
     },{
         title:"今日头条",
-        desc:"探索者协同网站",
-        imgurl:"./img/app/xittongpingtai.png",
+        desc:"今日头条官网",
+        imgurl:"./img/app/tt.png",
         url:"https://www.toutiao.com/?wid=1719275161280",
     },{
         title:"西瓜视频",
-        desc:"探索者协同网站",
-        imgurl:"./img/app/xittongpingtai.png",
+        desc:"西瓜视频官网",
+        imgurl:"./img/app/xgsp.png",
         url:"https://www.ixigua.com/",
     },{
         title:"新浪微博",
-        desc:"探索者协同网站",
-        imgurl:"./img/app/xittongpingtai.png",
+        desc:"新浪微博-推广",
+        imgurl:"./img/app/wb.png",
         url:"https://weibo.com/",
     }]
 },{
@@ -114,12 +114,12 @@ const friendsLists=[{
     children:[{
         title:"易舟科技",
         desc:"易舟科技官网",
-        imgurl:"./img/app/tsz.ico",
+        imgurl:"./img/app/yzkj.png",
         url:"https://martbyte.com/",
     },{
         title:"68API",
         desc:"优秀源码学习平台",
-        imgurl:"./img/app/crm.png",
+        imgurl:"./img/app/68api.png",
         url:"https://www.68api.com/",
     }]
 }]
@@ -128,15 +128,15 @@ const filelists=[{
     children:[{
         title:"爱源码-资源共享文档",
         desc:"资源共享免费",
-        imgurl:"./img/app/tsz.ico",
+        imgurl:"./img/app/txwd.png",
         url:"https://docs.qq.com/sheet/DSVN1Ylp0akRxc3ZS?tab=cjolos",
     }]
 },{
     title:"AI共享资源",
     children:[{
-        title:"codeAI资源共享",
+        title:"粉笔AI资源共享",
         desc:"资源共享免费",
-        imgurl:"./img/app/dapingtai.png",
+        imgurl:"./img/app/txwd.png",
         url:"https://docs.qq.com/sheet/DSUtZZlVPWnFJY1Nl?tab=BB08J2",
     }]
 }]
