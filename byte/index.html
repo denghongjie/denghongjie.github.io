@@ -127,6 +127,33 @@
                                 </el-row>
                             </div>
                         </el-tab-pane>
+                        <el-tab-pane label="开发者" name="4">
+                            <div class="nav_tab_body" v-for="(navs,index) in developlist" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="12" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-tab-pane>
                     </el-tabs>
                 </div>
             </el-scrollbar>
@@ -135,7 +162,7 @@
 </body>
 
 </html>
-<script src="./data.js?v1.0.1"></script>
+<script src="./data.js"></script>
 <script>
     const App = {
         setup() {
@@ -147,6 +174,7 @@
                     byteWeblist:byteWeblists,
                     friendsList:friendsLists,
                     filelist:filelists,
+                    developlist:developlists,
                     searchvalue:''
                 }
             }

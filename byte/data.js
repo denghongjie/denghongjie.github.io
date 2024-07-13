@@ -11,6 +11,11 @@ const byteWeblists=[{
         imgurl:"./img/app/aiyuanma.png",
         url:"https://www.jianai.love/",
     },{
+        title:"粉笔AI-【官网】",
+        desc:"字节码AI工具箱",
+        imgurl:"./img/app/fb.png",
+        url:"https://fenbi.chat",
+    },{
         title:"粉笔AI-前台",
         desc:"字节码AI工具箱",
         imgurl:"./img/app/fb.png",
@@ -83,6 +88,16 @@ const byteWeblists=[{
         desc:"新浪微博-推广",
         imgurl:"./img/app/wb.png",
         url:"https://weibo.com/",
+    },{
+        title:"B站",
+        desc:"新浪微博-推广",
+        imgurl:"./img/app/bzhan.png",
+        url:"https://www.bilibili.com/",
+    },{
+        title:"花瓣",
+        desc:"新浪微博-推广",
+        imgurl:"./img/app/huaban.png",
+        url:"https://huaban.com/follow",
     }]
 },{
     title:"运营工具",
@@ -101,11 +116,6 @@ const byteWeblists=[{
         desc:"运营工具箱",
         imgurl:"./img/app/guang.png",
         url:"https://www.lightai.com.cn/square",
-    },{
-        title:"LAI",
-        desc:"AI API接口平台",
-        imgurl:"./img/app/LAI.png",
-        url:"https://api.lightai.io/",
     }]
 }]
 
@@ -138,5 +148,85 @@ const filelists=[{
         desc:"资源共享免费",
         imgurl:"./img/app/txwd.png",
         url:"https://docs.qq.com/sheet/DSUtZZlVPWnFJY1Nl?tab=BB08J2",
+    }]
+}]
+
+
+const developlists=[{
+    title:"AI - API",
+    children:[{
+        title:"柏拉图次元 API (同LAI) ✨",
+        desc:"￥1=1$",
+        imgurl:"./img/app/bltcyapi.png",
+        url:"https://api.bltcy.ai/models",
+    },{
+        title:"SY API ✨",
+        desc:"￥1=1$",
+        imgurl:"./img/app/syapi.png",
+        url:"https://api.sychatplus.cc",
+    },{
+        title:"益丰API ✨",
+        desc:"￥1=1$",
+        imgurl:"./img/app/yfapi.png",
+        url:"https://ephone.ai",
+    },{
+        title:"LAI Api ",
+        desc:"￥1=1$",
+        imgurl:"./img/app/LAI.png",
+        url:"https://api.lightai.io/models",
+    },{
+        title:"taobeiv API ",
+        desc:"￥1=1$",
+        imgurl:"./img/app/txwd.png",
+        url:"https://api.taobeiv.cn/#1LuTlVpQW",
+    },{
+        title:"数字先锋 API ",
+        desc:"￥1=1$",
+        imgurl:"./img/app/txwd.png",
+        url:"https://mj.cxhao.com/",
+    },{
+        title:"one API ",
+        desc:"￥1.3=1$（只有midjourney）价格在0.12左右",
+        imgurl:"./img/app/txwd.png",
+        url:"https://mjapis.com/home",
+    },{
+        title:"OCOOL API ",
+        desc:"￥1.5=1$ 价格贵，模型多【文心一言、Minimax】",
+        imgurl:"./img/app/txwd.png",
+        url:"https://api.v36.cm/models",
+    },{
+        title:"V3 API ",
+        desc:"￥2.5=1$ 价格昂贵性能一般",
+        imgurl:"./img/app/txwd.png",
+        url:"https://api.v36.cm/models",
+    }]
+},{
+    title:"AI竞品网站",
+    children:[{
+        title:"LobeChat",
+        desc:"优秀的chatAI网站",
+        imgurl:"./img/app/lobechat.png",
+        url:"https://lobehub.com/zh",
+    },{
+        title:"伯乐AI",
+        desc:"优秀的chatAI网站",
+        imgurl:"./img/app/bole.png",
+        url:"https://ai.bleai.cn/",
+    }]
+},{
+    title:"源码",
+    children:[{
+        title:"【源码】LobeChat",
+        desc:"开源",
+        imgurl:"./img/app/lobechat.png",
+        url:"https://gitee.com/mirrors/lobechat",
+    }]
+},{
+    title:"工具",
+    children:[{
+        title:"wildcard",
+        desc:" OpenAI 第三方来获取 API Key",
+        imgurl:"./img/app/wildcard.png",
+        url:"https://wildcard.com.cn/?code=AIGC1688",
     }]
 }]
