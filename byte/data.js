@@ -98,6 +98,11 @@ const byteWeblists=[{
         desc:"新浪微博-推广",
         imgurl:"./img/app/huaban.png",
         url:"https://huaban.com/follow",
+    },{
+        title:"百度统计",
+        desc:"百度统计通道",
+        imgurl:"./img/app/baidu.png",
+        url:"https://tongji.baidu.com/main/homepage/10000639164/homepage/index",
     }]
 },{
     title:"运营工具",
