@@ -479,6 +479,11 @@ const toollists=[{
         desc:"破解版",
         imgurl:"./static/img/app/tools/everything.png",
         url:"https://yunzhukeji.cn/",
+    },{
+        title:"PS+PR+插件合集",
+        desc:"飞书文档",
+        imgurl:"./static/img/app/tools/Docs.png",
+        url:"https://pxhza5vd6il.feishu.cn/base/JDWdbJNada08Ojsl9PGcholNnqg?table=tbldplLNEZqJwOfH&view=vewtWHMxfA",
     }]
     
 }]
