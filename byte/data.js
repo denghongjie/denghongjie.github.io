@@ -122,6 +122,24 @@ const byteWeblists=[{
         imgurl:"./img/app/guang.png",
         url:"https://www.lightai.com.cn/square",
     }]
+},{
+    title:"辅助工具",
+    children:[{
+        title:"OutLook邮箱",
+        desc:"邮箱登录地址",
+        imgurl:"./img/app/dzc.png",
+        url:"https://outlook.live.com/mail/0/",
+    },{
+        title:"Poe",
+        desc:"claude-3-sonnet 体验站",
+        imgurl:"./img/app/poe.svg",
+        url:"https://poe.com/chat/3g200jofbshgnuoxqnd",
+    },{
+        title:"豆包",
+        desc:"快捷通道",
+        imgurl:"./img/app/poe.svg",
+        url:"https://www.doubao.com/chat/?channel=baidu_pz&source=db_baidu_pz_01&keywordid=weizhi7",
+    }]
 }]
 
 const friendsLists=[{
@@ -164,6 +182,11 @@ const developlists=[{
         desc:"￥1=1$",
         imgurl:"./img/app/bltcyapi.png",
         url:"https://api.bltcy.ai/models",
+    },{
+        title:"AIGC(个人搭建) ✨",
+        desc:"￥0.9=1$，mj 0.036",
+        imgurl:"./img/app/aigx-x.png",
+        url:"https://aigc.x-see.cn/",
     },{
         title:"SY API ✨",
         desc:"￥1=1$",
