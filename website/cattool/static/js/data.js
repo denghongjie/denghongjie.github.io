@@ -1513,9 +1513,14 @@ const devlist = [
     children: [
       {
         title: "xrelay",
-        desc: "梯子工具【稍微便宜点】",
+        desc: "梯子工具【稍微便宜点】一年大概120左右500GB足够用一年了",
         imgurl: "./static/img/app/Xrelay.png",
         url: "https://crelay.net/#/",
+      },{
+        title: "泡泡Dog",
+        desc: "梯子工具【稍微便宜点】一年大概98左右888GB足够用一年了",
+        imgurl: "./static/img/app/dog.png",
+        url: "https://ftq.lanzouj.com/i2oHW1l4wtud",
       },
     ],
   },
@@ -1893,10 +1898,10 @@ const AIlists = [{
       url: "https://monica.im/home/chat/monica/monica",
     },
     {
-      title: "chat",
-      desc: "免费、别人的测试机器",
+      title: "粉笔AI",
+      desc: "简单易用、支持AI绘画",
       imgurl: "./static/img/app/forchange.png",
-      url: "https://mn2p.ldaichat.com/c.html",
+      url: "https://fenbi.chat",
     },{
       title: "coze：GPT4.0 免费",
       desc: "免费可使用GPT4.0，字节跳动推出",
@@ -1975,6 +1980,21 @@ const AIlists = [{
       desc: "AI视频",
       imgurl: "./static/img/app/StableVideo.png",
       url: "https://www.stablevideo.com/login?returnUrl=%2F",
+    },{
+      title: "Luma",
+      desc: "基于NeRF,文字,图片,视频都可ai生成3D模型,Luma AI是3D图像制作的最新技术",
+      imgurl: "./static/img/app/luma.png",
+      url: "https://lumalabs.ai/dream-machine",
+    },{
+      title: "Sora",
+      desc: "Sora是一个基于大规模训练的文本控制视频生成扩散模型",
+      imgurl: "./static/img/app/Sora.png",
+      url: "https://openai.com/index/sora/",
+    },{
+      title: "suno",
+      desc: "Suno是一款Al驱动的音频和音乐生成工具",
+      imgurl: "./static/img/app/suno.png",
+      url: "https://suno.com/",
     },{
       title: "boximator",
       desc: "【字节跳动AI视频研究院】",

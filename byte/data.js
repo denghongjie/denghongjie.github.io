@@ -4,7 +4,7 @@ const byteWeblists=[{
         title:"字节码官网",
         desc:"字节码官网",
         imgurl:"./img/app/zjm.png",
-        url:"https://martbyte.com/",
+        url:"https://www.martbyte.com",
     },{
         title:"爱源码资源网",
         desc:"优秀源码学习平台",
@@ -14,7 +14,7 @@ const byteWeblists=[{
         title:"粉笔AI-【官网】",
         desc:"字节码AI工具箱",
         imgurl:"./img/app/fb.png",
-        url:"https://fenbi.chat",
+        url:"https://www.fenbi.chat",
     },{
         title:"粉笔AI-前台",
         desc:"字节码AI工具箱",
@@ -238,6 +238,11 @@ const developlists=[{
     },{
         title:"伯乐AI",
         desc:"优秀的chatAI网站",
+        imgurl:"./img/app/bole.png",
+        url:"https://ai.bleai.cn/",
+    },{
+        title:"ChatMoney",
+        desc:"机器人分身、机器人形象、视频、音乐",
         imgurl:"./img/app/bole.png",
         url:"https://ai.bleai.cn/",
     }]
