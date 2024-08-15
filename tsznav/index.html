@@ -72,7 +72,34 @@
                                 </el-row>
                             </div>
                         </el-tab-pane>
-                        <el-tab-pane label="产品下载" name="2">
+                        <el-tab-pane label="海外通道" name="2">
+                            <div class="nav_tab_body" v-for="(navs,index) in outwaylist" :key="index">
+                                <div class="title">{{navs.title}}</div>
+                                <el-row :gutter="16">
+                                    <el-col :xs="12" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
+                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                            <a :href="item.url" target="_blank">
+                                                <div class="appimg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_bg">
+                                                    <img :src="item.imgurl" alt="">
+                                                </div>
+                                                <div class="app_text">
+                                                    <div class="grid-content_title">
+                                                        {{item.title}}
+                                                    </div>
+                                                    <div class="desctext">
+                                                        {{item.desc}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                        </el-tab-pane>
+                        <el-tab-pane label="产品下载" name="3">
                             <div class="nav_tab_body" v-for="(navs,index) in threeDlist" :key="index">
                                 <div class="title">{{navs.title}}</div>
                                 <el-row :gutter="16">
@@ -99,7 +126,7 @@
                                 </el-row>
                             </div>
                         </el-tab-pane>
-                        <el-tab-pane label="文档资源" name="3">
+                        <el-tab-pane label="文档资源" name="4">
                             <div class="nav_tab_body" v-for="(navs,index) in filelist" :key="index">
                                 <div class="title">{{navs.title}}</div>
                                 <el-row :gutter="16">
@@ -124,7 +151,7 @@
                                 </el-row>
                             </div>
                         </el-tab-pane>
-                        <el-tab-pane label="视频资源" name="4">
+                        <el-tab-pane label="视频资源" name="5">
                             <div class="nav_tab_body" v-for="(navs,index) in vediolist" :key="index">
                                 <div class="title">{{navs.title}}</div>
                                 <el-row :gutter="16">
@@ -152,7 +179,7 @@
                                 </el-row>
                             </div>
                         </el-tab-pane>
-                        <el-tab-pane label="物料规范" name="5">
+                        <el-tab-pane label="物料规范" name="6">
                             <div class="nav_tab_body" v-for="(navs,index) in studylist" :key="index">
                                 <div class="title">{{navs.title}}</div>
                                 <el-row :gutter="16">
@@ -180,7 +207,7 @@
                                 </el-row>
                             </div>
                         </el-tab-pane>
-                        <el-tab-pane label="企业视觉识别系统" name="6">
+                        <el-tab-pane label="企业视觉识别系统" name="7">
                             <div class="nav_tab_body" v-for="(navs,index) in vilist" :key="index">
                                 <div class="title">{{navs.title}}</div>
                                 <el-row :gutter="16">
@@ -205,7 +232,7 @@
                                 </el-row>
                             </div>
                         </el-tab-pane>
-                        <el-tab-pane label="常用工具" name="7">
+                        <el-tab-pane label="常用工具" name="8">
                             <div class="nav_tab_body" v-for="(navs,index) in toollist" :key="index">
                                 <div class="title">{{navs.title}}</div>
                                 <el-row :gutter="16">
@@ -240,7 +267,7 @@
 </body>
 
 </html>
-<script src="./static/js/data.js?v1.1.2"></script>
+<script src="./static/js/data.js?v1.0.2"></script>
 <script>
     const App = {
         setup() {
@@ -250,6 +277,7 @@
                 return {
                     activeName:'1',
                     tszWeblist:tszWeblists,
+                    outwaylist:outwaylists,
                     threeDlist:threeDlists,
                     filelist:filelists,
                     vediolist:vediolists,
