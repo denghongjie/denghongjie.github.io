@@ -128,7 +128,7 @@ const outwaylists=[{
     },{
         title:"TikTok",
         desc:"短视频分享平台，积累了超过十亿的活跃用户",
-        imgurl:"./static/img/app/tools/TikTok.png",
+        imgurl:"./static/img/app/tools/tikTok.png",
         url:"https://www.tiktok.com",
     },{
         title:"Youtube",
