@@ -109,6 +109,92 @@ const tszWeblists=[{
         url:"http://123.56.22.197:81/zentao/user-login-L3plbnRhby9teS5odG1s.html",
     }]
 }]
+const outwaylists=[{
+    title:"梯子",
+    children:[{
+        title:"泡泡狗",
+        desc:"梯子",
+        imgurl:"./static/img/app/tools/paopao.png",
+        bgcolor:"#ecedf0",
+        url:"https://ftq.lanzouj.com/i2oHW1l4wtud",
+    }]
+},{
+    title:"渠道",
+    children:[{
+        title:"weichat",
+        desc:"微信国际版-海内外沟通桥梁",
+        imgurl:"./static/img/app/tools/wechat.png",
+        url:"https://www.wechat.com",
+    },{
+        title:"TikTok",
+        desc:"短视频分享平台，积累了超过十亿的活跃用户",
+        imgurl:"./static/img/app/tools/TikTok.png",
+        url:"https://www.tiktok.com",
+    },{
+        title:"Youtube",
+        desc:"一个流行的视频分享平台【美国-谷歌旗下】",
+        imgurl:"./static/img/app/tools/youtube.png",
+        url:"https://www.youtube.com",
+    },{
+        title:"facebook",
+        desc:"是全球用户最多的社交媒体平台之一【美国】",
+        imgurl:"./static/img/app/tools/facebook.png",
+        url:"https://www.facebook.com",
+    },{
+        title:"Twitter【X】",
+        desc:"以短文本（称为“推文”）的形式分享想法、新闻和实时事件，社交媒体平台",
+        imgurl:"./static/img/app/tools/x.png",
+        url:"https://x.com/",
+    },{
+        title:"Discord",
+        desc:"Discord最初针对游戏玩家，但现在广泛应用于学习、工作、爱好者社区、艺术创作等众多领域",
+        imgurl:"../website/cattool/static/img/app/Discord.png",
+        url:"https://discord.com/",
+    },{
+        title:"Snapchat",
+        desc:"一款图像和视频社交媒体应用程序，允许用户通过发送“快照”（Snap）与朋友和家人进行交流",
+        imgurl:"./static/img/app/tools/snaochat.png",
+        url:"https://www.snapchat.com/",
+    },{
+        title:"Reddit",
+        desc:"社交新闻和讨论平台，类似于twitter",
+        imgurl:"./static/img/app/tools/Reddit.png",
+        url:"https://www.reddit.com/",
+    }]
+},{
+    title:"其他",
+    children:[{
+        title:"spotify",
+        desc:"全球最大的流媒体音乐平台之一",
+        imgurl:"./static/img/app/tools/spotify.jfif",
+        url:"https://open.spotify.com",
+    },{
+        title:"line",
+        desc:"一款流行的即时通讯应用程序，主要在日本、东南亚以及其他一些地区广泛使用",
+        imgurl:"./static/img/app/tools/line.png",
+        url:"https://line.me/en",
+    },{
+        title:"Netflix",
+        desc:"全球领先的流媒体视频服务平台",
+        imgurl:"./static/img/app/tools/netflix.png",
+        url:"https://www.netflix.com",
+    },{
+        title:"Reddit",
+        desc:"网络上最大的社区之一，其内容覆盖面广泛，涵盖科技、娱乐、新闻、体育等多个领域",
+        imgurl:"./static/img/app/tools/Reddit.png",
+        url:"https://www.reddit.com",
+    },{
+        title:"Instagram",
+        desc:"一个流行的社交媒体平台，Instagram 也被广泛用于品牌营销和社交影响者推广",
+        imgurl:"./static/img/app/tools/Instagram.jfif",
+        url:"https://www.instagram.com",
+    },{
+        title:"whatsapp",
+        desc:"Discord最初针对游戏玩家，但现在广泛应用于学习、工作、爱好者社区、艺术创作等众多领域",
+        imgurl:"./static/img/app/tools/whatsapp.jfif",
+        url:"https://discord.com/",
+    }]
+}]
 const threeDlists=[{
     title:"探索者产品",
     children:[{
@@ -367,27 +453,27 @@ const toollists=[{
         title:"office2024",
         desc:"Office",
         imgurl:"./static/img/app/tools/office.jpg",
-        url:"https://www.tsz.com.cn/Index.jsp",
+        url:"https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=_k_Cj0KCQjwq_G1BhCSARIsACc7Nxrz8-YkTHxlEzicM1MkRnvxgBZRltCQO7ix2epgvAozlWCGmXWSfmQaAhVKEALw_wcB_k_&OCID=AIDcmm474qp8el_SEM__k_Cj0KCQjwq_G1BhCSARIsACc7Nxrz8-YkTHxlEzicM1MkRnvxgBZRltCQO7ix2epgvAozlWCGmXWSfmQaAhVKEALw_wcB_k_&gad_source=1&gclid=Cj0KCQjwq_G1BhCSARIsACc7Nxrz8-YkTHxlEzicM1MkRnvxgBZRltCQO7ix2epgvAozlWCGmXWSfmQaAhVKEALw_wcB",
     },{
         title:"Xmind思维导图",
         desc:"Xmind",
         imgurl:"./static/img/app/tools/xmind.png",
-        url:"https://crm.tsz.com.cn/login",
+        url:"https://xmind.cn/download/",
     },{
         title:"WPS",
         desc:"金山WPS",
         imgurl:"./static/img/app/tools/wps.jpg",
-        url:"https://cloud.tsz.com.cn/vpn/index.html",
+        url:"https://www.wps.cn",
     },{
         title:"Zoom",
         desc:"zoom会议",
         imgurl:"./static/img/app/tools/zoom.jpg",
-        url:"https://admin.yunzhukeji.cn/",
+        url:"https://zoom.us/zh-cn/download",
     },{
         title:"腾讯会议",
         desc:"腾讯会议",
         imgurl:"./static/img/app/tools/tenxunhuiyi.jpg",
-        url:"https://admin.yunzhukeji.cn/",
+        url:"https://meeting.tencent.com/",
     }]
 },{
     title:"开发工具",
@@ -395,32 +481,32 @@ const toollists=[{
         title:"VScode",
         desc:"前段开发工具",
         imgurl:"./static/img/app/tools/dapingtai.png",
-        url:"https://www.tszcloud.com.cn/index",
+        url:"https://code.visualstudio.com/",
     },{
         title:"NodePad++",
         desc:"易批注软件官网",
         imgurl:"./static/img/app/tools/ypz.png",
-        url:"https://www.tszcloud.com.cn/web-page/website/index.html",
+        url:"https://notepad-plus-plus.org/downloads/",
     },{
         title:"node.js",
         desc:"TSPsee产品介绍",
         imgurl:"./static/img/app/tools/gcpdf.png",
-        url:"http://gcyl.yunzhukeji.cn/",
+        url:"https://nodejs.org/zh-cn",
     },{
         title:"yarn",
         desc:"BIMbang官方网站",
         imgurl:"./static/img/app/tools/bimbang.png",
-        url:"https://bang.yunzhukeji.cn/",
+        url:"https://yarn.bootcss.com/index.html",
     },{
         title:"IDEA",
         desc:"数字化审图中心",
         imgurl:"./static/img/app/tools/shengtu.png",
-        url:"http://123.57.83.204:7002/",
+        url:"https://www.jetbrains.com/idea/",
     },{
         title:"谷歌浏览器",
         desc:"数字化审图中心",
         imgurl:"./static/img/app/tools/guge.jpg",
-        url:"http://123.57.83.204:7002/",
+        url:"https://www.google.com/intl/zh-CN/chrome/",
     }]
 },{
     title:"其他工具",
@@ -428,57 +514,57 @@ const toollists=[{
         title:"剪映",
         desc:"云注科技官网",
         imgurl:"./static/img/app/tools/jianyin.jpg",
-        url:"https://yunzhukeji.cn/",
+        url:"https://www.capcut.cn/",
     },{
         title:"钉钉企业版",
         desc:"云注科技官网",
         imgurl:"./static/img/app/tools/dingding.png",
-        url:"https://yunzhukeji.cn/",
+        url:"https://www.dingtalk.com/",
     },{
         title:"亿图",
         desc:"破解版",
         imgurl:"./static/img/app/tools/yitu.png",
-        url:"https://yunzhukeji.cn/",
+        url:"https://www.edrawsoft.cn/edrawsoft-3in1.html?channel=baidu&utm_source=baidu&utm_medium=cpc&utm_campaign=pinpai&utm_content=yitu&bd_vid=10512827907718422809",
     },{
         title:"photoshop2020",
         desc:"破解版",
         imgurl:"./static/img/app/tools/ps2022.jpg",
-        url:"https://yunzhukeji.cn/",
+        url:"https://www.adobe.com/creativecloud/business/teams/photoshop.html?gclid=Cj0KCQjwq_G1BhCSARIsACc7NxrlX25owEtlUQOQooyGLR__y83ea9zx2hlTnwRfMMBGCq9DvdszgaAaAmrHEALw_wcB&sdid=HVQ7WWTG&mv=search&mv2=paidsearch&ef_id=Cj0KCQjwq_G1BhCSARIsACc7NxrlX25owEtlUQOQooyGLR__y83ea9zx2hlTnwRfMMBGCq9DvdszgaAaAmrHEALw_wcB:G:s&s_kwcid=AL!3085!3!692467762463!e!!g!!latest%20photoshop!21070408252!157385366577&gad_source=1",
     },{
         title:"todesk",
         desc:"破解版",
         imgurl:"./static/img/app/tools/yzkj.png",
-        url:"https://yunzhukeji.cn/",
+        url:"https://www.todesk.com/",
     },{
         title:"向日葵",
         desc:"破解版",
         imgurl:"./static/img/app/tools/xiangrikui.jpg",
-        url:"https://yunzhukeji.cn/",
+        url:"https://sunlogin.oray.com/default",
     },{
         title:"百度网盘",
         desc:"破解版",
         imgurl:"./static/img/app/tools/baiduwangpang.jpg",
-        url:"https://yunzhukeji.cn/",
+        url:"https://pan.baidu.com/disk/main#/index",
     },{
         title:"阿里云盘",
         desc:"破解版",
         imgurl:"./static/img/app/tools/aliyun.jpg",
-        url:"https://yunzhukeji.cn/",
+        url:"https://www.alipan.com/",
     },{
         title:"飞书",
         desc:"破解版",
         imgurl:"./static/img/app/tools/feishu.jpg",
-        url:"https://yunzhukeji.cn/",
+        url:"https://www.feishu.cn/product/docs",
     },{
         title:"火绒",
         desc:"破解版",
         imgurl:"./static/img/app/tools/huorong.jpg",
-        url:"https://yunzhukeji.cn/",
+        url:"https://www.huorong.cn/",
     },{
         title:"everything",
         desc:"破解版",
         imgurl:"./static/img/app/tools/everything.png",
-        url:"https://yunzhukeji.cn/",
+        url:"https://everything.en.softonic.com/download?ex=RAMP-2081.4",
     },{
         title:"PS+PR+插件合集",
         desc:"飞书文档",
