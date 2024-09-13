@@ -121,6 +121,16 @@ const byteWeblists=[{
         desc:"运营工具箱",
         imgurl:"./img/app/guang.png",
         url:"https://www.lightai.com.cn/square",
+    },{
+        title:"智谱清言-清影AI",
+        desc:"清华大学出品·视频模型",
+        imgurl:"../website/cattool/static/img/app/zipuqingyan.svg",
+        url:"https://chatglm.cn/video",
+    },{
+        title:"Vidu",
+        desc:"北京生数科技有限公司联合清华大学发布的中国首个长时长、高一致性、高动态性视频大模型",
+        imgurl:"../website/cattool/static/img/app/vidu.png",
+        url:"https://www.vidu.studio/create",
     }]
 },{
     title:"辅助工具",
@@ -130,6 +140,11 @@ const byteWeblists=[{
         imgurl:"./img/app/dzc.png",
         url:"https://outlook.live.com/mail/0/",
     },{
+        title:"零时邮箱生成",
+        desc:"零时邮箱生成",
+        imgurl:"../website/cattool/static/img/app/22do.png",
+        url:"https://22.do",
+    },{
         title:"Poe",
         desc:"claude-3-sonnet 体验站",
         imgurl:"./img/app/poe.svg",
@@ -137,7 +152,7 @@ const byteWeblists=[{
     },{
         title:"豆包",
         desc:"快捷通道",
-        imgurl:"./img/app/poe.svg",
+        imgurl:"../website/cattool/static/img/app/zijiedoubao.png",
         url:"https://www.doubao.com/chat/?channel=baidu_pz&source=db_baidu_pz_01&keywordid=weizhi7",
     }]
 }]
@@ -154,6 +169,14 @@ const friendsLists=[{
         desc:"优秀源码学习平台",
         imgurl:"./img/app/68api.png",
         url:"https://www.68api.com/",
+    }]
+},{
+    title:"其他链接",
+    children:[{
+        title:"法行宝",
+        desc:"AI智能法律助手",
+        imgurl:"./img/app/faxingbao.png",
+        url:"https://ailegal.baidu.com/?fr=brand",
     }]
 }]
 const filelists=[{
