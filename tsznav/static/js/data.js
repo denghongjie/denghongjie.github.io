@@ -128,13 +128,13 @@ const outwaylists=[{
     },{
         title:"TikTok",
         desc:"短视频分享平台，积累了超过十亿的活跃用户",
-        imgurl:"./static/img/app/tools/tikTok.png",
+        imgurl:"./static/img/app/tools/tiktok.png",
         url:"https://www.tiktok.com",
     },{
         title:"Youtube",
         desc:"一个流行的视频分享平台【美国-谷歌旗下】",
         imgurl:"./static/img/app/tools/youtube.png",
-        url:"https://www.youtube.com",
+        url:"https://www.youtube.com/channel/UCzHiEAkKmdFZ5P5e1jIfelw",
     },{
         title:"facebook",
         desc:"是全球用户最多的社交媒体平台之一【美国】",
@@ -179,11 +179,6 @@ const outwaylists=[{
         imgurl:"./static/img/app/tools/netflix.png",
         url:"https://www.netflix.com",
     },{
-        title:"Reddit",
-        desc:"网络上最大的社区之一，其内容覆盖面广泛，涵盖科技、娱乐、新闻、体育等多个领域",
-        imgurl:"./static/img/app/tools/Reddit.png",
-        url:"https://www.reddit.com",
-    },{
         title:"Instagram",
         desc:"一个流行的社交媒体平台，Instagram 也被广泛用于品牌营销和社交影响者推广",
         imgurl:"./static/img/app/tools/Instagram.jfif",
@@ -194,7 +189,108 @@ const outwaylists=[{
         imgurl:"./static/img/app/tools/whatsapp.jfif",
         url:"https://discord.com/",
     }]
-}]
+},
+// {
+//     title:"阿联酋",
+//     children:[{
+//         title:"Injazat",
+//         desc:" Injazat 是阿布扎比的一家领先的 IT 服务公司，提供数字化转型、软件开发和云服务",
+//         imgurl:"./static/img/app/tools/spotify.jfif",
+//         url:"https://www.bjgczl.com.cn/StaticPage/periolcontent_157.html",
+//     },{
+//         title:"Emirates Software Group FZ LLC",
+//         desc:"是一家提供软件开发和 IT 咨询服务的公司，专注于为各种行业（包括建筑和工程）开发定制软件解决方案",
+//         imgurl:"./static/img/app/tools/line.png",
+//         url:"http://www.360doc.com/content/13/0129/17/10804835_263087636.shtml",
+//     },{
+//         title:"Finesse Global",
+//         desc:"全球领先的流媒体视频服务平台",
+//         imgurl:"./static/img/app/tools/netflix.png",
+//         url:"https://www.netflix.com",
+//     },{
+//         title:"Reddit",
+//         desc:"网络上最大的社区之一，其内容覆盖面广泛，涵盖科技、娱乐、新闻、体育等多个领域",
+//         imgurl:"./static/img/app/tools/Reddit.png",
+//         url:"https://www.reddit.com",
+//     },{
+//         title:"Instagram",
+//         desc:"一个流行的社交媒体平台，Instagram 也被广泛用于品牌营销和社交影响者推广",
+//         imgurl:"./static/img/app/tools/Instagram.jfif",
+//         url:"https://www.instagram.com",
+//     },{
+//         title:"whatsapp",
+//         desc:"Discord最初针对游戏玩家，但现在广泛应用于学习、工作、爱好者社区、艺术创作等众多领域",
+//         imgurl:"./static/img/app/tools/whatsapp.jfif",
+//         url:"https://discord.com/",
+//     }]
+// },{
+//     title:"德国",
+//     children:[{
+//         title:"在阿联酋进行工程质量管理和验收的特点",
+//         desc:"北京市工程建设质量管理协会",
+//         imgurl:"./static/img/app/tools/spotify.jfif",
+//         url:"https://www.bjgczl.com.cn/StaticPage/periolcontent_157.html",
+//     },{
+//         title:"世界最高建筑“哈利法塔”结构设计和施工",
+//         desc:"工程项目案例",
+//         imgurl:"./static/img/app/tools/line.png",
+//         url:"http://www.360doc.com/content/13/0129/17/10804835_263087636.shtml",
+//     },{
+//         title:"Netflix",
+//         desc:"全球领先的流媒体视频服务平台",
+//         imgurl:"./static/img/app/tools/netflix.png",
+//         url:"https://www.netflix.com",
+//     },{
+//         title:"Reddit",
+//         desc:"网络上最大的社区之一，其内容覆盖面广泛，涵盖科技、娱乐、新闻、体育等多个领域",
+//         imgurl:"./static/img/app/tools/Reddit.png",
+//         url:"https://www.reddit.com",
+//     },{
+//         title:"Instagram",
+//         desc:"一个流行的社交媒体平台，Instagram 也被广泛用于品牌营销和社交影响者推广",
+//         imgurl:"./static/img/app/tools/Instagram.jfif",
+//         url:"https://www.instagram.com",
+//     },{
+//         title:"whatsapp",
+//         desc:"Discord最初针对游戏玩家，但现在广泛应用于学习、工作、爱好者社区、艺术创作等众多领域",
+//         imgurl:"./static/img/app/tools/whatsapp.jfif",
+//         url:"https://discord.com/",
+//     }]
+// },{
+//     title:"法国",
+//     children:[{
+//         title:"在阿联酋进行工程质量管理和验收的特点",
+//         desc:"北京市工程建设质量管理协会",
+//         imgurl:"./static/img/app/tools/spotify.jfif",
+//         url:"https://www.bjgczl.com.cn/StaticPage/periolcontent_157.html",
+//     },{
+//         title:"世界最高建筑“哈利法塔”结构设计和施工",
+//         desc:"工程项目案例",
+//         imgurl:"./static/img/app/tools/line.png",
+//         url:"http://www.360doc.com/content/13/0129/17/10804835_263087636.shtml",
+//     },{
+//         title:"Netflix",
+//         desc:"全球领先的流媒体视频服务平台",
+//         imgurl:"./static/img/app/tools/netflix.png",
+//         url:"https://www.netflix.com",
+//     },{
+//         title:"Reddit",
+//         desc:"网络上最大的社区之一，其内容覆盖面广泛，涵盖科技、娱乐、新闻、体育等多个领域",
+//         imgurl:"./static/img/app/tools/Reddit.png",
+//         url:"https://www.reddit.com",
+//     },{
+//         title:"Instagram",
+//         desc:"一个流行的社交媒体平台，Instagram 也被广泛用于品牌营销和社交影响者推广",
+//         imgurl:"./static/img/app/tools/Instagram.jfif",
+//         url:"https://www.instagram.com",
+//     },{
+//         title:"whatsapp",
+//         desc:"Discord最初针对游戏玩家，但现在广泛应用于学习、工作、爱好者社区、艺术创作等众多领域",
+//         imgurl:"./static/img/app/tools/whatsapp.jfif",
+//         url:"https://discord.com/",
+//     }]
+// }
+]
 const threeDlists=[{
     title:"探索者产品",
     children:[{
