@@ -26,6 +26,11 @@ const byteWeblists=[{
         imgurl:"./img/app/fb.png",
         url:"http://47.104.4.220:9520/admin/#/",
     },{
+        title:"蓝纸巾-AI网址导航",
+        desc:"字节码AI工具箱",
+        imgurl:"./img/app/lzjlogo.png",
+        url:"http://59.110.169.215/",
+    },{
         title:"tower协同办公",
         desc:"字节码协同办公平台",
         imgurl:"./img/app/tower.png",
