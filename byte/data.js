@@ -16,11 +16,6 @@ const byteWeblists=[{
         imgurl:"./img/app/fb.png",
         url:"https://www.fenbi.chat",
     },{
-        title:"粉笔AI-前台",
-        desc:"字节码AI工具箱",
-        imgurl:"./img/app/fb.png",
-        url:"http://47.104.4.220:9520",
-    },{
         title:"粉笔AI-后台管理",
         desc:"字节码AI工具箱",
         imgurl:"./img/app/fb.png",
@@ -30,6 +25,56 @@ const byteWeblists=[{
         desc:"字节码AI工具箱",
         imgurl:"./img/app/lzjlogo.png",
         url:"http://59.110.169.215/",
+    },{
+        title:"蓝纸巾-AI网址导航-后台",
+        desc:"admin  123456",
+        imgurl:"./img/app/lzjlogo.png",
+        url:"http://59.110.169.215/admin/login/index.html",
+    },{
+        title:"互动宝-微现场",
+        desc:"admin",
+        imgurl:"./img/app/weixianc.png",
+        url:"http://101.200.129.82:33904/frame.php",
+    },{
+        title:"互动宝-微现场-后台",
+        desc:"zijiema     zijiema123",
+        imgurl:"./img/app/weixianc.png",
+        url:"http://101.200.129.82:33904/frame.php",
+    },{
+        title:"短剧通",
+        desc:"微信小程序",
+        imgurl:"./img/app/duanjutong.png",
+        url:"https://open.weixin.qq.com/connect/oauth2/authorize?appid=888&connect_redirect=1#wechat_redirect",
+    },{
+        title:"短剧通-后台",
+        desc:"web",
+        imgurl:"./img/app/duanjutong.png",
+        url:"http://59.110.169.215:88/index/user/login.html",
+    },{
+        title:"银牛API",
+        desc:"字节码AI工具箱",
+        imgurl:"./img/app/yinniu.png",
+        url:"http://101.200.129.82:33906/",
+    },{
+        title:"银牛API-后台",
+        desc:"admin  admin",
+        imgurl:"./img/app/yinniu.png",
+        url:"http://101.200.129.82:33906/home/index# ",
+    },{
+        title:"好租网",
+        desc:"用户账号合租平台（腾讯、爱奇艺、优酷、美团、youtube…）",
+        imgurl:"./img/app/hezu.png",
+        url:"http://59.110.169.215:99/",
+    },{
+        title:"好租网-后台",
+        desc:"admin  123456",
+        imgurl:"./img/app/hezu.png",
+        url:"http://59.110.169.215:99/admin ",
+    },{
+        title:"宝塔服务器",
+        desc:"字节码阿里云服务器",
+        imgurl:"./img/app/baota.png",
+        url:"https://101.200.129.82:19205/80da9804",
     },{
         title:"tower协同办公",
         desc:"字节码协同办公平台",
