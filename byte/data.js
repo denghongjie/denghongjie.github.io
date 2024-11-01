@@ -221,6 +221,14 @@ const friendsLists=[{
         url:"https://www.68api.com/",
     }]
 },{
+    title:"测试开发",
+    children:[{
+        title:"个人AI站点",
+        desc:"AI智能法律助手",
+        imgurl:"../website/cattool/static/img/app/forchange.png",
+        url:"http://101.200.129.82:6015/#/chat",
+    }]
+},{
     title:"其他链接",
     children:[{
         title:"法行宝",
@@ -259,7 +267,7 @@ const developlists=[{
         title:"AIGC(个人搭建) ✨",
         desc:"￥0.9=1$，mj 0.036",
         imgurl:"./img/app/aigx-x.png",
-        url:"https://aigc.x-see.cn/",
+        url:"https://open.xiaojingai.com/",
     },{
         title:"SY API ✨",
         desc:"￥1=1$",
