@@ -224,9 +224,62 @@ const friendsLists=[{
     title:"测试开发",
     children:[{
         title:"个人AI站点",
-        desc:"AI智能法律助手",
+        desc:"个人Key服务站",
         imgurl:"../website/cattool/static/img/app/forchange.png",
         url:"http://101.200.129.82:6015/#/chat",
+    }]
+},{
+    title:"mj作品赏析",
+    children:[{
+        title:"midjourney展示墙",
+        desc:"midjourney展示墙",
+        imgurl:"../website/cattool/static/img/app/mneyidjour.png",
+        url:"https://www.midjourney.com/explore?tab=top",
+    },{
+        title:"prompthero",
+        desc:"promptheroAI图库",
+        imgurl:"../website/cattool/static/img/app/mneyidjour.png",
+        url:"https://prompthero.com/",
+    },{
+        title:"4b3",
+        desc:"4b3",
+        imgurl:"../website/cattool/static/img/app/mneyidjour.png",
+        url:"https://www.4b3.com/",
+    },{
+        title:"lexica",
+        desc:"lexica",
+        imgurl:"../website/cattool/static/img/app/mneyidjour.png",
+        url:"https://lexica.art/",
+    },{
+        title:"bandeyu",
+        desc:"bandeyu",
+        imgurl:"../website/cattool/static/img/app/mneyidjour.png",
+        url:"https://mj.bandeyu.com/prompt",
+    },{
+        title:"midjourneycn",
+        desc:"midjourneycn",
+        imgurl:"../website/cattool/static/img/app/mneyidjour.png",
+        url:"http://www.midjourneycn.com.cn/paintings/",
+    },{
+        title:"midjourny",
+        desc:"midjourny",
+        imgurl:"../website/cattool/static/img/app/mneyidjour.png",
+        url:"https://www.midjourny.cn/mj-square/mj-square0_1.html",
+    },{
+        title:"midjourneysref",
+        desc:"midjourneysref",
+        imgurl:"./img/app/midjourneysref.png",
+        url:"https://midjourneysref.com/",
+    },{
+        title:"yczktek",
+        desc:"yczktek",
+        imgurl:"../website/cattool/static/img/app/mneyidjour.png",
+        url:"https://chat.yczktek.com/art/paintings/",
+    },{
+        title:"midjourney_works",
+        desc:"midjourney_works",
+        imgurl:"../website/cattool/static/img/app/mneyidjour.png",
+        url:"https://www.bzu.cn/midjourney_works",
     }]
 },{
     title:"其他链接",
