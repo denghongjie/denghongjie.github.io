@@ -116,7 +116,7 @@ const outwaylists=[{
         desc:"梯子",
         imgurl:"./static/img/app/tools/paopao.png",
         bgcolor:"#ecedf0",
-        url:"https://ftq.lanzouj.com/i2oHW1l4wtud",
+        url:"https://share.feijipan.com/s/iSCpVVtN",
     }]
 },{
     title:"渠道",
@@ -144,7 +144,7 @@ const outwaylists=[{
         title:"Twitter【X】",
         desc:"以短文本（称为“推文”）的形式分享想法、新闻和实时事件，社交媒体平台",
         imgurl:"./static/img/app/tools/x.png",
-        url:"https://x.com/",
+        url:"https://x.com/tszchina",
     },{
         title:"Discord",
         desc:"Discord最初针对游戏玩家，但现在广泛应用于学习、工作、爱好者社区、艺术创作等众多领域",
