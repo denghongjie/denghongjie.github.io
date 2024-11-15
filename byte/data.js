@@ -33,7 +33,7 @@ const byteWeblists=[{
     },{
         title:"豆蛙AI",
         desc:"根据个人Key服务站，让数据更安全",
-        imgurl:"../website/cattool/static/img/app/douwa.png",
+        imgurl:"/img/app/douwa.png",
         url:"http://101.200.129.82:6015/#/chat",
     },{
         title:"宝塔服务器",
