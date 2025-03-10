@@ -136,6 +136,11 @@ const outwaylists=[{
         imgurl:"./static/img/app/tools/youtube.png",
         url:"https://www.youtube.com/channel/UCzHiEAkKmdFZ5P5e1jIfelw",
     },{
+        title:"dailymotion.",
+        desc:"【法国】世界第二大视频网站",
+        imgurl:"./static/img/app/tools/dailymotion.png",
+        url:"https://www.dailymotion.com/us",
+    },{
         title:"facebook",
         desc:"是全球用户最多的社交媒体平台之一【美国】",
         imgurl:"./static/img/app/tools/facebook.png",
@@ -188,6 +193,42 @@ const outwaylists=[{
         desc:"Discord最初针对游戏玩家，但现在广泛应用于学习、工作、爱好者社区、艺术创作等众多领域",
         imgurl:"./static/img/app/tools/whatsapp.jfif",
         url:"https://discord.com/",
+    }]
+},{
+    title:"世界",
+    children:[{
+        title:"NAVER TV",
+        desc:"【韩国】视频分享网站",
+        imgurl:"./static/img/app/tools/navertv.png",
+        url:"http://tv.naver.com",
+    },{
+        title:"Rakuten Viki",
+        desc:"【美国】线上免费观看亚洲电视节目及电影",
+        imgurl:"./static/img/app/tools/viki.png",
+        url:"https://www.viki.com",
+    },{
+        title:"tiktok",
+        desc:"海外抖音",
+        imgurl:"./static/img/app/tools/tiktok.png",
+        url:"https://www.tiktok.com/explore",
+    }]
+},{
+    title:"工具",
+    children:[{
+        title:"InVideo",
+        desc:"nVideo可帮助您将内容转换为精彩视频。 我们为媒体公司、小型企业和品牌提供服务，通过视频内容的力量扩大受众参与度。InVideo是营销人员、出版商和专业人士的理想选择。InVideo是一款功能强大的在线视频编辑器。它包含5000多个模板、iStock媒体、音乐库、过滤器、过渡等等。",
+        imgurl:"./static/img/app/tools/InVideo.png",
+        url:"https://invideo.io",
+    },{
+        title:"Ecosia",
+        desc:"【德国搜索引擎】Ecosia是一个位于德国柏林的搜索引擎。Ecosia将自己视为一家社会企业，声称不排放二氧化碳，支持完全的财务透明度，并保护用户的隐私。Ecosia已获得B Lab认证，符合其责任、可持续性和绩效标准。",
+        imgurl:"./static/img/app/tools/ecosia.png",
+        url:"https://www.ecosia.org",
+    },{
+        title:"world68",
+        desc:"网址导航",
+        imgurl:"./static/img/app/tools/tiktok.png",
+        url:"https://www.world68.com/",
     }]
 },
 // {
