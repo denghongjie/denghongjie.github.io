@@ -120,6 +120,7 @@ h1{
         }
         &.is-active{
             color: $main_color;
+            background-color: rgba(89, 61 ,240 ,0.2);
         } 
     }
     .el-tabs__active-bar{
@@ -238,4 +239,8 @@ h1{
     .app_text{
         padding-left: 50px;
     }
+}
+.highlight {
+    color: red;
+    font-weight: bold;
 }

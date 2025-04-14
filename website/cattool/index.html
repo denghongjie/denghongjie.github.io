@@ -25,17 +25,56 @@
         <div class="navheader">
             <div class="logobox" >
                 <!-- <a href=""><img src="./static/img/navbar.png" alt=""></a> -->
-                <h1><span>cat </span> tool</h1>
+                <h1><span>cat </span> tool 
+                    <el-input v-model="input" style="width: 240px;margin-left: 10px;" placeholder="模糊检索" @input="handleSearch" clearable></el-input>
+                    <el-button @click="toggleTheme" style="margin-left: 10px;">
+                        {{ isDark ? '☀️' : '🌙' }}
+                    </el-button>
+                </h1>
+                
+                
             </div>
         </div>
         <div class="navbody">
-            <el-tabs v-model="activeName" class="demo-tabs navtab" tab-position="left" @tab-click="handleClick" >
-                <el-tab-pane label="实用工具" name="1">
+            <div v-if="input" style="padding: 20px;">
+                <h2 style="margin-bottom: 16px;" class="sreachtext">共查询出 <span style="color: #f00;">{{searchlists.length}} </span> 条数据</h2>
+                <div>
+                    <el-row :gutter="16" >
+                        <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in searchlists" :key="idx">
+                            <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
+                                <a :href="item.url" target="_blank">
+                                    <div class="appimg">
+                                        <img :src="item.imgurl" alt="">
+                                    </div>
+                                    <div class="app_bg">
+                                        <img :src="item.imgurl" alt="">
+                                    </div>
+                                    <div class="app_text">
+                                        <div class="grid-content_title" v-html="highlightText(item.title, input)">
+                                            {{item.title}}
+                                        </div>
+                                        <div class="desctext" v-html="highlightText(item.desc, input)">
+                                            {{item.desc}} 
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </el-col>
+                    </el-row>
+                </div>
+                
+            </div>
+            <el-tabs v-else v-model="activeName" class="demo-tabs navtab" tab-position="left" @tab-click="handleClick">
+                <el-tab-pane 
+                    v-for="cat in categoryList" 
+                    :key="cat.id" 
+                    :label="cat.label" 
+                    :name="cat.id">
                     <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in navList" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
+                        <el-scrollbar class="noscoll">
+                            <div class="nav_tab_body" v-for="(navs,index) in cat.list" :key="index" >
+                                <div class="title" >{{navs.title}}</div>
+                                <el-row :gutter="16" >
                                     <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
                                         <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
                                             <a :href="item.url" target="_blank">
@@ -60,531 +99,6 @@
                             </div>
                         </el-scrollbar>
                     </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="设计空间" name="2">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in designspace" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="释放大招" name="3">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in skillList" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="12" :sm="8" :md="6" :lg="6" :xl="4" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="软件下载" name="4">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in softwarelists" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="基础教程" name="5">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in studylist" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                    <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                        <a :href="item.url" target="_blank">
-                                            <div class="appimg">
-                                                <img :src="item.imgurl" alt="">
-                                            </div>
-                                            <div class="app_bg">
-                                                <img :src="item.imgurl" alt="">
-                                            </div>
-                                            <div class="app_text">
-                                                <div class="grid-content_title">
-                                                    {{item.title}}
-                                                </div>
-                                                <div class="desctext">
-                                                    {{item.desc}}
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="设计规范" name="6">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in designnorms" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="图标专栏" name="7">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in iconlists" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="可视设计" name="8">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in viewlists" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="编程工具" name="9">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in devlists" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="数据中心" name="10">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in datalist" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="产品经理" name="11">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="right_info" style="position: fixed; right:0;bottom:60px;z-index: 5;">
-                                <el-image
-                                    style="width: 100px; height: 100px"
-                                    :src="url"
-                                    :preview-src-list="srcList"
-                                    :initial-index="4"
-                                    fit="cover"
-                                ></el-image>
-                            </div>
-                            <div class="nav_tab_body" v-for="(navs,index) in PMlist" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="AI科技" name="12">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in AIlist" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="SD模型" name="13">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in SDlist" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div>
-                                                    <img :src="item.scanimg" alt="" style="width: 100%;">
-                                                </div>
-                                                <!-- <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div> -->
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text1">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="VIP通道" name="14">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in viplist" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="6" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="MAC工具箱" name="15">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in macList" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="网站欣赏" name="16">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in webList" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
-                </el-tab-pane>
-                <el-tab-pane label="自学空间" name="17">
-                    <div class="navbody-box">
-                        <el-scrollbar  class="noscoll">
-                            <div class="nav_tab_body" v-for="(navs,index) in selfstudylist" :key="index">
-                                <div class="title">{{navs.title}}</div>
-                                <el-row :gutter="16">
-                                    <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
-                                        <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
-                                            <a :href="item.url" target="_blank">
-                                                <div class="appimg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_bg">
-                                                    <img :src="item.imgurl" alt="">
-                                                </div>
-                                                <div class="app_text">
-                                                    <div class="grid-content_title">
-                                                        {{item.title}}
-                                                    </div>
-                                                    <div class="desctext">
-                                                        {{item.desc}}
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </div>
-                        </el-scrollbar>
-                    </div>
-                    
                 </el-tab-pane>
             </el-tabs>
         </div>
@@ -627,7 +141,7 @@
 </body>
 
 </html>
-<script src="./static/js/data.js?v1.01"></script>
+<script src="./static/js/data.js"></script>
 <script src="./static/data/logdata.js"></script>
 <script>
     const App = {
@@ -636,42 +150,112 @@
             const { computed} = Vue;
             function initState() {
                 return {
+                    input :'',
                     activeName:'1',
-                    designspace:designspaces,
-                    studylist:studylists,
-                    navList:navLists,
-                    skillList:skillLists,
-                    softwarelists:softwarelist,
-                    designnorms:designnorm,
-                    iconlists:iconDesigns,
-                    viewlists:viewlist,
-                    devlists:devlist,
-                    datalist:datalists,
-                    PMlist:PMlists,
-                    AIlist:AIlists,
-                    SDlist:SDlists,
-                    viplist:viplists,
-                    macList:mactools,
-                    webList:webLists,
-                    selfstudylist:selfstudylists,
 
                     // 近期上新
                     lastapp:lastapps,
                     isShowlastpage:true,
                     srcList:srcLists,
                     url:srcLists[0],
+                    searchlists:[],
+                    isDark: localStorage.getItem('theme') === 'dark'
                 }
             }
             const state = reactive(initState());
+            // 初始化时应用主题
+            onMounted(() => {
+                document.documentElement.classList.toggle('dark-theme', state.isDark);
+            });
+            const categoryList = [
+                { id: '1', label: '实用工具', list: navLists },
+                { id: '2', label: '设计空间', list: designspaces },
+                { id: '3', label: '释放大招', list: skillLists },
+                { id: '4', label: '软件下载', list: softwarelist },
+                { id: '5', label: '基础教程', list: studylists },
+                { id: '6', label: '设计规范', list: designnorm },
+                { id: '7', label: '图标专栏', list: iconDesigns },
+                { id: '8', label: '可视设计', list: viewlist },
+                { id: '9', label: '编程工具', list: devlist },
+                { id: '10', label: '数据中心', list: datalists },
+                { id: '11', label: '产品经理', list: PMlists },
+                { id: '12', label: 'AI科技', list: AIlists },
+                { id: '13', label: 'SD模型', list: SDlists },
+                { id: '14', label: 'VIP通道', list: viplists },
+                { id: '15', label: 'MAC工具箱', list: mactools },
+                { id: '16', label: '网站欣赏', list: webLists },
+                { id: '17', label: '自学空间', list: selfstudylists }
+            ];
             const newName = computed(() => {
                   
             })
+            function toggleTheme() {
+                state.isDark = !state.isDark;
+                localStorage.setItem('theme', state.isDark ? 'dark' : 'light');
+                document.documentElement.classList.toggle('dark-theme', state.isDark);
+            }
+            // 修改过滤逻辑部分
+            const filteredCategory = computed(() => 
+                categoryList.map(cat => ({
+                    ...cat,
+                    list: filterList(cat.list, state.input)
+                }))
+            );
+            // 新增搜索结果计算属性
+            const searchResults = computed(() => {
+                return categoryList.flatMap(cat => 
+                    filterList(cat.list, state.input)
+                        .flatMap(group => group.children || [])
+                );
+            });
+            // 修改处理搜索的方法
+            function handleSearch(val) {
+                state.input = val.toLowerCase();
+                state.searchlists = searchResults.value;  // 更新搜索结果列表
+            }
+            
+            // 添加过滤计算属性
+            const filteredLists = Vue.computed(() => ({
+                navList: filterList(navLists, state.input),
+                designspace: filterList(designspaces, state.input),
+                // 重复添加其他需要过滤的列表...
+                studylist: filterList(studylists, state.input),
+                skillList: filterList(skillLists, state.input),
+                // 其他列表过滤逻辑同上...
+            }));
+
+            // 列表过滤方法
+            function filterList(list, keyword) {
+                if (!keyword) return list;
+                return list.filter(group => {
+                    return group?.title?.toLowerCase().includes(keyword) ||  // 添加可选链操作符
+                        group?.children?.some(item =>  // 添加可选链操作符
+                            item?.title?.toLowerCase().includes(keyword) || 
+                            item?.desc?.toLowerCase().includes(keyword)
+                        );
+                }).map(group => ({
+                    ...group,
+                    children: group.children?.filter(item =>  // 添加可选链操作符
+                        item?.title?.toLowerCase().includes(keyword) || 
+                        item?.desc?.toLowerCase().includes(keyword)
+                    )
+                }));
+            }
             function handleClick (tab, event) {
                 console.log(tab, event)
             }
+            function highlightText(text, keyword) {
+                if (!keyword || !text) return text;
+                const regex = new RegExp(`(${keyword})`, 'gi');
+                return text.replace(regex, '<span class="highlight">$1</span>');
+            }
             return {
                 ...toRefs(state),
-                handleClick
+                toggleTheme,
+                highlightText, // 暴露高亮方法
+                handleClick,
+                handleSearch,  // 暴露搜索方法
+                categoryList: filteredCategory  // 暴露过滤后的列表
             }
         }
     }

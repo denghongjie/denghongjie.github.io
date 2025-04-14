@@ -1,7 +1,7 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
-  background-color: #f1f2f3;
   overflow-x: hidden;
 }
 
@@ -54,4 +54,56 @@ a {
 .navbutton:hover {
   border: 1px solid #0077ff;
   color: #0077ff;
+}
+
+:root {
+  --bg-color: #f0f0f3;
+  --text-color: #303133;
+  --card-bg: #ecedf0;
+  --border-color: #e4e7ed;
+  --boxshadow: 5px 5px 10px #d5dae1, -5px -5px 10px white;
+}
+
+.dark-theme {
+  --bg-color: #2f333f;
+  --text-color: #e5eaf3;
+  --card-bg: #ecedf0;
+  --border-color: #424242;
+  --boxshadow: 5px 5px 10px #1a1f25, -5px -5px 10px #3a3434;
+}
+
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color);
+  transition: all 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbody-box {
+  background-color: var(--bg-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+.grid-content {
+  background: var(--card-bg) !important;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--boxshadow) !important;
+}
+
+/* 修改Element Plus组件样式 */
+.el-tabs__item {
+  color: var(--text-color) !important;
+}
+
+.el-tabs__nav-wrap::after {
+  background-color: var(--border-color);
+}
+
+.navheader h1 {
+  color: var(--text-color) !important;
+  text-shadow: var(--boxshadow) !important;
+}
+
+.sreachtext {
+  color: var(--text-color) !important;
 }

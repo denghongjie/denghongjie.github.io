@@ -6,7 +6,7 @@ const designspaces = [
         title: "美叶",
         desc: "分类收藏",
         imgurl: "./static/img/app/my.png",
-        url: "https://www.meiye.art/inspiration",
+        url: "https://www.meiye.art/InspirationAlbum",
       },
       {
         title: "UI Notes",
@@ -24,7 +24,7 @@ const designspaces = [
         title: "小红书",
         desc: "PPT、平面、UI设计等都可参考",
         imgurl: "./static/img/app/xhs.png",
-        url: "https://www.xiaohongshu.com/explore/647c5793000000001300fa91",
+        url: "https://www.xiaohongshu.com/explore",
       },
       {
         title: "站酷",
@@ -97,12 +97,6 @@ const designspaces = [
         url: "https://www.foodiesfeed.com/",
       },
       {
-        title: "西田图像",
-        desc: "免版权",
-        imgurl: "./static/img/app/xttx.jpg",
-        url: "https://www.sitapix.com/",
-      },
-      {
         title: "splitshire",
         desc: "套图免版权",
         imgurl: "./static/img/app/splitshire.png",
@@ -162,15 +156,15 @@ const designspaces = [
     children: [
       {
         title: "思源黑体",
-        desc: "提取码：tob1",
+        desc: "提取码：rsd4",
         imgurl: "./static/img/app/syht.png",
-        url: "https://pan.baidu.com/share/init?surl=iFGeCGmH3l-_iz-5VsgLzg",
+        url: "https://pan.baidu.com/s/10w7F291LbadTs1cyaUMUbQ",
       },
       {
         title: "思源宋体",
-        desc: "提取码：tob1",
+        desc: "提取码：fyk5",
         imgurl: "./static/img/app/syst.png",
-        url: "https://source.typekit.com/source-han-serif/cn/",
+        url: "https://pan.baidu.com/s/1SqA2Cz5ZSfKCsZFKn8_KEw",
       },
       {
         title: "阿里巴巴普惠字体",
@@ -361,6 +355,11 @@ const navLists = [
         desc: "免费去图片水印",
         imgurl: "./static/img/app/watermarkremover.png",
         url: "https://www.watermarkremover.io/zh/upload",
+      },{
+        title: "360智图",
+        desc: "人物头像磨皮还行",
+        imgurl: "./static/img/app/360zitu.svg",
+        url: "https://pic.360.com/tools/image-editor/repair?src=repair&srcg=baidu",
       },
     ],
   },
@@ -676,7 +675,7 @@ const navLists = [
       {
         title: "热搜",
         desc: "什么值得看",
-        imgurl: "./static/img/app/30.jpg",
+        imgurl: "./static/img/app/30.png",
         url: "https://smzdk.top/#/",
       },
     ],
@@ -1520,7 +1519,7 @@ const devlist = [
         title: "泡泡Dog",
         desc: "梯子工具【稍微便宜点】一年大概98左右888GB足够用一年了",
         imgurl: "./static/img/app/dog.png",
-        url: "https://ftq.lanzouj.com/i2oHW1l4wtud",
+        url: "https://share.feijipan.com/s/iSCpVVtN",
       },
     ],
   },
@@ -1890,19 +1889,7 @@ const AIlists = [{
 },
 {
   title: "chatGPT",
-  children: [
-    {
-      title: "Monica ",
-      desc: "功能免费，GPT快速",
-      imgurl: "./static/img/app/Monica.png",
-      url: "https://monica.im/home/chat/monica/monica",
-    },
-    {
-      title: "粉笔AI",
-      desc: "简单易用、支持AI绘画",
-      imgurl: "./static/img/app/forchange.png",
-      url: "https://fenbi.chat",
-    },{
+  children: [{
       title: "coze：GPT4.0 免费",
       desc: "免费可使用GPT4.0，字节跳动推出",
       imgurl: "./static/img/app/coze.png",
@@ -1988,12 +1975,12 @@ const AIlists = [{
     },{
       title: "Sora",
       desc: "Sora是一个基于大规模训练的文本控制视频生成扩散模型",
-      imgurl: "./static/img/app/Sora.png",
+      imgurl: "./static/img/app/openAi.png",
       url: "https://openai.com/index/sora/",
     },{
       title: "suno",
       desc: "Suno是一款Al驱动的音频和音乐生成工具",
-      imgurl: "./static/img/app/suno.png",
+      imgurl: "./static/img/app/suno.jpg",
       url: "https://suno.com/",
     },{
       title: "boximator",
@@ -2705,7 +2692,7 @@ const SDlists = [
       {
         title: "AI-全行业知识库",
         desc: "AI知识库",
-        imgurl: "./static/img/app/AIGC.png",
+        imgurl: "./static/img/app/openAi.png",
         url: "https://h0kf1dj0xjn.feishu.cn/wiki/YYpgwH4ociU3d4kIUhgcsqxtnib",
       },
       {
@@ -2717,7 +2704,7 @@ const SDlists = [
       },{
         title: "秋葉aaaki",
         desc: "普度众生的秋葉佛祖，提供了SD整合包",
-        scanimg:'/static/img/SD/AICC.png',
+        scanimg:'/static/img/SD/openAi.png',
         imgurl: "./static/img/app/tingwu.png",
         url: "https://space.bilibili.com/12566101/channel/seriesdetail?sid=2706990&ctype=0",
       },{
@@ -2755,7 +2742,7 @@ const SDlists = [
       {
         title: "comfy workflows",
         desc: "不需要科学上网",
-        imgurl: "./static/img/app/AIGC.png",
+        imgurl: "./static/img/app/openAi.png",
         url: "https://comfyworkflows.com/",
       },
       {
