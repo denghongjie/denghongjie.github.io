@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./static/css/iconfonts/iconfont.css">
     <link href="./static/css/help.css" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" href="imgs/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 </head>
 
 <body>
@@ -30,6 +31,9 @@
                     <el-button @click="toggleTheme" style="margin-left: 10px;">
                         {{ isDark ? '☀️' : '🌙' }}
                     </el-button>
+                    <!-- <el-button @click="showAddDialog = true">添加链接（本地缓存）</el-button>
+                    <el-button @click="exportExcel">导出Excel</el-button>
+                    <el-button @click="clean">恢复网站</el-button> -->
                 </h1>
                 
                 
@@ -73,7 +77,7 @@
                     <div class="navbody-box">
                         <el-scrollbar class="noscoll">
                             <div class="nav_tab_body" v-for="(navs,index) in cat.list" :key="index" >
-                                <div class="title" >{{navs.title}}</div>
+                                <div class="title" >{{navs.title}} </div>
                                 <el-row :gutter="16" >
                                     <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="3" v-for="(item,idx) in navs.children" :key="idx">
                                         <div class="grid-content ep-bg-purple" :title="`名称：${item.title} &#10;描述：${item.desc}`">
@@ -93,6 +97,7 @@
                                                     </div>
                                                 </div>
                                             </a>
+                                            <div class="delicon" @click.stop="deleteLink(cat.id, navs.title, item)">×</div>
                                         </div>
                                     </el-col>
                                 </el-row>
@@ -137,6 +142,84 @@
            <div style="font-size: 12px;margin-bottom: 8px;text-align: center;letter-spacing: 2px;">建议添加链接</div> 
             <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=fjDFCuNRXjRmFIWBllfg0k_EtpJ_PTcp&jump_from=webapi&authKey=6wclgcMhp7+WEVYoinsU+KxtuKlhvkTcn6tb8RIgwQfN/Gqw2OVYpOdQY3WtjPmx"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="cattool 链接导航增删交" title="cattool 链接导航增删交"></a>
         </div>
+        <el-dialog 
+            title="添加新链接" 
+            v-model="showAddDialog" 
+            width="40%"
+            @close="addForm = {
+                password: '',
+                category: '',
+                subCategory: '',
+                title: '',
+                imgurl: '',
+                desc: '',
+                url: ''
+            }">
+            <el-form :model="addForm" label-width="100px">
+                <el-form-item label="分类" prop="category">
+                    <el-select v-model="addForm.category" placeholder="请选择分类">
+                        <div @click="showNewCategoryDialog = true" class="linkselect">新增分类</div>
+                        <el-option 
+                            v-for="cat in categoryList" 
+                            :key="cat.id"
+                            :label="cat.label"
+                            :value="cat.id">
+                        </el-option>
+                       
+                    </el-select>
+                </el-form-item>
+                <el-form-item label="子标签" prop="subCategory">
+                    <el-select v-model="addForm.subCategory" placeholder="请选择子标签">
+                        <div @click="showNewSubDialog = true" class="linkselect">新增子标签</div>
+                        <el-option 
+                            v-for="(sub, index) in getSubCategories" 
+                            :key="subIndex"
+                            :label="sub.title"
+                            :value="sub.title">
+                        </el-option>
+                    </el-select>
+                </el-form-item>
+                <el-form-item label="链接名称" prop="title">
+                    <el-input v-model="addForm.title"></el-input>
+                </el-form-item>
+                <el-form-item label="链接图片" prop="imgurl">
+                    <el-input v-model="addForm.imgurl" placeholder="输入图片URL"></el-input>
+                </el-form-item>
+                <el-form-item label="链接描述" prop="desc">
+                    <el-input v-model="addForm.desc" type="textarea"></el-input>
+                </el-form-item>
+                <el-form-item label="链接地址" prop="url">
+                    <el-input v-model="addForm.url" placeholder="输入http/https地址"></el-input>
+                </el-form-item>
+            </el-form>
+            <template #footer>
+                <el-button @click="showAddDialog = false">取消</el-button>
+                <el-button type="primary" @click="handleAddSubmit">确定添加</el-button>
+            </template>
+        </el-dialog>
+        <el-dialog title="新增分类" v-model="showNewCategoryDialog" width="400px">
+            <el-form :model="newCategoryForm">
+                <el-form-item label="分类名称" prop="name">
+                    <el-input v-model="newCategoryForm.name"></el-input>
+                </el-form-item>
+            </el-form>
+            <template #footer>
+                <el-button @click="showNewCategoryDialog = false">取消</el-button>
+                <el-button type="primary" @click="handleNewCategory">确认添加</el-button>
+            </template>
+        </el-dialog>
+        
+        <el-dialog title="新增子标签" v-model="showNewSubDialog" width="400px">
+            <el-form :model="newSubForm">
+                <el-form-item label="子标签名称" prop="name">
+                    <el-input v-model="newSubForm.name"></el-input>
+                </el-form-item>
+            </el-form>
+            <template #footer>
+                <el-button @click="showNewSubDialog = false">取消</el-button>
+                <el-button type="primary" @click="handleNewSub">确认添加</el-button>
+            </template>
+        </el-dialog>
     </div>
 </body>
 
@@ -159,15 +242,35 @@
                     srcList:srcLists,
                     url:srcLists[0],
                     searchlists:[],
-                    isDark: localStorage.getItem('theme') === 'dark'
+                    isDark: localStorage.getItem('theme') === 'dark',
+                    showAddDialog: false,
+                    addForm: {
+                        category: '',
+                        subCategory: '',
+                        title: '百度',
+                        imgurl: 'https://bkimg.cdn.bcebos.com/pic/5d6034a85edf8db177f09dce0723dd54574e74ba',
+                        desc: '百度搜索',
+                        url: 'https://www.baidu.com/'
+                    },
+                    showNewCategoryDialog: false,
+                    showNewSubDialog: false,
+                    newCategoryForm: { name: '' },
+                    newSubForm: { name: '' },
+                    
                 }
             }
             const state = reactive(initState());
             // 初始化时应用主题
             onMounted(() => {
                 document.documentElement.classList.toggle('dark-theme', state.isDark);
+                // 加载分类数据
+                const storedCategories = localStorage.getItem('cattool_categories');
+                if (storedCategories) {
+                    categoryList.splice(0, categoryList.length, ...JSON.parse(storedCategories));
+                }
+                loadLocalStorageData();  // 新增缓存数据加载
             });
-            const categoryList = [
+            const categoryList = Vue.reactive([
                 { id: '1', label: '实用工具', list: navLists },
                 { id: '2', label: '设计空间', list: designspaces },
                 { id: '3', label: '释放大招', list: skillLists },
@@ -184,11 +287,144 @@
                 { id: '14', label: 'VIP通道', list: viplists },
                 { id: '15', label: 'MAC工具箱', list: mactools },
                 { id: '16', label: '网站欣赏', list: webLists },
-                { id: '17', label: '自学空间', list: selfstudylists }
-            ];
+                { id: '17', label: '自学空间', list: selfstudylists },
+                { id: '18', label: '趣味AI', list: ai2025lists },
+                { id: '19', label: '动效站点', list: effectweblists },
+            ]);
             const newName = computed(() => {
                   
             })
+            const clean = () => {
+                localStorage.removeItem('cattool_links');
+                localStorage.removeItem('cattool_categories');
+                proxy.$message.success('缓存已清除，即将刷新页面');
+                setTimeout(() => window.location.reload(), 1000);
+            }
+            const formRules = {
+                category: [{ required: true, message: '请选择分类', trigger: 'change' }],
+                subCategory: [{ required: true, message: '请选择子标签', trigger: 'change' }],
+                title: [{ required: true, message: '请输入链接名称', trigger: 'blur' }],
+                imgurl: [{ required: true, message: '请输入图片地址', trigger: 'blur' }],
+                desc: [{ required: true, message: '请输入链接描述', trigger: 'blur' }],
+                url: [
+                    { required: true, message: '请输入链接地址', trigger: 'blur' },
+                    { type: 'url', message: '请输入有效的URL地址', trigger: 'blur' }
+                ]
+            };
+            // 新增缓存数据加载方法
+            function loadLocalStorageData() {
+                const storedData = JSON.parse(localStorage.getItem('cattool_links') || '[]');
+                storedData.forEach(item => {
+                    const category = categoryList.find(c => c.id === item.category);
+                    const subCategory = category?.list.find(g => g.title === item.subCategory);
+                    if (subCategory) {
+                        // 检查是否已存在相同条目
+                        const exists = subCategory.children.some(child => 
+                            child.title === item.title && 
+                            child.url === item.url
+                        );
+                        if (!exists) {
+                            subCategory.children.push({
+                                title: item.title,
+                                desc: item.desc,
+                                url: item.url,
+                                imgurl: item.imgurl
+                            });
+                        }
+                    }
+                });
+            }
+            const getSubCategories = computed(() => {
+                const category = categoryList.find(c => c.id === state.addForm.category);
+                 // 应该返回二级分类的分组标题列表
+                return category?.list.map(item => ({
+                    title: item.title,
+                    id: item.title // 使用分组标题作为唯一标识
+                })) || [];
+            });
+            function handleAddSubmit() {
+                
+                // 找到对应的分类和子分类
+                const category = categoryList.find(c => c.id === state.addForm.category);
+                // 通过分组标题查找对应分组
+                const subCategory = category?.list.find(
+                    item => item.title === state.addForm.subCategory
+                );
+                
+                if (subCategory && subCategory.children) {
+                    // 创建新链接对象
+                    const newLink = {
+                        title: state.addForm.title,
+                        desc: state.addForm.desc,
+                        url: state.addForm.url,
+                        imgurl: state.addForm.imgurl
+                    };
+                    subCategory.children.push(newLink);
+                    // 保存到本地存储
+                    saveToLocalStorage(newLink);
+                    proxy.$message.success('添加成功');
+                    state.showAddDialog = false; 
+                } else {
+                    proxy.$message.error('添加失败，请检查分类选择');
+                }
+            }
+            // 新增本地存储方法
+            function saveToLocalStorage(newLink) {
+                const storedData = JSON.parse(localStorage.getItem('cattool_links') || '[]');
+                storedData.push({
+                    ...newLink,
+                    category: state.addForm.category,
+                    subCategory: state.addForm.subCategory
+                });
+                localStorage.setItem('cattool_links', JSON.stringify(storedData));
+            }
+            // 新增导出Excel方法
+            function exportExcel() {
+                /* 创建工作表 */
+                const data = categoryList.flatMap(cat => 
+                    cat.list.flatMap(group => 
+                        group.children.map(item => ({
+                            分类: cat.label,
+                            子分类: group.title,
+                            名称: item.title,
+                            描述: item.desc,
+                            链接: item.url,
+                            图片: item.imgurl
+                        }))
+                    )
+                );
+                
+                // 合并本地存储数据
+                const storedData = JSON.parse(localStorage.getItem('cattool_links') || '[]');
+                storedData.forEach(item => {
+                    data.push({
+                        分类: categoryList.find(c => c.id === item.category)?.label || '未知分类',
+                        子分类: item.subCategory,
+                        名称: item.title,
+                        描述: item.desc,
+                        链接: item.url,
+                        图片: item.imgurl
+                    });
+                });
+
+                const worksheet = XLSX.utils.json_to_sheet(data);
+
+                // 新增列宽设置（基于字符宽度计算，约1字符=7像素）
+                worksheet['!cols'] = [
+                    { wch: 25 },  // 分类列 (25*7≈175px)
+                    { wch: 25 },  // 子分类列
+                    { wch: 25 },  // 名称列
+                    { wch: 72 },  // 描述列 (72*7≈500px)
+                    { wch: 86 },  // 链接列 (86*7≈600px)
+                    { wch: 40 }   // 图片列
+                ];
+                const workbook = XLSX.utils.book_new();
+                XLSX.utils.book_append_sheet(workbook, worksheet, "链接数据");
+                
+                /* 生成文件并下载 */
+                XLSX.writeFile(workbook, "cattool_links.xlsx");
+            }
+            
             function toggleTheme() {
                 state.isDark = !state.isDark;
                 localStorage.setItem('theme', state.isDark ? 'dark' : 'light');
@@ -249,13 +485,89 @@
                 const regex = new RegExp(`(${keyword})`, 'gi');
                 return text.replace(regex, '<span class="highlight">$1</span>');
             }
+            function deleteLink(categoryId, subCategoryTitle, item) {
+                const category = categoryList.find(c => c.id === categoryId);
+                const subCategory = category?.list.find(g => g.title === subCategoryTitle);
+                
+                if (subCategory) {
+                    const index = subCategory.children.findIndex(child => 
+                        child.title === item.title && 
+                        child.url === item.url
+                    );
+                    if (index > -1) {
+                        subCategory.children.splice(index, 1);
+                        // 更新分类结构缓存
+                        localStorage.setItem('cattool_categories', JSON.stringify(categoryList));
+                    }
+                    
+                    // 原有链接缓存清理逻辑...
+                    const storedData = JSON.parse(localStorage.getItem('cattool_links') || '[]');
+                    const filtered = storedData.filter(link => 
+                        !(link.category === categoryId &&
+                        link.subCategory === subCategoryTitle &&
+                        link.title === item.title &&
+                        link.url === item.url)
+                    );
+                    localStorage.setItem('cattool_links', JSON.stringify(filtered));
+                    
+                    proxy.$message.success('删除成功');
+                }
+            }
+            function handleNewCategory() {
+                if (!state.newCategoryForm.name) {
+                    proxy.$message.error('请输入分类名称');
+                    return;
+                }
+                
+                const newId = (categoryList.length + 1).toString();
+                categoryList.push({
+                    id: newId,
+                    label: state.newCategoryForm.name,
+                    list: []
+                });
+                
+                state.showNewCategoryDialog = false;
+                state.newCategoryForm.name = '';
+                proxy.$message.success('分类添加成功');
+                localStorage.setItem('cattool_categories', JSON.stringify(categoryList));
+            }
+
+            function handleNewSub() {
+                if (!state.addForm.category) {
+                    proxy.$message.error('请先选择分类');
+                    return;
+                }
+                if (!state.newSubForm.name) {
+                    proxy.$message.error('请输入子标签名称');
+                    return;
+                }
+                
+                const category = categoryList.find(c => c.id === state.addForm.category);
+                if (category) {
+                    category.list.push({
+                        title: state.newSubForm.name,
+                        children: []
+                    });
+                    state.showNewSubDialog = false;
+                    state.newSubForm.name = '';
+                    proxy.$message.success('子标签添加成功');
+                }
+                localStorage.setItem('cattool_categories', JSON.stringify(categoryList));
+            }
             return {
                 ...toRefs(state),
+                getSubCategories, // 暴露计算属性
+                handleAddSubmit,
                 toggleTheme,
                 highlightText, // 暴露高亮方法
                 handleClick,
                 handleSearch,  // 暴露搜索方法
-                categoryList: filteredCategory  // 暴露过滤后的列表
+                categoryList: filteredCategory,  // 暴露过滤后的列表
+                exportExcel,
+                deleteLink,  // 暴露删除方法
+                handleNewCategory,
+                handleNewSub,
+                clean,  // 暴露清理方法
             }
         }
     }

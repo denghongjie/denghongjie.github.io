@@ -275,7 +275,7 @@ const designspaces = [
   },
 ];
 
-const navLists = [
+const navLists = Vue.reactive([
   {
     title: "图片工具推荐",
     children: [
@@ -680,7 +680,7 @@ const navLists = [
       },
     ],
   },
-];
+]);
 
 const softwarelist = [
   {
@@ -1318,6 +1318,17 @@ const iconDesigns = [
     ],
   },
   {
+    title: "Loading 专区 ",
+    children: [
+      {
+        title: "css-loaders",
+        desc: "3D图标AI+扁平",
+        imgurl: "./static/img/app/cssloader.png",
+        url: "https://css-loaders.com/",
+      }
+    ],
+  },
+  {
     title: "动态图标+loading交互",
     children: [
       {
@@ -1936,16 +1947,31 @@ const AIlists = [{
 {
   title: "AI编码",
   children: [{
-      title: "AI自动生成网站",
-      desc: "10web",
-      imgurl: "./static/img/app/10web.png",
-      url: "https://10web-site.ai/51/darling-yeti/",
+      title: "readdyAI",
+      desc: "非常好的AI编程，好看的UI+代码，生成时间大概5分钟左右",
+      imgurl: "./static/img/app/readdyai.png",
+      url: "https://readdy.ai/",
+    },{
+      title: "V0",
+      desc: "AI编程、高效生成代码组件、支持figma",
+      imgurl: "./static/img/app/v0.png",
+      url: "https://v0.dev/",
+    },{
+        title: "AI自动生成网站",
+        desc: "10web",
+        imgurl: "./static/img/app/10web.png",
+        url: "https://10web-site.ai/51/darling-yeti/",
     },{
       title: "Marketsy",
       desc: "电商网站代码生成",
       imgurl: "./static/img/app/marketsy.png",
       url: "https://marketsy.ai/",
-    },
+    },{
+      title: "pagen",
+      desc: "AI编程、快速生成站点",
+      imgurl: "./static/img/app/v0.png",
+      url: "https://pagen.so/",
+    }
   ],
 },
 {
@@ -2519,17 +2545,6 @@ const viplists = [
     ],
   },
   {
-    title: "其他通道",
-    children: [
-      {
-        title: "享设计",
-        desc: "他们说他们是认真的",
-        imgurl: "./static/img/app/xiansheji.png",
-        url: "https://www.design006.com/",
-      },
-    ],
-  },
-  {
     title: "前端模板通道",
     children: [
       {
@@ -2781,3 +2796,73 @@ const selfstudylists = [
     ],
   },
 ];
+
+const ai2025lists=[{
+  title: "声音克隆",
+  children: [
+    {
+      title: "GPT-SoVITS",
+      desc: "AI声音克隆（免费）",
+      imgurl: "./static/img/app/tingwu.png",
+      url: "https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e/dkxgpiy9zb96hob4#KTvnO",
+    }
+  ],
+},{
+  title: "AI生图",
+  children: [
+    {
+      title: "免费换装",
+      desc: "免费换装",
+      imgurl: "./static/img/app/tingwu.png",
+      url: "https://huggingface.co/spaces/Kwai-Kolors/Kolors-Virtual-Try-On",
+    },{
+      title: "人物一致性",
+      desc: "免费，保持人物及服装一致性",
+      imgurl: "./static/img/app/tingwu.png",
+      url: "https://huggingface.co/spaces/Kwai-Kolors/Kolors-Character-With-Flux",
+    },{
+      title: "Kolors Portrait ",
+      desc: "免费，只保持人脸一致性，背景和服装动作都可以变换",
+      imgurl: "./static/img/app/tingwu.png",
+      url: "https://huggingface.co/spaces/Kwai-Kolors/Kolors-Portrait-with-Flux",
+    }
+  ],
+}]
+
+
+const effectweblists=[{
+  title: "LOGO 篇",
+  children: [
+    {
+      title: "Jitter",
+      desc: "Jitter 是一款快速且简单的动态设计工具,通过动画预设、无缝集成、多种导出格式等功能,帮助设计师高效创作高质量动画内容,适用于社交媒体、应用程序",
+      imgurl: "./static/img/app/jitter.svg",
+      url: "https://jitter.video/",
+    },{
+      title: "reactbits",
+      desc: "一款针对react开发的海量炫酷动画组件库，丝滑极简开发体验，前端er狂喜的React高能弹药库！",
+      imgurl: "./static/img/app/reactbits.svg",
+      url: "https://www.reactbits.dev/",
+    },{
+      title: "modyfi",
+      desc: "设计党的「数字魔法调色盘」Al+多工具丝滑混搭，平面到动态秒切模式，从此告别软件切切切！",
+      imgurl: "./static/img/app/modyfi.svg",
+      url: "https://www.modyfi.com/",
+    },{
+      title: "MoshPro.app",
+      desc: "实时特效「炸街」神器！无限创意调色盘+零门槛操作，一键封神你的视觉大片",
+      imgurl: "./static/img/app/mosh.png",
+      url: "https://moshpro.app/",
+    },{
+      title: "Antlii.work",
+      desc: "海量风格化动效库+极简创作工具，轻松解锁炫酷视觉盛宴，动效界的灵感宝藏！",
+      imgurl: "./static/img/app/antlii.png",
+      url: "https://antlii.work/",
+    },{
+      title: "Unicorn Studio",
+      desc: "依托 webGL技术，直接在浏览器中实现复杂的2D/3D图形渲染，无需安装插件即可为图片、视频添加动态效果！",
+      imgurl: "./static/img/app/Unicorn.svg",
+      url: "https://www.unicorn.studio/",
+    }
+  ],
+}]

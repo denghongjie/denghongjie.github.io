@@ -88,6 +88,26 @@ body {
   background: var(--card-bg) !important;
   border: 1px solid var(--border-color);
   box-shadow: var(--boxshadow) !important;
+  position: relative;
+}
+
+.grid-content .delicon {
+  position: absolute;
+  right: 8px;
+  top: 0;
+  color: #ccc;
+  opacity: 0;
+  translate: all 0.5s ease;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.grid-content .delicon:hover {
+  color: red !important;
+}
+
+.grid-content:hover .delicon {
+  opacity: 1;
 }
 
 /* 修改Element Plus组件样式 */
@@ -106,4 +126,18 @@ body {
 
 .sreachtext {
   color: var(--text-color) !important;
+}
+
+.linkselect {
+  background-color: #d9e4f0;
+  padding: 6px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: ease all 0.5s;
+}
+
+.linkselect:hover {
+  background-color: #4073ff;
+  color: #fff;
 }
