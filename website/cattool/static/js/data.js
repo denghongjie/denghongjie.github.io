@@ -1901,6 +1901,22 @@ const AIlists = [{
 {
   title: "chatGPT",
   children: [{
+    title: "Deepseek",
+    desc: "免费可使用GPT4.0，字节跳动推出",
+    imgurl: "./static/img/app/coze.png",
+    url: "https://chat.deepseek.com/",
+  },{
+    title: "Gemini",
+    desc: "谷歌推出的AI模型，免费可使用",
+    imgurl: "./static/img/app/coze.png",
+    url: "https://gemini.google.com/app",
+  },
+  {
+    title: "OPenAi -直达",
+    desc: "需要梯子访问",
+    imgurl: "./static/img/app/forchange.png",
+    url: "https://chat.openai.com/",
+  },{
       title: "coze：GPT4.0 免费",
       desc: "免费可使用GPT4.0，字节跳动推出",
       imgurl: "./static/img/app/coze.png",
@@ -1911,12 +1927,6 @@ const AIlists = [{
       desc: "【免费】智能概括书籍内容",
       imgurl: "./static/img/app/kimi.png",
       url: "https://kimi.moonshot.cn/",
-    },
-    {
-      title: "OPenAi -直达",
-      desc: "需要梯子访问",
-      imgurl: "./static/img/app/forchange.png",
-      url: "https://chat.openai.com/",
     },
     {
       title: "OpenAI 官网",
@@ -2864,5 +2874,103 @@ const effectweblists=[{
       imgurl: "./static/img/app/Unicorn.svg",
       url: "https://www.unicorn.studio/",
     }
+  ],
+}]
+
+const selfmedialists=[
+  {
+    title: "数据",
+    children: [
+      {
+        title: "新榜",
+        desc: "数据非常全面，可以根据日、月、周、年为周期来查看各种数据，公众号数据",
+        imgurl: "./static/img/app/xbgzh.png",
+        url: "https://www.newrank.cn/ranklist/gongzhonghao?l=sq_main-t_bd_gzhbd",
+      },{
+        title: "易媒助手(编辑器+数据)",
+        desc: "易媒助手，公众号数据提供管理、分发、营销、咨询、培训、服务于一体的信息化服务。",
+        imgurl: "./static/img/app/ymzs.png",
+        url: "https://yimeizhushou.com/",
+      },{
+        title: "新红",
+        desc: "新榜旗下小红书数据分析工具",
+        imgurl: "./static/img/app/xinhong.png",
+        url: "https://xh.newrank.cn/?promoPlatType=3&promoChannel=30&promoScene=166",
+      }
+    ],
+  },{
+  title: "排版工具",
+  children: [ {
+    title: "侯斯特【免费】",
+    desc: "微信图文AI自动排版、公众号编辑器",
+    imgurl: "./static/img/app/hstai.png",
+    url: "https://ai.weixinhost.com/",
+  },
+    {
+      title: "96编辑器",
+      desc: "很普通的编辑器、但是有很实用、公众号编辑器",
+      imgurl: "./static/img/app/96bjq.png",
+      url: "https://bj.96weixin.com/",
+    },{
+      title: "小墨鹰微信编辑器",
+      desc: "支持导入word模板编辑、公众号编辑器",
+      imgurl: "./static/img/app/xmybj.png",
+      url: "https://www.xmyeditor.com/",
+    },{
+      title: "新版小豆芽",
+      desc: "小红书编辑器、公众号编辑器",
+      imgurl: "./static/img/app/xbxdy.png",
+      url: "https://d.newrank.cn/nreditor/note?source=nav_yygj_pbbj",
+    },{
+      title: "有一云AI",
+      desc: "内容自动排版、公众号编辑器",
+      imgurl: "./static/img/app/yyyunai.png",
+      url: "https://i.uecloud.com/writings/view?log_id=6jNAlV",
+    },{
+      title: "易媒助手(编辑器+数据)",
+      desc: "易媒助手隶属于长沙中芯网络科技有限公司，长期为企业提供管理、分发、营销、咨询、培训、服务于一体的信息化服务。其主打品牌--易媒助手，在中国新媒体行业有较高的知名度。目前软件在传媒、电视台、新媒体、服务业、金融业、政府机构等295+行业广泛使用。",
+      imgurl: "./static/img/app/ymzs.png",
+      url: "https://yimeizhushou.com/",
+    },{
+      title: "壹伴助手",
+      desc: "公众号编辑器，可以智能筛查文章内可能出现的错别字和敏感词，并提示位置。这款编辑器的优势，是可以直接在公主号后台使用，不需要另外跳转到其他地方，使用方法也很简单，将文章内容导入编辑器中，点击文本校对按钮即可自动执行全文内容的检测，十分方便，不过现在要开通会员才可以使用这一功能。",
+      imgurl: "./static/img/app/yibang.webp",
+      url: "https://yiban.io/",
+    },{
+      title: "135 编辑器",
+      desc: "公众号编辑器，可以智能筛查文章内可能出现的错别字和敏感词，并提示位置。这款编辑器的优势，是可以直接在公主号后台使用，不需要另外跳转到其他地方，使用方法也很简单，将文章内容导入编辑器中，点击文本校对按钮即可自动执行全文内容的检测，十分方便，不过现在要开通会员才可以使用这一功能。",
+      imgurl: "./static/img/app/135editor_gray.png",
+      url: "https://jitter.video/",
+    }
+  ],
+},{
+  title: "检测工具",
+  children: [
+    {
+      title: "零克查词（免费）",
+      desc: "据零克查词网站的一个相关负责人说，这个网站一开始是用于提高公司内部筛查敏感词的效率，后来是因为太好用，朋友之间互相推荐，久而久之就很多人使用，目前还是免费。",
+      imgurl: "./static/img/app/lkcchi.ico",
+      url: "https://www.lingkechaci.com/",
+    },
+  ],
+},{
+  title: "视频直播数据",
+  children: [
+    {
+      title: "蝉妈妈",
+      desc: "据零克查词网站的一个相关负责人说，这个网站一开始是用于提高公司内部筛查敏感词的效率，后来是因为太好用，朋友之间互相推荐，久而久之就很多人使用，目前还是免费。",
+      imgurl: "./static/img/app/cmm.png",
+      url: "https://www.chanmama.com/douyin/",
+    },
+  ],
+},{
+  title: "网址导航",
+  children: [
+    {
+      title: "新媒体导航(推荐)",
+      desc: "据零克查词网站的一个相关负责人说，这个网站一开始是用于提高公司内部筛查敏感词的效率，后来是因为太好用，朋友之间互相推荐，久而久之就很多人使用，目前还是免费。",
+      imgurl: "./static/img/app/xmtdaohang.png",
+      url: "https://nav.newrank.cn/#site24",
+    },
   ],
 }]
