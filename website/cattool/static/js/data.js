@@ -2835,6 +2835,11 @@ const ai2025lists=[{
       desc: "免费，只保持人脸一致性，背景和服装动作都可以变换",
       imgurl: "./static/img/app/tingwu.png",
       url: "https://huggingface.co/spaces/Kwai-Kolors/Kolors-Portrait-with-Flux",
+    },{
+      title: "视觉完形填空-VisualCloze ",
+      desc: "通过可视化上下文学习的通用图像生成框架（支持换装、生成深度图、姿势、压缩、模糊、换背景……）9美元每月",
+      imgurl: "./static/img/app/tingwu.png",
+      url: "https://huggingface.co/spaces/VisualCloze/VisualCloze",
     }
   ],
 }]
@@ -2879,7 +2884,7 @@ const effectweblists=[{
 
 const selfmedialists=[
   {
-    title: "数据",
+    title: "数据分析",
     children: [
       {
         title: "新榜",
@@ -2905,6 +2910,11 @@ const selfmedialists=[
     desc: "微信图文AI自动排版、公众号编辑器",
     imgurl: "./static/img/app/hstai.png",
     url: "https://ai.weixinhost.com/",
+  },{
+    title: "新版小豆芽（推荐）",
+    desc: "小红书编辑器、公众号编辑器",
+    imgurl: "./static/img/app/xbxdy.png",
+    url: "https://d.newrank.cn/nreditor/note?source=nav_yygj_pbbj",
   },
     {
       title: "96编辑器",
@@ -2916,11 +2926,6 @@ const selfmedialists=[
       desc: "支持导入word模板编辑、公众号编辑器",
       imgurl: "./static/img/app/xmybj.png",
       url: "https://www.xmyeditor.com/",
-    },{
-      title: "新版小豆芽",
-      desc: "小红书编辑器、公众号编辑器",
-      imgurl: "./static/img/app/xbxdy.png",
-      url: "https://d.newrank.cn/nreditor/note?source=nav_yygj_pbbj",
     },{
       title: "有一云AI",
       desc: "内容自动排版、公众号编辑器",
@@ -2941,6 +2946,11 @@ const selfmedialists=[
       desc: "公众号编辑器，可以智能筛查文章内可能出现的错别字和敏感词，并提示位置。这款编辑器的优势，是可以直接在公主号后台使用，不需要另外跳转到其他地方，使用方法也很简单，将文章内容导入编辑器中，点击文本校对按钮即可自动执行全文内容的检测，十分方便，不过现在要开通会员才可以使用这一功能。",
       imgurl: "./static/img/app/135editor_gray.png",
       url: "https://jitter.video/",
+    },{
+      title: "飞书-公众号排版器",
+      desc: "公众号排版器是专为微信公众号自媒体作者设计的高效排版工具，它与飞书平台无缝集成，让用户可以快速登录并利用云文档进行文章编辑。",
+      imgurl: "./static/img/app/135editor_gray.png",
+      url: "https://app.feishu.cn/app/cli_a782728235f1500c",
     }
   ],
 },{
@@ -2951,6 +2961,11 @@ const selfmedialists=[
       desc: "据零克查词网站的一个相关负责人说，这个网站一开始是用于提高公司内部筛查敏感词的效率，后来是因为太好用，朋友之间互相推荐，久而久之就很多人使用，目前还是免费。",
       imgurl: "./static/img/app/lkcchi.ico",
       url: "https://www.lingkechaci.com/",
+    },{
+      title: "ContentAny",
+      desc: "AI检测、去除AI、原创检测和内容优化工具",
+      imgurl: "./static/img/app/lkcchi.ico",
+      url: "https://cn.aifoxs.com/CheckRepeat",
     },
   ],
 },{
@@ -2971,6 +2986,21 @@ const selfmedialists=[
       desc: "据零克查词网站的一个相关负责人说，这个网站一开始是用于提高公司内部筛查敏感词的效率，后来是因为太好用，朋友之间互相推荐，久而久之就很多人使用，目前还是免费。",
       imgurl: "./static/img/app/xmtdaohang.png",
       url: "https://nav.newrank.cn/#site24",
+    },
+  ],
+},{
+  title: "辅助工具",
+  children: [
+    {
+      title: "AI智能图片处理工具",
+      desc: "AI名片、logo、证件照、logo动效、图标、封面、水印处理、GIF生成",
+      imgurl: "./static/img/app/designer-icon-ai.svg",
+      url: "https://www.logosc.cn/design/",
+    },{
+      title: "outlook邮箱",
+      desc: "Outlook邮箱登录",
+      imgurl: "./static/img/app/outlook.png",
+      url: "https://outlook.live.com/",
     },
   ],
 }]
