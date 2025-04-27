@@ -293,9 +293,9 @@ const navLists = Vue.reactive([
       },
       {
         title: "codeformer【强大】",
-        desc: "AI图片模糊变清晰",
+        desc: "AI图片模糊变清晰，老照片修复非常好",
         imgurl: "./static/img/app/codeformer.png",
-        url: "https://replicate.com/sczhou/codeformer",
+        url: "https://huggingface.co/spaces/sczhou/CodeFormer",
       },{
         title: "lednet【强大】",
         desc: "AI图片补光（提亮晚上拍的照片）",
@@ -2826,6 +2826,11 @@ const ai2025lists=[{
       imgurl: "./static/img/app/tingwu.png",
       url: "https://huggingface.co/spaces/Kwai-Kolors/Kolors-Virtual-Try-On",
     },{
+      title: "免费换装Outfitanyone",
+      desc: "虚拟试衣间体验",
+      imgurl: "./static/img/app/tingwu.png",
+      url: "https://huggingface.co/spaces/HumanAIGC/OutfitAnyone",
+    },{
       title: "人物一致性",
       desc: "免费，保持人物及服装一致性",
       imgurl: "./static/img/app/tingwu.png",
@@ -2901,6 +2906,11 @@ const selfmedialists=[
         desc: "新榜旗下小红书数据分析工具",
         imgurl: "./static/img/app/xinhong.png",
         url: "https://xh.newrank.cn/?promoPlatType=3&promoChannel=30&promoScene=166",
+      },{
+        title: "【经验】自媒体知识库",
+        desc: "今日头条、公众号、百家号等自媒体文章AI写作技巧、AI提示词、AI配图、AI检测技巧干货",
+        imgurl: "./static/img/app/feishu.png",
+        url: "https://w5dtb9fakx.feishu.cn/docx/GIWXdiv67oesxZx5l86cy23Pndg?from=from_copylink",
       }
     ],
   },{
@@ -2964,7 +2974,7 @@ const selfmedialists=[
     },{
       title: "ContentAny",
       desc: "AI检测、去除AI、原创检测和内容优化工具",
-      imgurl: "./static/img/app/lkcchi.ico",
+      imgurl: "./static/img/app/contentany.png",
       url: "https://cn.aifoxs.com/CheckRepeat",
     },
   ],
