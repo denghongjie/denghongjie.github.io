@@ -195,6 +195,11 @@ const designspaces = [
     title: "配色空间站",
     children: [
       {
+        title: "fffuel",
+        desc: "新加坡配色网站，非常强大",
+        imgurl: "./static/img/app/fffuel.png",
+        url: "https://www.fffuel.co/",
+      },{
         title: "flat Color",
         desc: "扁平UI配色",
         imgurl: "./static/img/app/flatuicolorpicker.png",
@@ -454,7 +459,17 @@ const navLists = Vue.reactive([
         desc: "【免费】AI生成歌曲",
         imgurl: "./static/img/app/songR.webp",
         url: "https://app.songr.ai/?utm_source=%E7%A5%9E%E5%99%A8%E9%9B%86",
-      },
+      },{
+        title: "音频人声分离",
+        desc: "【免费】分离音乐、人声",
+        imgurl: "./static/img/app/vocalremover.png",
+        url: "https://vocalremover.org/zh/splitter-ai",
+      },{
+        title: "傲气科技网",
+        desc: "【收费】音频剪辑、混合、调频、拼接",
+        imgurl: "./static/img/app/audio-cutter.ico",
+        url: "https://www.aoqiv.com/",
+      }
     ],
   },
   {
@@ -489,6 +504,12 @@ const navLists = Vue.reactive([
   {
     title: "网盘",
     children: [
+      {
+        title: "盘库吧",
+        desc: "支持百度网盘、阿里云盘、夸克网盘、迅雷云盘搜索，可快速搜索百度网盘和各网盘资源中的有效连接，自动识别无效的百度云网盘资源，每天更新海量资源",
+        imgurl: "./static/img/app/antdownload.png",
+        url: "https://panku8.com/",
+      },
       {
         title: "油猴脚本",
         desc: "【网盘下载不限速神器】",
@@ -1318,19 +1339,14 @@ const iconDesigns = [
     ],
   },
   {
-    title: "Loading 专区 ",
+    title: "动态图标+loading交互",
     children: [
       {
         title: "css-loaders",
         desc: "3D图标AI+扁平",
         imgurl: "./static/img/app/cssloader.png",
         url: "https://css-loaders.com/",
-      }
-    ],
-  },
-  {
-    title: "动态图标+loading交互",
-    children: [
+      },
       {
         title: "useanimations 【访问慢】",
         desc: "带动效果的图标",
@@ -1368,6 +1384,81 @@ const iconDesigns = [
         url: "https://icons8.com/preloaders/",
       },
     ],
+  },{
+    title: "windows 图标系列",
+    children: [
+      {
+        title: "win7 系统图标",
+        desc: "系统下的一系列图标",
+        imgurl: "./static/img/app/win7.png",
+        url: "https://www.iconarchive.com/search?q=windows+7.html&page=1",
+      },{
+        title: "win7 系统图标",
+        desc: "Trainee图标包",
+        imgurl: "./static/img/app/win7.png",
+        url: "https://www.iconarchive.com/show/trainee-icons-by-emey87.html",
+      },{
+        title: "win7 系统图标",
+        desc: "Trainee图标包",
+        imgurl: "./static/img/app/win7.png",
+        url: "https://www.iconarchive.com/show/aurora-icons-by-mann-mit-der-tarnjacke.html",
+      },{
+        title: "win7 系统图标",
+        desc: "Project图标包",
+        imgurl: "./static/img/app/win7.png",
+        url: "https://www.iconarchive.com/show/project-icons-by-bogo-d.html",
+      },{
+        title: "win7 系统图标",
+        desc: "Fuguet图标包",
+        imgurl: "./static/img/app/win7.png",
+        url: "https://www.iconarchive.com/show/fugue-icons-by-yusuke-kamiyamane.html",
+      },{
+        title: "win7 系统图标",
+        desc: "Pixelophilia图标包",
+        imgurl: "./static/img/app/win7.png",
+        url: "https://www.iconarchive.com/show/pixelophilia-icons-by-omercetin.html",
+      },{
+        title: "win7 系统图标",
+        desc: "WooCons图标包",
+        imgurl: "./static/img/app/win7.png",
+        url: "https://www.iconarchive.com/show/woocons-icons-by-janik-baumgartner.html",
+      },{
+        title: "win7 系统图标",
+        desc: "WooFunction图标包",
+        imgurl: "./static/img/app/win7.png",
+        url: "https://www.iconarchive.com/show/woofunction-icons-by-wefunction.html",
+      },{
+        title: "win7 系统图标",
+        desc: "Koloria图标包",
+        imgurl: "./static/img/app/win7.png",
+        url: "https://www.iconarchive.com/show/koloria-icons-by-graphicrating.html",
+      },{
+        title: "win7 系统图标",
+        desc: "Mini图标包",
+        imgurl: "./static/img/app/win7.png",
+        url: "https://www.iconarchive.com/show/mini-icons-by-famfamfam.html",
+      },{
+        title: "win7 系统图标",
+        desc: "Led图标包",
+        imgurl: "./static/img/app/win7.png",
+        url: "https://www.iconarchive.com/show/led-icons-by-led24.de.html",
+      },{
+        title: "win7 系统图标",
+        desc: "Farm图标包",
+        imgurl: "./static/img/app/win7.png",
+        url: "https://www.iconarchive.com/show/farm-fresh-icons-by-fatcow.html",
+      },{
+        title: "win7 系统图标",
+        desc: "Silk图标包",
+        imgurl: "./static/img/app/win7.png",
+        url: "https://www.iconarchive.com/show/silk-icons-by-famfamfam.html",
+      },{
+        title: "win8 系统图标",
+        desc: "Windows 8 Metro图标包",
+        imgurl: "./static/img/app/win7.png",
+        url: "https://www.iconarchive.com/show/windows-8-metro-icons-by-dakirby309.html",
+      },
+    ],
   },
   {
     title: "APP ICON ",
@@ -1377,6 +1468,11 @@ const iconDesigns = [
         desc: "IOS app精致图标收集",
         imgurl: "./static/img/app/iosicongallery.png",
         url: "https://www.iosicongallery.com/",
+      },{
+        title: "APPLore",
+        desc: "应用程序图标库",
+        imgurl: "./static/img/app/APPLore.png",
+        url: "https://app.uiboy.com/",
       },
     ],
   },
@@ -1413,7 +1509,7 @@ const iconDesigns = [
         url: "https://healthicons.org/",
       },
     ],
-  },
+  }
 ];
 
 const viewlist = [
@@ -2789,7 +2885,7 @@ const selfstudylists = [
       {
         title: "二米",
         desc: "音视频内容 AI 效率工具（阿里巴巴出品）",
-        imgurl: "./static/img/app/tingwu.png",
+        imgurl: "./static/img/app/ermi.png",
         url: "http://www.2-m.cn/index.html",
       }
     ],
@@ -2800,7 +2896,7 @@ const selfstudylists = [
       {
         title: "二米",
         desc: "音视频内容 AI 效率工具（阿里巴巴出品）",
-        imgurl: "./static/img/app/tingwu.png",
+        imgurl: "./static/img/app/ermi.png",
         url: "http://www.2-m.cn/index.html",
       }
     ],
@@ -2961,6 +3057,46 @@ const selfmedialists=[
       desc: "公众号排版器是专为微信公众号自媒体作者设计的高效排版工具，它与飞书平台无缝集成，让用户可以快速登录并利用云文档进行文章编辑。",
       imgurl: "./static/img/app/135editor_gray.png",
       url: "https://app.feishu.cn/app/cli_a782728235f1500c",
+    }
+  ],
+},{
+  title: "变现通道",
+  children: [
+    {
+      title: "腾讯广告互选平台",
+      desc: "腾讯广告互选平台，连接广告主与创作者",
+      imgurl: "./static/img/app/txgghx.png",
+      url: "https://huxuan.qq.com/trade/free/index",
+    },{
+      title: "新版有赚",
+      desc: "公众号接广告",
+      imgurl: "./static/img/app/xbgzh.png",
+      url: "https://newrank.cn/user/ade/login",
+    },{
+      title: "蜜蜂派单",
+      desc: "每天自由接单，无提现门槛",
+      imgurl: "./static/img/app/mfpaidan.png",
+      url: "https://mifengpaidan.com/index.html",
+    },{
+      title: "神赞",
+      desc: "充分利用空闲广告位 流量变现最大化",
+      imgurl: "./static/img/app/gzhsz.svg",
+      url: "https://www.shenzan.com/web-media/we",
+    },{
+      title: "发呀",
+      desc: "30余类广告类型",
+      imgurl: "./static/img/app/faya.png",
+      url: "https://www.88faya.com/cpc_adv.html",
+    },{
+      title: "云自媒",
+      desc: "海量一手媒体资源交易平台",
+      imgurl: "./static/img/app/yunzimei.jpg",
+      url: "https://www.myunmei.com/",
+    },{
+      title: "云瞻",
+      desc: "多平台CPS、CPA产品推广，渠道丰富",
+      imgurl: "./static/img/app/yunzhan.svg",
+      url: "https://www.yunzhanxinxi.com/index.html",
     }
   ],
 },{
