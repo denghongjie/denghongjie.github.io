@@ -31,6 +31,7 @@
                     <el-button @click="toggleTheme" style="margin-left: 10px;">
                         {{ isDark ? '☀️' : '🌙' }}
                     </el-button>
+                    <span style="margin-left: 20px;font-size: 14px;font-weight: 400;color: #aaa;" v-if="searchlists.length">共 {{searchlists.length}} 个收藏</span>
                     <!-- <el-button @click="showAddDialog = true">添加链接（本地缓存）</el-button>
                     <el-button @click="exportExcel">导出Excel</el-button>
                     <el-button @click="clean">恢复网站</el-button> -->
