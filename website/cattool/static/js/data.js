@@ -13,6 +13,11 @@ const designspaces = [
         desc: "161 个应用 43256 张截图",
         imgurl: "./static/img/app/UINotes.svg",
         url: "https://uinotes.com/",
+      },{
+        title: "Pinterest",
+        desc: "网络图片收藏",
+        imgurl: "./static/img/app/pinterest.png",
+        url: "https://ca.pinterest.com/",
       },
       {
         title: "花瓣",
