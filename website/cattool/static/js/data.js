@@ -1630,6 +1630,16 @@ const devlist = [
         url: "https://share.feijipan.com/s/iSCpVVtN",
       },
     ],
+  },{
+    title: "API接口网站",
+    children: [
+      {
+        title: "68API",
+        desc: "68API",
+        imgurl: "./static/img/app/shuzixiangshu.png",
+        url: "https://68api.com/",
+      },
+    ],
   },
   {
     title: "SEO 工具",
