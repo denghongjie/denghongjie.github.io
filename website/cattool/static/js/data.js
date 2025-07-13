@@ -2915,10 +2915,55 @@ const selfstudylists = [
 ];
 
 const ai2025lists = [{
+  title: "AI智能体",
+  children: [
+    {
+      title: "N8N",
+      desc: "灵活的 AI 工作流自动化、开源，免费",
+      imgurl: "./static/img/app/n8n.png",
+      url: "https://n8n.io/",
+    },{
+      title: "dify",
+      desc: "AI 知识库集成,支持多服务商集成的 AI 对话客户端",
+      imgurl: "./static/img/app/Cherry.png",
+      url: "https://cloud.dify.ai/signin",
+    },{
+      title: "扣子",
+      desc: "免费且灵活的应用程序，用于您的私人想法",
+      imgurl: "./static/img/app/obsidian.png",
+      url: "https://www.coze.cn/",
+    },{
+      title: "魔塔社区",
+      desc: "AI 知识库集成,支持多服务商集成的 AI 对话客户端",
+      imgurl: "./static/img/app/Cherry.png",
+      url: "https://devpress.csdn.net/community.modelscope.cn",
+    },{
+      title: "Make",
+      desc: "AI 知识库集成,支持多服务商集成的 AI 对话客户端",
+      imgurl: "./static/img/app/Cherry.png",
+      url: "https://www.make.com/en",
+    }
+  ],
+},{
   title: "声音克隆",
   children: [
     {
+      title: "Elevenlabs",
+      desc: "最真实的语音 AI 平台\支持文本转语音，语音转文本、对话式、配音式、克隆式",
+      imgurl: "./static/img/app/tingwu.png",
+      url: "https://elevenlabs.io/",
+    },{
       title: "GPT-SoVITS",
+      desc: "AI声音克隆（免费）",
+      imgurl: "./static/img/app/tingwu.png",
+      url: "https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e/dkxgpiy9zb96hob4#KTvnO",
+    },{
+      title: "CosyVoice",
+      desc: "AI声音克隆（免费）",
+      imgurl: "./static/img/app/tingwu.png",
+      url: "https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e/dkxgpiy9zb96hob4#KTvnO",
+    },{
+      title: "ChatTTS",
       desc: "AI声音克隆（免费）",
       imgurl: "./static/img/app/tingwu.png",
       url: "https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e/dkxgpiy9zb96hob4#KTvnO",
@@ -2952,6 +2997,57 @@ const ai2025lists = [{
       desc: "通过可视化上下文学习的通用图像生成框架（支持换装、生成深度图、姿势、压缩、模糊、换背景……）9美元每月",
       imgurl: "./static/img/app/VisualCloze.webp",
       url: "https://huggingface.co/spaces/VisualCloze/VisualCloze",
+    }
+  ],
+}, {
+  title: "AI生歌",
+  children: [
+    {
+      title: "suno",
+      desc: "AI音乐生成",
+      imgurl: "./static/img/app/kolors.webp",
+      url: "https://suno.com/create?signup_source=splashpage&referrer=%2Fhome&redirected_from=signup",
+    }
+  ],
+}, {
+  title: "短视频",
+  children: [
+    {
+      title: "invideo",
+      desc: "AI音乐生成",
+      imgurl: "./static/img/app/kolors.webp",
+      url: "https://invideo.io/",
+    },
+    {
+      title: "skyreels",
+      desc: "AI音乐生成",
+      imgurl: "./static/img/app/kolors.webp",
+      url: "https://www.skyreels.ai/home",
+    },{
+      title: "viggle",
+      desc: "AI音乐生成",
+      imgurl: "./static/img/app/kolors.webp",
+      url: "https://viggle.ai/home",
+    }
+  ],
+}, {
+  title: "AI知识库",
+  children: [
+    {
+      title: "NoteBookLM",
+      desc: "个性化 AI 研究助理",
+      imgurl: "./static/img/app/notebooklm.png",
+      url: "https://notebooklm.google/",
+    },{
+      title: "Obsidian(客户端)",
+      desc: "免费且灵活的应用程序，用于您的私人想法",
+      imgurl: "./static/img/app/obsidian.png",
+      url: "https://obsidian.md/",
+    },{
+      title: "Cherry studio",
+      desc: "AI 知识库集成,支持多服务商集成的 AI 对话客户端",
+      imgurl: "./static/img/app/Cherry.png",
+      url: "https://www.cherry-ai.com/",
     }
   ],
 }]
@@ -3185,5 +3281,48 @@ const selfmedialists = [
         imgurl: "./static/img/app/outlook.png",
         url: "https://outlook.live.com/",
       },
+    ],
+  }]
+
+
+  const Salelists=[{
+    title: "淘宝系",
+    children: [
+      {
+        title: "1688铺货",
+        desc: "用手机端过滤（小红书面单+支持一件代发+7天无理由退货+有利润空间）支持铺货的",
+        imgurl: "./static/img/app/designer-icon-ai.svg",
+        url: "https://www.1688.com/",
+      }, {
+        title: "千牛",
+        desc: "用分销应用管理商品",
+        imgurl: "./static/img/app/outlook.png",
+        url: "https://myseller.taobao.com/home.htm/SellManage/all?current=1&pageSize=20",
+      }, {
+        title: "万相",
+        desc: "产品解析-AI混剪视频",
+        imgurl: "./static/img/app/outlook.png",
+        url: "https://www.wanxiang.art/video/meditorMix",
+      },
+    ],
+  },{
+    title: "抖音系",
+    children: [
+      {
+        title: "抖音小厨",
+        desc: "巨量百营应",
+        imgurl: "./static/img/app/designer-icon-ai.svg",
+        url: "https://buyin.jinritemai.com/dashboard/merch-picking-library/merch-promoting?id=3462677868407045160&enter_from=%7B%22pick_first_source%22%3A%22%E7%99%BE%E5%BA%94%22%2C%22pick_second_source%22%3A%22select_product_topic%22%2C%22pick_third_source%22%3A%22topic_sale_toplist%22%2C%22pick_source_id%22%3A%22topic_sale_toplist_61006%22%2C%22page_name%22%3A%22topic_sale_toplist%22%2C%22top_list_type%22%3A%22topic_sale_toplist%22%2C%22top_list_id%22%3A%2261006%22%2C%22product_tab_name%22%3A%22%E5%85%A8%E9%83%A8%E7%88%86%E6%AC%BE%E6%A6%9C%22%2C%22product_label%22%3A%22%7B%5C%22in_toplist%5C%22%3A%5C%221%5C%22%2C%5C%22top_list_id%5C%22%3A%5C%2261006%5C%22%2C%5C%22top_list_type%5C%22%3A%5C%22topic_sale_toplist%5C%22%2C%5C%22top_list_name%5C%22%3A%5C%22%E5%85%A8%E9%83%A8%E7%88%86%E6%AC%BE%E6%A6%9C%5C%22%2C%5C%22pick_source_id%5C%22%3A%5C%22topic_sale_toplist%5C%22%2C%5C%22button%5C%22%3A%5C%22%E7%B1%BB%E7%9B%AE%EF%BC%9A%E5%85%A8%E9%83%A8%5C%22%7D%22%2C%22enter_from%22%3A%22%E9%80%89%E5%93%81%E5%B9%BF%E5%9C%BA%E9%A6%96%E9%A1%B5%22%2C%22source%22%3A%22%E9%80%89%E5%93%81%E5%B9%BF%E5%9C%BA%E9%A6%96%E9%A1%B5%22%2C%22position%22%3A%22list%22%2C%22log_pb%22%3A%22%22%2C%22product_id%22%3A%223462662477458839596%22%2C%22commodity_id%22%3A%223462677868407045160%22%2C%22previous_page_name%22%3A%22topic_sale_toplist%22%2C%22is_has_same_item%22%3A0%7D&rank_log_params=%7B%22pick_first_source%22%3A%22%E7%99%BE%E5%BA%94%22%2C%22pick_second_source%22%3A%22select_product_topic%22%2C%22pick_third_source%22%3A%22topic_sale_toplist%22%2C%22pick_source_id%22%3A%22topic_sale_toplist_61006%22%2C%22page_name%22%3A%22topic_sale_toplist%22%2C%22top_list_type%22%3A%22topic_sale_toplist%22%2C%22top_list_id%22%3A%2261006%22%2C%22product_tab_name%22%3A%22%E5%85%A8%E9%83%A8%E7%88%86%E6%AC%BE%E6%A6%9C%22%2C%22product_label%22%3A%22%7B%5C%22in_toplist%5C%22%3A%5C%221%5C%22%2C%5C%22top_list_id%5C%22%3A%5C%2261006%5C%22%2C%5C%22top_list_type%5C%22%3A%5C%22topic_sale_toplist%5C%22%2C%5C%22top_list_name%5C%22%3A%5C%22%E5%85%A8%E9%83%A8%E7%88%86%E6%AC%BE%E6%A6%9C%5C%22%2C%5C%22pick_source_id%5C%22%3A%5C%22topic_sale_toplist%5C%22%2C%5C%22button%5C%22%3A%5C%22%E7%B1%BB%E7%9B%AE%EF%BC%9A%E5%85%A8%E9%83%A8%5C%22%7D%22%2C%22enter_from%22%3A%22%E9%80%89%E5%93%81%E5%B9%BF%E5%9C%BA%E9%A6%96%E9%A1%B5%22%2C%22source%22%3A%22%E9%80%89%E5%93%81%E5%B9%BF%E5%9C%BA%E9%A6%96%E9%A1%B5%22%2C%22position%22%3A%22list%22%2C%22log_pb%22%3A%22%22%2C%22product_id%22%3A%223462662477458839596%22%2C%22commodity_id%22%3A%223462677868407045160%22%7D&decision_enter_from=pc.selection_square.alliance_rank&btm_ppre=a10091.b544996.c0.d0&btm_pre=a10091.b951679.c0.d0&btm_show_id=90ddde5d-9905-403d-b2cb-34ee45700260&pre_universal_page_params_id=&universal_page_params_id=9f9fa65e-0330-4bf2-9203-f0356b5fc8f7",
+      }
+    ],
+  },{
+    title: "小红书",
+    children: [
+      {
+        title: "小红书电商",
+        desc: "1688也可以铺货小红书",
+        imgurl: "./static/img/app/designer-icon-ai.svg",
+        url: "https://zhaoshang.xiaohongshu.com/merchant/login?from=xhsweb",
+      }, 
     ],
   }]
