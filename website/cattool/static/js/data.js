@@ -3313,11 +3313,6 @@ const selfmedialists = [
         desc: "自动分销操作流程",
         imgurl: "./static/img/app/1688.png",
         url: "https://peixun.1688.com/space/l2Amo48BwAwpDGdb/detail/Obva6QBXJw9l1Oppu49X9LxzWn4qY5Pr",
-      },{
-        title: "达人上货管家",
-        desc: "小红书铺货插件",
-        imgurl: "./static/img/app/xhs.png",
-        url: "http://xhsgood.xingyebao.com/#/",
       },
     ],
   },{
@@ -3338,6 +3333,11 @@ const selfmedialists = [
         desc: "1688也可以铺货小红书",
         imgurl: "./static/img/app/xhs.png",
         url: "https://zhaoshang.xiaohongshu.com/merchant/login?from=xhsweb",
-      }, 
+      }, {
+        title: "达人上货管家",
+        desc: "小红书铺货插件",
+        imgurl: "./static/img/app/xhs.png",
+        url: "http://xhsgood.xingyebao.com/#/",
+      },
     ],
   }]
