@@ -137,7 +137,7 @@ const outwaylists=[{
         url:"https://www.youtube.com/channel/UCzHiEAkKmdFZ5P5e1jIfelw",
     },{
         title:"dailymotion.",
-        desc:"【法国】世界第二大视频网站",
+        desc:"【法国】世界第二大视频网站，法国本土的在线视频平台，类似YouTube，提供多样的内容，覆盖新闻、娱乐、音乐、体育等。",
         imgurl:"./static/img/app/tools/dailymotion.png",
         url:"https://www.dailymotion.com/us",
     },{
@@ -153,7 +153,7 @@ const outwaylists=[{
     },{
         title:"Discord",
         desc:"Discord最初针对游戏玩家，但现在广泛应用于学习、工作、爱好者社区、艺术创作等众多领域",
-        imgurl:"../website/cattool/static/img/app/Discord.png",
+        imgurl:"./static/img/app/tools/Discord.png",
         url:"https://discord.com/",
     },{
         title:"Snapchat",
@@ -197,15 +197,45 @@ const outwaylists=[{
 },{
     title:"世界",
     children:[{
-        title:"NAVER TV",
-        desc:"【韩国】视频分享网站",
-        imgurl:"./static/img/app/tools/navertv.png",
-        url:"http://tv.naver.com",
+        title:"VKontakte (VK)",
+        desc:"【俄罗斯】俄罗斯最大的社交媒体平台，类似于Facebook，用户可以分享视频、照片、音乐等内容，也有直播功能。",
+        imgurl:"./static/img/app/tools/vk.png",
+        url:"https://vk.com/feed",
+    },{
+        title:"Odnoklassniki (OK)",
+        desc:"【俄罗斯】俄罗斯的社交平台，用户可以通过该平台发布视频、图片，进行互动和社交。",
+        imgurl:"./static/img/app/tools/ok.png",
+        url:"https://ok.ru/feed",
     },{
         title:"Rakuten Viki",
         desc:"【美国】线上免费观看亚洲电视节目及电影",
-        imgurl:"./static/img/app/tools/viki.png",
+        imgurl:"./static/img/app/tools/viki-icon.png",
         url:"https://www.viki.com",
+    },{
+        title:"Moj",
+        desc:"【印度】印度本土的短视频平台，为创作者提供了一个分享舞蹈、搞笑、娱乐等内容的机会。",
+        imgurl:"./static/img/app/tools/moj.png",
+        url:"https://mojapp.in/",
+    },{
+        title:"Chingari",
+        desc:"【印度】一个平台让印度用户创作并分享短视频，成为TikTok停运后流行的自媒体平台",
+        imgurl:"./static/img/app/tools/Chingari.webp",
+        url:"https://chingari.io/",
+    },{
+        title:"NAVER TV",
+        desc:"【韩国】视频分享网站",
+        imgurl:"./static/img/app/tools/NAVER.webp",
+        url:"http://tv.naver.com",
+    },{
+        title:"KakaoTalk",
+        desc:"【韩国】KakaoTalk是韩国的主流通讯工具，许多创作者通过KakaoTalk进行内容分享与社交互动",
+        imgurl:"./static/img/app/tools/KakaoTalk.webp",
+        url:"https://www.kakaocorp.com/",
+    },{
+        title:"Aparat Shorts",
+        desc:"【伊朗】Aparat也推出了类似于TikTok和Instagram Reels的短视频功能，用户可以创作并分享短视频，内容覆盖娱乐、搞笑、教育等。",
+        imgurl:"./static/img/app/tools/Aparat.jpg",
+        url:"https://shorts.aparat.com/fa/shorts/feeds",
     },{
         title:"tiktok",
         desc:"海外抖音",
