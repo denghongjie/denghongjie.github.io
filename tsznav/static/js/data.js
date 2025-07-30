@@ -117,6 +117,12 @@ const outwaylists=[{
         imgurl:"./static/img/app/tools/paopao.png",
         bgcolor:"#ecedf0",
         url:"https://share.feijipan.com/s/iSCpVVtN",
+    },{
+        title:"三毛机场",
+        desc:"梯子",
+        imgurl:"./static/img/app/tools/paopao.png",
+        bgcolor:"#ecedf0",
+        url:"https://smjcdh.com/#/dashboard",
     }]
 },{
     title:"渠道",
@@ -165,6 +171,44 @@ const outwaylists=[{
         desc:"社交新闻和讨论平台，类似于twitter",
         imgurl:"./static/img/app/tools/Reddit.png",
         url:"https://www.reddit.com/",
+    }]
+},{
+    title:"工具",
+    children:[,{
+        title:"【视频下载】datatool",
+        desc:"1080P 4K ",
+        imgurl:"./static/img/app/tools/youtube.png",
+        url:"https://www.datatool.vip",
+    },{
+        title:"【视频下载】yt1d ",
+        desc:"480P ",
+        imgurl:"./static/img/app/tools/youtube.png",
+        url:"https://yt1d.com/zh-tw",
+    },{
+        title:"【视频下载】yt5s",
+        desc:"1080P 4K ",
+        imgurl:"./static/img/app/tools/youtube.png",
+        url:"https://yt5s.biz/zh-cn",
+    },{
+        title:"【视频下载】downmp3",
+        desc:"1080P 4K ",
+        imgurl:"./static/img/app/tools/youtube.png",
+        url:"https://downmp3.yt/zhn2/youtube-video-downloader",
+    },{
+        title:"InVideo",
+        desc:"nVideo可帮助您将内容转换为精彩视频。 我们为媒体公司、小型企业和品牌提供服务，通过视频内容的力量扩大受众参与度。InVideo是营销人员、出版商和专业人士的理想选择。InVideo是一款功能强大的在线视频编辑器。它包含5000多个模板、iStock媒体、音乐库、过滤器、过渡等等。",
+        imgurl:"./static/img/app/tools/InVideo.png",
+        url:"https://invideo.io",
+    },{
+        title:"Ecosia",
+        desc:"【德国搜索引擎】Ecosia是一个位于德国柏林的搜索引擎。Ecosia将自己视为一家社会企业，声称不排放二氧化碳，支持完全的财务透明度，并保护用户的隐私。Ecosia已获得B Lab认证，符合其责任、可持续性和绩效标准。",
+        imgurl:"./static/img/app/tools/ecosia.png",
+        url:"https://www.ecosia.org",
+    },{
+        title:"world68",
+        desc:"网址导航",
+        imgurl:"./static/img/app/tools/tiktok.png",
+        url:"https://www.world68.com/",
     }]
 },{
     title:"其他",
@@ -241,24 +285,6 @@ const outwaylists=[{
         desc:"海外抖音",
         imgurl:"./static/img/app/tools/tiktok.png",
         url:"https://www.tiktok.com/explore",
-    }]
-},{
-    title:"工具",
-    children:[{
-        title:"InVideo",
-        desc:"nVideo可帮助您将内容转换为精彩视频。 我们为媒体公司、小型企业和品牌提供服务，通过视频内容的力量扩大受众参与度。InVideo是营销人员、出版商和专业人士的理想选择。InVideo是一款功能强大的在线视频编辑器。它包含5000多个模板、iStock媒体、音乐库、过滤器、过渡等等。",
-        imgurl:"./static/img/app/tools/InVideo.png",
-        url:"https://invideo.io",
-    },{
-        title:"Ecosia",
-        desc:"【德国搜索引擎】Ecosia是一个位于德国柏林的搜索引擎。Ecosia将自己视为一家社会企业，声称不排放二氧化碳，支持完全的财务透明度，并保护用户的隐私。Ecosia已获得B Lab认证，符合其责任、可持续性和绩效标准。",
-        imgurl:"./static/img/app/tools/ecosia.png",
-        url:"https://www.ecosia.org",
-    },{
-        title:"world68",
-        desc:"网址导航",
-        imgurl:"./static/img/app/tools/tiktok.png",
-        url:"https://www.world68.com/",
     }]
 },
 // {
