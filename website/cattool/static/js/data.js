@@ -3313,6 +3313,16 @@ const selfmedialists = [
         desc: "自动分销操作流程",
         imgurl: "./static/img/app/1688.png",
         url: "https://peixun.1688.com/space/l2Amo48BwAwpDGdb/detail/Obva6QBXJw9l1Oppu49X9LxzWn4qY5Pr",
+      },{
+        title: "逸掌柜-淘宝店铺推单-",
+        desc: "点击产品关联-商品可以推单到1688供应商",
+        imgurl: "./static/img/app/yizg.png",
+        url: "https://orderwebs.yzcsoft.com/okoweb/pages/commodity_relation",
+      },{
+        title: "1688-官方铺淘",
+        desc: "1688官方铺货工具",
+        imgurl: "./static/img/app/1688putao.png",
+        url: "https://ufuwu.1688.com/page/fuwu_work_isv_container.htm?role=buyer&appkey=2839818&state=%7B%22scene_type%22%3A%22shop_distribute_settings%22%2C%22shopCode%22%3A%22869722162%22%2C%22channel%22%3A%22thyny%22%7D",
       },
     ],
   },{
