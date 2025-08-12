@@ -3321,7 +3321,7 @@ const selfmedialists = [
       },{
         title: "1688-官方铺淘",
         desc: "1688官方铺货工具",
-        imgurl: "./static/img/app/1688putao.png",
+        imgurl: "./static/img/app/1688putao.jpg",
         url: "https://ufuwu.1688.com/page/fuwu_work_isv_container.htm?role=buyer&appkey=2839818&state=%7B%22scene_type%22%3A%22shop_distribute_settings%22%2C%22shopCode%22%3A%22869722162%22%2C%22channel%22%3A%22thyny%22%7D",
       },
     ],
