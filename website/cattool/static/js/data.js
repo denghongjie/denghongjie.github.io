@@ -125,6 +125,12 @@ const designspaces = [
         imgurl: "./static/img/app/manypixels.jpg",
         url: "https://www.manypixels.co/gallery",
       },
+      {
+        title: "下载解析器",
+        desc: "freepik、Flaticon解析下载",
+        imgurl: "./static/img/app/freepik.jpg",
+        url: "https://sucai.ixling.com/c/5HmJ1Qgt6",
+      },{}
     ],
   },
   {
