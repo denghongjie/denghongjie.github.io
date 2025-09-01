@@ -128,9 +128,9 @@ const designspaces = [
       {
         title: "下载解析器",
         desc: "freepik、Flaticon解析下载",
-        imgurl: "./static/img/app/freepik.jpg",
+        imgurl: "./static/img/app/freepik.png",
         url: "https://sucai.ixling.com/c/5HmJ1Qgt6",
-      },{}
+      }
     ],
   },
   {
