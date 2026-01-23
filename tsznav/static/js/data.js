@@ -116,7 +116,7 @@ const outwaylists=[{
         desc:"梯子",
         imgurl:"./static/img/app/tools/paopao.png",
         bgcolor:"#ecedf0",
-        url:"https://share.feijipan.com/s/iSCpVVtN",
+        url:"https://gh-proxy.com/https://github.com/gaosuwen/paopaogou/releases/download/chaoxi/windows_paopaogou_v4.1.11.exe",
     },{
         title:"三毛机场",
         desc:"梯子",
