@@ -15,12 +15,17 @@ const tszWeblists=[{
         title:"探索者云",
         desc:"探索者云系统",
         imgurl:"./static/img/app/tszcould.png",
-        url:"https://cloud.tsz.com.cn/vpn/index.html",
+        url:"https://cloud.tsz.com.cn:4433/vpn/index.html",
     },{
-        title:"探索者CLM管理系统",
+        title:"[旧] 探索者CLM管理系统",
         desc:"写锁平台",
         imgurl:"./static/img/app/tsz.ico",
         url:"https://admin.yunzhukeji.cn/",
+    },{
+        title:"[新] 探索者CLM管理系统",
+        desc:"写锁平台",
+        imgurl:"./static/img/app/tszbitclock.png",
+        url:"https://keys.tszcloud.com.cn/login",
     }]
 },{
     title:"产品网站",
@@ -39,27 +44,31 @@ const tszWeblists=[{
         desc:"TSPsee产品介绍",
         imgurl:"./static/img/app/gcpdf.png",
         url:"http://gcyl.yunzhukeji.cn/",
-    },{
-        title:"BIMbang",
-        desc:"BIMbang官方网站",
-        imgurl:"./static/img/app/bimbang.png",
-        url:"https://bang.yunzhukeji.cn/",
-    },{
-        title:"数字化审图",
-        desc:"数字化审图中心",
+    }
+    // ,{
+    //     title:"BIMbang",
+    //     desc:"BIMbang官方网站",
+    //     imgurl:"./static/img/app/bimbang.png",
+    //     url:"https://bang.yunzhukeji.cn/",
+    // }
+    ,{
+        title:"探索者流程引擎",
+        desc:"探索者流程引擎",
         imgurl:"./static/img/app/shengtu.png",
-        url:"http://123.57.83.204:7002/",
-    },{
-        title:"设计院管理系统",
-        desc:"设计院管理系统",
-        imgurl:"./static/img/app/shejiyuan.png",
-        url:"http://123.57.83.204:7006/login?redirect=/home",
-    },{
-        title:"探索者协同",
-        desc:"探索者协同网站",
-        imgurl:"./static/img/app/xittongpingtai.png",
-        url:"http://123.57.83.204:9002/",
-    }]
+        url:"https://apps.tszcloud.com.cn/bpm/ythlogin?redirect=%2Findex",
+    },
+    // {
+    //     title:"设计院管理系统",
+    //     desc:"设计院管理系统",
+    //     imgurl:"./static/img/app/shejiyuan.png",
+    //     url:"http://123.57.83.204:7006/login?redirect=/home",
+    // },{
+    //     title:"探索者协同",
+    //     desc:"探索者协同网站",
+    //     imgurl:"./static/img/app/xittongpingtai.png",
+    //     url:"http://123.57.83.204:9002/",
+    // }
+]
 },{
     title:"友情链接",
     children:[{
@@ -72,12 +81,14 @@ const tszWeblists=[{
         desc:"探索者审图小助手",
         imgurl:"./static/img/app/审图助手-客户.png",
         url:"https://shentuasst.yunzhukeji.cn/",
-    },{
-        title:"南昌探索者软件",
-        desc:"江西南昌探索者",
-        imgurl:"./static/img/app/big.png",
-        url:"https://www.tsz.com.cn/Index.jsp",
-    },{
+    }
+    // ,{
+    //     title:"南昌探索者软件",
+    //     desc:"江西南昌探索者",
+    //     imgurl:"./static/img/app/big.png",
+    //     url:"https://www.tsz.com.cn/Index.jsp",
+    // }
+    ,{
         title:"江阴数字化审图中心",
         desc:"江阴数字化生态园",
         imgurl:"./static/img/app/big.png",
@@ -93,10 +104,10 @@ const tszWeblists=[{
         imgurl:"./static/img/app/cat.png",
         url:"../website/cattool/index.html",
     },{
-        title:"开发者社区",
+        title:"开发者社区-腾讯",
         desc:"技术共享",
         imgurl:"./static/img/app/ymxs.png",
-        url:"../website/opentool/",
+        url:"https://tencentcloud.csdn.net/",
     }
 ]
     
@@ -107,6 +118,11 @@ const tszWeblists=[{
         desc:"探索者测试专用平台",
         imgurl:"./static/img/app/tszcd.png",
         url:"http://123.56.22.197:81/zentao/user-login-L3plbnRhby9teS5odG1s.html",
+    },{
+        title:"探索者阿里云-GIT",
+        desc:"探索者测试专用平台",
+        imgurl:"./static/img/app/tszcd.png",
+        url:"http://101.201.52.227:3000/",
     }]
 }]
 const outwaylists=[{
