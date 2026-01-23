@@ -180,20 +180,25 @@ const outwaylists=[{
         imgurl:"./static/img/app/tools/youtube.png",
         url:"https://www.datatool.vip",
     },{
-        title:"【视频下载】yt1d ",
+        title:"【视频下载】DL2MP3 ",
         desc:"480P ",
         imgurl:"./static/img/app/tools/youtube.png",
-        url:"https://yt1d.com/zh-tw",
+        url:"https://dl2mp3.to/",
     },{
-        title:"【视频下载】yt5s",
+        title:"【视频下载】cnvmp3",
         desc:"1080P 4K ",
         imgurl:"./static/img/app/tools/youtube.png",
-        url:"https://yt5s.biz/zh-cn",
+        url:"https://cnvmp3.com/v51",
     },{
         title:"【视频下载】downmp3",
         desc:"1080P 4K ",
         imgurl:"./static/img/app/tools/youtube.png",
         url:"https://downmp3.yt/zhn2/youtube-video-downloader",
+    },{
+        title:"【视频下载】YTDown",
+        desc:"YouTube视频下载器 ",
+        imgurl:"./static/img/app/tools/youtube.png",
+        url:"https://ytdown.to/zh2/",
     },{
         title:"InVideo",
         desc:"nVideo可帮助您将内容转换为精彩视频。 我们为媒体公司、小型企业和品牌提供服务，通过视频内容的力量扩大受众参与度。InVideo是营销人员、出版商和专业人士的理想选择。InVideo是一款功能强大的在线视频编辑器。它包含5000多个模板、iStock媒体、音乐库、过滤器、过渡等等。",
