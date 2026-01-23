@@ -329,6 +329,11 @@ const navLists = Vue.reactive([
         desc: "AI在线抠图、去水印、制作证件照",
         imgurl: "./static/img/app/zuotang.png",
         url: "https://picwish.cn/?apptype=aps-pin",
+      },{
+        title: "WaifuXL【动漫图片高清化】",
+        desc: "图片变高清-小图片",
+        imgurl: "./static/img/app/zuotang.png",
+        url: "https://waifuxl.com/",
       },
       {
         title: "Vector Magic【免费】",
@@ -370,7 +375,17 @@ const navLists = Vue.reactive([
         desc: "人物头像磨皮还行",
         imgurl: "./static/img/app/360zitu.svg",
         url: "https://pic.360.com/tools/image-editor/repair?src=repair&srcg=baidu",
-      },
+      },{
+        title: "image-upscaling【图片放大器】",
+        desc: "图片变高清",
+        imgurl: "./static/img/app/upscaling.png",
+        url: "https://image-upscaling.net/upscaling/en.html",
+      },{
+        title: "imgupscaler【视频放大器】",
+        desc: "图片视频变高清、老照片修复",
+        imgurl: "./static/img/app/imgupscaler.png",
+        url: "https://imgupscaler.ai/zh/video-enhancer/",
+      }
     ],
   },
   {
@@ -651,6 +666,12 @@ const navLists = Vue.reactive([
   {
     title: "其他工具",
     children: [
+      {
+        title: "FMHY",
+        desc: "免费软件工具箱,长期更新",
+        imgurl: "./static/img/app/colossyan.png",
+        url: "https://fmhy.net/misc",
+      },
       {
         title: "自适应界面测试",
         desc: "批量导出网站在不通设备的截图",
