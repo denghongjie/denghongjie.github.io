@@ -124,12 +124,6 @@ const designspaces = [
         desc: "自定义插画",
         imgurl: "./static/img/app/manypixels.jpg",
         url: "https://www.manypixels.co/gallery",
-      },
-      {
-        title: "下载解析器",
-        desc: "freepik、Flaticon解析下载",
-        imgurl: "./static/img/app/freepik.png",
-        url: "https://sucai.ixling.com/c/5HmJ1Qgt6",
       }
     ],
   },
@@ -434,12 +428,6 @@ const navLists = Vue.reactive([
         url: "https://convertio.co/zh/",
       },
       {
-        title: "智影",
-        desc: "数字人播报·字幕",
-        imgurl: "./static/img/app/zenvideo.png",
-        url: "https://zenvideo.qq.com/",
-      },
-      {
         title: "奇妙元",
         desc: "数字人播报·字幕",
         imgurl: "./static/img/app/qmy.png",
@@ -460,12 +448,49 @@ const navLists = Vue.reactive([
         desc: "【收费】音频剪辑、混合、调频、拼接",
         imgurl: "./static/img/app/audio-cutter.ico",
         url: "https://www.aoqiv.com/",
-      }, {
+      }
+    ],
+  },
+  {
+    title: "下载工具",
+    children: [
+       {
         title: "下载狗",
         desc: "免费无水印视频解析下载",
         imgurl: "./static/img/app/xiazaigou.png",
         url: "https://www.xiazaitool.com/?ref=96249F7",
+      },
+      {
+        title: "下载解析器",
+        desc: "freepik、Flaticon解析下载",
+        imgurl: "./static/img/app/freepik.png",
+        url: "https://sucai.ixling.com/c/5HmJ1Qgt6",
+      },
+      {
+        title: "DataTool.VIP",
+        desc: "视频素材资源解析下载（无水印下载）",
+        imgurl: "./static/img/app/youtube.png",
+        url: "https://www.datatool.vip/",
+      },
+      {
+        title: "DataTool.VIP",
+        desc: "Youtube、抖音、小红书等视频素材资源解析下载（无水印下载）",
+        imgurl: "./static/img/app/youtube.png",
+        url: "https://www.datatool.vip/",
+      },
+      {
+        title: "DL2MP3资源下载",
+        desc: "Youtube、抖音、小红书等视频素材资源解析下载（无水印下载）",
+        imgurl: "./static/img/app/youtube.png",
+        url: "https://dl2mp3.to/",
+      },
+      {
+        title: "CNVMP3资源下载",
+        desc: "Youtube、抖音、小红书等视频素材资源解析下载（无水印下载）",
+        imgurl: "./static/img/app/youtube.png",
+        url: "https://cnvmp3.com/v54",
       }
+      
     ],
   },
   {
@@ -499,13 +524,7 @@ const navLists = Vue.reactive([
   },
   {
     title: "网盘",
-    children: [
-      {
-        title: "盘库吧",
-        desc: "支持百度网盘、阿里云盘、夸克网盘、迅雷云盘搜索，可快速搜索百度网盘和各网盘资源中的有效连接，自动识别无效的百度云网盘资源，每天更新海量资源",
-        imgurl: "./static/img/app/antdownload.png",
-        url: "https://panku8.com/",
-      }, {
+    children: [ {
         title: "混合盘",
         desc: "一款功能强大的网盘资源搜索工具，支持多网盘搜索引擎的聚合搜索",
         imgurl: "./static/img/app/hunhepan.svg",
@@ -517,12 +536,6 @@ const navLists = Vue.reactive([
         desc: "激活码：milk",
         imgurl: "./static/img/app/antdownload.png",
         url: "https://www.alipansou.com/",
-      },
-      {
-        title: "夸克资源",
-        desc: "趣盘搜",
-        imgurl: "./static/img/app/antdownload.png",
-        url: "https://pan.funletu.com/#/",
       },
       {
         title: "学霸盘",
@@ -542,25 +555,6 @@ const navLists = Vue.reactive([
         imgurl: "./static/img/app/antdownload.png",
         url: "https://greasyfork.org/zh-CN/scripts/461574",
       },
-
-      // {
-      //   title: "Antdownload",
-      //   desc: "【百度网盘下载不限速神器】",
-      //   imgurl: "./static/img/app/antdownload.png",
-      //   url: "https://www.jb51.net/softs/820446.html",
-      // },
-      // {
-      //   title: "文叔叔",
-      //   desc: "10G 免费上传下载不限速",
-      //   imgurl: "./static/img/app/wenshushu.webp",
-      //   url: "https://www.wenshushu.cn/",
-      // },
-      // {
-      //   title: "TMP LINK",
-      //   desc: "24小时自动删除",
-      //   imgurl: "./static/img/app/tmp_link.svg",
-      //   url: "https://tmp.link/",
-      // },
     ],
   },
   {
@@ -613,7 +607,7 @@ const navLists = Vue.reactive([
         title: "GifCam",
         desc: "录制Gif",
         imgurl: "./static/img/app/GifCam.png",
-        url: "https://gifcam.en.softonic.com/download",
+        url: "https://pan.baidu.com/share/init?surl=pi4bEVy8zvs1Zucs_Th-BQ&pwd=kxes",
       },
       {
         title: "ezgif【免费】",
@@ -690,17 +684,6 @@ const navLists = Vue.reactive([
         imgurl: "./static/img/app/佛系软件.png",
         url: "https://foxirj.com/",
       }
-    ],
-  },
-  {
-    title: "4K世界",
-    children: [
-      {
-        title: "4K世界",
-        desc: "4K资源共享下载",
-        imgurl: "./static/img/app/4ksj.jpeg",
-        url: " https://www.4khdr.cn/ ",
-      },
     ],
   }, {
     title: "windows 问题助手",
@@ -2918,27 +2901,133 @@ const SDlists = [
 
 const selfstudylists = [
   {
-    title: "自学教程资源",
+    title: "国内AI视频生成",
     children: [
       {
-        title: "二米",
-        desc: "音视频内容 AI 效率工具（阿里巴巴出品）",
-        imgurl: "./static/img/app/ermi.png",
-        url: "http://www.2-m.cn/index.html",
+        title: "即梦",
+        desc: "视频处理",
+        imgurl: "./static/img/app/jimeng.png",
+        url: "https://jimeng.jianying.com/ai-tool/home",
+      },{
+        title: "可灵",
+        desc: "视频处理（非常棒）火山引擎",
+        imgurl: "./static/img/app/keling.png",
+        url: "https://klingai.com/app",
+      },{
+        title: "volcengine",
+        desc: "视频处理（非常棒）火山引擎",
+        imgurl: "./static/img/app/volcengine.svg",
+        url: "https://console.volcengine.com/vod/region:vod+cn-north-1/aiApplicationPlaza/",
+      },
+      {
+        title: "小云雀【剪映】",
+        desc: "11",
+        imgurl: "./static/img/app/xiaoyunque.png",
+        url: "https://xyq.jianying.com/",
+      },
+      {
+        title: "SkyProduction 昆仑万维（天工短剧工作台）",
+        desc: "[适合漫画]按分镜创作视频，有点慢，一个视频6s，需要17个积分，支持多模型，",
+        imgurl: "./static/img/app/SkyProduction.png",
+        url: "https://www.skyproduction.cn/login?returnTo=/",
+      },
+      {
+        title: "jurilu巨日祿【星河大模型】",
+        desc: "收费有点贵，最少冲1000，还没体验的，可以对项目的人物进行管理，通过分镜，片段管理",
+        imgurl: "./static/img/app/jurilu.png",
+        url: "https://video.jurilu.com/project_management/project_page/modification?projectId=71965&projectName=001",
+      },{
+        title: "liblibTV",
+        desc: "有免费体验，通过工作流创作",
+        imgurl: "./static/img/app/libtv.png",
+        url: "https://www.liblib.tv/",
+      }
+    ],
+  },
+  
+  {
+    title: "海外AI视频生成",
+    children: [
+      {
+        title: "flova",
+        desc: "11",
+        imgurl: "./static/img/app/flova.svg",
+        url: "https://www.flova.ai/zh-CN/",
+      },
+      {
+        title: "zopia",
+        desc: "ai",
+        imgurl: "./static/img/app/zopia.svg",
+        url: "https://zopia.ai/zh",
+      },{
+        title: "Vheer",
+        desc: "侧边栏广告有点多，有免费模型",
+        imgurl: "./static/img/app/vheer.svg",
+        url: "https://vheer.com/app/image-to-video",
+      },
+      {
+        title: "Arena",
+        desc: "免费视频生成工具",
+        imgurl: "./static/img/app/Arena.png",
+        url: "https://arena.ai",
+      },
+      {
+        title: "WanAI",
+        desc: "免费视频生成工具",
+        imgurl: "./static/img/app/wan.png",
+        url: "https://create.wan.video/chat-canvas/board",
+      },
+      {
+        title: "qwen",
+        desc: "千问",
+        imgurl: "./static/img/app/wan.png",
+        url: "https://qwen.ai/home",
+      },
+      {
+        title: "digen",
+        desc: "支持多模型，送300积分，每次消耗30个积分，每天可生成10个，通过临时邮箱复用实现免费使用",
+        imgurl: "./static/img/app/digen.png",
+        url: "https://digen.ai/",
       }
     ],
   },
   {
-    title: "知识库",
+    title: "第三方",
     children: [
       {
-        title: "二米",
+        title: "videocaptioner",
+        desc: "按分镜创作视频，有点慢，一个视频6s，需要17个积分，支持多模型",
+        imgurl: "./static/img/app/videocaptioner.png",
+        url: "https://api.videocaptioner.cn/console/ticket",
+      },{
+        title: "chatfire（AI火宝）",
+        desc: "ai",
+        imgurl: "./static/img/app/chatfire.png",
+        url: "https://api.chatfire.site/models",
+      }
+    ],
+  },{
+    title: "开源项目",
+    children: [
+      {
+        title: "魔因漫创（github开源）",
         desc: "音视频内容 AI 效率工具（阿里巴巴出品）",
-        imgurl: "./static/img/app/ermi.png",
-        url: "http://www.2-m.cn/index.html",
+        imgurl: "./static/img/app/Moyin.png",
+        url: "https://github.com/MemeCalculate/moyin-creator?tab=readme-ov-file",
       }
     ],
   },
+  {
+    title: "临时邮箱生成",
+    children: [
+      {
+        title: "TEMP-mail",
+        desc: "临时邮箱生成",
+        imgurl: "./static/img/app/tmmpmail.png",
+        url: "https://temp-mail.org/en/",
+      }
+    ],
+  }
 ];
 
 const ai2025lists = [{
