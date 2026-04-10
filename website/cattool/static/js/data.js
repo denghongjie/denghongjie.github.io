@@ -52,6 +52,17 @@ const designspaces = [
     ],
   },
   {
+    title: "AI设计",
+    children: [
+      {
+        title: "Stitch",
+        desc: "Google Labs‌ 推出的一款基于人工智能的用户界面（UI）设计工具",
+        imgurl: "./static/img/app/stitch.jpg",
+        url: "https://stitch.withgoogle.com/?pli=1",
+      }
+    ],
+  },
+  {
     title: "在线工具",
     children: [
       {
@@ -2914,7 +2925,7 @@ const selfstudylists = [
         imgurl: "./static/img/app/keling.png",
         url: "https://klingai.com/app",
       },{
-        title: "volcengine",
+        title: "Volcengine",
         desc: "视频处理（非常棒）火山引擎",
         imgurl: "./static/img/app/volcengine.svg",
         url: "https://console.volcengine.com/vod/region:vod+cn-north-1/aiApplicationPlaza/",
@@ -2924,6 +2935,18 @@ const selfstudylists = [
         desc: "11",
         imgurl: "./static/img/app/xiaoyunque.png",
         url: "https://xyq.jianying.com/",
+      },
+      {
+        title: "堆友AI视频【免费】",
+        desc: "堆友AI推出的免费AI视频生成工具（基于万相2.2视频大模型）",
+        imgurl: "./static/img/app/duiyouai.png",
+        url: "https://d.design/ai/generate",
+      },
+      {
+        title: "白日梦AI【自己的模型】",
+        desc: "可生成最长50分钟的视频（适合漫剧）",
+        imgurl: "./static/img/app/aibrm.png",
+        url: "https://aibrm.com/project/edit",
       },
       {
         title: "SkyProduction 昆仑万维（天工短剧工作台）",
@@ -2941,6 +2964,32 @@ const selfstudylists = [
         desc: "有免费体验，通过工作流创作",
         imgurl: "./static/img/app/libtv.png",
         url: "https://www.liblib.tv/",
+      },{
+        title: "WanAI",
+        desc: "免费视频生成工具",
+        imgurl: "./static/img/app/wan.png",
+        url: "https://create.wan.video/chat-canvas/board",
+      },
+      {
+        title: "qwen",
+        desc: "千问",
+        imgurl: "./static/img/app/wan.png",
+        url: "https://qwen.ai/home",
+      }, {
+        title: "通义万相",
+        desc: "阿里AI视频剪辑",
+        imgurl: "./static/img/app/wxyz.png",
+        url: "https://tongyi.aliyun.com/wan/explore",
+      },{
+        title: "Vidu",
+        desc: "vidu模型-生数科技推出的AI视频生成大模型",
+        imgurl: "./static/img/app/vidu.png",
+        url: "https://www.vidu.cn/home/recommend",
+      }, {
+        title: "绘蛙AI",
+        desc: "蛙推出的AI图生视频工具",
+        imgurl: "./static/img/app/huiwa.png",
+        url: "https://www.ihuiwa.com/workspace/ai-video/custom-action",
       }
     ],
   },
@@ -2948,7 +2997,27 @@ const selfstudylists = [
   {
     title: "海外AI视频生成",
     children: [
-      {
+       {
+        title: "Sora",
+        desc: "OpenAI推出的AI视频生成模型",
+        imgurl: "./static/img/app/sora.png",
+        url: "https://sora.chatgpt.com/explore",
+      }, {
+        title: "【美国】Lovart",
+        desc: "全球首个专业级 AI 设计智能体（AI Design Agent），定位为「设计领域的指挥官」",
+        imgurl: "./static/img/app/lovart.png",
+        url: "https://www.lovart.ai/zh/home",
+      },{
+        title: "Pollo AI",
+        desc: "Pollo AI 集成多种先进的 AI 模型，如 Pollo 2.5、Veo 3 等",
+        imgurl: "./static/img/app/PolloAI.png",
+        url: "https://pollo.ai/?ref=ody1mju",
+      },{
+        title: "Flowith",
+        desc: "Flowith的“无限画布”交互界面，使用后觉得视频质量不好",
+        imgurl: "./static/img/app/flowith.svg",
+        url: "https://flowith.io/conv/",
+      },{
         title: "flova",
         desc: "11",
         imgurl: "./static/img/app/flova.svg",
@@ -2971,18 +3040,7 @@ const selfstudylists = [
         imgurl: "./static/img/app/Arena.png",
         url: "https://arena.ai",
       },
-      {
-        title: "WanAI",
-        desc: "免费视频生成工具",
-        imgurl: "./static/img/app/wan.png",
-        url: "https://create.wan.video/chat-canvas/board",
-      },
-      {
-        title: "qwen",
-        desc: "千问",
-        imgurl: "./static/img/app/wan.png",
-        url: "https://qwen.ai/home",
-      },
+      
       {
         title: "digen",
         desc: "支持多模型，送300积分，每次消耗30个积分，每天可生成10个，通过临时邮箱复用实现免费使用",
@@ -3025,6 +3083,96 @@ const selfstudylists = [
         desc: "临时邮箱生成",
         imgurl: "./static/img/app/tmmpmail.png",
         url: "https://temp-mail.org/en/",
+      },{
+        title: "22.do",
+        desc: "临时邮箱生成",
+        imgurl: "./static/img/app/tmmpmail.png",
+        url: "https://22.do/",
+      }
+    ],
+  },{
+    title: "AI-chat",
+    children: [
+      {
+        title: "Gemini-",
+        desc: "谷歌-gemini",
+        imgurl: "./static/img/app/google.png",
+        url: "https://gemini.google.com/app?hl=zh",
+      },{
+        title: "22.do",
+        desc: "临时邮箱生成",
+        imgurl: "./static/img/app/tmmpmail.png",
+        url: "https://22.do/",
+      }
+    ],
+  },
+  {
+    title: "视频处理工具",
+    children: [
+      {
+        title: "soundviewai【科大讯飞】",
+        desc: "视频换脸、声音克隆、无水印下载、口型同步……AI处理",
+        imgurl: "./static/img/app/soundviewai.png",
+        url: "https://soundviewai.com/video-workbench",
+      },{
+        title: "adobe firefly",
+        desc: "去水印、视频剪辑等……AI处理",
+        imgurl: "./static/img/app/firefly.svg",
+        url: "https://firefly.adobe.com/quick-actions",
+      }
+    ],
+  },
+  {
+    title: "数字人",
+    children: [
+      {
+        title: "Heygen",
+        desc: "全球领先的AI数字人视频创作平台，支持创建个人角色、克隆角色",
+        imgurl: "./static/img/app/heygen.svg",
+        url: "https://app.heygen.com/home",
+      },
+      {
+        title: "蝉镜AI",
+        desc: "蝉妈妈旗下推出的一款AI数字人短视频与直播平台",
+        imgurl: "./static/img/app/chanjing.png",
+        url: "https://www.chanjing.cc/",
+      },{
+        title: "有言AI",
+        desc: "数字人、ppt生成视频、3d人物生成",
+        imgurl: "./static/img/app/youyan.png",
+        url: "https://www.youyan3d.com/workspace/",
+      },{
+        title: "JoyPix",
+        desc: "AI数字人创作工具，支持声音克隆",
+        imgurl: "./static/img/app/joypix.png",
+        url: "https://www.joypix.ai/app/video-effects/",
+      }
+    ],
+  },
+  {
+    title: "找灵感",
+    children: [
+      {
+        title: "tapnow",
+        desc: "AI视觉内容创作平台，提供多种预设工作流",
+        imgurl: "./static/img/app/tapnow.png",
+        url: "https://app.tapnow.ai/home",
+      },
+    ],
+  },
+  {
+    title: "AI 数据测评",
+    children: [
+      {
+        title: "Artificial Analysis",
+        desc: "一家专注于人工智能模型与API分析的独立平台",
+        imgurl: "./static/img/app/videocaptioner.png",
+        url: "https://artificialanalysis.ai/",
+      },{
+        title: "aigcrank",
+        desc: "国内版 人工智能模型与API分析的独立平台",
+        imgurl: "./static/img/app/videocaptioner.png",
+        url: "https://aigcrank.cn/llmprice",
       }
     ],
   }
