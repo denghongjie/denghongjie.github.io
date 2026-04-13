@@ -3173,6 +3173,11 @@ const selfstudylists = [
         desc: "国内版 人工智能模型与API分析的独立平台",
         imgurl: "./static/img/app/videocaptioner.png",
         url: "https://aigcrank.cn/llmprice",
+      },{
+        title: "AIbase",
+        desc: "全球人工智能流量排行",
+        imgurl: "./static/img/app/aibase.svg",
+        url: "https://app.aibase.com/best-ai-tools/",
       }
     ],
   }
