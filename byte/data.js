@@ -61,7 +61,7 @@ const byteWeblists=[{
         title:"cattool",
         desc:"工具箱",
         imgurl:"./img/app/cat.png",
-        url:"https://www.navbar.site/website/cattool/index.html",
+        url:"https://www.ctools.site/website/cattool/index.html",
     }]
 },{
     title:"运营通道",
